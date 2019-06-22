@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, /home/timmy/Git/Learn_VHDL/Learn_VHDL.bdf
+source_file = 1, /home/timmy/Git/Learn_VHDL/db/Learn_VHDL.cbx.xml
+design_name = Learn_VHDL
+instance = comp, \F~output\, F~output, Learn_VHDL, 1
+instance = comp, \A~input\, A~input, Learn_VHDL, 1
+instance = comp, \B~input\, B~input, Learn_VHDL, 1
