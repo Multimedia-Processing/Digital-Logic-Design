@@ -1,6 +1,6 @@
 Assembler report for Learn_VHDL
-Fri Jun 21 22:05:03 2019
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Sat Jun 22 19:29:54 2019
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Jun 21 22:05:03 2019 ;
+; Assembler Status      ; Successful - Sat Jun 22 19:29:54 2019 ;
 ; Revision Name         ; Learn_VHDL                            ;
 ; Top-level Entity Name ; Learn_VHDL                            ;
 ; Family                ; Cyclone III                           ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                 ;
 +----------------+-------------------------+
 ; Device         ; EP3C16F484C6            ;
-; JTAG usercode  ; 0x000C7C54              ;
-; Checksum       ; 0x000C7C54              ;
+; JTAG usercode  ; 0x000C74E7              ;
+; Checksum       ; 0x000C74E7              ;
 +----------------+-------------------------+
 
 
@@ -101,16 +101,16 @@ applicable agreement for further details.
 ; Assembler Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Assembler
+Info: Running Quartus II 32-bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Jun 21 22:05:00 2019
+    Info: Processing started: Sat Jun 22 19:29:51 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Learn_VHDL -c Learn_VHDL
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
-Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 606 megabytes
-    Info: Processing ended: Fri Jun 21 22:05:03 2019
+Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 364 megabytes
+    Info: Processing ended: Sat Jun 22 19:29:54 2019
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

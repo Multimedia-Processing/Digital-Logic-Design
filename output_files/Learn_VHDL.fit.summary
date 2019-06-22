@@ -1,5 +1,5 @@
-Fitter Status : Successful - Fri Jun 21 22:04:56 2019
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Fitter Status : Successful - Sat Jun 22 19:29:46 2019
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : Learn_VHDL
 Top-level Entity Name : Learn_VHDL
 Family : Cyclone III
@@ -9,7 +9,7 @@ Total logic elements : 1 / 15,408 ( < 1 % )
     Total combinational functions : 1 / 15,408 ( < 1 % )
     Dedicated logic registers : 0 / 15,408 ( 0 % )
 Total registers : 0
-Total pins : 3 / 347 ( < 1 % )
+Total pins : 3 / 276 ( 1 % )
 Total virtual pins : 0
 Total memory bits : 0 / 516,096 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )

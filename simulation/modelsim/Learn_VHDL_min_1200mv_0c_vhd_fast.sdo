@@ -29,9 +29,9 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Learn_VHDL")
-  (DATE "06/21/2019 22:05:16")
+  (DATE "06/22/2019 19:30:08")
   (VENDOR "Altera")
-  (PROGRAM "Quartus II 64-Bit")
+  (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
@@ -41,7 +41,7 @@
     (INSTANCE \\F\~output\\)
     (DELAY
       (ABSOLUTE
-        (PORT i (261:261:261) (241:241:241))
+        (PORT i (181:181:181) (161:161:161))
         (IOPATH i o (1490:1490:1490) (1506:1506:1506))
       )
     )
@@ -69,10 +69,10 @@
     (INSTANCE inst)
     (DELAY
       (ABSOLUTE
-        (PORT datab (1622:1622:1622) (1812:1812:1812))
-        (PORT datad (1446:1446:1446) (1607:1607:1607))
-        (IOPATH datab combout (167:167:167) (167:167:167))
-        (IOPATH datad combout (68:68:68) (63:63:63))
+        (PORT datab (1615:1615:1615) (1802:1802:1802))
+        (PORT datac (1556:1556:1556) (1727:1727:1727))
+        (IOPATH datab combout (168:168:168) (167:167:167))
+        (IOPATH datac combout (119:119:119) (124:124:124))
       )
     )
   )

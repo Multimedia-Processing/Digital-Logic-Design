@@ -13,10 +13,10 @@
 -- applicable agreement for further details.
 
 -- VENDOR "Altera"
--- PROGRAM "Quartus II 64-Bit"
+-- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "06/21/2019 22:05:15"
+-- DATE "06/22/2019 19:30:07"
 
 -- 
 -- Device: Altera EP3C16F484C6 Package FBGA484
@@ -41,7 +41,7 @@ END Learn_VHDL;
 
 -- Design Ports Information
 -- F	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
@@ -97,7 +97,7 @@ PORT MAP (
 	i => ww_A,
 	o => \A~input_o\);
 
--- Location: IOIBUF_X0_Y26_N8
+-- Location: IOIBUF_X0_Y26_N1
 \B~input\ : cycloneiii_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -108,19 +108,19 @@ PORT MAP (
 	i => ww_B,
 	o => \B~input_o\);
 
--- Location: LCCOMB_X1_Y26_N0
+-- Location: LCCOMB_X1_Y27_N16
 inst : cycloneiii_lcell_comb
 -- Equation(s):
 -- \inst~combout\ = (\A~input_o\ & \B~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110000000000",
+	lut_mask => "1100000011000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	datab => \A~input_o\,
-	datad => \B~input_o\,
+	datac => \B~input_o\,
 	combout => \inst~combout\);
 
 ww_F <= \F~output_o\;

@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for Learn_VHDL
-Fri Jun 21 22:05:09 2019
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Sat Jun 22 19:30:00 2019
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -148,8 +148,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 6.638 ; 7.015 ;    ;
-; B          ; F           ;    ; 6.099 ; 6.452 ;    ;
+; A          ; F           ;    ; 6.481 ; 6.890 ;    ;
+; B          ; F           ;    ; 6.245 ; 6.640 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -158,8 +158,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 6.476 ; 6.826 ;    ;
-; B          ; F           ;    ; 5.970 ; 6.313 ;    ;
+; A          ; F           ;    ; 6.292 ; 6.676 ;    ;
+; B          ; F           ;    ; 6.107 ; 6.492 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -210,8 +210,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 6.187 ; 6.466 ;    ;
-; B          ; F           ;    ; 5.693 ; 5.965 ;    ;
+; A          ; F           ;    ; 6.027 ; 6.367 ;    ;
+; B          ; F           ;    ; 5.818 ; 6.136 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -220,8 +220,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 6.045 ; 6.307 ;    ;
-; B          ; F           ;    ; 5.583 ; 5.850 ;    ;
+; A          ; F           ;    ; 5.861 ; 6.183 ;    ;
+; B          ; F           ;    ; 5.700 ; 6.010 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -266,8 +266,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 3.967 ; 4.552 ;    ;
-; B          ; F           ;    ; 3.652 ; 4.194 ;    ;
+; A          ; F           ;    ; 3.901 ; 4.479 ;    ;
+; B          ; F           ;    ; 3.744 ; 4.304 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -276,8 +276,8 @@ No paths to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 3.874 ; 4.440 ;    ;
-; B          ; F           ;    ; 3.576 ; 4.114 ;    ;
+; A          ; F           ;    ; 3.792 ; 4.354 ;    ;
+; B          ; F           ;    ; 3.666 ; 4.219 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -302,8 +302,8 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 6.638 ; 7.015 ;    ;
-; B          ; F           ;    ; 6.099 ; 6.452 ;    ;
+; A          ; F           ;    ; 6.481 ; 6.890 ;    ;
+; B          ; F           ;    ; 6.245 ; 6.640 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -312,8 +312,8 @@ No synchronizer chains to report.
 +------------+-------------+----+-------+-------+----+
 ; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
 +------------+-------------+----+-------+-------+----+
-; A          ; F           ;    ; 3.874 ; 4.440 ;    ;
-; B          ; F           ;    ; 3.576 ; 4.114 ;    ;
+; A          ; F           ;    ; 3.792 ; 4.354 ;    ;
+; B          ; F           ;    ; 3.666 ; 4.219 ;    ;
 +------------+-------------+----+-------+-------+----+
 
 
@@ -328,17 +328,88 @@ No synchronizer chains to report.
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
 
-+----------------------------------------------------------------------------+
-; Input Transition Times                                                     ;
-+-------------------------+--------------+-----------------+-----------------+
-; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
-+-------------------------+--------------+-----------------+-----------------+
-; B                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; A                       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-+-------------------------+--------------+-----------------+-----------------+
++--------------------------------------------------------------------------------+
+; Input Transition Times                                                         ;
++-----------------------------+--------------+-----------------+-----------------+
+; Pin                         ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-----------------------------+--------------+-----------------+-----------------+
+; B                           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; A                           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD20~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD21~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD22~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD23~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD50~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD65~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD66~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD67~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD73~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD74~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD79~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD83~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD84~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD85~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD86~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD87~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD88~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD89~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD90~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD91~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD92~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD94~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD95~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD97~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD98~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD105~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD121~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD125~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD148~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD153~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD156~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD160~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD176~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD180~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD189~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD192~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD193~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD195~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD196~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD197~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD205~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD214~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD232~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD233~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD236~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD238~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD243~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD244~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD247~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD258~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD259~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD273~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD274~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD277~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD278~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD280~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD287~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD288~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD295~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD302~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD303~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD304~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD305~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD323~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD325~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD331~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD341~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD342~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD343~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD344~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~CONFIGURE_AS_INPUT_PAD353~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-----------------------------+--------------+-----------------+-----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -399,9 +470,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Jun 21 22:05:07 2019
+    Info: Processing started: Sat Jun 22 19:29:57 2019
 Info: Command: quartus_sta Learn_VHDL -c Learn_VHDL
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -447,10 +518,10 @@ Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 597 megabytes
-    Info: Processing ended: Fri Jun 21 22:05:09 2019
-    Info: Elapsed time: 00:00:02
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 373 megabytes
+    Info: Processing ended: Sat Jun 22 19:30:00 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 
