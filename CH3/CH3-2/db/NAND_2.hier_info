@@ -1,0 +1,10 @@
+|NAND_2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C => inst.IN0
+D => inst.IN1
+Y1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+F <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst5.IN0
+A => inst5.IN1
+
+
