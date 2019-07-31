@@ -56,8 +56,20 @@ set_location_assignment PIN_E4 -to B
 set_location_assignment PIN_B1 -to F
 set_global_assignment -name BDF_FILE Work1.bdf
 set_global_assignment -name BDF_FILE NAND_2.bdf
-set_location_assignment PIN_B2 -to Y
-set_location_assignment PIN_C2 -to Y1
-set_location_assignment PIN_E3 -to C
-set_location_assignment PIN_H7 -to D
+set_location_assignment PIN_E3 -to A1
+set_location_assignment PIN_H7 -to B1
+set_location_assignment PIN_J7 -to A2
+set_location_assignment PIN_G5 -to B2
+set_location_assignment PIN_G4 -to A3
+set_location_assignment PIN_H6 -to B3
+set_location_assignment PIN_B2 -to F1
+set_location_assignment PIN_C2 -to F2
+set_location_assignment PIN_E1 -to F4
+set_location_assignment PIN_F2 -to F5
+set_location_assignment PIN_H5 -to A4
+set_location_assignment PIN_F1 -to A5
+set_location_assignment PIN_J6 -to B4
+set_location_assignment PIN_G3 -to B5
+set_location_assignment PIN_C1 -to F3
+set_location_assignment PIN_H1 -to F6
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
