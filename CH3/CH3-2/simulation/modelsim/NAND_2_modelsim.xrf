@@ -1,8 +1,12 @@
 vendor_name = ModelSim
+source_file = 1, Work1.bdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/NAND_2.bdf
-source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/output_files/Work1.bdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/db/NAND_2.cbx.xml
 design_name = NAND_2
+instance = comp, \Y~output\, Y~output, NAND_2, 1
+instance = comp, \Y1~output\, Y1~output, NAND_2, 1
 instance = comp, \F~output\, F~output, NAND_2, 1
+instance = comp, \D~input\, D~input, NAND_2, 1
+instance = comp, \C~input\, C~input, NAND_2, 1
 instance = comp, \A~input\, A~input, NAND_2, 1
 instance = comp, \B~input\, B~input, NAND_2, 1
