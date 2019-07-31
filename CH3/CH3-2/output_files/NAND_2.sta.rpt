@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for NAND_2
-Wed Jul 31 08:23:48 2019
+Wed Jul 31 12:26:48 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -401,7 +401,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jul 31 08:23:44 2019
+    Info: Processing started: Wed Jul 31 12:26:45 2019
 Info: Command: quartus_sta NAND_2 -c NAND_2
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -448,9 +448,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 367 megabytes
-    Info: Processing ended: Wed Jul 31 08:23:48 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 377 megabytes
+    Info: Processing ended: Wed Jul 31 12:26:48 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

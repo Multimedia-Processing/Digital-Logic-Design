@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/NAND_2.bdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/output_files/Work1.bdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH3/CH3-2/db/NAND_2.cbx.xml
 design_name = NAND_2
 instance = comp, \F~output\, F~output, NAND_2, 1

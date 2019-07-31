@@ -1,5 +1,5 @@
 EDA Netlist Writer report for NAND_2
-Wed Jul 31 08:23:59 2019
+Wed Jul 31 12:26:53 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jul 31 08:23:59 2019 ;
+; EDA Netlist Writer Status ; Successful - Wed Jul 31 12:26:53 2019 ;
 ; Revision Name             ; NAND_2                                ;
 ; Top-level Entity Name     ; NAND_2                                ;
 ; Family                    ; Cyclone III                           ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Jul 31 08:23:57 2019
+    Info: Processing started: Wed Jul 31 12:26:52 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off NAND_2 -c NAND_2
 Info (204019): Generated file NAND_2_6_1200mv_85c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH3/CH3-2/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file NAND_2_6_1200mv_0c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH3/CH3-2/simulation/modelsim/" for EDA simulation tool
@@ -100,8 +100,8 @@ Info (204019): Generated file NAND_2_min_1200mv_0c_vhd_fast.sdo in folder "/home
 Info (204019): Generated file NAND_2_vhd.sdo in folder "/home/timmy/Git/Learn-VHDL/CH3/CH3-2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Wed Jul 31 08:23:59 2019
+    Info: Processing ended: Wed Jul 31 12:26:54 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
