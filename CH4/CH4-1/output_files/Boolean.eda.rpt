@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Boolean
-Fri Aug  2 23:29:18 2019
+Fri Aug  2 23:56:32 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Aug  2 23:29:18 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Aug  2 23:56:32 2019 ;
 ; Revision Name             ; Boolean                               ;
 ; Top-level Entity Name     ; Boolean                               ;
 ; Family                    ; Cyclone III                           ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Aug  2 23:29:17 2019
+    Info: Processing started: Fri Aug  2 23:56:28 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Boolean -c Boolean
 Info (204019): Generated file Boolean_6_1200mv_85c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file Boolean_6_1200mv_0c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
@@ -100,8 +100,8 @@ Info (204019): Generated file Boolean_min_1200mv_0c_vhd_fast.sdo in folder "/hom
 Info (204019): Generated file Boolean_vhd.sdo in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Fri Aug  2 23:29:18 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Processing ended: Fri Aug  2 23:56:33 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
 
 
