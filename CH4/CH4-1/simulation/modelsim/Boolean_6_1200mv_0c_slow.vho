@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 32-bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "08/01/2019 23:28:58"
+-- DATE "08/02/2019 23:29:18"
 
 -- 
 -- Device: Altera EP3C16F484C6 Package FBGA484
@@ -42,7 +42,13 @@ ENTITY 	Boolean IS
 	B2 : IN std_logic;
 	F4 : OUT std_logic;
 	A3 : IN std_logic;
-	B3 : IN std_logic
+	B3 : IN std_logic;
+	F5 : OUT std_logic;
+	A4 : IN std_logic;
+	F6 : OUT std_logic;
+	F7 : OUT std_logic;
+	B4 : IN std_logic;
+	F8 : OUT std_logic
 	);
 END Boolean;
 
@@ -55,8 +61,14 @@ END Boolean;
 -- B2	=>  Location: PIN_H7,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- F4	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- B3	=>  Location: PIN_G5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F5	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F6	=>  Location: PIN_F2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F7	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F8	=>  Location: PIN_J3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A2	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- A3	=>  Location: PIN_J7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A4	=>  Location: PIN_G4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B4	=>  Location: PIN_H6,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Boolean IS
@@ -79,6 +91,12 @@ SIGNAL ww_B2 : std_logic;
 SIGNAL ww_F4 : std_logic;
 SIGNAL ww_A3 : std_logic;
 SIGNAL ww_B3 : std_logic;
+SIGNAL ww_F5 : std_logic;
+SIGNAL ww_A4 : std_logic;
+SIGNAL ww_F6 : std_logic;
+SIGNAL ww_F7 : std_logic;
+SIGNAL ww_B4 : std_logic;
+SIGNAL ww_F8 : std_logic;
 SIGNAL \A~input_o\ : std_logic;
 SIGNAL \A1~input_o\ : std_logic;
 SIGNAL \B2~input_o\ : std_logic;
@@ -87,8 +105,16 @@ SIGNAL \F~output_o\ : std_logic;
 SIGNAL \F2~output_o\ : std_logic;
 SIGNAL \F3~output_o\ : std_logic;
 SIGNAL \F4~output_o\ : std_logic;
+SIGNAL \F5~output_o\ : std_logic;
+SIGNAL \F6~output_o\ : std_logic;
+SIGNAL \F7~output_o\ : std_logic;
+SIGNAL \F8~output_o\ : std_logic;
 SIGNAL \A2~input_o\ : std_logic;
 SIGNAL \A3~input_o\ : std_logic;
+SIGNAL \A4~input_o\ : std_logic;
+SIGNAL \B4~input_o\ : std_logic;
+SIGNAL \ALT_INV_B4~input_o\ : std_logic;
+SIGNAL \ALT_INV_A4~input_o\ : std_logic;
 
 BEGIN
 
@@ -102,9 +128,17 @@ ww_B2 <= B2;
 F4 <= ww_F4;
 ww_A3 <= A3;
 ww_B3 <= B3;
+F5 <= ww_F5;
+ww_A4 <= A4;
+F6 <= ww_F6;
+F7 <= ww_F7;
+ww_B4 <= B4;
+F8 <= ww_F8;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\ALT_INV_B4~input_o\ <= NOT \B4~input_o\;
+\ALT_INV_A4~input_o\ <= NOT \A4~input_o\;
 
 -- Location: IOOBUF_X0_Y27_N16
 \F~output\ : cycloneiii_io_obuf
@@ -154,6 +188,54 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \F4~output_o\);
 
+-- Location: IOOBUF_X0_Y24_N16
+\F5~output\ : cycloneiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \ALT_INV_A4~input_o\,
+	devoe => ww_devoe,
+	o => \F5~output_o\);
+
+-- Location: IOOBUF_X0_Y24_N23
+\F6~output\ : cycloneiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \A4~input_o\,
+	devoe => ww_devoe,
+	o => \F6~output_o\);
+
+-- Location: IOOBUF_X0_Y21_N16
+\F7~output\ : cycloneiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \ALT_INV_B4~input_o\,
+	devoe => ww_devoe,
+	o => \F7~output_o\);
+
+-- Location: IOOBUF_X0_Y21_N23
+\F8~output\ : cycloneiii_io_obuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	open_drain_output => "false")
+-- pragma translate_on
+PORT MAP (
+	i => \B4~input_o\,
+	devoe => ww_devoe,
+	o => \F8~output_o\);
+
 -- Location: IOIBUF_X0_Y26_N8
 \A2~input\ : cycloneiii_io_ibuf
 -- pragma translate_off
@@ -175,6 +257,28 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_A3,
 	o => \A3~input_o\);
+
+-- Location: IOIBUF_X0_Y23_N8
+\A4~input\ : cycloneiii_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_A4,
+	o => \A4~input_o\);
+
+-- Location: IOIBUF_X0_Y25_N22
+\B4~input\ : cycloneiii_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_B4,
+	o => \B4~input_o\);
 
 -- Location: IOIBUF_X0_Y25_N1
 \A~input\ : cycloneiii_io_ibuf
@@ -227,6 +331,14 @@ ww_F2 <= \F2~output_o\;
 ww_F3 <= \F3~output_o\;
 
 ww_F4 <= \F4~output_o\;
+
+ww_F5 <= \F5~output_o\;
+
+ww_F6 <= \F6~output_o\;
+
+ww_F7 <= \F7~output_o\;
+
+ww_F8 <= \F8~output_o\;
 END structure;
 
 

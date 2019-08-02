@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Boolean
-Thu Aug  1 23:28:22 2019
+Fri Aug  2 23:28:49 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug  1 23:28:22 2019      ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug  2 23:28:49 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Boolean                                    ;
 ; Top-level Entity Name              ; Boolean                                    ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 10                                         ;
+; Total pins                         ; 16                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -185,12 +185,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 10       ;
+; I/O pins                                    ; 16       ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; F~output ;
-; Maximum fan-out                             ; 1        ;
-; Total fan-out                               ; 12       ;
-; Average fan-out                             ; 0.60     ;
+; Maximum fan-out node                        ; A4~input ;
+; Maximum fan-out                             ; 2        ;
+; Total fan-out                               ; 22       ;
+; Average fan-out                             ; 0.69     ;
 +---------------------------------------------+----------+
 
 
@@ -199,7 +199,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Boolean                   ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |Boolean            ; work         ;
+; |Boolean                   ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Boolean            ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Aug  1 23:28:19 2019
+    Info: Processing started: Fri Aug  2 23:28:47 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Boolean -c Boolean
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Boolean.bdf
@@ -250,13 +250,13 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "A1"
     Warning (15610): No output dependent on input pin "B2"
     Warning (15610): No output dependent on input pin "B3"
-Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 4 output pins
+Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 8 output pins
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 371 megabytes
-    Info: Processing ended: Thu Aug  1 23:28:22 2019
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Fri Aug  2 23:28:49 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

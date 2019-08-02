@@ -13,5 +13,13 @@ F4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 A3 => inst7.IN0
 A3 => inst9.IN1
 B3 => inst9.IN0
+F5 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst1.IN0
+A4 => inst1.IN1
+F6 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+F7 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst10.IN0
+B4 => inst10.IN1
+F8 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 
 

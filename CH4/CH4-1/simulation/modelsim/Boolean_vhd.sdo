@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Boolean")
-  (DATE "08/01/2019 23:28:58")
+  (DATE "08/02/2019 23:29:18")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -57,6 +57,46 @@
     )
   )
   (CELL
+    (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE \\F5\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2987:2987:2987) (2749:2749:2749))
+        (IOPATH i o (2234:2234:2234) (2246:2246:2246))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE \\F6\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2749:2749:2749) (2987:2987:2987))
+        (IOPATH i o (2246:2246:2246) (2234:2234:2234))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE \\F7\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2994:2994:2994) (2743:2743:2743))
+        (IOPATH i o (2224:2224:2224) (2236:2236:2236))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_obuf")
+    (INSTANCE \\F8\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2743:2743:2743) (2994:2994:2994))
+        (IOPATH i o (3436:3436:3436) (3537:3537:3537))
+      )
+    )
+  )
+  (CELL
     (CELLTYPE "cycloneiii_io_ibuf")
     (INSTANCE \\A2\~input\\)
     (DELAY
@@ -68,6 +108,24 @@
   (CELL
     (CELLTYPE "cycloneiii_io_ibuf")
     (INSTANCE \\A3\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (725:725:725) (886:886:886))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_ibuf")
+    (INSTANCE \\A4\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (735:735:735) (896:896:896))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiii_io_ibuf")
+    (INSTANCE \\B4\~input\\)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (725:725:725) (886:886:886))
