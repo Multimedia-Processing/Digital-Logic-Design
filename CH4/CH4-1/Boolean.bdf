@@ -4,19 +4,20 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -125,7 +126,7 @@ applicable agreement for further details.
 	(input)
 	(rect -16 488 152 504)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "A4" (rect 5 0 20 10)(font "Arial" ))
+	(text "A4" (rect 5 0 19 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -142,7 +143,7 @@ applicable agreement for further details.
 	(input)
 	(rect -16 584 152 600)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "B4" (rect 5 0 20 10)(font "Arial" ))
+	(text "B4" (rect 5 0 19 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -159,7 +160,24 @@ applicable agreement for further details.
 	(input)
 	(rect -16 704 152 720)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "B5" (rect 5 0 20 10)(font "Arial" ))
+	(text "B5" (rect 5 0 19 10)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -72 720 -16 736))
+)
+(pin
+	(input)
+	(rect -16 640 152 656)
+	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
+	(text "A5" (rect 5 0 19 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -174,9 +192,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -16 640 152 656)
+	(rect -16 824 152 840)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "A5" (rect 5 0 20 10)(font "Arial" ))
+	(text "B6" (rect 5 0 19 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -187,13 +205,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -72 576 -16 592))
+	(annotation_block (location)(rect -72 840 -16 856))
 )
 (pin
 	(input)
-	(rect -16 824 152 840)
+	(rect -16 760 152 776)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "B6" (rect 5 0 20 10)(font "Arial" ))
+	(text "A6" (rect 5 0 19 10)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -205,23 +223,6 @@ applicable agreement for further details.
 	)
 	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -72 776 -16 792))
-)
-(pin
-	(input)
-	(rect -16 760 152 776)
-	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
-	(text "A6" (rect 5 0 20 10)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 149 16)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -72 696 -16 712))
 )
 (pin
 	(output)

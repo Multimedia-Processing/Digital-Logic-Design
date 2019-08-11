@@ -1,34 +1,37 @@
--- Copyright (C) 1991-2013 Altera Corporation
+-- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 -- Your use of Altera Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
 -- (including device programming or simulation files), and any 
 -- associated documentation or information are expressly subject 
 -- to the terms and conditions of the Altera Program License 
--- Subscription Agreement, Altera MegaCore Function License 
--- Agreement, or other applicable license agreement, including, 
--- without limitation, that your use is for the sole purpose of 
--- programming logic devices manufactured by Altera and sold by 
--- Altera or its authorized distributors.  Please refer to the 
--- applicable agreement for further details.
+-- Subscription Agreement, the Altera Quartus II License Agreement,
+-- the Altera MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Altera and sold by Altera or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
 
 -- VENDOR "Altera"
--- PROGRAM "Quartus II 32-bit"
--- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+-- PROGRAM "Quartus II 64-Bit"
+-- VERSION "Version 15.0.2 Build 153 07/15/2015 SJ Web Edition"
 
--- DATE "08/02/2019 23:56:32"
+-- DATE "08/12/2019 00:41:03"
 
 -- 
--- Device: Altera EP3C16F484C6 Package FBGA484
+-- Device: Altera 5CSXFC6D6F31C8 Package FBGA896
 -- 
 
 -- 
 -- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
 
-LIBRARY CYCLONEIII;
+LIBRARY ALTERA_LNSIM;
+LIBRARY CYCLONEV;
 LIBRARY IEEE;
-USE CYCLONEIII.CYCLONEIII_COMPONENTS.ALL;
+USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
+USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	Boolean IS
@@ -61,30 +64,30 @@ ENTITY 	Boolean IS
 END Boolean;
 
 -- Design Ports Information
--- F	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F2	=>  Location: PIN_B2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A1	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F3	=>  Location: PIN_C2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B2	=>  Location: PIN_H7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F4	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B3	=>  Location: PIN_G5,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F5	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F6	=>  Location: PIN_F2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F7	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F8	=>  Location: PIN_J3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F9	=>  Location: PIN_T9,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F10	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F11	=>  Location: PIN_B19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- F12	=>  Location: PIN_A18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A2	=>  Location: PIN_E3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A3	=>  Location: PIN_J7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A4	=>  Location: PIN_G4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B4	=>  Location: PIN_H6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B5	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A5	=>  Location: PIN_P17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B6	=>  Location: PIN_H15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A6	=>  Location: PIN_G16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F	=>  Location: PIN_AF14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A	=>  Location: PIN_E8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F2	=>  Location: PIN_AJ29,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A1	=>  Location: PIN_AG7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F3	=>  Location: PIN_Y27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B2	=>  Location: PIN_AJ20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F4	=>  Location: PIN_AB30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B3	=>  Location: PIN_G7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F5	=>  Location: PIN_AA26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F6	=>  Location: PIN_AD29,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F7	=>  Location: PIN_AC30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F8	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F9	=>  Location: PIN_AF10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F10	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F11	=>  Location: PIN_AE11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- F12	=>  Location: PIN_AD7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A2	=>  Location: PIN_Y26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A3	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A4	=>  Location: PIN_AB27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B4	=>  Location: PIN_AE29,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B5	=>  Location: PIN_V25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A5	=>  Location: PIN_W25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B6	=>  Location: PIN_AC29,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A6	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF Boolean IS
@@ -125,28 +128,21 @@ SIGNAL \A~input_o\ : std_logic;
 SIGNAL \A1~input_o\ : std_logic;
 SIGNAL \B2~input_o\ : std_logic;
 SIGNAL \B3~input_o\ : std_logic;
-SIGNAL \F~output_o\ : std_logic;
-SIGNAL \F2~output_o\ : std_logic;
-SIGNAL \F3~output_o\ : std_logic;
-SIGNAL \F4~output_o\ : std_logic;
-SIGNAL \F5~output_o\ : std_logic;
-SIGNAL \F6~output_o\ : std_logic;
-SIGNAL \F7~output_o\ : std_logic;
-SIGNAL \F8~output_o\ : std_logic;
-SIGNAL \F9~output_o\ : std_logic;
-SIGNAL \F10~output_o\ : std_logic;
-SIGNAL \F11~output_o\ : std_logic;
-SIGNAL \F12~output_o\ : std_logic;
+SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \A2~input_o\ : std_logic;
 SIGNAL \A3~input_o\ : std_logic;
 SIGNAL \A4~input_o\ : std_logic;
 SIGNAL \B4~input_o\ : std_logic;
-SIGNAL \B5~input_o\ : std_logic;
 SIGNAL \A5~input_o\ : std_logic;
+SIGNAL \B5~input_o\ : std_logic;
 SIGNAL \inst17~combout\ : std_logic;
-SIGNAL \B6~input_o\ : std_logic;
 SIGNAL \A6~input_o\ : std_logic;
+SIGNAL \B6~input_o\ : std_logic;
 SIGNAL \inst14~combout\ : std_logic;
+SIGNAL \ALT_INV_A6~input_o\ : std_logic;
+SIGNAL \ALT_INV_B6~input_o\ : std_logic;
+SIGNAL \ALT_INV_A5~input_o\ : std_logic;
+SIGNAL \ALT_INV_B5~input_o\ : std_logic;
 SIGNAL \ALT_INV_B4~input_o\ : std_logic;
 SIGNAL \ALT_INV_A4~input_o\ : std_logic;
 SIGNAL \ALT_INV_inst14~combout\ : std_logic;
@@ -181,157 +177,173 @@ F12 <= ww_F12;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\ALT_INV_A6~input_o\ <= NOT \A6~input_o\;
+\ALT_INV_B6~input_o\ <= NOT \B6~input_o\;
+\ALT_INV_A5~input_o\ <= NOT \A5~input_o\;
+\ALT_INV_B5~input_o\ <= NOT \B5~input_o\;
 \ALT_INV_B4~input_o\ <= NOT \B4~input_o\;
 \ALT_INV_A4~input_o\ <= NOT \A4~input_o\;
 \ALT_INV_inst14~combout\ <= NOT \inst14~combout\;
 \ALT_INV_inst17~combout\ <= NOT \inst17~combout\;
 
--- Location: IOOBUF_X0_Y27_N16
-\F~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X32_Y0_N2
+\F~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => VCC,
 	devoe => ww_devoe,
-	o => \F~output_o\);
+	o => ww_F);
 
--- Location: IOOBUF_X0_Y27_N9
-\F2~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y6_N39
+\F2~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => GND,
 	devoe => ww_devoe,
-	o => \F2~output_o\);
+	o => ww_F2);
 
--- Location: IOOBUF_X0_Y26_N16
-\F3~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y25_N22
+\F3~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \A2~input_o\,
 	devoe => ww_devoe,
-	o => \F3~output_o\);
+	o => ww_F3);
 
--- Location: IOOBUF_X0_Y26_N23
-\F4~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y21_N5
+\F4~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \A3~input_o\,
 	devoe => ww_devoe,
-	o => \F4~output_o\);
+	o => ww_F4);
 
--- Location: IOOBUF_X0_Y24_N16
-\F5~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y23_N5
+\F5~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \ALT_INV_A4~input_o\,
 	devoe => ww_devoe,
-	o => \F5~output_o\);
+	o => ww_F5);
 
--- Location: IOOBUF_X0_Y24_N23
-\F6~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y23_N56
+\F6~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \A4~input_o\,
 	devoe => ww_devoe,
-	o => \F6~output_o\);
+	o => ww_F6);
 
--- Location: IOOBUF_X0_Y21_N16
-\F7~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y25_N56
+\F7~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \ALT_INV_B4~input_o\,
 	devoe => ww_devoe,
-	o => \F7~output_o\);
+	o => ww_F7);
 
--- Location: IOOBUF_X0_Y21_N23
-\F8~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X89_Y25_N39
+\F8~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \B4~input_o\,
 	devoe => ww_devoe,
-	o => \F8~output_o\);
+	o => ww_F8);
 
--- Location: IOOBUF_X1_Y0_N9
-\F9~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X4_Y0_N53
+\F9~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \inst17~combout\,
 	devoe => ww_devoe,
-	o => \F9~output_o\);
+	o => ww_F9);
 
--- Location: IOOBUF_X1_Y0_N16
-\F10~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X4_Y0_N19
+\F10~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \ALT_INV_inst17~combout\,
 	devoe => ww_devoe,
-	o => \F10~output_o\);
+	o => ww_F10);
 
--- Location: IOOBUF_X32_Y29_N2
-\F11~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X4_Y0_N36
+\F11~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \ALT_INV_inst14~combout\,
 	devoe => ww_devoe,
-	o => \F11~output_o\);
+	o => ww_F11);
 
--- Location: IOOBUF_X32_Y29_N16
-\F12~output\ : cycloneiii_io_obuf
+-- Location: IOOBUF_X6_Y0_N2
+\F12~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
-	open_drain_output => "false")
+	open_drain_output => "false",
+	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
 	i => \inst14~combout\,
 	devoe => ww_devoe,
-	o => \F12~output_o\);
+	o => ww_F12);
 
--- Location: IOIBUF_X0_Y26_N8
-\A2~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y25_N4
+\A2~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -341,8 +353,8 @@ PORT MAP (
 	i => ww_A2,
 	o => \A2~input_o\);
 
--- Location: IOIBUF_X0_Y22_N15
-\A3~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y21_N38
+\A3~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -352,8 +364,8 @@ PORT MAP (
 	i => ww_A3,
 	o => \A3~input_o\);
 
--- Location: IOIBUF_X0_Y23_N8
-\A4~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y23_N21
+\A4~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -363,8 +375,8 @@ PORT MAP (
 	i => ww_A4,
 	o => \A4~input_o\);
 
--- Location: IOIBUF_X0_Y25_N22
-\B4~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y23_N38
+\B4~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -374,19 +386,8 @@ PORT MAP (
 	i => ww_B4,
 	o => \B4~input_o\);
 
--- Location: IOIBUF_X0_Y7_N1
-\B5~input\ : cycloneiii_io_ibuf
--- pragma translate_off
-GENERIC MAP (
-	bus_hold => "false",
-	simulate_z_as => "z")
--- pragma translate_on
-PORT MAP (
-	i => ww_B5,
-	o => \B5~input_o\);
-
--- Location: IOIBUF_X41_Y7_N8
-\A5~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y20_N44
+\A5~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -396,34 +397,35 @@ PORT MAP (
 	i => ww_A5,
 	o => \A5~input_o\);
 
--- Location: LCCOMB_X1_Y7_N24
-inst17 : cycloneiii_lcell_comb
--- Equation(s):
--- \inst17~combout\ = (\B5~input_o\) # (\A5~input_o\)
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "1111111110101010",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	dataa => \B5~input_o\,
-	datad => \A5~input_o\,
-	combout => \inst17~combout\);
-
--- Location: IOIBUF_X35_Y29_N22
-\B6~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X89_Y20_N61
+\B5~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_B6,
-	o => \B6~input_o\);
+	i => ww_B5,
+	o => \B5~input_o\);
 
--- Location: IOIBUF_X39_Y29_N22
-\A6~input\ : cycloneiii_io_ibuf
+-- Location: LABCELL_X88_Y20_N30
+inst17 : cyclonev_lcell_comb
+-- Equation(s):
+-- \inst17~combout\ = ( \B5~input_o\ ) # ( !\B5~input_o\ & ( \A5~input_o\ ) )
+
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000111100001111000011110000111111111111111111111111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	datac => \ALT_INV_A5~input_o\,
+	dataf => \ALT_INV_B5~input_o\,
+	combout => \inst17~combout\);
+
+-- Location: IOIBUF_X89_Y20_N78
+\A6~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -433,23 +435,35 @@ PORT MAP (
 	i => ww_A6,
 	o => \A6~input_o\);
 
--- Location: LCCOMB_X37_Y28_N0
-inst14 : cycloneiii_lcell_comb
+-- Location: IOIBUF_X89_Y20_N95
+\B6~input\ : cyclonev_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_B6,
+	o => \B6~input_o\);
+
+-- Location: LABCELL_X88_Y20_N9
+inst14 : cyclonev_lcell_comb
 -- Equation(s):
--- \inst14~combout\ = (!\A6~input_o\) # (!\B6~input_o\)
+-- \inst14~combout\ = ( \B6~input_o\ & ( !\A6~input_o\ ) ) # ( !\B6~input_o\ )
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111111111111",
-	sum_lutc_input => "datac")
+	extended_lut => "off",
+	lut_mask => "1111111111111111111100001111000011111111111111111111000011110000",
+	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \B6~input_o\,
-	datad => \A6~input_o\,
+	datac => \ALT_INV_A6~input_o\,
+	datae => \ALT_INV_B6~input_o\,
 	combout => \inst14~combout\);
 
--- Location: IOIBUF_X0_Y25_N1
-\A~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X18_Y81_N75
+\A~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -459,8 +473,8 @@ PORT MAP (
 	i => ww_A,
 	o => \A~input_o\);
 
--- Location: IOIBUF_X0_Y26_N1
-\A1~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X10_Y0_N92
+\A1~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -470,8 +484,8 @@ PORT MAP (
 	i => ww_A1,
 	o => \A1~input_o\);
 
--- Location: IOIBUF_X0_Y25_N15
-\B2~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X62_Y0_N35
+\B2~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -481,8 +495,8 @@ PORT MAP (
 	i => ww_B2,
 	o => \B2~input_o\);
 
--- Location: IOIBUF_X0_Y27_N22
-\B3~input\ : cycloneiii_io_ibuf
+-- Location: IOIBUF_X2_Y81_N75
+\B3~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -492,29 +506,17 @@ PORT MAP (
 	i => ww_B3,
 	o => \B3~input_o\);
 
-ww_F <= \F~output_o\;
+-- Location: MLABCELL_X47_Y14_N0
+\~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
+-- Equation(s):
 
-ww_F2 <= \F2~output_o\;
-
-ww_F3 <= \F3~output_o\;
-
-ww_F4 <= \F4~output_o\;
-
-ww_F5 <= \F5~output_o\;
-
-ww_F6 <= \F6~output_o\;
-
-ww_F7 <= \F7~output_o\;
-
-ww_F8 <= \F8~output_o\;
-
-ww_F9 <= \F9~output_o\;
-
-ww_F10 <= \F10~output_o\;
-
-ww_F11 <= \F11~output_o\;
-
-ww_F12 <= \F12~output_o\;
+-- pragma translate_off
+GENERIC MAP (
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000000000000000000000000000000000000",
+	shared_arith => "off")
+-- pragma translate_on
+;
 END structure;
 
 

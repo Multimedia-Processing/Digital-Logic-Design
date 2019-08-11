@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Boolean
-Fri Aug  2 23:56:32 2019
-Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Mon Aug 12 00:41:03 2019
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
 ---------------------
@@ -17,29 +17,30 @@ Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Aug  2 23:56:32 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Aug 12 00:41:03 2019 ;
 ; Revision Name             ; Boolean                               ;
 ; Top-level Entity Name     ; Boolean                               ;
-; Family                    ; Cyclone III                           ;
+; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
@@ -66,42 +67,29 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                  ;
-+---------------------------------------------------------------------------------------------+
-; Generated Files                                                                             ;
-+---------------------------------------------------------------------------------------------+
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_6_1200mv_85c_slow.vho      ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_6_1200mv_0c_slow.vho       ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_min_1200mv_0c_fast.vho     ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean.vho                        ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_6_1200mv_85c_vhd_slow.sdo  ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_6_1200mv_0c_vhd_slow.sdo   ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_min_1200mv_0c_vhd_fast.sdo ;
-; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean_vhd.sdo                    ;
-+---------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------+
+; Simulation Generated Files                                           ;
++----------------------------------------------------------------------+
+; Generated Files                                                      ;
++----------------------------------------------------------------------+
+; /home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/Boolean.vho ;
++----------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit EDA Netlist Writer
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Aug  2 23:56:28 2019
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Mon Aug 12 00:41:00 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Boolean -c Boolean
-Info (204019): Generated file Boolean_6_1200mv_85c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_6_1200mv_0c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_min_1200mv_0c_fast.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
+Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file Boolean.vho in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_6_1200mv_85c_vhd_slow.sdo in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_6_1200mv_0c_vhd_slow.sdo in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_min_1200mv_0c_vhd_fast.sdo in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Boolean_vhd.sdo in folder "/home/timmy/Git/Learn-VHDL/CH4/CH4-1/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Fri Aug  2 23:56:33 2019
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1163 megabytes
+    Info: Processing ended: Mon Aug 12 00:41:03 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
