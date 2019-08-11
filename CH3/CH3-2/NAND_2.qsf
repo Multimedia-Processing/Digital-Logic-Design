@@ -16,16 +16,16 @@
 #
 # -------------------------------------------------------------------------- #
 #
-# Quartus II 64-Bit
+# Quartus II 32-bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 23:21:38  June 20, 2019
+# Date created = 21:46:28  July 30, 2019
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		Learn_VHDL_assignment_defaults.qdf
+#		NAND_2_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -37,11 +37,39 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Learn_VHDL
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY NAND_2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:21:38  JUNE 20, 2019"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:46:28  JULY 30, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_D2 -to A
+set_location_assignment PIN_E4 -to B
+set_location_assignment PIN_B1 -to F
+set_global_assignment -name BDF_FILE Work1.bdf
+set_global_assignment -name BDF_FILE NAND_2.bdf
+set_location_assignment PIN_E3 -to A1
+set_location_assignment PIN_H7 -to B1
+set_location_assignment PIN_J7 -to A2
+set_location_assignment PIN_G5 -to B2
+set_location_assignment PIN_G4 -to A3
+set_location_assignment PIN_H6 -to B3
+set_location_assignment PIN_B2 -to F1
+set_location_assignment PIN_C2 -to F2
+set_location_assignment PIN_E1 -to F4
+set_location_assignment PIN_F2 -to F5
+set_location_assignment PIN_H5 -to A4
+set_location_assignment PIN_F1 -to A5
+set_location_assignment PIN_J6 -to B4
+set_location_assignment PIN_G3 -to B5
+set_location_assignment PIN_C1 -to F3
+set_location_assignment PIN_H1 -to F6
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

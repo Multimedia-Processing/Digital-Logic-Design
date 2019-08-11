@@ -16,15 +16,15 @@
 #
 # -------------------------------------------------------------------------- #
 #
-# Quartus II 64-Bit
+# Quartus II 32-bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 23:21:38  June 20, 2019
+# Date created = 21:46:28  July 30, 2019
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "13.1"
-DATE = "23:21:38  June 20, 2019"
+DATE = "21:46:28  July 30, 2019"
 
 # Revisions
 
-PROJECT_REVISION = "Learn_VHDL"
+PROJECT_REVISION = "NAND_2"
