@@ -1,5 +1,5 @@
 Analysis & Synthesis report for voting_circuit_1
-Mon Aug 12 12:41:34 2019
+Mon Aug 12 15:16:54 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 12 12:41:34 2019      ;
+; Analysis & Synthesis Status     ; Successful - Mon Aug 12 15:16:54 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; voting_circuit_1                           ;
 ; Top-level Entity Name           ; voting_circuit_1                           ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
 ; Total registers                 ; 0                                          ;
-; Total pins                      ; 4                                          ;
+; Total pins                      ; 12                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -176,24 +176,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimate of Logic utilization (ALMs needed) ; 1       ;
+; Estimate of Logic utilization (ALMs needed) ; 2       ;
 ;                                             ;         ;
-; Combinational ALUT usage for logic          ; 1       ;
+; Combinational ALUT usage for logic          ; 3       ;
 ;     -- 7 input functions                    ; 0       ;
 ;     -- 6 input functions                    ; 0       ;
 ;     -- 5 input functions                    ; 0       ;
 ;     -- 4 input functions                    ; 0       ;
-;     -- <=3 input functions                  ; 1       ;
+;     -- <=3 input functions                  ; 3       ;
 ;                                             ;         ;
 ; Dedicated logic registers                   ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 4       ;
+; I/O pins                                    ; 12      ;
 ;                                             ;         ;
 ; Total DSP Blocks                            ; 0       ;
 ;                                             ;         ;
 ; Maximum fan-out node                        ; inst7~0 ;
 ; Maximum fan-out                             ; 1       ;
-; Total fan-out                               ; 8       ;
+; Total fan-out                               ; 24      ;
 ; Average fan-out                             ; 0.89    ;
 +---------------------------------------------+---------+
 
@@ -203,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |voting_circuit_1          ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 4    ; 0            ; |voting_circuit_1   ; work         ;
+; |voting_circuit_1          ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 12   ; 0            ; |voting_circuit_1   ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,10 +228,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         3 data inputs ; 1                           ;
-; boundary_port         ; 4                           ;
+; arriav_lcell_comb     ; 3                           ;
+;     normal            ; 3                           ;
+;         3 data inputs ; 3                           ;
+; boundary_port         ; 12                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
 ; Average LUT depth     ; 1.00                        ;
@@ -243,7 +243,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -253,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Aug 12 12:41:09 2019
+    Info: Processing started: Mon Aug 12 15:16:20 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off voting_circuit_1 -c voting_circuit_1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file voting_circuit_1.bdf
@@ -262,14 +262,14 @@ Info (12127): Elaborating entity "voting_circuit_1" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 1 logic cells
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 3 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1054 megabytes
-    Info: Processing ended: Mon Aug 12 12:41:34 2019
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:51
+    Info: Peak virtual memory: 1056 megabytes
+    Info: Processing ended: Mon Aug 12 15:16:54 2019
+    Info: Elapsed time: 00:00:34
+    Info: Total CPU time (on all processors): 00:00:53
 
 

@@ -1,5 +1,5 @@
 Assembler report for voting_circuit_1
-Mon Aug 12 12:43:20 2019
+Mon Aug 12 15:19:18 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Aug 12 12:43:20 2019 ;
+; Assembler Status      ; Successful - Mon Aug 12 15:19:18 2019 ;
 ; Revision Name         ; voting_circuit_1                      ;
 ; Top-level Entity Name ; voting_circuit_1                      ;
 ; Family                ; Cyclone V                             ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                       ;
 +----------------+-------------------------------+
 ; Device         ; 5CSXFC6D6F31C8                ;
-; JTAG usercode  ; 0x00AF52A5                    ;
-; Checksum       ; 0x00AF52A5                    ;
+; JTAG usercode  ; 0x00AF5A55                    ;
+; Checksum       ; 0x00AF5A55                    ;
 +----------------+-------------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Aug 12 12:43:02 2019
+    Info: Processing started: Mon Aug 12 15:18:58 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off voting_circuit_1 -c voting_circuit_1
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 974 megabytes
-    Info: Processing ended: Mon Aug 12 12:43:20 2019
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 971 megabytes
+    Info: Processing ended: Mon Aug 12 15:19:19 2019
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 
