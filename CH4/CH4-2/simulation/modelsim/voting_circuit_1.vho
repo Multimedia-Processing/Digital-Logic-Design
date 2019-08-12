@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 15.0.2 Build 153 07/15/2015 SJ Web Edition"
 
--- DATE "08/12/2019 12:03:37"
+-- DATE "08/12/2019 12:43:39"
 
 -- 
 -- Device: Altera 5CSXFC6D6F31C8 Package FBGA896
@@ -44,10 +44,10 @@ ENTITY 	voting_circuit_1 IS
 END voting_circuit_1;
 
 -- Design Ports Information
--- Y	=>  Location: PIN_Y26,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- A	=>  Location: PIN_Y27,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- C	=>  Location: PIN_AC30,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- B	=>  Location: PIN_AD30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Y	=>  Location: PIN_AF10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A	=>  Location: PIN_W25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- C	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- B	=>  Location: PIN_V25,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF voting_circuit_1 IS
@@ -86,7 +86,7 @@ ww_devpor <= devpor;
 \ALT_INV_C~input_o\ <= NOT \C~input_o\;
 \ALT_INV_A~input_o\ <= NOT \A~input_o\;
 
--- Location: IOOBUF_X89_Y25_N5
+-- Location: IOOBUF_X4_Y0_N53
 \Y~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -99,7 +99,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => ww_Y);
 
--- Location: IOIBUF_X89_Y25_N38
+-- Location: IOIBUF_X89_Y20_N61
 \B~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -110,7 +110,7 @@ PORT MAP (
 	i => ww_B,
 	o => \B~input_o\);
 
--- Location: IOIBUF_X89_Y25_N21
+-- Location: IOIBUF_X89_Y20_N44
 \A~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -121,7 +121,7 @@ PORT MAP (
 	i => ww_A,
 	o => \A~input_o\);
 
--- Location: IOIBUF_X89_Y25_N55
+-- Location: IOIBUF_X89_Y20_N78
 \C~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -132,7 +132,7 @@ PORT MAP (
 	i => ww_C,
 	o => \C~input_o\);
 
--- Location: LABCELL_X88_Y25_N0
+-- Location: LABCELL_X88_Y20_N30
 \inst7~0\ : cyclonev_lcell_comb
 -- Equation(s):
 -- \inst7~0_combout\ = ( \C~input_o\ & ( (\A~input_o\) # (\B~input_o\) ) ) # ( !\C~input_o\ & ( (\B~input_o\ & \A~input_o\) ) )
@@ -140,16 +140,16 @@ PORT MAP (
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
-	lut_mask => "0000001100000011001111110011111100000011000000110011111100111111",
+	lut_mask => "0000010100000101000001010000010101011111010111110101111101011111",
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_B~input_o\,
+	dataa => \ALT_INV_B~input_o\,
 	datac => \ALT_INV_A~input_o\,
-	datae => \ALT_INV_C~input_o\,
+	dataf => \ALT_INV_C~input_o\,
 	combout => \inst7~0_combout\);
 
--- Location: MLABCELL_X34_Y47_N0
+-- Location: MLABCELL_X47_Y71_N3
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 

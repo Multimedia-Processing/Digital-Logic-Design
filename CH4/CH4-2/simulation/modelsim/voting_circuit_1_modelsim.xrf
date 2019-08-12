@@ -1,6 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-2/voting_circuit_1.bdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-2/Waveform.vwf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-2/output_files/Chain1.cdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-2/db/voting_circuit_1.cbx.xml
 design_name = voting_circuit_1
 instance = comp, \Y~output\, Y~output, voting_circuit_1, 1

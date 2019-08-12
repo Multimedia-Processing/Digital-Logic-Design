@@ -1,5 +1,5 @@
 Flow report for voting_circuit_1
-Mon Aug 12 12:03:37 2019
+Mon Aug 12 12:43:39 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Mon Aug 12 12:03:37 2019      ;
+; Flow Status                     ; Successful - Mon Aug 12 12:43:39 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; voting_circuit_1                           ;
 ; Top-level Entity Name           ; voting_circuit_1                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/12/2019 12:00:31 ;
+; Start date & time ; 08/12/2019 12:41:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; voting_circuit_1    ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.156558243010886      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.156558486912851      ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                     ; --            ; --          ; --             ;
@@ -96,12 +96,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:31     ; 1.0                     ; 1001 MB             ; 00:00:54                           ;
-; Fitter                    ; 00:01:42     ; 1.0                     ; 1900 MB             ; 00:01:48                           ;
-; Assembler                 ; 00:00:21     ; 1.0                     ; 973 MB              ; 00:00:20                           ;
-; TimeQuest Timing Analyzer ; 00:00:15     ; 1.0                     ; 1227 MB             ; 00:00:14                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1160 MB             ; 00:00:03                           ;
-; Total                     ; 00:02:51     ; --                      ; --                  ; 00:03:19                           ;
+; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 1001 MB             ; 00:00:50                           ;
+; Fitter                    ; 00:01:21     ; 1.0                     ; 1898 MB             ; 00:01:23                           ;
+; Assembler                 ; 00:00:18     ; 1.0                     ; 974 MB              ; 00:00:17                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 1226 MB             ; 00:00:10                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1163 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:15     ; --                      ; --                  ; 00:02:42                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for voting_circuit_1
-Mon Aug 12 12:01:01 2019
+Mon Aug 12 12:41:34 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 12 12:01:01 2019      ;
+; Analysis & Synthesis Status     ; Successful - Mon Aug 12 12:41:34 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; voting_circuit_1                           ;
 ; Top-level Entity Name           ; voting_circuit_1                           ;
@@ -243,7 +243,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -253,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Aug 12 12:00:30 2019
+    Info: Processing started: Mon Aug 12 12:41:09 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off voting_circuit_1 -c voting_circuit_1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file voting_circuit_1.bdf
@@ -268,8 +268,8 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 1054 megabytes
-    Info: Processing ended: Mon Aug 12 12:01:01 2019
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:54
+    Info: Processing ended: Mon Aug 12 12:41:34 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:51
 
 
