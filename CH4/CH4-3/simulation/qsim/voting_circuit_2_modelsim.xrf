@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-3/voting_circuit_2.bdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-3/Waveform.vwf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH4/CH4-3/db/voting_circuit_2.cbx.xml
+design_name = voting_circuit_2
+instance = comp, \F1~output , F1~output, voting_circuit_2, 1
+instance = comp, \F2~output , F2~output, voting_circuit_2, 1
+instance = comp, \F3~output , F3~output, voting_circuit_2, 1
+instance = comp, \B~input , B~input, voting_circuit_2, 1
+instance = comp, \A~input , A~input, voting_circuit_2, 1
+instance = comp, \C~input , C~input, voting_circuit_2, 1
+instance = comp, \inst15~0 , inst15~0, voting_circuit_2, 1
+instance = comp, \inst16~0 , inst16~0, voting_circuit_2, 1
+instance = comp, \inst10~0 , inst10~0, voting_circuit_2, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, voting_circuit_2, 1
