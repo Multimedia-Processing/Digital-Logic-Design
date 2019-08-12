@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Aug 12 00:38:43 2019
+Analysis & Synthesis Status : Successful - Mon Aug 12 10:16:14 2019
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
 Revision Name : Boolean
 Top-level Entity Name : Boolean
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 24
+Total pins : 30
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

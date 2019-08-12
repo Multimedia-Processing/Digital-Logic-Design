@@ -33,5 +33,15 @@ B6 => inst13.IN1
 A6 => inst12.IN0
 A6 => inst12.IN1
 F12 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+F13 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+B7 => inst23.IN0
+B7 => inst20.IN0
+A7 => inst20.IN1
+A7 => inst21.IN1
+F14 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+B8 => inst26.IN0
+B8 => inst22.IN0
+A8 => inst22.IN1
+A8 => inst25.IN1
 
 

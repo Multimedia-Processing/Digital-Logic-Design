@@ -53,12 +53,10 @@ set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name CDF_FILE output_files/Boolean.cdf
-set_location_assignment PIN_W25 -to A5
-set_location_assignment PIN_V25 -to B5
-set_location_assignment PIN_AC28 -to A6
-set_location_assignment PIN_AC29 -to B6
-set_location_assignment PIN_AF10 -to F9
-set_location_assignment PIN_AD10 -to F10
-set_location_assignment PIN_AE11 -to F11
-set_location_assignment PIN_AD7 -to F12
+set_location_assignment PIN_AF10 -to F13
+set_location_assignment PIN_AE11 -to F14
+set_location_assignment PIN_W25 -to A7
+set_location_assignment PIN_AC28 -to A8
+set_location_assignment PIN_V25 -to B7
+set_location_assignment PIN_AC29 -to B8
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

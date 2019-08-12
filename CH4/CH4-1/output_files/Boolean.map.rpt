@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Boolean
-Mon Aug 12 00:38:43 2019
+Mon Aug 12 10:16:14 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 12 00:38:43 2019      ;
+; Analysis & Synthesis Status     ; Successful - Mon Aug 12 10:16:14 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; Boolean                                    ;
 ; Top-level Entity Name           ; Boolean                                    ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
 ; Total registers                 ; 0                                          ;
-; Total pins                      ; 24                                         ;
+; Total pins                      ; 30                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0                                          ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -176,25 +176,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimate of Logic utilization (ALMs needed) ; 1      ;
+; Estimate of Logic utilization (ALMs needed) ; 2      ;
 ;                                             ;        ;
-; Combinational ALUT usage for logic          ; 2      ;
+; Combinational ALUT usage for logic          ; 4      ;
 ;     -- 7 input functions                    ; 0      ;
 ;     -- 6 input functions                    ; 0      ;
 ;     -- 5 input functions                    ; 0      ;
 ;     -- 4 input functions                    ; 0      ;
-;     -- <=3 input functions                  ; 2      ;
+;     -- <=3 input functions                  ; 4      ;
 ;                                             ;        ;
 ; Dedicated logic registers                   ; 0      ;
 ;                                             ;        ;
-; I/O pins                                    ; 24     ;
+; I/O pins                                    ; 30     ;
 ;                                             ;        ;
 ; Total DSP Blocks                            ; 0      ;
 ;                                             ;        ;
 ; Maximum fan-out node                        ; inst17 ;
 ; Maximum fan-out                             ; 2      ;
-; Total fan-out                               ; 38     ;
-; Average fan-out                             ; 0.76   ;
+; Total fan-out                               ; 50     ;
+; Average fan-out                             ; 0.78   ;
 +---------------------------------------------+--------+
 
 
@@ -203,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |Boolean                   ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 24   ; 0            ; |Boolean            ; work         ;
+; |Boolean                   ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 30   ; 0            ; |Boolean            ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,15 +228,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 8                           ;
-;     normal            ; 8                           ;
+; arriav_lcell_comb     ; 11                          ;
+;     normal            ; 11                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-; boundary_port         ; 24                          ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 4                           ;
+; boundary_port         ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.25                        ;
+; Average LUT depth     ; 1.35                        ;
 +-----------------------+-----------------------------+
 
 
@@ -255,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Mon Aug 12 00:38:18 2019
+    Info: Processing started: Mon Aug 12 10:15:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Boolean -c Boolean
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Boolean.bdf
@@ -272,14 +272,14 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "A1"
     Warning (15610): No output dependent on input pin "B2"
     Warning (15610): No output dependent on input pin "B3"
-Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 2 logic cells
+Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 4 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 1058 megabytes
-    Info: Processing ended: Mon Aug 12 00:38:43 2019
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:53
+    Info: Processing ended: Mon Aug 12 10:16:14 2019
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:49
 
 
