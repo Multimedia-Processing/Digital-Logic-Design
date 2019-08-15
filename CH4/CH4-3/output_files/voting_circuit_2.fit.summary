@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Aug 15 10:10:34 2019
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : voting_circuit_2
+Top-level Entity Name : voting_circuit_2
+Family : Cyclone V
+Device : 5CSXFC6D6F31C8
+Timing Models : Final
+Logic utilization (in ALMs) : 3 / 41,910 ( < 1 % )
+Total registers : 0
+Total pins : 11 / 499 ( 2 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 5,662,720 ( 0 % )
+Total RAM Blocks : 0 / 553 ( 0 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 0 / 15 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )
