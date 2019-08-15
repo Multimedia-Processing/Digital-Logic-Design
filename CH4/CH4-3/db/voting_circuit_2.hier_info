@@ -17,5 +17,19 @@ A => inst11.IN0
 A => inst3.IN2
 F2 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
 F3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+F4 <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst21.IN0
+A1 => inst20.IN0
+A1 => inst19.IN0
+A1 => inst23.IN0
+C1 => inst21.IN1
+C1 => inst25.IN0
+C1 => inst19.IN1
+D1 => inst28.IN0
+D1 => inst20.IN2
+D1 => inst19.IN2
+D1 => inst22.IN2
+B1 => inst24.IN0
+B1 => inst19.IN3
 
 

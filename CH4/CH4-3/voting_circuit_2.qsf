@@ -55,12 +55,14 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_W25 -to A
-set_location_assignment PIN_V25 -to B
-set_location_assignment PIN_AC28 -to C
-set_location_assignment PIN_AF10 -to F1
-set_location_assignment PIN_AD10 -to F2
-set_location_assignment PIN_AE11 -to F3
 set_global_assignment -name CDF_FILE output_files/Chain1.cdf
-set_global_assignment -name CDF_FILE Chain1.cdf
+set_location_assignment PIN_W25 -to A1
+set_location_assignment PIN_V25 -to B1
+set_location_assignment PIN_AC28 -to C1
+set_location_assignment PIN_AC29 -to D1
+set_location_assignment PIN_AF10 -to F4
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

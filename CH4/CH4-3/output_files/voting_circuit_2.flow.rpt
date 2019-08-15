@@ -1,5 +1,5 @@
 Flow report for voting_circuit_2
-Mon Aug 12 20:59:00 2019
+Thu Aug 15 10:11:11 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Mon Aug 12 20:59:00 2019      ;
+; Flow Status                     ; Successful - Thu Aug 15 10:11:11 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; voting_circuit_2                           ;
 ; Top-level Entity Name           ; voting_circuit_2                           ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CSXFC6D6F31C8                             ;
 ; Timing Models                   ; Final                                      ;
-; Logic utilization (in ALMs)     ; 2 / 41,910 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 3 / 41,910 ( < 1 % )                       ;
 ; Total registers                 ; 0                                          ;
-; Total pins                      ; 6 / 499 ( 1 % )                            ;
+; Total pins                      ; 11 / 499 ( 2 % )                           ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                      ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                            ;
@@ -68,27 +68,31 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/12/2019 20:56:25 ;
+; Start date & time ; 08/15/2019 10:08:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; voting_circuit_2    ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                            ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                  ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.156561458526958      ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                      ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057               ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --          ; --             ;
-+-------------------------------------+------------------------+---------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 0.156583492629476                     ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; VHDL_INPUT_VERSION                  ; VHDL_2008                             ; VHDL_1993     ; --          ; --             ;
+; VHDL_SHOW_LMF_MAPPING_MESSAGES      ; Off                                   ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,12 +100,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 1001 MB             ; 00:00:51                           ;
-; Fitter                    ; 00:01:26     ; 1.0                     ; 1857 MB             ; 00:01:28                           ;
-; Assembler                 ; 00:00:19     ; 1.0                     ; 967 MB              ; 00:00:18                           ;
-; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 1182 MB             ; 00:00:10                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1163 MB             ; 00:00:02                           ;
-; Total                     ; 00:02:22     ; --                      ; --                  ; 00:02:49                           ;
+; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 1001 MB             ; 00:00:52                           ;
+; Fitter                    ; 00:01:21     ; 1.0                     ; 1861 MB             ; 00:01:27                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 970 MB              ; 00:00:16                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 1184 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 1161 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:12     ; --                      ; --                  ; 00:02:46                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
