@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-1/Full_adder_S.bdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_files/Chain1.cdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-1/Waveform.vwf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-1/Half_adder.bdf
+design_name = Full_adder_S
+instance = comp, \So~output\, So~output, Full_adder_S, 1
+instance = comp, \Co~output\, Co~output, Full_adder_S, 1
+instance = comp, \A~input\, A~input, Full_adder_S, 1
+instance = comp, \B~input\, B~input, Full_adder_S, 1
+instance = comp, \Ci~input\, Ci~input, Full_adder_S, 1
+instance = comp, \inst1|inst\, inst1|inst, Full_adder_S, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Full_adder_S, 1

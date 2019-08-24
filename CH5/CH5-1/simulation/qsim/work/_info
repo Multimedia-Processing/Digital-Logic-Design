@@ -1,0 +1,275 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/timmy/Git/Learn-VHDL/CH5/CH5-1/simulation/qsim
+v\4bit_adder 
+!s110 1566653368
+!i10b 1
+!s100 QUPQEAMZ[g7o^i@_31QC61
+IjXVbCI7H[^BPA@d`hYkP:1
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1566653366
+84bit_adder.vo
+F4bit_adder.vo
+Z2 L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1566653368.538693
+!s107 4bit_adder.vo|
+!s90 -work|work|4bit_adder.vo|
+!i113 1
+Z4 o-work work
+n@1344bit_adder@040
+veight_bit_adder
+Z5 !s110 1566660032
+!i10b 1
+!s100 SHjnkTDB[_z@JCFBcQa>H2
+II6J[[YO<cG`jIgc3o4EP13
+R1
+R0
+w1566660030
+8eight_bit_adder.vo
+Feight_bit_adder.vo
+R2
+R3
+r1
+!s85 0
+31
+!s108 1566660032.255558
+!s107 eight_bit_adder.vo|
+!s90 -work|work|eight_bit_adder.vo|
+!i113 1
+R4
+veight_bit_adder_vlg_check_tst
+R5
+!i10b 1
+!s100 6JPM`R9l>P9zkcY[<Nb@f1
+IzX>L=_S=[;bZI8ZX;ZcHT0
+R1
+R0
+Z6 w1566660025
+Z7 8eight_bit_adder.vwf.vt
+Z8 Feight_bit_adder.vwf.vt
+L0 88
+R3
+r1
+!s85 0
+31
+Z9 !s108 1566660032.311465
+Z10 !s107 eight_bit_adder.vwf.vt|
+Z11 !s90 -work|work|eight_bit_adder.vwf.vt|
+!i113 1
+R4
+veight_bit_adder_vlg_sample_tst
+R5
+!i10b 1
+!s100 91_1@hmilJLPHSO3Km5W80
+I5lVeUI5l1L>LE[<m1CdeM2
+R1
+R0
+R6
+R7
+R8
+Z12 L0 30
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4
+veight_bit_adder_vlg_vec_tst
+R5
+!i10b 1
+!s100 :3oPkSHlI;C?So^Tfe>jk1
+I=ON12j575mZoMVja1jA[U3
+R1
+R0
+R6
+R7
+R8
+L0 408
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4
+vfour_bir_adder
+Z13 !s110 1566657384
+!i10b 1
+!s100 <c8zYZDQeS]<7g:blN?aI3
+I1Zaa<UnUKGC@K>o=kQP^B1
+R1
+R0
+w1566657382
+8four_bir_adder.vo
+Ffour_bir_adder.vo
+R2
+R3
+r1
+!s85 0
+31
+!s108 1566657384.030936
+!s107 four_bir_adder.vo|
+!s90 -work|work|four_bir_adder.vo|
+!i113 1
+R4
+vfour_bir_adder_vlg_check_tst
+R13
+!i10b 1
+!s100 d6NACK9mEce@aM1hdb>T10
+ITiS6j]Pd7CNJGLT1lKZ<W0
+R1
+R0
+Z14 w1566657377
+Z15 8four_bit_adder.vwf.vt
+Z16 Ffour_bit_adder.vwf.vt
+L0 74
+R3
+r1
+!s85 0
+31
+Z17 !s108 1566657384.114190
+Z18 !s107 four_bit_adder.vwf.vt|
+Z19 !s90 -work|work|four_bit_adder.vwf.vt|
+!i113 1
+R4
+vfour_bir_adder_vlg_sample_tst
+R13
+!i10b 1
+!s100 @8N`on;2;k@O0Q6Sd4^F83
+IP3He87o2jTAJ7;@g@:OV:2
+R1
+R0
+R14
+R15
+R16
+R12
+R3
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R4
+vfour_bir_adder_vlg_vec_tst
+R13
+!i10b 1
+!s100 4KQ042[Pz:`]CX_Wz:8>b0
+IEH_DKUkUMPYNfG_nAUdWR3
+R1
+R0
+R14
+R15
+R16
+L0 282
+R3
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R4
+vFull_adder_S
+Z20 !s110 1566651963
+!i10b 1
+!s100 AWn]VmX862Pmna1]RDihM2
+I<hJkR6I87j;f_JFi2Cc@G1
+R1
+R0
+w1566651962
+8Full_adder_S.vo
+FFull_adder_S.vo
+R2
+R3
+r1
+!s85 0
+31
+!s108 1566651963.892712
+!s107 Full_adder_S.vo|
+!s90 -work|work|Full_adder_S.vo|
+!i113 1
+R4
+n@full_adder_@s
+vFull_adder_S_vlg_check_tst
+R20
+!i10b 1
+!s100 U3?39o5SU>Zc>Rea`]GoI3
+I2DSFKCNZ?M_A7T0IP[J]g2
+R1
+R0
+Z21 w1566651957
+Z22 8Waveform.vwf.vt
+Z23 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z24 !s108 1566651963.932527
+Z25 !s107 Waveform.vwf.vt|
+Z26 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@full_adder_@s_vlg_check_tst
+vFull_adder_S_vlg_sample_tst
+R20
+!i10b 1
+!s100 9FI46MM;1GiYAMg@5A56B1
+I9]UhV2F5ZPeHcB<Il]W<j2
+R1
+R0
+R21
+R22
+R23
+R12
+R3
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 1
+R4
+n@full_adder_@s_vlg_sample_tst
+vFull_adder_S_vlg_vec_tst
+R20
+!i10b 1
+!s100 3^U:@b`jBIQ8Lj7I26]kM1
+I:jmJSVjG5OYLmRSR1@8:G0
+R1
+R0
+R21
+R22
+R23
+L0 186
+R3
+r1
+!s85 0
+31
+R24
+R25
+R26
+!i113 1
+R4
+n@full_adder_@s_vlg_vec_tst
