@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Aug 15 23:43:59 2019
+Analysis & Synthesis Status : Successful - Sat Aug 24 21:26:05 2019
 Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
 Revision Name : 4bit_adder
 Top-level Entity Name : 4bit_adder
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 13
+Total pins : 14
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

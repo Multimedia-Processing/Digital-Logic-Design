@@ -6,6 +6,7 @@ A2 => Full_adder_S:inst3.A
 B2 => Full_adder_S:inst3.B
 A1 => Full_adder_S:inst4.A
 B1 => Full_adder_S:inst4.B
+C0 => Full_adder_S:inst4.Ci
 S4 <= Full_adder_S:inst.So
 A4 => Full_adder_S:inst.A
 B4 => Full_adder_S:inst.B

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "08/16/2019 00:01:29"
+// Generated on "08/24/2019 21:29:20"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    4bit_adder
 // 
@@ -36,6 +36,7 @@ module 4bit_adder_vlg_sample_tst(
 	B2,
 	B3,
 	B4,
+	C0,
 	sampler_tx
 );
 input  A1;
@@ -46,11 +47,12 @@ input  B1;
 input  B2;
 input  B3;
 input  B4;
+input  C0;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(A1 or A2 or A3 or A4 or B1 or B2 or B3 or B4)
+always @(A1 or A2 or A3 or A4 or B1 or B2 or B3 or B4 or C0)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -152,7 +154,6 @@ end
 initial
 begin
 	C4_expected = 1'bX;
-	C4_expected = #999000 1'b0;
 end 
 
 // expected S1
@@ -288,6 +289,7 @@ reg B1;
 reg B2;
 reg B3;
 reg B4;
+reg C0;
 // wires                                               
 wire C4;
 wire S1;
@@ -308,6 +310,7 @@ wire sampler;
 	.B2(B2),
 	.B3(B3),
 	.B4(B4),
+	.C0(C0),
 	.C4(C4),
 	.S1(S1),
 	.S2(S2),
@@ -350,7 +353,7 @@ end
 // B1
 initial
 begin
-	B1 = 1'b1;
+	B1 = 1'b0;
 end 
 
 // B2
@@ -371,6 +374,12 @@ begin
 	B4 = 1'b0;
 end 
 
+// C0
+initial
+begin
+	C0 = 1'b0;
+end 
+
 4bit_adder_vlg_sample_tst tb_sample (
 	.A1(A1),
 	.A2(A2),
@@ -380,6 +389,7 @@ end
 	.B2(B2),
 	.B3(B3),
 	.B4(B4),
+	.C0(C0),
 	.sampler_tx(sampler)
 );
 

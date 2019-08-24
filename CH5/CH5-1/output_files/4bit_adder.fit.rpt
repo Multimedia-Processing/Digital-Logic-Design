@@ -1,5 +1,5 @@
 Fitter report for 4bit_adder
-Thu Aug 15 23:45:53 2019
+Sat Aug 24 21:27:45 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -57,7 +57,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +---------------------------------+--------------------------------------------+
-; Fitter Status                   ; Successful - Thu Aug 15 23:45:53 2019      ;
+; Fitter Status                   ; Successful - Sat Aug 24 21:27:45 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; 4bit_adder                                 ;
 ; Top-level Entity Name           ; 4bit_adder                                 ;
@@ -66,7 +66,7 @@ agreement for further details.
 ; Timing Models                   ; Final                                      ;
 ; Logic utilization (in ALMs)     ; 4 / 41,910 ( < 1 % )                       ;
 ; Total registers                 ; 0                                          ;
-; Total pins                      ; 13 / 499 ( 3 % )                           ;
+; Total pins                      ; 14 / 499 ( 3 % )                           ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 0 / 5,662,720 ( 0 % )                      ;
 ; Total RAM Blocks                ; 0 / 553 ( 0 % )                            ;
@@ -88,6 +88,7 @@ agreement for further details.
 ; Device                                                                     ; 5CSXFC6D6F31C8                        ;                                       ;
 ; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
 ; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
+; Device I/O Standard                                                        ; 2.5 V                                 ;                                       ;
 ; Use smart compilation                                                      ; Off                                   ; Off                                   ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
 ; Enable compact report table                                                ; Off                                   ; Off                                   ;
@@ -149,38 +150,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------+
-; I/O Assignment Warnings                  ;
-+----------+-------------------------------+
-; Pin Name ; Reason                        ;
-+----------+-------------------------------+
-; S3       ; Incomplete set of assignments ;
-; S4       ; Incomplete set of assignments ;
-; S1       ; Incomplete set of assignments ;
-; C4       ; Incomplete set of assignments ;
-; S2       ; Incomplete set of assignments ;
-; A3       ; Incomplete set of assignments ;
-; B3       ; Incomplete set of assignments ;
-; A2       ; Incomplete set of assignments ;
-; B2       ; Incomplete set of assignments ;
-; A1       ; Incomplete set of assignments ;
-; B1       ; Incomplete set of assignments ;
-; A4       ; Incomplete set of assignments ;
-; B4       ; Incomplete set of assignments ;
-; S3       ; Missing location assignment   ;
-; S4       ; Missing location assignment   ;
-; S1       ; Missing location assignment   ;
-; C4       ; Missing location assignment   ;
-; S2       ; Missing location assignment   ;
-; A3       ; Missing location assignment   ;
-; B3       ; Missing location assignment   ;
-; A2       ; Missing location assignment   ;
-; B2       ; Missing location assignment   ;
-; A1       ; Missing location assignment   ;
-; B1       ; Missing location assignment   ;
-; A4       ; Missing location assignment   ;
-; B4       ; Missing location assignment   ;
-+----------+-------------------------------+
++-------------------------------------------------+
+; I/O Assignment Warnings                         ;
++----------+--------------------------------------+
+; Pin Name ; Reason                               ;
++----------+--------------------------------------+
+; S3       ; Missing drive strength and slew rate ;
+; S4       ; Missing drive strength and slew rate ;
+; S1       ; Missing drive strength and slew rate ;
+; C4       ; Missing drive strength and slew rate ;
+; S2       ; Missing drive strength and slew rate ;
+; S3       ; Missing location assignment          ;
+; S4       ; Missing location assignment          ;
+; S1       ; Missing location assignment          ;
+; C4       ; Missing location assignment          ;
+; S2       ; Missing location assignment          ;
+; B3       ; Missing location assignment          ;
+; B2       ; Missing location assignment          ;
+; C0       ; Missing location assignment          ;
+; B1       ; Missing location assignment          ;
+; B4       ; Missing location assignment          ;
++----------+--------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -189,8 +179,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 33 ) ; 0.00 % ( 0 / 33 )          ; 0.00 % ( 0 / 33 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 33 ) ; 0.00 % ( 0 / 33 )          ; 0.00 % ( 0 / 33 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 35 ) ; 0.00 % ( 0 / 35 )          ; 0.00 % ( 0 / 35 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -213,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 33 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 35 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -231,12 +221,12 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 4 / 41,910         ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 4                  ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 4 / 41,910         ; < 1 % ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 6 / 41,910         ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 4                  ;       ;
+;         [b] ALMs used for LUT logic                         ; 6                  ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41,910         ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41,910         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -251,10 +241,10 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 7                  ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 1                  ;       ;
-;     -- 5 input functions                                    ; 2                  ;       ;
-;     -- 4 input functions                                    ; 2                  ;       ;
-;     -- <=3 input functions                                  ; 2                  ;       ;
+;     -- 6 input functions                                    ; 0                  ;       ;
+;     -- 5 input functions                                    ; 4                  ;       ;
+;     -- 4 input functions                                    ; 0                  ;       ;
+;     -- <=3 input functions                                  ; 3                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ; Dedicated logic registers                                   ; 0                  ;       ;
 ;     -- By type:                                             ;                    ;       ;
@@ -265,8 +255,8 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 13 / 499           ; 3 %   ;
-;     -- Clock pins                                           ; 0 / 11             ; 0 %   ;
+; I/O pins                                                    ; 14 / 499           ; 3 %   ;
+;     -- Clock pins                                           ; 1 / 11             ; 9 %   ;
 ;     -- Dedicated input pins                                 ; 0 / 39             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -324,11 +314,11 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.0% / 0.2% ;       ;
-; Maximum fan-out                                             ; 4                  ;       ;
-; Highest non-global fan-out                                  ; 4                  ;       ;
-; Total fan-out                                               ; 44                 ;       ;
-; Average fan-out                                             ; 1.33               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.1% / 0.2% ;       ;
+; Maximum fan-out                                             ; 3                  ;       ;
+; Highest non-global fan-out                                  ; 3                  ;       ;
+; Total fan-out                                               ; 45                 ;       ;
+; Average fan-out                                             ; 1.29               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -339,12 +329,12 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 +-------------------------------------------------------------+---------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 4 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 4                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 4 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 6 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 4                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 6                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                   ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                   ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41910 ( 0 % )   ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 2 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )   ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                   ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                   ; 0                              ;
@@ -359,10 +349,10 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;                                                             ;                     ;                                ;
 ; Combinational ALUT usage for logic                          ; 7                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                   ; 0                              ;
-;     -- 6 input functions                                    ; 1                   ; 0                              ;
-;     -- 5 input functions                                    ; 2                   ; 0                              ;
-;     -- 4 input functions                                    ; 2                   ; 0                              ;
-;     -- <=3 input functions                                  ; 2                   ; 0                              ;
+;     -- 6 input functions                                    ; 0                   ; 0                              ;
+;     -- 5 input functions                                    ; 4                   ; 0                              ;
+;     -- 4 input functions                                    ; 0                   ; 0                              ;
+;     -- <=3 input functions                                  ; 3                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                   ; 0                              ;
 ; Memory ALUT usage                                           ; 0                   ; 0                              ;
 ;     -- 64-address deep                                      ; 0                   ; 0                              ;
@@ -378,7 +368,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;                                                             ;                     ;                                ;
 ;                                                             ;                     ;                                ;
 ; Virtual pins                                                ; 0                   ; 0                              ;
-; I/O pins                                                    ; 13                  ; 0                              ;
+; I/O pins                                                    ; 14                  ; 0                              ;
 ; I/O registers                                               ; 0                   ; 0                              ;
 ; Total block memory bits                                     ; 0                   ; 0                              ;
 ; Total block memory implementation bits                      ; 0                   ; 0                              ;
@@ -390,7 +380,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 44                  ; 0                              ;
+;     -- Total Connections                                    ; 45                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -398,7 +388,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ;     -- hard_block:auto_generated_inst                       ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Partition Interface                                         ;                     ;                                ;
-;     -- Input Ports                                          ; 8                   ; 0                              ;
+;     -- Input Ports                                          ; 9                   ; 0                              ;
 ;     -- Output Ports                                         ; 5                   ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
@@ -423,14 +413,15 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; A1   ; AB30  ; 5B       ; 89           ; 21           ; 3            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A2   ; AA28  ; 5B       ; 89           ; 21           ; 54           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A3   ; W25   ; 5B       ; 89           ; 20           ; 43           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A4   ; V25   ; 5B       ; 89           ; 20           ; 60           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B1   ; AC28  ; 5B       ; 89           ; 20           ; 77           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B2   ; AC29  ; 5B       ; 89           ; 20           ; 94           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B3   ; AB28  ; 5B       ; 89           ; 21           ; 37           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B4   ; AH30  ; 5A       ; 89           ; 16           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A1   ; W25   ; 5B       ; 89           ; 20           ; 43           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A2   ; V25   ; 5B       ; 89           ; 20           ; 60           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A3   ; AC28  ; 5B       ; 89           ; 20           ; 77           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A4   ; AC29  ; 5B       ; 89           ; 20           ; 94           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B1   ; AC30  ; 5B       ; 89           ; 25           ; 54           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B2   ; AA26  ; 5B       ; 89           ; 23           ; 3            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B3   ; AD29  ; 5B       ; 89           ; 23           ; 54           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B4   ; AE29  ; 5B       ; 89           ; 23           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; C0   ; AB27  ; 5B       ; 89           ; 23           ; 20           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -439,11 +430,11 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; C4   ; AE29  ; 5B       ; 89           ; 23           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; S1   ; AD26  ; 5A       ; 89           ; 16           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; S2   ; AD29  ; 5B       ; 89           ; 23           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; S3   ; AG30  ; 5A       ; 89           ; 16           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; S4   ; AA30  ; 5B       ; 89           ; 21           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; C4   ; AB30  ; 5B       ; 89           ; 21           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; S1   ; AA28  ; 5B       ; 89           ; 21           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; S2   ; AA30  ; 5B       ; 89           ; 21           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; S3   ; AB28  ; 5B       ; 89           ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; S4   ; AD30  ; 5B       ; 89           ; 25           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -458,8 +449,8 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; 3A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 3B       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 4A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 3 / 32 ( 9 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 10 / 16 ( 63 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 14 / 16 ( 88 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 6B       ; 0 / 44 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 6A       ; 0 / 56 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 19 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -528,11 +519,11 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AA23     ;            ; --       ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
 ; AA24     ; 228        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AA25     ; 224        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AA26     ; 252        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AA26     ; 252        ; 5B       ; B2                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AA27     ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA28     ; 251        ; 5B       ; A2                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AA28     ; 251        ; 5B       ; S1                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AA29     ;            ; 5B       ; VREFB5BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA30     ; 250        ; 5B       ; S4                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AA30     ; 250        ; 5B       ; S2                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 32         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -559,10 +550,10 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AB24     ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AB25     ; 230        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AB26     ; 226        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AB27     ; 254        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AB28     ; 249        ; 5B       ; B3                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AB27     ; 254        ; 5B       ; C0                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AB28     ; 249        ; 5B       ; S3                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AB29     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB30     ; 248        ; 5B       ; A1                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AB30     ; 248        ; 5B       ; C4                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AC1      ; 35         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AC2      ; 34         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AC3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -590,9 +581,9 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AC25     ; 215        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AC26     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AC27     ; 242        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AC28     ; 245        ; 5B       ; B1                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; AC29     ; 247        ; 5B       ; B2                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; AC30     ; 259        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AC28     ; 245        ; 5B       ; A3                              ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; AC29     ; 247        ; 5B       ; A4                              ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; AC30     ; 259        ; 5B       ; B1                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AD1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD3      ; 36         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -618,11 +609,11 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AD23     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AD24     ; 211        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AD25     ; 213        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AD26     ; 240        ; 5A       ; S1                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AD26     ; 240        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AD27     ; 222        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AD28     ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AD29     ; 255        ; 5B       ; S2                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; AD30     ; 257        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; AD29     ; 255        ; 5B       ; B3                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AD30     ; 257        ; 5B       ; S4                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AE1      ; 39         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AE2      ; 38         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AE3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -651,7 +642,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AE26     ; 220        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AE27     ; 229        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AE28     ; 231        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AE29     ; 253        ; 5B       ; C4                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AE29     ; 253        ; 5B       ; B4                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; AE30     ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; AF1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AF2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -712,7 +703,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AG27     ; 212        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AG28     ; 233        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AG29     ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AG30     ; 243        ; 5A       ; S3                              ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AG30     ; 243        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AH1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AH2      ; 69         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH3      ; 81         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -742,7 +733,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; AH27     ; 201        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AH28     ; 214        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AH29     ; 218        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; AH30     ; 241        ; 5A       ; B4                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; AH30     ; 241        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; AJ1      ; 79         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ2      ; 77         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AJ3      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -1305,7 +1296,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; V22      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; V23      ; 236        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; V24      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; V25      ; 246        ; 5B       ; A4                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; V25      ; 246        ; 5B       ; A2                              ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; V26      ;            ; 6B       ; VCCIO6B_HPS                     ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; V27      ; 265        ; 6B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; V28      ; 271        ; 6B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -1335,7 +1326,7 @@ The pin-out file can be found in /home/timmy/Git/Learn-VHDL/CH5/CH5-1/output_fil
 ; W22      ; 223        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W23      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W24      ; 238        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; W25      ; 244        ; 5B       ; A3                              ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; W25      ; 244        ; 5B       ; A1                              ; input  ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; W26      ; 274        ; 6B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W27      ; 261        ; 6B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; W28      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -1380,15 +1371,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+--------------+
-; |4bit_adder                ; 4.0 (0.5)            ; 4.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 13   ; 0            ; |4bit_adder                                     ; work         ;
-;    |Full_adder_S:inst|     ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst                   ; work         ;
-;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst|Half_adder:inst1  ; work         ;
-;    |Full_adder_S:inst2|    ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst2                  ; work         ;
-;       |Half_adder:inst1|   ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst2|Half_adder:inst1 ; work         ;
-;    |Full_adder_S:inst3|    ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst3                  ; work         ;
-;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst3|Half_adder:inst1 ; work         ;
-;    |Full_adder_S:inst4|    ; 0.0 (0.0)            ; 0.5 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst4                  ; work         ;
-;       |Half_adder:inst|    ; 0.0 (0.0)            ; 0.5 (0.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst4|Half_adder:inst  ; work         ;
+; |4bit_adder                ; 3.5 (0.5)            ; 5.5 (0.5)                        ; 2.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 14   ; 0            ; |4bit_adder                                     ; work         ;
+;    |Full_adder_S:inst|     ; 1.0 (0.5)            ; 2.0 (1.0)                        ; 1.0 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst                   ; work         ;
+;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst|Half_adder:inst1  ; work         ;
+;    |Full_adder_S:inst2|    ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst2                  ; work         ;
+;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst2|Half_adder:inst1 ; work         ;
+;    |Full_adder_S:inst3|    ; 1.0 (0.5)            ; 2.0 (1.0)                        ; 1.0 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst3                  ; work         ;
+;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 1.0 (1.0)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst3|Half_adder:inst1 ; work         ;
+;    |Full_adder_S:inst4|    ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst4                  ; work         ;
+;       |Half_adder:inst1|   ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |4bit_adder|Full_adder_S:inst4|Half_adder:inst1 ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1403,14 +1394,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; S1   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; C4   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; S2   ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; A3   ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A3   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B3   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A2   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B2   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; C0   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A1   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B1   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A4   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B4   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A4   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B4   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1420,7 +1412,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                             ; Pad To Core Index ; Setting ;
 +-------------------------------------------------+-------------------+---------+
 ; A3                                              ;                   ;         ;
-;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 0                 ; 0       ;
+;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 1                 ; 0       ;
 ;      - Full_adder_S:inst|Half_adder:inst1|inst  ; 1                 ; 0       ;
 ;      - Full_adder_S:inst|inst2                  ; 1                 ; 0       ;
 ; B3                                              ;                   ;         ;
@@ -1428,29 +1420,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - Full_adder_S:inst|Half_adder:inst1|inst  ; 1                 ; 0       ;
 ;      - Full_adder_S:inst|inst2                  ; 1                 ; 0       ;
 ; A2                                              ;                   ;         ;
-;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 1                 ; 0       ;
-;      - Full_adder_S:inst3|inst2                 ; 1                 ; 0       ;
-;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 1                 ; 0       ;
-; B2                                              ;                   ;         ;
-;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 1                 ; 0       ;
-;      - Full_adder_S:inst3|inst2                 ; 1                 ; 0       ;
-;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 1                 ; 0       ;
-; A1                                              ;                   ;         ;
-;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 0                 ; 0       ;
 ;      - Full_adder_S:inst3|inst2                 ; 0                 ; 0       ;
-;      - Full_adder_S:inst4|Half_adder:inst|inst  ; 0                 ; 0       ;
+;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 0                 ; 0       ;
+; B2                                              ;                   ;         ;
+;      - Full_adder_S:inst3|inst2                 ; 0                 ; 0       ;
+;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 0                 ; 0       ;
+; C0                                              ;                   ;         ;
+;      - Full_adder_S:inst3|inst2                 ; 0                 ; 0       ;
+;      - Full_adder_S:inst4|Half_adder:inst1|inst ; 0                 ; 0       ;
+;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 0                 ; 0       ;
+; A1                                              ;                   ;         ;
+;      - Full_adder_S:inst3|inst2                 ; 0                 ; 0       ;
+;      - Full_adder_S:inst4|Half_adder:inst1|inst ; 0                 ; 0       ;
 ;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 0                 ; 0       ;
 ; B1                                              ;                   ;         ;
-;      - Full_adder_S:inst2|Half_adder:inst1|inst ; 1                 ; 0       ;
 ;      - Full_adder_S:inst3|inst2                 ; 1                 ; 0       ;
-;      - Full_adder_S:inst4|Half_adder:inst|inst  ; 1                 ; 0       ;
+;      - Full_adder_S:inst4|Half_adder:inst1|inst ; 1                 ; 0       ;
 ;      - Full_adder_S:inst3|Half_adder:inst1|inst ; 1                 ; 0       ;
 ; A4                                              ;                   ;         ;
-;      - Full_adder_S:inst|Half_adder:inst1|inst  ; 0                 ; 0       ;
-;      - Full_adder_S:inst|inst2                  ; 0                 ; 0       ;
-; B4                                              ;                   ;         ;
 ;      - Full_adder_S:inst|Half_adder:inst1|inst  ; 1                 ; 0       ;
 ;      - Full_adder_S:inst|inst2                  ; 1                 ; 0       ;
+; B4                                              ;                   ;         ;
+;      - Full_adder_S:inst|Half_adder:inst1|inst  ; 0                 ; 0       ;
+;      - Full_adder_S:inst|inst2                  ; 0                 ; 0       ;
 +-------------------------------------------------+-------------------+---------+
 
 
@@ -1461,12 +1453,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Block interconnects                         ; 14 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 0 / 13,420 ( 0 % )     ;
-; C2 interconnects                            ; 8 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 4 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 5 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 5 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 0 / 289,320 ( 0 % )    ;
+; Direct links                                ; 3 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 0 / 16 ( 0 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1524,10 +1516,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
 ; Local interconnects                         ; 1 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 1 / 12,676 ( < 1 % )   ;
+; R14 interconnects                           ; 0 / 12,676 ( 0 % )     ;
 ; R14/C12 interconnect drivers                ; 0 / 20,720 ( 0 % )     ;
-; R3 interconnects                            ; 3 / 130,992 ( < 1 % )  ;
-; R6 interconnects                            ; 4 / 266,960 ( < 1 % )  ;
+; R3 interconnects                            ; 11 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 3 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )        ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1539,10 +1531,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 28    ;
-; Number of I/O Rules Passed       ; 6     ;
+; Number of I/O Rules Passed       ; 9     ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 22    ;
+; Number of I/O Rules Inapplicable ; 19    ;
 +----------------------------------+-------+
 
 
@@ -1552,12 +1544,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Status       ; ID        ; Category                          ; Rule Description                                                                   ; Severity ; Information                                                              ; Area                ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 ; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.  ; Critical ; No Global Signal assignments found.                                      ; I/O                 ;                   ;
-; Inapplicable ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
-; Inapplicable ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                   ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O                 ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
 ; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                               ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                  ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                     ; Critical ; No reserved LogicLock region found.                                      ; I/O                 ;                   ;
 ; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                      ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                  ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
@@ -1588,22 +1580,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000003    ; IO_000001    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000034    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 13        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 13        ; 13        ; 0            ;
+; Total Pass         ; 0            ; 4            ; 4            ; 0            ; 0            ; 14        ; 4            ; 0            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 5            ; 0            ; 14        ; 14        ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
-; Total Inapplicable ; 13           ; 13           ; 13           ; 13           ; 13           ; 0         ; 13           ; 13           ; 13           ; 13           ; 13           ; 13           ; 8            ; 13           ; 13           ; 13           ; 13           ; 13           ; 8            ; 13           ; 13           ; 13           ; 13           ; 8            ; 13           ; 0         ; 0         ; 13           ;
+; Total Inapplicable ; 14           ; 10           ; 10           ; 14           ; 14           ; 0         ; 10           ; 14           ; 14           ; 14           ; 14           ; 14           ; 9            ; 14           ; 14           ; 14           ; 14           ; 14           ; 9            ; 14           ; 14           ; 14           ; 14           ; 9            ; 14           ; 0         ; 0         ; 14           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0            ;
 ; S3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; S4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; S1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; C4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; S2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; A3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; A3                 ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; B3                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; A2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; A2                 ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; B2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; A1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; C0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; A1                 ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; B1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
-; A4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
+; A4                 ; Inapplicable ; Pass         ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 ; B4                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+--------------+
 
@@ -1661,7 +1654,7 @@ Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 13 pins of 13 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 10 pins of 14 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (184020): Starting Fitter periphery placement operations
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
@@ -1680,7 +1673,7 @@ Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X78_Y11 to location X89_Y22
@@ -1688,16 +1681,16 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:09
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1897 megabytes
-    Info: Processing ended: Thu Aug 15 23:45:55 2019
-    Info: Elapsed time: 00:01:53
-    Info: Total CPU time (on all processors): 00:01:55
+    Info: Peak virtual memory: 1864 megabytes
+    Info: Processing ended: Sat Aug 24 21:27:46 2019
+    Info: Elapsed time: 00:01:38
+    Info: Total CPU time (on all processors): 00:01:46
 
 

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 15.0.2 Build 153 07/15/2015 SJ Web Edition"
 
--- DATE "08/15/2019 12:12:05"
+-- DATE "08/24/2019 21:20:35"
 
 -- 
 -- Device: Altera 5CSXFC6D6F31C8 Package FBGA896

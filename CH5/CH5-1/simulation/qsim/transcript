@@ -1,19 +1,45 @@
-# do 4bit_adder.do
+# do eight_bit_adder.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 00:01:36 on Aug 16,2019
-# vlog -work work 4bit_adder.vo 
-# -- Compiling module \4bit_adder 
+# Start time: 23:20:32 on Aug 24,2019
+# vlog -work work eight_bit_adder.vo 
+# -- Compiling module eight_bit_adder
 # 
 # Top level modules:
-# 	\4bit_adder 
-# End time: 00:01:36 on Aug 16,2019, Elapsed time: 0:00:00
+# 	eight_bit_adder
+# End time: 23:20:32 on Aug 24,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 00:01:36 on Aug 16,2019
-# vlog -work work 4bit_adder.vwf.vt 
-# ** Error: 4bit_adder.vwf.vt(30): near "4": syntax error, unexpected INTEGER NUMBER, expecting IDENTIFIER or automatic or TYPE_IDENTIFIER or static
-# End time: 00:01:36 on Aug 16,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /home/timmy/altera/15.0/modelsim_ase/linuxaloem/vlog failed.
-# Executing ONERROR command at macro ./4bit_adder.do line 4
+# Start time: 23:20:32 on Aug 24,2019
+# vlog -work work eight_bit_adder.vwf.vt 
+# -- Compiling module eight_bit_adder_vlg_sample_tst
+# -- Compiling module eight_bit_adder_vlg_check_tst
+# -- Compiling module eight_bit_adder_vlg_vec_tst
+# 
+# Top level modules:
+# 	eight_bit_adder_vlg_vec_tst
+# End time: 23:20:32 on Aug 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "eight_bit_adder.do" 
+# Start time: 23:20:32 on Aug 24,2019
+# Loading work.eight_bit_adder_vlg_vec_tst
+# Loading work.eight_bit_adder
+# Loading work.eight_bit_adder_vlg_sample_tst
+# Loading work.eight_bit_adder_vlg_check_tst
+# ERROR! Vector Mismatch for output port S4 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S7 :: @time = 2000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S6 :: @time = 3000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S5 :: @time = 5000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           4 mismatched vectors : Simulation failed !
+# ** Note: $finish    : eight_bit_adder.vwf.vt(404)
+#    Time: 16 us  Iteration: 0  Instance: /eight_bit_adder_vlg_vec_tst/tb_out
+# End time: 23:20:32 on Aug 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
