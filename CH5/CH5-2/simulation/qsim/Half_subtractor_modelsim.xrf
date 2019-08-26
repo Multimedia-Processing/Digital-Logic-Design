@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-2/Half_subtractor.bdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-2/Half_subtractor.vwf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH5/CH5-2/db/Half_subtractor.cbx.xml
+design_name = Half_subtractor
+instance = comp, \Do~output , Do~output, Half_subtractor, 1
+instance = comp, \Bo~output , Bo~output, Half_subtractor, 1
+instance = comp, \A~input , A~input, Half_subtractor, 1
+instance = comp, \B~input , B~input, Half_subtractor, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Half_subtractor, 1
