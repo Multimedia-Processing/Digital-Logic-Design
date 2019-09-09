@@ -1,0 +1,107 @@
+EDA Netlist Writer report for BCD_adder_7483
+Mon Aug 26 23:13:46 2019
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Mon Aug 26 23:13:46 2019 ;
+; Revision Name             ; BCD_adder_7483                        ;
+; Top-level Entity Name     ; BCD_adder_7483                        ;
+; Family                    ; Cyclone III                           ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate netlist for functional simulation only                                                   ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                         ;
++----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                    ;
++----------------------------------------------------------------------------------------------------+
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_6_1200mv_85c_slow.vho      ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_6_1200mv_0c_slow.vho       ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_min_1200mv_0c_fast.vho     ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483.vho                        ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_6_1200mv_85c_vhd_slow.sdo  ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_6_1200mv_0c_vhd_slow.sdo   ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_min_1200mv_0c_vhd_fast.sdo ;
+; /home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/BCD_adder_7483_vhd.sdo                    ;
++----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Mon Aug 26 23:13:44 2019
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off BCD_adder_7483 -c BCD_adder_7483
+Info (204019): Generated file BCD_adder_7483_6_1200mv_85c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_6_1200mv_0c_slow.vho in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_min_1200mv_0c_fast.vho in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483.vho in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_6_1200mv_85c_vhd_slow.sdo in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_6_1200mv_0c_vhd_slow.sdo in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_min_1200mv_0c_vhd_fast.sdo in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file BCD_adder_7483_vhd.sdo in folder "/home/timmy/Git/Learn-VHDL/CH5/CH5-3/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 348 megabytes
+    Info: Processing ended: Mon Aug 26 23:13:46 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
