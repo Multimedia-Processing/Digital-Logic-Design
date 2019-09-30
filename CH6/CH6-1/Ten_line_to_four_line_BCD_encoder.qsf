@@ -18,14 +18,14 @@
 #
 # Quartus II 32-bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 21:10:57  September 11, 2019
+# Date created = 23:05:27  September 30, 2019
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		CH6-1_assignment_defaults.qdf
+#		Ten_line_to_four_line_BCD_encoder_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -38,9 +38,9 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY "CH6-1"
+set_global_assignment -name TOP_LEVEL_ENTITY Ten_line_to_four_line_BCD_encoder
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:10:57  SEPTEMBER 11, 2019"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:05:27  SEPTEMBER 30, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -49,3 +49,24 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE Ten_line_to_four_line_BCD_encoder.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C1 -to A
+set_location_assignment PIN_C2 -to B
+set_location_assignment PIN_B2 -to C
+set_location_assignment PIN_B1 -to D
+set_location_assignment PIN_D2 -to I0
+set_location_assignment PIN_E3 -to I2
+set_location_assignment PIN_H7 -to I3
+set_location_assignment PIN_J7 -to I4
+set_location_assignment PIN_G5 -to I5
+set_location_assignment PIN_G4 -to I6
+set_location_assignment PIN_H6 -to I7
+set_location_assignment PIN_H5 -to I8
+set_location_assignment PIN_J6 -to I9
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_location_assignment PIN_E4 -to I1
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
