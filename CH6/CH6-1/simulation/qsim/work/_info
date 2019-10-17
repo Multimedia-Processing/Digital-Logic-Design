@@ -3,51 +3,51 @@ K3
 13
 cModel Technology
 Z0 d/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim
-vten_line_to_four_line_BCD_priority_encoder
-Z1 !s100 N[Q?5E7>KEYZP8;]Iz4kS1
-Z2 IX@zO`S[Wdl76BL<1Xb_ZK1
-Z3 VilJ2R0kjeL;iYdm;B[@dD2
+vBCD_to_decimal_decoder
+Z1 !s100 J4Pc;Wc=oXSMFZgW^<b`[3
+Z2 IhCC@F`[:n2cO_EX58zV[;2
+Z3 V11gzD>UjYQ9R<j>E:dXW72
 Z4 d/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim
-Z5 w1571318187
-Z6 8ten_line_to_four_line_BCD_priority_encoder.vo
-Z7 Ften_line_to_four_line_BCD_priority_encoder.vo
+Z5 w1571325856
+Z6 8BCD_to_decimal_decoder.vo
+Z7 FBCD_to_decimal_decoder.vo
 L0 31
 Z8 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vo|
+Z9 !s90 -work|work|BCD_to_decimal_decoder.vo|
 Z10 o-work work -O0
-Z11 nten_line_to_four_line_@b@c@d_priority_encoder
+Z11 n@b@c@d_to_decimal_decoder
 !i10b 1
 !s85 0
-Z12 !s108 1571318188.507450
-Z13 !s107 ten_line_to_four_line_BCD_priority_encoder.vo|
+Z12 !s108 1571325857.364260
+Z13 !s107 BCD_to_decimal_decoder.vo|
 !s101 -O0
-vten_line_to_four_line_BCD_priority_encoder_vlg_check_tst
+vBCD_to_decimal_decoder_vlg_check_tst
 !i10b 1
-Z14 !s100 ncHnIa?4`?koVJ<>UGa041
-Z15 IO1;?HoEVJ0OAfD`zJQ?aA3
-Z16 VZ1Gl>QM?d=>heFl]MARCc0
+Z14 !s100 FQo`Fg`;GNmi7nhMHIe?A0
+Z15 IiIFP6GcUkDbUO63P9?=f;2
+Z16 V4=1>D?1N>O]>@j^GHZ4Ib3
 R4
-Z17 w1571318183
-Z18 8ten_line_to_four_line_BCD_priority_encoder.vwf.vt
-Z19 Ften_line_to_four_line_BCD_priority_encoder.vwf.vt
-L0 71
+Z17 w1571325851
+Z18 8BCD_to_decimal_decoder.vwf.vt
+Z19 FBCD_to_decimal_decoder.vwf.vt
+L0 63
 R8
 r1
 !s85 0
 31
-Z20 !s108 1571318188.537913
-Z21 !s107 ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
-Z22 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
+Z20 !s108 1571325857.394046
+Z21 !s107 BCD_to_decimal_decoder.vwf.vt|
+Z22 !s90 -work|work|BCD_to_decimal_decoder.vwf.vt|
 !s101 -O0
 R10
-Z23 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_check_tst
-vten_line_to_four_line_BCD_priority_encoder_vlg_sample_tst
+Z23 n@b@c@d_to_decimal_decoder_vlg_check_tst
+vBCD_to_decimal_decoder_vlg_sample_tst
 !i10b 1
-Z24 !s100 ]S]]o8>[N82OUJC2fV8^11
-Z25 I7GN>DeU>o=A42?^QbfC@@2
-Z26 V901ZJVHoaM`E@PiKKcRde3
+Z24 !s100 YXCE[77lz42>]9dC_Y5I?2
+Z25 IkT;05[8I<[U4R1jY022N71
+Z26 V[D3Dj:0QW1GZnjHN=ZH6M0
 R4
 R17
 R18
@@ -62,17 +62,17 @@ R21
 R22
 !s101 -O0
 R10
-Z27 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_sample_tst
-vten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst
+Z27 n@b@c@d_to_decimal_decoder_vlg_sample_tst
+vBCD_to_decimal_decoder_vlg_vec_tst
 !i10b 1
-!s100 3NmCYjnC2NNS>5J=fo[dO2
-IFhYe^Q3GOl9>;`QB>AR4;0
-Z28 V_VUE1:=c`h@b[lgdzbhjI1
+!s100 6zKmIS;]C>;;AVG3K69i@1
+ITFR;mNL5ZLJmHRE[MnSo;2
+Z28 V9oY]^d=1GS>>R@5?MB4Ym3
 R4
 R17
 R18
 R19
-Z29 L0 251
+Z29 L0 411
 R8
 r1
 !s85 0
@@ -82,4 +82,84 @@ R21
 R22
 !s101 -O0
 R10
-Z30 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_vec_tst
+Z30 n@b@c@d_to_decimal_decoder_vlg_vec_tst
+vten_line_to_four_line_BCD_priority_encoder
+Z31 !s100 N[Q?5E7>KEYZP8;]Iz4kS1
+Z32 IX@zO`S[Wdl76BL<1Xb_ZK1
+Z33 VilJ2R0kjeL;iYdm;B[@dD2
+R4
+Z34 w1571318187
+Z35 8ten_line_to_four_line_BCD_priority_encoder.vo
+Z36 Ften_line_to_four_line_BCD_priority_encoder.vo
+L0 31
+R8
+r1
+31
+Z37 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vo|
+R10
+Z38 nten_line_to_four_line_@b@c@d_priority_encoder
+Z39 !s108 1571318188.507450
+Z40 !s107 ten_line_to_four_line_BCD_priority_encoder.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vten_line_to_four_line_BCD_priority_encoder_vlg_check_tst
+Z41 !s100 ncHnIa?4`?koVJ<>UGa041
+Z42 IO1;?HoEVJ0OAfD`zJQ?aA3
+Z43 VZ1Gl>QM?d=>heFl]MARCc0
+R4
+Z44 w1571318183
+Z45 8ten_line_to_four_line_BCD_priority_encoder.vwf.vt
+Z46 Ften_line_to_four_line_BCD_priority_encoder.vwf.vt
+L0 71
+R8
+r1
+31
+Z47 !s108 1571318188.537913
+Z48 !s107 ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
+Z49 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
+R10
+Z50 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vten_line_to_four_line_BCD_priority_encoder_vlg_sample_tst
+Z51 !s100 ]S]]o8>[N82OUJC2fV8^11
+Z52 I7GN>DeU>o=A42?^QbfC@@2
+Z53 V901ZJVHoaM`E@PiKKcRde3
+R4
+R44
+R45
+R46
+L0 29
+R8
+r1
+31
+R47
+R48
+R49
+R10
+Z54 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst
+Z55 IFhYe^Q3GOl9>;`QB>AR4;0
+Z56 V_VUE1:=c`h@b[lgdzbhjI1
+R4
+R44
+R45
+R46
+Z57 L0 251
+R8
+r1
+31
+R47
+R48
+R49
+R10
+Z58 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_vec_tst
+Z59 !s100 3NmCYjnC2NNS>5J=fo[dO2
+!i10b 1
+!s85 0
+!s101 -O0
