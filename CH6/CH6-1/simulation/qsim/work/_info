@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim
+vten_line_to_four_line_BCD_priority_encoder
+Z1 !s100 N[Q?5E7>KEYZP8;]Iz4kS1
+Z2 IX@zO`S[Wdl76BL<1Xb_ZK1
+Z3 VilJ2R0kjeL;iYdm;B[@dD2
+Z4 d/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim
+Z5 w1571318187
+Z6 8ten_line_to_four_line_BCD_priority_encoder.vo
+Z7 Ften_line_to_four_line_BCD_priority_encoder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vo|
+Z10 o-work work -O0
+Z11 nten_line_to_four_line_@b@c@d_priority_encoder
+!i10b 1
+!s85 0
+Z12 !s108 1571318188.507450
+Z13 !s107 ten_line_to_four_line_BCD_priority_encoder.vo|
+!s101 -O0
+vten_line_to_four_line_BCD_priority_encoder_vlg_check_tst
+!i10b 1
+Z14 !s100 ncHnIa?4`?koVJ<>UGa041
+Z15 IO1;?HoEVJ0OAfD`zJQ?aA3
+Z16 VZ1Gl>QM?d=>heFl]MARCc0
+R4
+Z17 w1571318183
+Z18 8ten_line_to_four_line_BCD_priority_encoder.vwf.vt
+Z19 Ften_line_to_four_line_BCD_priority_encoder.vwf.vt
+L0 71
+R8
+r1
+!s85 0
+31
+Z20 !s108 1571318188.537913
+Z21 !s107 ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
+Z22 !s90 -work|work|ten_line_to_four_line_BCD_priority_encoder.vwf.vt|
+!s101 -O0
+R10
+Z23 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_check_tst
+vten_line_to_four_line_BCD_priority_encoder_vlg_sample_tst
+!i10b 1
+Z24 !s100 ]S]]o8>[N82OUJC2fV8^11
+Z25 I7GN>DeU>o=A42?^QbfC@@2
+Z26 V901ZJVHoaM`E@PiKKcRde3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_sample_tst
+vten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst
+!i10b 1
+!s100 3NmCYjnC2NNS>5J=fo[dO2
+IFhYe^Q3GOl9>;`QB>AR4;0
+Z28 V_VUE1:=c`h@b[lgdzbhjI1
+R4
+R17
+R18
+R19
+Z29 L0 251
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 nten_line_to_four_line_@b@c@d_priority_encoder_vlg_vec_tst
