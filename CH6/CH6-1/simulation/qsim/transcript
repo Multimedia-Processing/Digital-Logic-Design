@@ -1,52 +1,73 @@
-# do BCD_to_decimal_decoder.do 
+# do four_line_to_sixteen_line_decimal_decoder.do 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module BCD_to_decimal_decoder
+# -- Compiling module four_line_to_sixteen_line_decimal_decoder
 # 
 # Top level modules:
-# 	BCD_to_decimal_decoder
+# 	four_line_to_sixteen_line_decimal_decoder
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module BCD_to_decimal_decoder_vlg_sample_tst
-# -- Compiling module BCD_to_decimal_decoder_vlg_check_tst
-# -- Compiling module BCD_to_decimal_decoder_vlg_vec_tst
+# -- Compiling module four_line_to_sixteen_line_decimal_decoder_vlg_sample_tst
+# -- Compiling module four_line_to_sixteen_line_decimal_decoder_vlg_check_tst
+# -- Compiling module four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst
 # 
 # Top level modules:
-# 	BCD_to_decimal_decoder_vlg_vec_tst
-# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.BCD_to_decimal_decoder_vlg_vec_tst 
-# Loading work.BCD_to_decimal_decoder_vlg_vec_tst
-# Loading work.BCD_to_decimal_decoder
+# 	four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst 
+# Loading work.four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst
+# Loading work.four_line_to_sixteen_line_decimal_decoder
 # Loading cycloneiii_ver.cycloneiii_io_obuf
 # Loading cycloneiii_ver.cycloneiii_io_ibuf
 # Loading cycloneiii_ver.cycloneiii_lcell_comb
-# Loading work.BCD_to_decimal_decoder_vlg_sample_tst
-# Loading work.BCD_to_decimal_decoder_vlg_check_tst
+# Loading work.four_line_to_sixteen_line_decimal_decoder_vlg_sample_tst
+# Loading work.four_line_to_sixteen_line_decimal_decoder_vlg_check_tst
 # ERROR! Vector Mismatch for output port Y0 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y1 :: @time = 2000000.000 ps
+# ERROR! Vector Mismatch for output port Y1 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y2 :: @time = 3000000.000 ps
+# ERROR! Vector Mismatch for output port Y3 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y3 :: @time = 4000000.000 ps
+# ERROR! Vector Mismatch for output port Y4 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y4 :: @time = 5000000.000 ps
+# ERROR! Vector Mismatch for output port Y5 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y5 :: @time = 6000000.000 ps
+# ERROR! Vector Mismatch for output port Y6 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y6 :: @time = 7000000.000 ps
+# ERROR! Vector Mismatch for output port Y7 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y7 :: @time = 8000000.000 ps
+# ERROR! Vector Mismatch for output port Y8 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port Y8 :: @time = 9000000.000 ps
+# ERROR! Vector Mismatch for output port Y9 :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-#           9 mismatched vectors : Simulation failed !
-# ** Note: $finish    : BCD_to_decimal_decoder.vwf.vt(407)
-#    Time: 10 us  Iteration: 0  Instance: /BCD_to_decimal_decoder_vlg_vec_tst/tb_out
+# ERROR! Vector Mismatch for output port Y10 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y11 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y12 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y13 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y14 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y15 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port Y2 :: @time = 2000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#          16 mismatched vectors : Simulation failed !
+# ** Note: $finish    : four_line_to_sixteen_line_decimal_decoder.vwf.vt(575)
+#    Time: 10 us  Iteration: 0  Instance: /four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst/tb_out
