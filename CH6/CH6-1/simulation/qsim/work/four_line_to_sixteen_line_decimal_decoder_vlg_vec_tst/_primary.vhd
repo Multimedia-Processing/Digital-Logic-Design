@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst is
+end four_line_to_sixteen_line_decimal_decoder_vlg_vec_tst;
