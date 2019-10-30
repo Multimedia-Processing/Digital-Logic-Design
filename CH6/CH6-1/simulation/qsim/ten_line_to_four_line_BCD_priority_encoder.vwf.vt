@@ -1,0 +1,370 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/17/2019 21:16:23"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    ten_line_to_four_line_BCD_priority_encoder
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ten_line_to_four_line_BCD_priority_encoder_vlg_sample_tst(
+	I2,
+	I3,
+	I4,
+	I5,
+	I6,
+	I7,
+	I8,
+	I9,
+	sampler_tx
+);
+input  I2;
+input  I3;
+input  I4;
+input  I5;
+input  I6;
+input  I7;
+input  I8;
+input  I9;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(I2 or I3 or I4 or I5 or I6 or I7 or I8 or I9)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module ten_line_to_four_line_BCD_priority_encoder_vlg_check_tst (
+	A,
+	B,
+	C,
+	D,
+	sampler_rx
+);
+input  A;
+input  B;
+input  C;
+input  D;
+input sampler_rx;
+
+reg  A_expected;
+reg  B_expected;
+reg  C_expected;
+reg  D_expected;
+
+reg  A_prev;
+reg  B_prev;
+reg  C_prev;
+reg  D_prev;
+
+reg  A_expected_prev;
+reg  B_expected_prev;
+reg  C_expected_prev;
+reg  D_expected_prev;
+
+reg  last_A_exp;
+reg  last_B_exp;
+reg  last_C_exp;
+reg  last_D_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:4] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 4'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	A_prev = A;
+	B_prev = B;
+	C_prev = C;
+	D_prev = D;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	A_expected_prev = A_expected;
+	B_expected_prev = B_expected;
+	C_expected_prev = C_expected;
+	D_expected_prev = D_expected;
+end
+
+
+
+// expected A
+initial
+begin
+	A_expected = 1'bX;
+	A_expected = #999000 1'b0;
+end 
+
+// expected B
+initial
+begin
+	B_expected = 1'bX;
+	B_expected = #999000 1'b0;
+end 
+
+// expected C
+initial
+begin
+	C_expected = 1'bX;
+	C_expected = #999000 1'b0;
+end 
+
+// expected D
+initial
+begin
+	D_expected = 1'bX;
+	D_expected = #999000 1'b0;
+end 
+// generate trigger
+always @(A_expected or A or B_expected or B or C_expected or C or D_expected or D)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected A = %b | expected B = %b | expected C = %b | expected D = %b | ",A_expected_prev,B_expected_prev,C_expected_prev,D_expected_prev);
+	$display("| real A = %b | real B = %b | real C = %b | real D = %b | ",A_prev,B_prev,C_prev,D_prev);
+`endif
+	if (
+		( A_expected_prev !== 1'bx ) && ( A_prev !== A_expected_prev )
+		&& ((A_expected_prev !== last_A_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A_expected_prev);
+		$display ("     Real value = %b", A_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_A_exp = A_expected_prev;
+	end
+	if (
+		( B_expected_prev !== 1'bx ) && ( B_prev !== B_expected_prev )
+		&& ((B_expected_prev !== last_B_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port B :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", B_expected_prev);
+		$display ("     Real value = %b", B_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_B_exp = B_expected_prev;
+	end
+	if (
+		( C_expected_prev !== 1'bx ) && ( C_prev !== C_expected_prev )
+		&& ((C_expected_prev !== last_C_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C_expected_prev);
+		$display ("     Real value = %b", C_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_C_exp = C_expected_prev;
+	end
+	if (
+		( D_expected_prev !== 1'bx ) && ( D_prev !== D_expected_prev )
+		&& ((D_expected_prev !== last_D_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port D :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", D_expected_prev);
+		$display ("     Real value = %b", D_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_D_exp = D_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#9000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module ten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg I2;
+reg I3;
+reg I4;
+reg I5;
+reg I6;
+reg I7;
+reg I8;
+reg I9;
+// wires                                               
+wire A;
+wire B;
+wire C;
+wire D;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+ten_line_to_four_line_BCD_priority_encoder i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.C(C),
+	.D(D),
+	.I2(I2),
+	.I3(I3),
+	.I4(I4),
+	.I5(I5),
+	.I6(I6),
+	.I7(I7),
+	.I8(I8),
+	.I9(I9)
+);
+
+// I2
+initial
+begin
+	I2 = 1'b0;
+	I2 = #7000000 1'b1;
+end 
+
+// I3
+initial
+begin
+	I3 = 1'b1;
+	I3 = #1000000 1'b0;
+	I3 = #6000000 1'b1;
+end 
+
+// I4
+initial
+begin
+	I4 = 1'b1;
+	I4 = #2000000 1'b0;
+	I4 = #5000000 1'b1;
+end 
+
+// I5
+initial
+begin
+	I5 = 1'b1;
+	I5 = #3000000 1'b0;
+	I5 = #4000000 1'b1;
+end 
+
+// I6
+initial
+begin
+	I6 = 1'b1;
+	I6 = #4000000 1'b0;
+	I6 = #3000000 1'b1;
+end 
+
+// I7
+initial
+begin
+	I7 = 1'b1;
+	I7 = #5000000 1'b0;
+	I7 = #2000000 1'b1;
+end 
+
+// I8
+initial
+begin
+	I8 = 1'b1;
+	I8 = #6000000 1'b0;
+	I8 = #1000000 1'b1;
+end 
+
+// I9
+initial
+begin
+	I9 = 1'b1;
+	I9 = #7000000 1'b0;
+	I9 = #1000000 1'b1;
+end 
+
+ten_line_to_four_line_BCD_priority_encoder_vlg_sample_tst tb_sample (
+	.I2(I2),
+	.I3(I3),
+	.I4(I4),
+	.I5(I5),
+	.I6(I6),
+	.I7(I7),
+	.I8(I8),
+	.I9(I9),
+	.sampler_tx(sampler)
+);
+
+ten_line_to_four_line_BCD_priority_encoder_vlg_check_tst tb_out(
+	.A(A),
+	.B(B),
+	.C(C),
+	.D(D),
+	.sampler_rx(sampler)
+);
+endmodule
+
