@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Ten_line_to_four_line_BCD_encoder")
-  (DATE "10/01/2019 00:13:13")
+  (DATE "10/30/2019 20:58:15")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")

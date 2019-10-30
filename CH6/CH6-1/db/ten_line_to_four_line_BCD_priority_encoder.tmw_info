@@ -1,5 +1,5 @@
-start_analysis_synthesis:s:00:00:07
+start_analysis_synthesis:s:00:00:08
 start_analysis_elaboration:s
-start_fitter:s:00:00:14
+start_fitter:s:00:00:15
 start_timing_analyzer:s:00:00:06
-start_eda_netlist_writer:s:00:00:05
+start_eda_netlist_writer:s:00:00:08

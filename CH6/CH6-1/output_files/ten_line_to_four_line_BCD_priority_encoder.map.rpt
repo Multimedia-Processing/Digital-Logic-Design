@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ten_line_to_four_line_BCD_priority_encoder
-Thu Oct 17 21:26:03 2019
+Wed Oct 30 21:06:55 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 17 21:26:03 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 30 21:06:55 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ten_line_to_four_line_BCD_priority_encoder ;
 ; Top-level Entity Name              ; ten_line_to_four_line_BCD_priority_encoder ;
@@ -227,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -237,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 17 21:26:00 2019
+    Info: Processing started: Wed Oct 30 21:06:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ten_line_to_four_line_BCD_priority_encoder -c ten_line_to_four_line_BCD_priority_encoder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ten_line_to_four_line_BCD_priority_encoder.bdf
@@ -254,7 +254,7 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21061): Implemented 7 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 371 megabytes
-    Info: Processing ended: Thu Oct 17 21:26:03 2019
+    Info: Processing ended: Wed Oct 30 21:06:55 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

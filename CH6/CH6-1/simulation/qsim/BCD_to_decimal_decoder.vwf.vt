@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/17/2019 23:24:11"
+// Generated on "10/30/2019 21:16:03"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    BCD_to_decimal_decoder
 // 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Ten_line_to_four_line_BCD_encoder
-Tue Oct  1 00:13:07 2019
+Wed Oct 30 21:05:52 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -522,7 +522,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct  1 00:13:04 2019
+    Info: Processing started: Wed Oct 30 21:05:49 2019
 Info: Command: quartus_sta Ten_line_to_four_line_BCD_encoder -c Ten_line_to_four_line_BCD_encoder
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -571,7 +571,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 383 megabytes
-    Info: Processing ended: Tue Oct  1 00:13:07 2019
+    Info: Processing ended: Wed Oct 30 21:05:52 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

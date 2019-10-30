@@ -1,5 +1,5 @@
 EDA Netlist Writer report for four_line_to_sixteen_line_decimal_decoder
-Thu Oct 24 22:24:53 2019
+Wed Oct 30 21:26:32 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                            ;
 +---------------------------+-------------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 24 22:24:53 2019     ;
+; EDA Netlist Writer Status ; Successful - Wed Oct 30 21:26:32 2019     ;
 ; Revision Name             ; four_line_to_sixteen_line_decimal_decoder ;
 ; Top-level Entity Name     ; four_line_to_sixteen_line_decimal_decoder ;
 ; Family                    ; Cyclone III                               ;
@@ -93,12 +93,12 @@ Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Thu Oct 24 22:24:52 2019
+    Info: Processing started: Wed Oct 30 21:26:31 2019
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim/ four_line_to_sixteen_line_decimal_decoder -c four_line_to_sixteen_line_decimal_decoder
 Info (204019): Generated file four_line_to_sixteen_line_decimal_decoder.vo in folder "/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Thu Oct 24 22:24:53 2019
+    Info: Peak virtual memory: 344 megabytes
+    Info: Processing ended: Wed Oct 30 21:26:32 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
