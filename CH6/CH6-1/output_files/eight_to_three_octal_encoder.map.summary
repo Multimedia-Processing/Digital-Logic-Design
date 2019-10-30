@@ -1,0 +1,12 @@
+Analysis & Synthesis Status : Failed - Wed Oct 30 22:41:06 2019
+Quartus II 64-Bit Version : 15.0.2 Build 153 07/15/2015 SJ Web Edition
+Revision Name : eight_to_three_octal_encoder
+Top-level Entity Name : eight_to_three_priority_encoder
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge
