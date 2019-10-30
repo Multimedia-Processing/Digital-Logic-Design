@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ten_line_to_four_line_BCD_encoder
-Tue Oct  1 00:12:38 2019
+Wed Oct 30 21:05:25 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct  1 00:12:38 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 30 21:05:25 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Ten_line_to_four_line_BCD_encoder          ;
 ; Top-level Entity Name              ; Ten_line_to_four_line_BCD_encoder          ;
@@ -65,7 +65,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+-----------------------------------+-----------------------------------+
 ; Device                                                                     ; EP3C16F484C6                      ;                                   ;
 ; Top-level entity name                                                      ; Ten_line_to_four_line_BCD_encoder ; Ten_line_to_four_line_BCD_encoder ;
-; Family name                                                                ; Cyclone III                       ; Cyclone IV GX                     ;
+; Family name                                                                ; Cyclone III                       ; Cyclone V                         ;
 ; Use smart compilation                                                      ; Off                               ; Off                               ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                ; On                                ;
 ; Enable compact report table                                                ; Off                               ; Off                               ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Oct  1 00:12:36 2019
+    Info: Processing started: Wed Oct 30 21:05:22 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ten_line_to_four_line_BCD_encoder -c Ten_line_to_four_line_BCD_encoder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Ten_line_to_four_line_BCD_encoder.bdf
@@ -253,8 +253,8 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21061): Implemented 5 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 371 megabytes
-    Info: Processing ended: Tue Oct  1 00:12:38 2019
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Oct 30 21:05:25 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

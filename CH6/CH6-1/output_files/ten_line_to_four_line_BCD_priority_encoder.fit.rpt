@@ -1,5 +1,5 @@
 Fitter report for ten_line_to_four_line_BCD_priority_encoder
-Thu Oct 17 21:26:16 2019
+Wed Oct 30 21:07:09 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Thu Oct 17 21:26:16 2019      ;
+; Fitter Status                      ; Successful - Wed Oct 30 21:07:09 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ten_line_to_four_line_BCD_priority_encoder ;
 ; Top-level Entity Name              ; ten_line_to_four_line_BCD_priority_encoder ;
@@ -1224,13 +1224,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file /home/timmy/Git/Learn-VHDL/CH6/CH6-1/output_files/ten_line_to_four_line_BCD_priority_encoder.fit.smsg
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 535 megabytes
-    Info: Processing ended: Thu Oct 17 21:26:17 2019
+    Info: Processing ended: Wed Oct 30 21:07:09 2019
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Total CPU time (on all processors): 00:00:13
 
 
 +----------------------------+

@@ -56,4 +56,19 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE BCD_to_decimal_decoder.vwf
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_H7 -to A
+set_location_assignment PIN_E3 -to B
+set_location_assignment PIN_E4 -to C
+set_location_assignment PIN_D2 -to D
+set_location_assignment PIN_B1 -to Y0
+set_location_assignment PIN_B2 -to Y1
+set_location_assignment PIN_C2 -to Y2
+set_location_assignment PIN_C1 -to Y3
+set_location_assignment PIN_E1 -to Y4
+set_location_assignment PIN_F2 -to Y5
+set_location_assignment PIN_H1 -to Y6
+set_location_assignment PIN_J3 -to Y7
+set_location_assignment PIN_J2 -to Y8
+set_location_assignment PIN_J1 -to Y9
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

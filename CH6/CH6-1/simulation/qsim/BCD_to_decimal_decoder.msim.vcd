@@ -3,7 +3,7 @@ $comment
 		vcd file BCD_to_decimal_decoder.msim.vcd -direction
 $end
 $date
-	Thu Oct 17 23:24:17 2019
+	Wed Oct 30 21:16:09 2019
 $end
 $version
 	ModelSim Version 10.1d

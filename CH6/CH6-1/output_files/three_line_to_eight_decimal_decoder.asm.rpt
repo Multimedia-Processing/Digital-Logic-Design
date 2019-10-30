@@ -1,5 +1,5 @@
 Assembler report for three_line_to_eight_decimal_decoder
-Thu Oct 24 21:57:51 2019
+Wed Oct 30 21:22:43 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Oct 24 21:57:51 2019 ;
+; Assembler Status      ; Successful - Wed Oct 30 21:22:43 2019 ;
 ; Revision Name         ; three_line_to_eight_decimal_decoder   ;
 ; Top-level Entity Name ; three_line_to_eight_decimal_decoder   ;
 ; Family                ; Cyclone III                           ;
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 24 21:57:49 2019
+    Info: Processing started: Wed Oct 30 21:22:41 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off three_line_to_eight_decimal_decoder -c three_line_to_eight_decimal_decoder
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 32-bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 382 megabytes
-    Info: Processing ended: Thu Oct 24 21:57:51 2019
+    Info: Processing ended: Wed Oct 30 21:22:43 2019
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

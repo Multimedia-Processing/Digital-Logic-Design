@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BCD_to_decimal_decoder
-Thu Oct 17 23:24:36 2019
+Wed Oct 30 21:19:32 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 17 23:24:36 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 30 21:19:32 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; BCD_to_decimal_decoder                     ;
 ; Top-level Entity Name              ; BCD_to_decimal_decoder                     ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 17 23:24:33 2019
+    Info: Processing started: Wed Oct 30 21:19:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BCD_to_decimal_decoder -c BCD_to_decimal_decoder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file BCD_to_decimal_decoder.bdf
@@ -249,8 +249,8 @@ Info (21057): Implemented 24 device resources after synthesis - the final resour
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 10 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 383 megabytes
-    Info: Processing ended: Thu Oct 17 23:24:36 2019
+    Info: Peak virtual memory: 371 megabytes
+    Info: Processing ended: Wed Oct 30 21:19:32 2019
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

@@ -1,5 +1,5 @@
 Flow report for three_line_to_eight_decimal_decoder
-Thu Oct 24 21:58:03 2019
+Wed Oct 30 21:22:59 2019
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 24 21:58:03 2019      ;
+; Flow Status                        ; Successful - Wed Oct 30 21:22:59 2019      ;
 ; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; three_line_to_eight_decimal_decoder        ;
 ; Top-level Entity Name              ; three_line_to_eight_decimal_decoder        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+-------------------------------------+
 ; Option            ; Setting                             ;
 +-------------------+-------------------------------------+
-; Start date & time ; 10/24/2019 21:57:29                 ;
+; Start date & time ; 10/30/2019 21:22:09                 ;
 ; Main task         ; Compilation                         ;
 ; Revision Name     ; three_line_to_eight_decimal_decoder ;
 +-------------------+-------------------------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+-------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.157192544931923                                     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.157244172900398                                     ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                    ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; /home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                           ; --            ; --          ; eda_simulation ;
@@ -95,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 360 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 536 MB              ; 00:00:11                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 382 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 383 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 360 MB              ; 00:00:06                           ;
+; Fitter                    ; 00:00:15     ; 1.0                     ; 535 MB              ; 00:00:16                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 382 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 369 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 338 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:29     ; --                      ; --                  ; 00:00:29                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
