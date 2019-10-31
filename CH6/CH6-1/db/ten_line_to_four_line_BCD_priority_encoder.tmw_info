@@ -1,0 +1,5 @@
+start_analysis_synthesis:s
+start_analysis_elaboration:s
+start_fitter:s
+start_timing_analyzer:s
+start_eda_netlist_writer:s

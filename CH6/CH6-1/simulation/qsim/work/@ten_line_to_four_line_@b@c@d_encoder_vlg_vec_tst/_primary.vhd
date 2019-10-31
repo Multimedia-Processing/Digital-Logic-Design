@@ -1,0 +1,4 @@
+library verilog;
+use verilog.vl_types.all;
+entity Ten_line_to_four_line_BCD_encoder_vlg_vec_tst is
+end Ten_line_to_four_line_BCD_encoder_vlg_vec_tst;
