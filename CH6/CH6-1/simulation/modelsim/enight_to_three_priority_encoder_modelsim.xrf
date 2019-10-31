@@ -1,6 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH6/CH6-1/enight_to_three_priority_encoder.bdf
 source_file = 1, /home/timmy/Git/Learn-VHDL/CH6/CH6-1/output_files/Chain2.cdf
+source_file = 1, /home/timmy/Git/Learn-VHDL/CH6/CH6-1/enight_to_three_priority_encoder.vwf
 source_file = 1, /home/timmy/altera/15.0/quartus/libraries/others/maxplus2/74148.bdf
 design_name = enight_to_three_priority_encoder
 instance = comp, \Y0~output\, Y0~output, enight_to_three_priority_encoder, 1
