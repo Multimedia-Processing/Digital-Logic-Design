@@ -1,5 +1,5 @@
 Analysis & Synthesis report for enight_to_three_priority_encoder
-Thu Oct 31 00:34:52 2019
+Thu Oct 31 21:26:57 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 31 00:34:52 2019      ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 31 21:26:57 2019      ;
 ; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; enight_to_three_priority_encoder           ;
 ; Top-level Entity Name           ; enight_to_three_priority_encoder           ;
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Thu Oct 31 00:34:33 2019
+    Info: Processing started: Thu Oct 31 21:26:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off enight_to_three_priority_encoder -c enight_to_three_priority_encoder
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file enight_to_three_priority_encoder.bdf
@@ -277,9 +277,9 @@ Info (21057): Implemented 15 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1054 megabytes
-    Info: Processing ended: Thu Oct 31 00:34:53 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 1053 megabytes
+    Info: Processing ended: Thu Oct 31 21:26:57 2019
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:51
 
 

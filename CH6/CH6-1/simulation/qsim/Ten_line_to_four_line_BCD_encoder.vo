@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 32-bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "10/30/2019 21:05:57"
+// DATE "10/31/2019 20:26:59"
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -30,33 +30,33 @@
 
 module Ten_line_to_four_line_BCD_encoder (
 	A,
-	I1,
-	I5,
-	I3,
-	I9,
-	I7,
 	B,
+	C,
+	D,
+	I0,
+	I9,
+	I5,
+	I7,
+	I1,
+	I3,
 	I2,
 	I6,
-	C,
 	I4,
-	D,
-	I8,
-	I0);
+	I8);
 output 	A;
-input 	I1;
-input 	I5;
-input 	I3;
-input 	I9;
-input 	I7;
 output 	B;
+output 	C;
+output 	D;
+input 	I0;
+input 	I9;
+input 	I5;
+input 	I7;
+input 	I1;
+input 	I3;
 input 	I2;
 input 	I6;
-output 	C;
 input 	I4;
-output 	D;
 input 	I8;
-input 	I0;
 
 // Design Ports Information
 // A	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default

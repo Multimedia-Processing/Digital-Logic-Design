@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for enight_to_three_priority_encoder
-Thu Oct 31 00:36:57 2019
+Thu Oct 31 21:29:19 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -643,7 +643,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Thu Oct 31 00:36:49 2019
+    Info: Processing started: Thu Oct 31 21:29:10 2019
 Info: Command: quartus_sta enight_to_three_priority_encoder -c enight_to_three_priority_encoder
 Info: qsta_default_script.tcl version: #11
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -703,8 +703,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 1183 megabytes
-    Info: Processing ended: Thu Oct 31 00:36:57 2019
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Thu Oct 31 21:29:19 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
 
 

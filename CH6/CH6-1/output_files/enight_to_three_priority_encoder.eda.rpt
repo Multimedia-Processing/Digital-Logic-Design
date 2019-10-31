@@ -1,5 +1,5 @@
 EDA Netlist Writer report for enight_to_three_priority_encoder
-Thu Oct 31 00:37:02 2019
+Thu Oct 31 21:29:24 2019
 Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 31 00:37:02 2019 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 31 21:29:24 2019 ;
 ; Revision Name             ; enight_to_three_priority_encoder      ;
 ; Top-level Entity Name     ; enight_to_three_priority_encoder      ;
 ; Family                    ; Cyclone V                             ;
@@ -82,13 +82,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
-    Info: Processing started: Thu Oct 31 00:37:00 2019
+    Info: Processing started: Thu Oct 31 21:29:22 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off enight_to_three_priority_encoder -c enight_to_three_priority_encoder
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file enight_to_three_priority_encoder.vho in folder "/home/timmy/Git/Learn-VHDL/CH6/CH6-1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1161 megabytes
-    Info: Processing ended: Thu Oct 31 00:37:02 2019
+    Info: Peak virtual memory: 1164 megabytes
+    Info: Processing ended: Thu Oct 31 21:29:24 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
