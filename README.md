@@ -28,7 +28,11 @@ Quartus II 32-bit 13.1 Web Edition
 
 通常在使用Simulation Waveform Editor的Run Functional Simulation時調用ModelSim-Altera運行時會先出現以下錯誤:
 ```
-error while loading shared libraries: libXft.so.2: cannot open shared object file: No such file or directory
+**** Running the ModelSim simulation ****
+
+altera/13.1/modelsim_ase/linuxaloem/vsim -c -do BCD_seven_seg_A.do
+
+altera/13.1/modelsim_ase/linuxaloem/vish: error while loading shared libraries: libXft.so.2: cannot open shared object file: No such file or directory
 ```
 
 Quartus II 64-bit 15.0 Web Edition
