@@ -1,85 +1,90 @@
 m255
 K3
+z0
 13
 cModel Technology
 Z0 d/home/timmy/Git/Learn-VHDL/CH6/CH6-2/simulation/qsim
 vBCD_seven_seg_A
-Z1 !s100 XSAE2fAdQN33062DiU<Z_1
-Z2 I5kmbZP97=mfPcVM>[08A<1
-Z3 VBd;N0L53[T0lJ8ffbkNEK3
-Z4 d/home/timmy/Git/Learn-VHDL/CH6/CH6-2/simulation/qsim
-Z5 w1578542109
-Z6 8BCD_seven_seg_A.vo
-Z7 FBCD_seven_seg_A.vo
-L0 31
-Z8 OV;L;10.1d;51
-r1
-31
-Z9 !s90 -work|work|BCD_seven_seg_A.vo|
-Z10 o-work work -O0
-Z11 n@b@c@d_seven_seg_@a
+Z1 !s110 1583767528
 !i10b 1
+!s100 ?^ePWeP5Ynj`6>Xzl`L;e0
+Id[z`f9]lBY]IEGoWn:cJ92
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1583767526
+8BCD_seven_seg_A.vo
+FBCD_seven_seg_A.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
 !s85 0
-Z12 !s108 1578542110.141300
-Z13 !s107 BCD_seven_seg_A.vo|
-!s101 -O0
+31
+!s108 1583767528.833370
+!s107 BCD_seven_seg_A.vo|
+!s90 -work|work|BCD_seven_seg_A.vo|
+!i113 1
+Z4 o-work work
+n@b@c@d_seven_seg_@a
 vBCD_seven_seg_A_vlg_check_tst
+R1
 !i10b 1
-Z14 !s100 g;07o`C7JWPHK[KXH7LC;1
-Z15 I>N`]jm^g_OaG4KB@[4`?73
-Z16 VgBa:L[EDm4ZhBN[8gofk<3
-R4
-Z17 w1578542103
-Z18 8BCD_seven_seg_A.vwf.vt
-Z19 FBCD_seven_seg_A.vwf.vt
-L0 63
-R8
+!s100 7S>__FaK=Xk675]FZBXcT0
+IF0jBbRjE0P<>MMO;_39ZV3
+R2
+R0
+Z5 w1583767521
+Z6 8BCD_seven_seg_A.vwf.vt
+Z7 FBCD_seven_seg_A.vwf.vt
+L0 64
+R3
 r1
 !s85 0
 31
-Z20 !s108 1578542110.178312
-Z21 !s107 BCD_seven_seg_A.vwf.vt|
-Z22 !s90 -work|work|BCD_seven_seg_A.vwf.vt|
-!s101 -O0
-R10
-Z23 n@b@c@d_seven_seg_@a_vlg_check_tst
+Z8 !s108 1583767528.972810
+Z9 !s107 BCD_seven_seg_A.vwf.vt|
+Z10 !s90 -work|work|BCD_seven_seg_A.vwf.vt|
+!i113 1
+R4
+n@b@c@d_seven_seg_@a_vlg_check_tst
 vBCD_seven_seg_A_vlg_sample_tst
+R1
 !i10b 1
-Z24 !s100 >?=7?9E7EP0=AaE:nhOje0
-Z25 I2XSSzB6eHUUW<KW^fWJaT0
-Z26 V<N@Y=81DTjZAi@2JY=IfV3
-R4
-R17
-R18
-R19
-L0 29
-R8
+!s100 ?;F`PPoOYNK05io?>LN392
+IiQj@=[YR3KfBnSf4^92nT0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
 r1
 !s85 0
 31
-R20
-R21
-R22
-!s101 -O0
+R8
+R9
 R10
-Z27 n@b@c@d_seven_seg_@a_vlg_sample_tst
+!i113 1
+R4
+n@b@c@d_seven_seg_@a_vlg_sample_tst
 vBCD_seven_seg_A_vlg_vec_tst
+R1
 !i10b 1
-!s100 ]`JZ_ONH_:iW@=O=YI3=Y2
-I^]8leYQab1>m``m<5_`nc0
-Z28 VVNg:3PF]SmN2<>>W4>Ki^1
-R4
-R17
-R18
-R19
-Z29 L0 327
-R8
+!s100 4D7I39cUPKCkgJ]=J50T=2
+Ig43:AkzHP3Fm7fFZj?dO13
+R2
+R0
+R5
+R6
+R7
+L0 328
+R3
 r1
 !s85 0
 31
-R20
-R21
-R22
-!s101 -O0
+R8
+R9
 R10
-Z30 n@b@c@d_seven_seg_@a_vlg_vec_tst
+!i113 1
+R4
+n@b@c@d_seven_seg_@a_vlg_vec_tst
