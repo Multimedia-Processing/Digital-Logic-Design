@@ -1,54 +1,57 @@
-# do BCD_seven_seg_A.do
+# do BCD_seven_seg_seven_four_four_seven.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:25:28 on Mar 09,2020
-# vlog -work work BCD_seven_seg_A.vo 
-# -- Compiling module BCD_seven_seg_A
+# Start time: 21:51:30 on Mar 16,2020
+# vlog -work work BCD_seven_seg_seven_four_four_seven.vo 
+# -- Compiling module BCD_seven_seg_seven_four_four_seven
 # 
 # Top level modules:
-# 	BCD_seven_seg_A
-# End time: 23:25:28 on Mar 09,2020, Elapsed time: 0:00:00
+# 	BCD_seven_seg_seven_four_four_seven
+# End time: 21:51:30 on Mar 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 23:25:28 on Mar 09,2020
-# vlog -work work BCD_seven_seg_A.vwf.vt 
-# -- Compiling module BCD_seven_seg_A_vlg_sample_tst
-# -- Compiling module BCD_seven_seg_A_vlg_check_tst
-# -- Compiling module BCD_seven_seg_A_vlg_vec_tst
+# Start time: 21:51:31 on Mar 16,2020
+# vlog -work work BCD_seven_seg_seven_four_four_seven.vwf.vt 
+# -- Compiling module BCD_seven_seg_seven_four_four_seven_vlg_sample_tst
+# -- Compiling module BCD_seven_seg_seven_four_four_seven_vlg_check_tst
+# -- Compiling module BCD_seven_seg_seven_four_four_seven_vlg_vec_tst
 # 
 # Top level modules:
-# 	BCD_seven_seg_A_vlg_vec_tst
-# End time: 23:25:28 on Mar 09,2020, Elapsed time: 0:00:00
+# 	BCD_seven_seg_seven_four_four_seven_vlg_vec_tst
+# End time: 21:51:31 on Mar 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -do "BCD_seven_seg_A.do" 
-# Start time: 23:25:29 on Mar 09,2020
-# Loading work.BCD_seven_seg_A_vlg_vec_tst
-# Loading work.BCD_seven_seg_A
-# Loading work.BCD_seven_seg_A_vlg_sample_tst
-# Loading work.BCD_seven_seg_A_vlg_check_tst
-# ERROR! Vector Mismatch for output port G :: @time = 1000000.000 ps
+# vsim -c -do "BCD_seven_seg_seven_four_four_seven.do" 
+# Start time: 21:51:31 on Mar 16,2020
+# Loading work.BCD_seven_seg_seven_four_four_seven_vlg_vec_tst
+# Loading work.BCD_seven_seg_seven_four_four_seven
+# Loading work.BCD_seven_seg_seven_four_four_seven_vlg_sample_tst
+# Loading work.BCD_seven_seg_seven_four_four_seven_vlg_check_tst
+# ERROR! Vector Mismatch for output port OG :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port A :: @time = 2000000.000 ps
+# ERROR! Vector Mismatch for output port OP :: @time = 1000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port D :: @time = 2000000.000 ps
+# ERROR! Vector Mismatch for output port OA :: @time = 2000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port E :: @time = 2000000.000 ps
+# ERROR! Vector Mismatch for output port OD :: @time = 2000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port F :: @time = 2000000.000 ps
+# ERROR! Vector Mismatch for output port OE :: @time = 2000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port C :: @time = 3000000.000 ps
+# ERROR! Vector Mismatch for output port OF :: @time = 2000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-# ERROR! Vector Mismatch for output port B :: @time = 6000000.000 ps
+# ERROR! Vector Mismatch for output port OC :: @time = 3000000.000 ps
 #      Expected value = 0
 #      Real value = 1
-#           7 mismatched vectors : Simulation failed !
-# ** Note: $finish    : BCD_seven_seg_A.vwf.vt(324)
-#    Time: 10 us  Iteration: 0  Instance: /BCD_seven_seg_A_vlg_vec_tst/tb_out
-# End time: 23:25:30 on Mar 09,2020, Elapsed time: 0:00:01
+# ERROR! Vector Mismatch for output port OB :: @time = 6000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           8 mismatched vectors : Simulation failed !
+# ** Note: $finish    : BCD_seven_seg_seven_four_four_seven.vwf.vt(358)
+#    Time: 13 us  Iteration: 0  Instance: /BCD_seven_seg_seven_four_four_seven_vlg_vec_tst/tb_out
+# End time: 21:51:31 on Mar 16,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
