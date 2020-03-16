@@ -1,0 +1,91 @@
+Assembler report for BCD_seven_seg_seven_four_four_seven
+Mon Mar 16 21:39:29 2020
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: BCD_seven_seg_seven_four_four_seven.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Mon Mar 16 21:39:29 2020 ;
+; Revision Name         ; BCD_seven_seg_seven_four_four_seven   ;
+; Top-level Entity Name ; BCD_seven_seg_seven_four_four_seven   ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSXFC6D6F31C6                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++-----------------------------------------+
+; Assembler Generated Files               ;
++-----------------------------------------+
+; File Name                               ;
++-----------------------------------------+
+; BCD_seven_seg_seven_four_four_seven.sof ;
++-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Assembler Device Options: BCD_seven_seg_seven_four_four_seven.sof ;
++----------------+--------------------------------------------------+
+; Option         ; Setting                                          ;
++----------------+--------------------------------------------------+
+; Device         ; 5CSXFC6D6F31C6                                   ;
+; JTAG usercode  ; 0x00AF8BC5                                       ;
+; Checksum       ; 0x00AF8BC5                                       ;
++----------------+--------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Assembler
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Mon Mar 16 21:39:15 2020
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off BCD_seven_seg_seven_four_four_seven -c BCD_seven_seg_seven_four_four_seven
+Info (115030): Assembler is generating device programming files
+Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1013 megabytes
+    Info: Processing ended: Mon Mar 16 21:39:29 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
+
+
