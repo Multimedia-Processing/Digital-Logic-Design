@@ -1,0 +1,47 @@
+|BCD_seven_seg_seven_four_two_four_eight
+OA <= 74248:inst.OA
+A => 74248:inst.A
+B => 74248:inst.B
+RBI => 74248:inst.RBIN
+D => 74248:inst.D
+C => 74248:inst.C
+LT => 74248:inst.LTN
+BI_RBO => 74248:inst.BIN
+OB <= 74248:inst.OB
+OC <= 74248:inst.OC
+OD <= 74248:inst.OD
+OE <= 74248:inst.OE
+OF <= 74248:inst.OF
+OG <= 74248:inst.OG
+S1 <= <VCC>
+S2 <= <VCC>
+S3 <= <VCC>
+S4 <= <GND>
+
+
+|BCD_seven_seg_seven_four_two_four_eight|74248:inst
+OG <= 88.DB_MAX_OUTPUT_PORT_TYPE
+B => 54.IN0
+B => 57.IN1
+A => 54.IN1
+A => 56.IN1
+RBIN => 54.IN2
+RBIN => 54.IN3
+C => 54.IN4
+C => 58.IN1
+D => 54.IN5
+D => 62.IN0
+BIN => 55.IN0
+LTN => 60.IN1
+LTN => 61.IN1
+LTN => 64.IN1
+LTN => 59.IN1
+OF <= 89.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 90.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 87.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 91.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 92.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 93.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 94.DB_MAX_OUTPUT_PORT_TYPE
+
+
