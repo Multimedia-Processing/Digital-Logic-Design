@@ -1,6 +1,6 @@
 Analysis & Synthesis report for BCD_seven_seg_seven_four_two_four_eight
-Mon Mar 16 22:55:17 2020
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Sun Sep 20 23:42:50 2020
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
 ---------------------
@@ -43,8 +43,8 @@ agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 16 22:55:17 2020      ;
-; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 20 23:42:50 2020      ;
+; Quartus II 64-Bit Version       ; 15.0.2 Build 153 07/15/2015 SJ Web Edition ;
 ; Revision Name                   ; BCD_seven_seg_seven_four_two_four_eight    ;
 ; Top-level Entity Name           ; BCD_seven_seg_seven_four_two_four_eight    ;
 ; Family                          ; Cyclone V                                  ;
@@ -151,21 +151,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+-----------------------------------------+-----------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -255,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -264,10 +258,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Mar 16 22:55:00 2020
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Sun Sep 20 23:42:20 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BCD_seven_seg_seven_four_two_four_eight -c BCD_seven_seg_seven_four_two_four_eight
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file BCD_seven_seg_seven_four_two_four_eight.bdf
     Info (12023): Found entity 1: BCD_seven_seg_seven_four_two_four_eight
 Info (12127): Elaborating entity "BCD_seven_seg_seven_four_two_four_eight" for the top level hierarchy
@@ -285,10 +279,10 @@ Info (21057): Implemented 27 device resources after synthesis - the final resour
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 9 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1094 megabytes
-    Info: Processing ended: Mon Mar 16 22:55:17 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 1064 megabytes
+    Info: Processing ended: Sun Sep 20 23:42:50 2020
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:55
 
 

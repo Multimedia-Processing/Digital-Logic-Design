@@ -1,6 +1,6 @@
 EDA Netlist Writer report for BCD_seven_seg_seven_four_two_four_eight
-Mon Mar 16 22:58:28 2020
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Sun Sep 20 23:45:15 2020
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
 ---------------------
@@ -37,7 +37,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                          ;
 +---------------------------+-----------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Mar 16 22:58:28 2020   ;
+; EDA Netlist Writer Status ; Successful - Sun Sep 20 23:45:15 2020   ;
 ; Revision Name             ; BCD_seven_seg_seven_four_two_four_eight ;
 ; Top-level Entity Name     ; BCD_seven_seg_seven_four_two_four_eight ;
 ; Family                    ; Cyclone V                               ;
@@ -81,15 +81,15 @@ agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Mar 16 22:58:26 2020
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Sun Sep 20 23:45:12 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off BCD_seven_seg_seven_four_two_four_eight -c BCD_seven_seg_seven_four_two_four_eight
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file BCD_seven_seg_seven_four_two_four_eight.vho in folder "/home/timmy/Git/Learn-VHDL/CH6/CH6-2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1203 megabytes
-    Info: Processing ended: Mon Mar 16 22:58:28 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 1163 megabytes
+    Info: Processing ended: Sun Sep 20 23:45:15 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

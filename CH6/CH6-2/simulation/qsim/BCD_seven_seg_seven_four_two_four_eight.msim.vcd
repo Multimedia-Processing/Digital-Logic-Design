@@ -1,0 +1,294 @@
+$comment
+	File created using the following command:
+		vcd file BCD_seven_seg_seven_four_two_four_eight.msim.vcd -direction
+$end
+$date
+	Sun Sep 20 23:40:53 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module BCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # BI_RBO $end
+$var reg 1 $ C $end
+$var reg 1 % D $end
+$var reg 1 & LT $end
+$var reg 1 ' RBI $end
+$var wire 1 ( OA $end
+$var wire 1 ) OB $end
+$var wire 1 * OC $end
+$var wire 1 + OD $end
+$var wire 1 , OE $end
+$var wire 1 - OF $end
+$var wire 1 . OG $end
+$var wire 1 / S1 $end
+$var wire 1 0 S2 $end
+$var wire 1 1 S3 $end
+$var wire 1 2 S4 $end
+$var wire 1 3 sampler $end
+
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 ; A~input_o $end
+$var wire 1 < BI_RBO~input_o $end
+$var wire 1 = RBI~input_o $end
+$var wire 1 > B~input_o $end
+$var wire 1 ? C~input_o $end
+$var wire 1 @ D~input_o $end
+$var wire 1 A inst|57~0_combout $end
+$var wire 1 B LT~input_o $end
+$var wire 1 C inst|94~0_combout $end
+$var wire 1 D inst|93~0_combout $end
+$var wire 1 E inst|92~0_combout $end
+$var wire 1 F inst|91~0_combout $end
+$var wire 1 G inst|90~0_combout $end
+$var wire 1 H inst|89~0_combout $end
+$var wire 1 I inst|89~1_combout $end
+$var wire 1 J inst|88~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+0$
+0%
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+1/
+10
+11
+02
+x3
+04
+15
+x6
+17
+18
+19
+0:
+0;
+1<
+1=
+0>
+0?
+0@
+1A
+1B
+1C
+1D
+1E
+1F
+0G
+1H
+1I
+0J
+$end
+#1000000
+1!
+1;
+03
+0H
+1G
+0F
+0C
+0(
+0+
+0,
+0I
+0-
+#2000000
+1"
+0!
+1>
+0;
+13
+0G
+1J
+1F
+0E
+1C
+1(
+0*
+1+
+1.
+1,
+#3000000
+1!
+1;
+03
+1G
+1E
+1*
+0,
+#4000000
+1$
+0"
+0!
+1?
+0>
+0;
+13
+1H
+0F
+0C
+0(
+0+
+1I
+1-
+#5000000
+1!
+1;
+03
+1F
+0D
+1C
+1(
+0)
+1+
+#6000000
+1"
+0!
+1>
+0;
+13
+0G
+1,
+#7000000
+1!
+1;
+03
+0H
+1G
+0J
+0F
+1D
+1)
+0+
+0.
+0,
+0I
+0-
+#8000000
+0'
+1%
+0$
+0"
+0!
+0=
+1@
+0?
+0>
+0;
+13
+1H
+0G
+1J
+1F
+1+
+1.
+1,
+1I
+1-
+#9000000
+1'
+1!
+1=
+1;
+03
+1G
+0,
+#9002058
+x#
+x<
+13
+xH
+xA
+xJ
+xF
+xE
+xD
+xC
+xI
+x-
+x(
+x)
+x*
+x+
+x.
+#10000000
+0&
+1"
+0!
+0B
+1>
+0;
+03
+0H
+0G
+1J
+1F
+1E
+1D
+1C
+1I
+1-
+1(
+1)
+1*
+1+
+1.
+1,
+#11000000
+1&
+1!
+1B
+1;
+13
+1G
+xJ
+xF
+xE
+0D
+0C
+0I
+0-
+0(
+0)
+x*
+x+
+x.
+0,
+#11000166
+1#
+1<
+03
+1A
+1J
+1F
+1E
+1*
+1+
+1.
+#12000000
