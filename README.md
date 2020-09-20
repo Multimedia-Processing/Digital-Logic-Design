@@ -12,11 +12,12 @@
 - [環境變數設定](#環境變數設定)
 - [Altera Cyclone V SoC Kit](#altera-cyclone-v-soc-kit)
 - [Quartus II 32-bit 13.1 Web Edition](#quartus-ii-32-bit-131-web-edition)
-  - [常見問題](#常見問題)
+  - [使用Ubuntu 16.04 LTS系統缺少libXft函式庫](#使用ubuntu-1604-lts系統缺少libxft函式庫)
   - [授權問題](#授權問題)
 - [Quartus II 64-bit 15.0 Web Edition](#quartus-ii-64-bit-150-web-edition)
   - [晶片版本與軟體版本轉換錯誤](#晶片版本與軟體版本轉換錯誤)
   - [使用Ubuntu 18.04 LTS系統缺少libpng12函式庫](#使用ubuntu-1804-lts系統缺少libpng12函式庫)
+  - [使用Ubuntu 18.04 LTS系統缺少libXft函式庫](#使用ubuntu-1804-lts系統缺少libxft函式庫)
 - [參考資料](#參考資料)
 
 <!-- /code_chunk_output -->
@@ -36,16 +37,26 @@
 - Ubuntu 18.04 LTS
 
 # 環境變數設定
+設定暫時的環境變數，在終端機界面關閉後就會消失，因此可以暫時設定環境變數。`ALTERAPATH`是Quartus II Web Edition安裝的位置，請填入絕對路徑。
+
+```
+export ALTERAPATH="/home/timmy/altera/15.0"
+export ALTERAOCLSDKROOT="${ALTERAPATH}/hld"
+export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus
+export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"
+export QSYS_ROOTDIR="${ALTERAPATH}/quartus/sopc_builder/bin"
+export PATH=$PATH:${ALTERAPATH}/quartus/bin
+export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
+```
+
+之後直接輸入`quartus`就可以直接執行。
 
 # Altera Cyclone V SoC Kit
 SW 預設以高電位
 
 # Quartus II 32-bit 13.1 Web Edition
-## 常見問題
-1. Quartus II 13版本前Altera官方都沒有出64Bit的IDE工具，而Ubuntu 16後所有的系統都不會內建32bit的C語言相關的函式庫，所以Ubuntu 16.04 LTS的使用者在第一次安裝Quartus II 32-bit 13.1 Web Edition會需要去安裝一些函式庫，下載連結:
-- 套件名稱與連結，不過因為上次安裝後沒有紀錄，只能等下次重新佈署系統再紀錄了。
-
-1. Quartus II 13版本前Altera官方都沒有出64Bit的IDE工具，而Ubuntu 16後所有的系統都不會內建32bit的C語言相關的函式庫，所以Ubuntu 16.04 LTS的使用者在使用ModelSim-Altera函式庫會需要去安裝`libxft2`的函式庫，下載連結:
+## 使用Ubuntu 16.04 LTS系統缺少libXft函式庫
+Quartus II 13版本前Altera官方都沒有出64Bit的IDE工具，而Ubuntu 16後所有的系統都不會內建32bit的C語言相關的函式庫，所以Ubuntu 16.04 LTS的使用者在使用ModelSim-Altera函式庫會需要去安裝`libxft2`的函式庫，下載連結:
 - [libxft2](https://packages.ubuntu.com/xenial/libxft2)
 
 通常在使用Simulation Waveform Editor的Run Functional Simulation時調用ModelSim-Altera運行時會先出現以下錯誤:
@@ -84,7 +95,7 @@ Error (114006): Database file /home/timmy/Git/Learn-VHDL/CH6/CH6-2/db/BCD_seven_
 quartus: error while loading shared libraries: libpng12.so.0: cannot open shared object file: No such file or directory
 ```
 
-因為Ubuntu 18.04 LTS之後的系統取消了libpng12函式庫，因此要自己從網路上安裝，有分成64位元版本與32位元版本。
+因為Ubuntu 18.04 LTS之後的系統取消了libpng12函式庫，因此要自己從網路上下載安裝，有分成64位元版本與32位元版本。
 
 [64位元版本](https://launchpad.net/~ubuntu-security/+archive/ubuntu/ppa/+build/15108504)
 
@@ -94,6 +105,29 @@ quartus: error while loading shared libraries: libpng12.so.0: cannot open shared
 
 下載後使用`sudo dpkg -i libpng12-0_1.2.54-1ubuntu1.1_amd64.deb`安裝`libpng12-0`，成功之後應該能夠在Ubuntu 18.04 LTS執行Quartus II 64-bit 15.0 Web Edition。
 
+## 使用Ubuntu 18.04 LTS系統缺少libXft函式庫
+如果在Ubuntu 18.04 LTS安裝Quartus II 64-bit 15.0 Web Edition，安裝完成使用`ModelSim`或`ModelSim-Altera`後會出現以下問題：
+
+```
+Determining the location of the ModelSim executable...
+
+...
+
+**** Running the ModelSim simulation ****
+
+/home/timmy/altera/15.0/modelsim_ae/linuxaloem/vsim -c -do BCD_seven_seg_seven_four_two_four_eight.do
+
+/home/timmy/altera/15.0/modelsim_ae/linuxaloem/vish: error while loading shared libraries: libXft.so.2: cannot open shared object file: No such file or directory
+Error.
+```
+
+透過以下方式安裝缺少的函式庫就可以解決。
+
+```
+sudo apt-get install libxft2 libxft2:i386 lib32ncurses5
+```
+
 # 參考資料
 - [Fix libpng12-0 Missing In Ubuntu 18.04, 19.10 Or 20.04](https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html)
 - [Quartus installation on Linux](http://www.armadeus.org/wiki/index.php?title=Quartus_installation_on_Linux)
+- [ModelSim-Altera error](https://stackoverflow.com/questions/31908525/modelsim-altera-error)
