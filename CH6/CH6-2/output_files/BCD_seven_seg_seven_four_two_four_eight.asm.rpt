@@ -1,6 +1,6 @@
 Assembler report for BCD_seven_seg_seven_four_two_four_eight
-Mon Mar 16 22:57:22 2020
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Sun Sep 20 23:44:56 2020
+Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
 
 
 ---------------------
@@ -38,7 +38,7 @@ agreement for further details.
 +-----------------------------------------------------------------+
 ; Assembler Summary                                               ;
 +-----------------------+-----------------------------------------+
-; Assembler Status      ; Successful - Mon Mar 16 22:57:22 2020   ;
+; Assembler Status      ; Successful - Sun Sep 20 23:44:56 2020   ;
 ; Revision Name         ; BCD_seven_seg_seven_four_two_four_eight ;
 ; Top-level Entity Name ; BCD_seven_seg_seven_four_two_four_eight ;
 ; Family                ; Cyclone V                               ;
@@ -78,14 +78,14 @@ agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Mon Mar 16 22:57:06 2020
+    Info: Version 15.0.2 Build 153 07/15/2015 SJ Web Edition
+    Info: Processing started: Sun Sep 20 23:44:35 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off BCD_seven_seg_seven_four_two_four_eight -c BCD_seven_seg_seven_four_two_four_eight
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1009 megabytes
-    Info: Processing ended: Mon Mar 16 22:57:22 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 968 megabytes
+    Info: Processing ended: Sun Sep 20 23:44:56 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:19
 
 
