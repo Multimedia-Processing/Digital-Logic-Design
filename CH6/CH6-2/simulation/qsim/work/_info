@@ -119,14 +119,14 @@ R0
 Z14 w1584366685
 Z15 8BCD_seven_seg_seven_four_four_seven.vwf.vt
 Z16 FBCD_seven_seg_seven_four_four_seven.vwf.vt
-L0 70
+Z17 L0 70
 R4
 r1
 !s85 0
 31
-Z17 !s108 1584366691.032866
-Z18 !s107 BCD_seven_seg_seven_four_four_seven.vwf.vt|
-Z19 !s90 -work|work|BCD_seven_seg_seven_four_four_seven.vwf.vt|
+Z18 !s108 1584366691.032866
+Z19 !s107 BCD_seven_seg_seven_four_four_seven.vwf.vt|
+Z20 !s90 -work|work|BCD_seven_seg_seven_four_four_seven.vwf.vt|
 !i113 1
 R5
 n@b@c@d_seven_seg_seven_four_four_seven_vlg_check_tst
@@ -145,9 +145,9 @@ R4
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R5
 n@b@c@d_seven_seg_seven_four_four_seven_vlg_sample_tst
@@ -166,9 +166,93 @@ R4
 r1
 !s85 0
 31
-R17
 R18
 R19
+R20
 !i113 1
 R5
 n@b@c@d_seven_seg_seven_four_four_seven_vlg_vec_tst
+vBCD_seven_seg_seven_four_two_four_eight
+Z21 !s110 1600616452
+!i10b 1
+!s100 _f@B>^NSlmaKk9z<QN_j>2
+IJLf07K5h[HPkS>QdVW<oY0
+R2
+R0
+w1600616450
+8BCD_seven_seg_seven_four_two_four_eight.vo
+FBCD_seven_seg_seven_four_two_four_eight.vo
+R3
+R4
+r1
+!s85 0
+31
+!s108 1600616452.779856
+!s107 BCD_seven_seg_seven_four_two_four_eight.vo|
+!s90 -work|work|BCD_seven_seg_seven_four_two_four_eight.vo|
+!i113 1
+R5
+n@b@c@d_seven_seg_seven_four_two_four_eight
+vBCD_seven_seg_seven_four_two_four_eight_vlg_check_tst
+R21
+!i10b 1
+!s100 YWJ[WO04@R=TA[4YDieeV3
+IPWS>B5P76KOX_^:egaQ_a0
+R2
+R0
+Z22 w1600616445
+Z23 8BCD_seven_seg_seven_four_two_four_eight.vwf.vt
+Z24 FBCD_seven_seg_seven_four_two_four_eight.vwf.vt
+R17
+R4
+r1
+!s85 0
+31
+Z25 !s108 1600616452.882902
+Z26 !s107 BCD_seven_seg_seven_four_two_four_eight.vwf.vt|
+Z27 !s90 -work|work|BCD_seven_seg_seven_four_two_four_eight.vwf.vt|
+!i113 1
+R5
+n@b@c@d_seven_seg_seven_four_two_four_eight_vlg_check_tst
+vBCD_seven_seg_seven_four_two_four_eight_vlg_sample_tst
+R21
+!i10b 1
+!s100 imTc`81[b4[6UdNdDJDRK1
+I;nl75fXlz71><2>971KlD1
+R2
+R0
+R22
+R23
+R24
+R12
+R4
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R5
+n@b@c@d_seven_seg_seven_four_two_four_eight_vlg_sample_tst
+vBCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst
+R21
+!i10b 1
+!s100 3gXj:01?nTjck2F=g@>V:2
+INcGgNc9;Xk1d5]ROa<7703
+R2
+R0
+R22
+R23
+R24
+L0 435
+R4
+r1
+!s85 0
+31
+R25
+R26
+R27
+!i113 1
+R5
+n@b@c@d_seven_seg_seven_four_two_four_eight_vlg_vec_tst

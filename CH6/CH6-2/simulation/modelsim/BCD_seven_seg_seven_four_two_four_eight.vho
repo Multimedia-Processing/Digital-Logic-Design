@@ -15,9 +15,9 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus II 64-Bit"
--- VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
+-- VERSION "Version 15.0.2 Build 153 07/15/2015 SJ Web Edition"
 
--- DATE "03/16/2020 22:58:28"
+-- DATE "09/20/2020 23:45:14"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -123,16 +123,16 @@ SIGNAL \inst|90~0_combout\ : std_logic;
 SIGNAL \inst|89~0_combout\ : std_logic;
 SIGNAL \inst|89~1_combout\ : std_logic;
 SIGNAL \inst|88~0_combout\ : std_logic;
+SIGNAL \ALT_INV_LT~input_o\ : std_logic;
+SIGNAL \ALT_INV_RBI~input_o\ : std_logic;
+SIGNAL \ALT_INV_BI_RBO~input_o\ : std_logic;
+SIGNAL \ALT_INV_D~input_o\ : std_logic;
 SIGNAL \ALT_INV_C~input_o\ : std_logic;
 SIGNAL \ALT_INV_A~input_o\ : std_logic;
 SIGNAL \ALT_INV_B~input_o\ : std_logic;
 SIGNAL \inst|ALT_INV_89~0_combout\ : std_logic;
 SIGNAL \inst|ALT_INV_90~0_combout\ : std_logic;
 SIGNAL \inst|ALT_INV_57~0_combout\ : std_logic;
-SIGNAL \ALT_INV_LT~input_o\ : std_logic;
-SIGNAL \ALT_INV_RBI~input_o\ : std_logic;
-SIGNAL \ALT_INV_BI_RBO~input_o\ : std_logic;
-SIGNAL \ALT_INV_D~input_o\ : std_logic;
 
 BEGIN
 
@@ -157,16 +157,16 @@ S4 <= ww_S4;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\ALT_INV_LT~input_o\ <= NOT \LT~input_o\;
+\ALT_INV_RBI~input_o\ <= NOT \RBI~input_o\;
+\ALT_INV_BI_RBO~input_o\ <= NOT \BI_RBO~input_o\;
+\ALT_INV_D~input_o\ <= NOT \D~input_o\;
 \ALT_INV_C~input_o\ <= NOT \C~input_o\;
 \ALT_INV_A~input_o\ <= NOT \A~input_o\;
 \ALT_INV_B~input_o\ <= NOT \B~input_o\;
 \inst|ALT_INV_89~0_combout\ <= NOT \inst|89~0_combout\;
 \inst|ALT_INV_90~0_combout\ <= NOT \inst|90~0_combout\;
 \inst|ALT_INV_57~0_combout\ <= NOT \inst|57~0_combout\;
-\ALT_INV_LT~input_o\ <= NOT \LT~input_o\;
-\ALT_INV_RBI~input_o\ <= NOT \RBI~input_o\;
-\ALT_INV_BI_RBO~input_o\ <= NOT \BI_RBO~input_o\;
-\ALT_INV_D~input_o\ <= NOT \D~input_o\;
 
 -- Location: IOOBUF_X89_Y8_N5
 \OA~output\ : cyclonev_io_obuf
