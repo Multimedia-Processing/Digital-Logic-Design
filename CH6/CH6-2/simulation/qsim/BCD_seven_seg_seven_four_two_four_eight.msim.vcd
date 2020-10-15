@@ -3,7 +3,7 @@ $comment
 		vcd file BCD_seven_seg_seven_four_two_four_eight.msim.vcd -direction
 $end
 $date
-	Sun Sep 20 23:40:53 2020
+	Mon Sep 21 11:25:24 2020
 $end
 $version
 	ModelSim Version 10.3d
