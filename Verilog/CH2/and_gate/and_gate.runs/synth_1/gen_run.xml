@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1602752333">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1602755024">
   <File Type="VDS-TIMINGSUMMARY" Name="and_gate_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="and_gate.dcp"/>
   <File Type="RDS-UTIL-PB" Name="and_gate_utilization_synth.pb"/>

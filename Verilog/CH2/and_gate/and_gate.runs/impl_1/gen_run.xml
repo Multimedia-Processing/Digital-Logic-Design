@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1602752334">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1602755024">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="and_gate.vdi"/>
   <File Type="BG-DRC" Name="and_gate.drc"/>
