@@ -1,4 +1,4 @@
-# 學習數位邏輯設計
+# 數位邏輯設計
 使用Verilog、SystemVerilog與VHDL學習數位邏輯設計，並通過Altera Cyclone V SoC Kit、Altera Cyclone III DE0與Xilinx實作與學習，將參考以下書籍：
 
 - 數位邏輯實習 FPGA篇
