@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct 15 17:01:11 2020
+# Process ID: 8417
+# Current directory: /home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.runs/impl_1
+# Command line: vivado -log and_gate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source and_gate.tcl -notrace
+# Log file: /home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.runs/impl_1/and_gate.vdi
+# Journal file: /home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source and_gate.tcl -notrace
+Command: link_design -top and_gate -part xc7a35tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.879 ; gain = 0.000 ; free physical = 385 ; free virtual = 2702
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc]
+WARNING: [Vivado 12-584] No ports matched 'A'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'B'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'A'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O'. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.srcs/constrs_1/new/and_gate.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2109.879 ; gain = 0.000 ; free physical = 294 ; free virtual = 2606
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+5 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2109.879 ; gain = 0.113 ; free physical = 294 ; free virtual = 2606
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2141.781 ; gain = 31.902 ; free physical = 275 ; free virtual = 2594
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 89e92882
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 2281.891 ; gain = 140.109 ; free physical = 141 ; free virtual = 2180
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 136 ; free virtual = 2038
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 136 ; free virtual = 2038
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 136 ; free virtual = 2038
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 135 ; free virtual = 2038
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 135 ; free virtual = 2038
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 135 ; free virtual = 2038
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 135 ; free virtual = 2038
+Ending Logic Optimization Task | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2443.859 ; gain = 0.000 ; free physical = 135 ; free virtual = 2038
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2459.734 ; gain = 15.875 ; free physical = 132 ; free virtual = 2038
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.734 ; gain = 0.000 ; free physical = 132 ; free virtual = 2038
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.734 ; gain = 0.000 ; free physical = 132 ; free virtual = 2038
+Ending Netlist Obfuscation Task | Checksum: 89e92882
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2459.734 ; gain = 0.000 ; free physical = 132 ; free virtual = 2038
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 2459.734 ; gain = 349.855 ; free physical = 132 ; free virtual = 2038
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.runs/impl_1/and_gate_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file and_gate_drc_opted.rpt -pb and_gate_drc_opted.pb -rpx and_gate_drc_opted.rpx
+Command: report_drc -file and_gate_drc_opted.rpt -pb and_gate_drc_opted.pb -rpx and_gate_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/timmy/Git/Learn-VHDL/Verilog/CH2/and_gate/and_gate.runs/impl_1/and_gate_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2539.410 ; gain = 39.656 ; free physical = 134 ; free virtual = 2026
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2539.410 ; gain = 0.000 ; free physical = 130 ; free virtual = 2022
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2539.410 ; gain = 0.000 ; free physical = 130 ; free virtual = 2022
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2539.410 ; gain = 0.000 ; free physical = 128 ; free virtual = 2021
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2539.410 ; gain = 0.000 ; free physical = 128 ; free virtual = 2021
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 6 Warnings, 6 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 15 17:03:17 2020...
