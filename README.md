@@ -1,12 +1,19 @@
-# Learn VHDL
-使用Altera Cyclone V SoC Kit和Altera Cyclone III DE0學習使用FPGA與VHDL的過程檔案。
+# 學習數位邏輯設計
+使用Verilog、SystemVerilog與VHDL學習數位邏輯設計，並通過Altera Cyclone V SoC Kit、Altera Cyclone III DE0與Xilinx實作與學習，將參考以下書籍：
+
+- 數位邏輯實習 FPGA篇
+- Verilog數位邏輯設計入門實務
+- VHDL數位邏輯設計入門實務
+- 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
+
+依序將不同的書籍內的範例製作出來，並將問題與過程紀錄。
 
 # 目錄
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
 
-- [Learn VHDL](#learn-vhdl)
+- [學習數位邏輯設計](#學習數位邏輯設計)
 - [目錄](#目錄)
 - [開發環境](#開發環境)
 - [環境變數設定](#環境變數設定)
@@ -18,21 +25,28 @@
   - [晶片版本與軟體版本轉換錯誤](#晶片版本與軟體版本轉換錯誤)
   - [使用Ubuntu 18.04 LTS系統缺少libpng12函式庫](#使用ubuntu-1804-lts系統缺少libpng12函式庫)
   - [使用Ubuntu 18.04 LTS系統缺少libXft函式庫](#使用ubuntu-1804-lts系統缺少libxft函式庫)
+- [Xilinx Vivado 2020.1](#xilinx-vivado-20201)
+  - [Java圖形界面問題](#java圖形界面問題)
 - [參考資料](#參考資料)
 
 <!-- /code_chunk_output -->
 
 # 開發環境
 板子與晶片:
+
 - Altera Cyclone V SoC Kit:5CSXFC6D6F31C8NES
 - Altera Cyclone III DE0:EP3C16F484C6N
+- Xilinx
 
 軟體:
+
 - Quartus II 64-bit 15.0 Web Edition
 - Quartus II 32-bit 13.1 Web Edition
+- Xilinx Vivado 2020.1
 
 作業系統:
-- Windows
+
+- Windows10
 - Ubuntu 16.04 LTS
 - Ubuntu 18.04 LTS
 
@@ -127,7 +141,16 @@ Error.
 sudo apt-get install libxft2 libxft2:i386 lib32ncurses5
 ```
 
+# Xilinx Vivado 2020.1
+## Java圖形界面問題
 # 參考資料
 - [Fix libpng12-0 Missing In Ubuntu 18.04, 19.10 Or 20.04](https://www.linuxuprising.com/2018/05/fix-libpng12-0-missing-in-ubuntu-1804.html)
 - [Quartus installation on Linux](http://www.armadeus.org/wiki/index.php?title=Quartus_installation_on_Linux)
 - [ModelSim-Altera error](https://stackoverflow.com/questions/31908525/modelsim-altera-error)
+- 數位邏輯實習 FPGA篇
+- VHDL數位邏輯設計入門實務
+- 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
+- Verilog數位邏輯設計入門實務
+- [Xilinx Vivado](https://wiki.archlinux.org/index.php/Xilinx_Vivado)
+- [在 Gentoo Linux 安裝 Vivado 2020.1](https://coldnew.github.io/16cb6a8e/)
+- [Installation of Vivado 2020.1 under Centos 7.8 fails](https://forums.xilinx.com/t5/Installation-and-Licensing/Installation-of-Vivado-2020-1-under-Centos-7-8-fails/td-p/1115482)
