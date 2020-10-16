@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1602834710">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="wire_and_or.vdi"/>
+  <File Type="BG-DRC" Name="wire_and_or.drc"/>
+  <File Type="BG-BGN" Name="wire_and_or.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="wire_and_or.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="wire_and_or.ltx"/>
+  <File Type="RBD_FILE" Name="wire_and_or.rbd"/>
+  <File Type="NPI_FILE" Name="wire_and_or.npi"/>
+  <File Type="RNPI_FILE" Name="wire_and_or.rnpi"/>
+  <File Type="CFI_FILE" Name="wire_and_or.cfi"/>
+  <File Type="RCFI_FILE" Name="wire_and_or.rcfi"/>
+  <File Type="PDI-FILE" Name="wire_and_or.pdi"/>
+  <File Type="BITSTR-MMI" Name="wire_and_or.mmi"/>
+  <File Type="BITSTR-BMM" Name="wire_and_or_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="wire_and_or.nky"/>
+  <File Type="BITSTR-RBT" Name="wire_and_or.rbt"/>
+  <File Type="BITSTR-MSK" Name="wire_and_or.msk"/>
+  <File Type="BG-BIN" Name="wire_and_or.bin"/>
+  <File Type="BG-BIT" Name="wire_and_or.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="wire_and_or_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="wire_and_or_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="wire_and_or_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="wire_and_or_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="wire_and_or_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="wire_and_or_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="wire_and_or_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="wire_and_or_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="wire_and_or_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="wire_and_or_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="wire_and_or_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="wire_and_or_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="wire_and_or_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="wire_and_or_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="wire_and_or_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="wire_and_or_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="wire_and_or_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="wire_and_or_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="wire_and_or_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="wire_and_or_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="wire_and_or_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="wire_and_or_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="wire_and_or_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="wire_and_or_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="wire_and_or_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="wire_and_or_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="wire_and_or_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="wire_and_or_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="wire_and_or_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="wire_and_or_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="wire_and_or_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="wire_and_or_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="wire_and_or_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="wire_and_or_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="wire_and_or_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="wire_and_or_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="wire_and_or_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="wire_and_or_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="wire_and_or_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="wire_and_or_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="wire_and_or_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="wire_and_or_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="wire_and_or_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="wire_and_or_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="wire_and_or_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="wire_and_or_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="wire_and_or.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="wire_and_or_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="wire_and_or_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="wire_and_or_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="wire_and_or_timing_summary_init.rpt"/>
+  <File Type="PWROPT-TIMING" Name="wire_and_or_timing_summary_pwropted.rpt"/>
+  <File Type="REPORTS-TCL" Name="wire_and_or_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="wire_and_or_timing_summary_opted.rpt"/>
+  <File Type="PA-TCL" Name="wire_and_or.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../wire_and_or.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="wire_and_or"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
