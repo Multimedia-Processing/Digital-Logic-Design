@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Fri Oct 16 15:53:12 2020
-# Process ID: 19106
+# Start of session at: Fri Oct 16 16:58:49 2020
+# Process ID: 32414
 # Current directory: /home/timmy/Git/Digital-Logic-Design/Verilog_Digital_Logic_Design_Practice/CH3/wire_and_or/wire_and_or.runs/impl_1
 # Command line: vivado -log wire_and_or.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source wire_and_or.tcl -notrace
 # Log file: /home/timmy/Git/Digital-Logic-Design/Verilog_Digital_Logic_Design_Practice/CH3/wire_and_or/wire_and_or.runs/impl_1/wire_and_or.vdi
