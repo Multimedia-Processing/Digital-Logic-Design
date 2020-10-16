@@ -1,9 +1,9 @@
 # 數位邏輯設計
 使用Verilog、SystemVerilog與VHDL學習數位邏輯設計，並通過Altera Cyclone V SoC Kit、Altera Cyclone III DE0與Xilinx實作與學習，將參考以下書籍：
 
-- 數位邏輯實習 FPGA篇
-- Verilog數位邏輯設計入門實務
-- VHDL數位邏輯設計入門實務
+- 《數位邏輯實習 FPGA篇》
+- 《Verilog硬體描述語言實務 第二版》
+- 《VHDL數位邏輯設計入門實務》，
 - 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
 
 依序將不同的書籍內的範例製作出來，並將問題與過程紀錄。
@@ -36,7 +36,7 @@
 
 - Altera Cyclone V SoC Kit:5CSXFC6D6F31C8NES
 - Altera Cyclone III DE0:EP3C16F484C6N
-- Xilinx
+- Xilinx EGO1 XC7A35TCSG324-1
 
 軟體:
 
