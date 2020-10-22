@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, /home/timmy/Git/Learn-VHDL/CH6/CH6-2/BCD_seven_seg_seven_four_two_four_eight.bdf
-source_file = 1, /home/timmy/Git/Learn-VHDL/CH6/CH6-2/BCD_seven_seg_seven_four_two_four_eight.vwf
+source_file = 1, /home/timmy/Git/Digital-Logic-Design/Digital_Logic_Practice/CH6/CH6-2/BCD_seven_seg_seven_four_two_four_eight.bdf
+source_file = 1, /home/timmy/Git/Digital-Logic-Design/Digital_Logic_Practice/CH6/CH6-2/BCD_seven_seg_seven_four_two_four_eight.vwf
 source_file = 1, /home/timmy/altera/15.0/quartus/libraries/others/maxplus2/74248.bdf
 design_name = BCD_seven_seg_seven_four_two_four_eight
 instance = comp, \OA~output , OA~output, BCD_seven_seg_seven_four_two_four_eight, 1

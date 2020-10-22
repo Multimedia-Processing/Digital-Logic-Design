@@ -1,34 +1,64 @@
-# do BCD_seven_seg_seven_four_two_four_eight.do
+# do BCD_seven_seg_seven_four_two_four_eight_error.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:25:23 on Sep 21,2020
-# vlog -work work BCD_seven_seg_seven_four_two_four_eight.vo 
-# -- Compiling module BCD_seven_seg_seven_four_two_four_eight
+# Start time: 17:30:21 on Oct 22,2020
+# vlog -work work BCD_seven_seg_seven_four_two_four_eight_error.vo 
+# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_error
 # 
 # Top level modules:
-# 	BCD_seven_seg_seven_four_two_four_eight
-# End time: 11:25:23 on Sep 21,2020, Elapsed time: 0:00:00
+# 	BCD_seven_seg_seven_four_two_four_eight_error
+# End time: 17:30:21 on Oct 22,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 11:25:23 on Sep 21,2020
-# vlog -work work BCD_seven_seg_seven_four_two_four_eight.vwf.vt 
-# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_vlg_sample_tst
-# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_vlg_check_tst
-# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst
+# Start time: 17:30:21 on Oct 22,2020
+# vlog -work work BCD_seven_seg_seven_four_two_four_eight_error.vwf.vt 
+# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_error_vlg_sample_tst
+# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_error_vlg_check_tst
+# -- Compiling module BCD_seven_seg_seven_four_two_four_eight_error_vlg_vec_tst
 # 
 # Top level modules:
-# 	BCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst
-# End time: 11:25:23 on Sep 21,2020, Elapsed time: 0:00:00
+# 	BCD_seven_seg_seven_four_two_four_eight_error_vlg_vec_tst
+# End time: 17:30:21 on Oct 22,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -c -do "BCD_seven_seg_seven_four_two_four_eight.do" 
-# Start time: 11:25:23 on Sep 21,2020
-# Loading work.BCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst
-# Loading work.BCD_seven_seg_seven_four_two_four_eight
-# Loading work.BCD_seven_seg_seven_four_two_four_eight_vlg_sample_tst
-# Loading work.BCD_seven_seg_seven_four_two_four_eight_vlg_check_tst
+# vsim -c -do "BCD_seven_seg_seven_four_two_four_eight_error.do" 
+# Start time: 17:30:21 on Oct 22,2020
+# Loading work.BCD_seven_seg_seven_four_two_four_eight_error_vlg_vec_tst
+# Loading work.BCD_seven_seg_seven_four_two_four_eight_error
+# Loading work.BCD_seven_seg_seven_four_two_four_eight_error_vlg_sample_tst
+# Loading work.BCD_seven_seg_seven_four_two_four_eight_error_vlg_check_tst
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# Simulation passed !
-# ** Note: $finish    : BCD_seven_seg_seven_four_two_four_eight.vwf.vt(431)
-#    Time: 12 us  Iteration: 0  Instance: /BCD_seven_seg_seven_four_two_four_eight_vlg_vec_tst/tb_out
-# End time: 11:25:24 on Sep 21,2020, Elapsed time: 0:00:01
+# ERROR! Vector Mismatch for output port OA :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OB :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OC :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OD :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OE :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OF :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S1 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S2 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S3 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port OG :: @time = 2000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#          10 mismatched vectors : Simulation failed !
+# ** Note: $finish    : BCD_seven_seg_seven_four_two_four_eight_error.vwf.vt(442)
+#    Time: 19 us  Iteration: 0  Instance: /BCD_seven_seg_seven_four_two_four_eight_error_vlg_vec_tst/tb_out
+# End time: 17:30:22 on Oct 22,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
