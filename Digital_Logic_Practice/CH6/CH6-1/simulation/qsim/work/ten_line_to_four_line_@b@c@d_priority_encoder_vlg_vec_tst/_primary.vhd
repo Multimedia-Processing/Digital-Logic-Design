@@ -1,4 +1,0 @@
-library verilog;
-use verilog.vl_types.all;
-entity ten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst is
-end ten_line_to_four_line_BCD_priority_encoder_vlg_vec_tst;
