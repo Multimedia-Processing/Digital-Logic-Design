@@ -48,7 +48,14 @@ hc_output/
 
 
 ##	VIVADO
-full_adder_one/
+*.cache/
+*.hbs/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.ioplanning/
 
 ##	Python
 # Byte-compiled / optimized / DLL files
