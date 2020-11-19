@@ -23,29 +23,23 @@
 *.sopc_builder
 *.summary
 *.tcl
+*.txt  # Explicitly add any text files used
 *~
 *example*
 *sopc_*
-
-# Explicitly add any text files used
-*.txt
-PLLJ_PLLSPE_INFO.txt
-
-# I want those timing files
-*.sdc
+*.sdc  # I want those timing files
 
 # ignore Quartus II generated folders
-db/
+*/db/
+*/incremental_db/
+*/simulation/
+*/timing/
+*/testbench/
+*/*_sim/
 incremental_db/
-simulation/
-timing/
-testbench/
-*_sim/
+db/
 _output_files/
-output_files/
-simulation/
-hc_output/
-
+PLLJ_PLLSPE_INFO.txt
 
 ##	VIVADO
 
