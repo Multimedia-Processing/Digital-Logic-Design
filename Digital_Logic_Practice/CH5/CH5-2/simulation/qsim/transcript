@@ -1,0 +1,42 @@
+# do four_bit_add_sub.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:08:41 on Aug 26,2019
+# vlog -work work four_bit_add_sub.vo 
+# -- Compiling module four_bit_add_sub
+# 
+# Top level modules:
+# 	four_bit_add_sub
+# End time: 22:08:41 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:08:41 on Aug 26,2019
+# vlog -work work four_bit_add_sub.vwf.vt 
+# -- Compiling module four_bit_add_sub_vlg_sample_tst
+# -- Compiling module four_bit_add_sub_vlg_check_tst
+# -- Compiling module four_bit_add_sub_vlg_vec_tst
+# 
+# Top level modules:
+# 	four_bit_add_sub_vlg_vec_tst
+# End time: 22:08:41 on Aug 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "four_bit_add_sub.do" 
+# Start time: 22:08:41 on Aug 26,2019
+# Loading work.four_bit_add_sub_vlg_vec_tst
+# Loading work.four_bit_add_sub
+# Loading work.four_bit_add_sub_vlg_sample_tst
+# Loading work.four_bit_add_sub_vlg_check_tst
+# ERROR! Vector Mismatch for output port C3 :: @time = 2000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S3 :: @time = 3000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port S2 :: @time = 5000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           3 mismatched vectors : Simulation failed !
+# ** Note: $finish    : four_bit_add_sub.vwf.vt(278)
+#    Time: 16 us  Iteration: 0  Instance: /four_bit_add_sub_vlg_vec_tst/tb_out
+# End time: 22:08:42 on Aug 26,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
