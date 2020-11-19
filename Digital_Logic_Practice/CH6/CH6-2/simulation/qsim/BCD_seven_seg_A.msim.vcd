@@ -1,0 +1,196 @@
+$comment
+	File created using the following command:
+		vcd file BCD_seven_seg_A.msim.vcd -direction
+$end
+$date
+	Mon Mar  9 23:25:30 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module BCD_seven_seg_A_vlg_vec_tst $end
+$var reg 1 ! B0 $end
+$var reg 1 " B1 $end
+$var reg 1 # B2 $end
+$var reg 1 $ B3 $end
+$var wire 1 % A $end
+$var wire 1 & B $end
+$var wire 1 ' C $end
+$var wire 1 ( D $end
+$var wire 1 ) E $end
+$var wire 1 * F $end
+$var wire 1 + G $end
+$var wire 1 , sampler $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 4 B3~input_o $end
+$var wire 1 5 B2~input_o $end
+$var wire 1 6 B1~input_o $end
+$var wire 1 7 B0~input_o $end
+$var wire 1 8 inst14~0_combout $end
+$var wire 1 9 inst17~combout $end
+$var wire 1 : inst22~0_combout $end
+$var wire 1 ; inst19~0_combout $end
+$var wire 1 < inst2~combout $end
+$var wire 1 = inst23~0_combout $end
+$var wire 1 > inst21~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+1+
+x,
+0-
+1.
+x/
+10
+11
+12
+03
+04
+05
+06
+07
+18
+09
+0:
+0;
+0<
+0=
+0>
+$end
+#1000000
+1!
+17
+0,
+1>
+1;
+1:
+19
+1*
+1)
+1(
+1%
+#2000000
+1"
+0!
+16
+07
+1,
+0>
+1<
+0;
+0:
+08
+0+
+0)
+0(
+1'
+0%
+#3000000
+1!
+17
+0,
+0<
+1:
+1)
+0'
+#4000000
+1#
+0"
+0!
+15
+06
+07
+1,
+1>
+1;
+09
+0*
+1(
+1%
+#5000000
+1!
+17
+0,
+0>
+1=
+0;
+0(
+1&
+0%
+#6000000
+1"
+0!
+16
+07
+1,
+1>
+0:
+0)
+1%
+#7000000
+1!
+17
+0,
+0>
+0=
+1;
+1:
+19
+18
+1+
+1*
+1)
+1(
+0&
+0%
+#8000000
+1$
+0#
+0"
+0!
+14
+05
+06
+07
+1,
+0;
+0:
+09
+08
+0+
+0*
+0)
+0(
+#9000000
+1!
+17
+0,
+1;
+1:
+1)
+1(
+#10000000
