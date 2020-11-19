@@ -56,8 +56,6 @@ hc_output/
 *.sim/
 *.srcs/
 *.ioplanning/
-*.jou
-*.str
 
 ##	Python
 # Byte-compiled / optimized / DLL files
