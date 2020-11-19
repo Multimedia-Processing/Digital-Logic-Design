@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/timmy/Git/Learn-VHDL/CH4/CH4-2/simulation/qsim
+vvoting_circuit_1
+Z1 !s110 1565583767
+!i10b 1
+!s100 5eN0jF3Qle[R6]0W3I0GW1
+I>03?1CM]:J?iGd2[:0GY80
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1565583766
+8voting_circuit_1.vo
+Fvoting_circuit_1.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1565583767.876768
+!s107 voting_circuit_1.vo|
+!s90 -work|work|voting_circuit_1.vo|
+!i113 1
+Z4 o-work work
+vvoting_circuit_1_vlg_check_tst
+R1
+!i10b 1
+!s100 NhQiPdAODZaDJ=TZA7R9C2
+Iio29S1Hhg1JED<[kD`c`K0
+R2
+R0
+Z5 w1565583761
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1565583767.917995
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vvoting_circuit_1_vlg_sample_tst
+R1
+!i10b 1
+!s100 o^MjbG66YEZ38WON2Yo[a3
+IP0]CdN^VKO<ZlY[CkP]z=3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vvoting_circuit_1_vlg_vec_tst
+R1
+!i10b 1
+!s100 bZ2UMRXeMfJc5=]BJgUM@1
+IhcJ@^WIa`B]ZzOMS_aE3O2
+R2
+R0
+R5
+R6
+R7
+L0 158
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

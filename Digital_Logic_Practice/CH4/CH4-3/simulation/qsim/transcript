@@ -1,0 +1,41 @@
+# do voting_circuit_2.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:15:42 on Aug 12,2019
+# vlog -work work voting_circuit_2.vo 
+# -- Compiling module voting_circuit_2
+# 
+# Top level modules:
+# 	voting_circuit_2
+# End time: 20:15:42 on Aug 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:15:42 on Aug 12,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module voting_circuit_2_vlg_sample_tst
+# -- Compiling module voting_circuit_2_vlg_check_tst
+# -- Compiling module voting_circuit_2_vlg_vec_tst
+# 
+# Top level modules:
+# 	voting_circuit_2_vlg_vec_tst
+# End time: 20:15:42 on Aug 12,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "voting_circuit_2.do" 
+# Start time: 20:15:42 on Aug 12,2019
+# Loading work.voting_circuit_2_vlg_vec_tst
+# Loading work.voting_circuit_2
+# Loading work.voting_circuit_2_vlg_sample_tst
+# Loading work.voting_circuit_2_vlg_check_tst
+# ERROR! Vector Mismatch for output port F2 :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port F3 :: @time = 4000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port F1 :: @time = 6000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           3 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(210)
+#    Time: 8 us  Iteration: 0  Instance: /voting_circuit_2_vlg_vec_tst/tb_out
+# End time: 20:15:43 on Aug 12,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
