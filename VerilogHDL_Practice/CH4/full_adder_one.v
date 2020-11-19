@@ -2,8 +2,6 @@ module full_adder_one (A, B, Ci, Co, S);
 
 input A, B, Ci;
 output Co, S;
-wire AB, ACi, BCi;
-
 
 and (AB, A, B);
 and (ACi, A, Ci);
