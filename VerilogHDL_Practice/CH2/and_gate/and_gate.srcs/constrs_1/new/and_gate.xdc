@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN P5 [get_ports A]
+set_property PACKAGE_PIN P4 [get_ports B]
+set_property PACKAGE_PIN F6 [get_ports O]
+set_property IOSTANDARD LVCMOS33 [get_ports B]
+set_property IOSTANDARD LVCMOS33 [get_ports A]
+set_property IOSTANDARD LVCMOS33 [get_ports O]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct 16 18:22:12 2020
+# Process ID: 11275
+# Current directory: /home/timmy/Git/Digital-Logic-Design/Verilog_Digital_Logic_Design_Practice/CH3/full_adder_one/full_adder_one.runs/impl_1
+# Command line: vivado -log full_add_one.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source full_add_one.tcl -notrace
+# Log file: /home/timmy/Git/Digital-Logic-Design/Verilog_Digital_Logic_Design_Practice/CH3/full_adder_one/full_adder_one.runs/impl_1/full_add_one.vdi
+# Journal file: /home/timmy/Git/Digital-Logic-Design/Verilog_Digital_Logic_Design_Practice/CH3/full_adder_one/full_adder_one.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source full_add_one.tcl -notrace
