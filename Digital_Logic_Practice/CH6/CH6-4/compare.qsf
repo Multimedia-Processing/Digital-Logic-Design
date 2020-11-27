@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY one_bit_compare
+set_global_assignment -name TOP_LEVEL_ENTITY eight_bit_compare_seven_four_eight_five
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:41:23  十一月 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 15.0.2
@@ -59,6 +59,9 @@ set_global_assignment -name BDF_FILE eight_bit_compare_seven_four_eight_five.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE one_bit_compare.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE two_bit_compare.vwf
 
+set_global_assignment -name BDF_FILE four_bit_compare.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE eight_bit_compare_seven_four_eight_five.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE four_bit_compare.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
