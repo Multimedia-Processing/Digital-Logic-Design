@@ -5,6 +5,7 @@
 - 《Verilog硬體描述語言實務 第二版》，VerilogHDL Practice TWOTH EDITION
 - 《VHDL數位邏輯設計入門實務》，VHDL Digital Logic Design Practice
 - 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
+- 《軟核心處理器設計 從ARM9到FPGA》
 
 依序將不同的書籍內的範例製作出來，並將問題與過程紀錄。
 
