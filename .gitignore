@@ -57,6 +57,10 @@ hc_output/
 *.sim/
 *.srcs/
 *.ioplanning/
+*.out
+*.str
+*.jou
+vivado_*.zip
 
 ##	Python
 # Byte-compiled / optimized / DLL files
