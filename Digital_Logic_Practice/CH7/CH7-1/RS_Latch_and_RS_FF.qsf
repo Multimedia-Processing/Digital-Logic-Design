@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY RS_FF
+set_global_assignment -name TOP_LEVEL_ENTITY RS_FF_NAND
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:10:08  十二月 03, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 15.0.2
@@ -51,11 +51,15 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name BDF_FILE "RS_FF.bdf"
 
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE RS_FF.vwf
 set_global_assignment -name BDF_FILE RS_Latch_NOR.bdf
 set_global_assignment -name BDF_FILE RS_Latch_NAND.bdf
 set_global_assignment -name BDF_FILE RS_FF_NAND.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RS_Latch_NOR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RS_Latch_NAND.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE RS_FF_NANd.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE RS_FF_test.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
