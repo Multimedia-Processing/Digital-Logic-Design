@@ -1,0 +1,58 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/09/2005 07:08:13      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "bcd_7seg_a"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "b0"                           : INPUT_PIN  = 20     ; -- LC19
+    "b1"                           : INPUT_PIN  = 19     ; -- LC20
+    "b2"                           : INPUT_PIN  = 18     ; -- LC21
+    "b3"                           : INPUT_PIN  = 16     ; -- LC25
+    "a"                            : OUTPUT_PIN = 4      ; -- LC16
+    "b"                            : OUTPUT_PIN = 5      ; -- LC14
+    "c"                            : OUTPUT_PIN = 6      ; -- LC11
+    "d"                            : OUTPUT_PIN = 8      ; -- LC5
+    "e"                            : OUTPUT_PIN = 9      ; -- LC4
+    "f"                            : OUTPUT_PIN = 11     ; -- LC3
+    "g"                            : OUTPUT_PIN = 12     ; -- LC1
+
+END;
+
+INTERNAL_INFO "bcd_7seg_a"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC16    : LORAX = "G102R0";
+	LC11    : LORAX = "G68R0";
+	LC14    : LORAX = "G100R0";
+	LC5     : LORAX = "G50R0";
+	LC1     : LORAX = "G17R0";
+	LC3     : LORAX = "G19R0";
+	LC4     : LORAX = "G20R0";
+	OH24R0P16 : LORAX = "G37R0,PA10R0C0";
+	OH20R0P18 : LORAX = "G87R0,PA18R0C0";
+	OH19R0P19 : LORAX = "G123R0,PA33R0C0";
+	OH18R0P20 : LORAX = "G122R0,PA28R0C0";
+END;

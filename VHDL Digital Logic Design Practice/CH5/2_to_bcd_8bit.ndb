@@ -1,0 +1,347 @@
+NDB006
+The number of symbol table entries is: 8
+The length of the symbol table is: 104
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|5_add_3:39|
+;	|5_add_3:45|
+H	|5_add_3:44|
+U	|5_add_3:42|
+b	|5_add_3:43|
+o	|5_add_3:41|
+|	|5_add_3:40|
+
+The number of name info structs is : 328
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	1	*	B0	p
+#	Ky&|	!	8	,	-	#x	#y	#z	#t	#u	#v	B1	q
+$	Ky&|	!	25	,	-	.	/	1	#K	#M	#N	#D	#E	#x	#y	#z	#{	#t	#u	#v	$D	$E	$F	$H	$I	$J	$K	$C	B2	r
+%	Ky&|	!	31	-	.	/	1	3	"Q	"R	"T	"V	"W	"L	"N	"O	#K	#L	#M	#N	#D	#E	#F	#x	#y	#v	$D	$E	$F	$G	$H	$I	$J	$K	B3	s
+&	Ky&|	!	35	-	.	/	0	1	3	"Q	"R	"T	"V	"W	"L	"N	"O	#K	#L	#M	#N	#D	#E	#F	#x	#y	#v	$D	$E	$F	$G	$H	$I	$J	$K	$L	$N	$C	B4	t
+'	Ky&|	!	35	-	.	/	0	1	3	"Q	"R	"T	"V	"W	"L	"N	"O	#K	#L	#M	#N	#D	#E	#F	#x	#y	#v	$D	$E	$F	$G	$H	$I	$J	$K	$L	$N	$C	B5	u
+(	Ky&|	!	35	-	.	/	0	1	3	"Q	"R	"T	"V	"W	"L	"N	"O	#K	#L	#M	#N	#D	#E	#F	#x	#y	#v	$D	$E	$F	$G	$H	$I	$J	$K	$L	$N	$C	B6	v
+)	Ky&|	!	35	-	.	/	0	1	3	"Q	"R	"T	"V	"W	"L	"N	"O	#K	#L	#M	#N	#D	#E	#F	#x	#y	#v	$D	$E	$F	$G	$H	$I	$J	$K	$L	$N	$C	B7	o
+*	IGdq	!	BCD00	""
++	IGdq	!	BCD01	w
+,	XUi[	!	2	3	6	1	7	BCD02	"$
+-	XUi[	!	3	5	3	4	1	2	5	BCD03	"#
+.	XUi[	!	1	3	3	2	1	BCD10	"!
+/	XUi[	!	3	4	3	4	2	1	BCD11	~
+0	NLG+	!	1	BCD12	}
+1	XUi[	!	1	2	1	2	BCD13	|
+2	IGdq	!	BCD20	{
+3	NLG+	!	1	BCD21	z
+4	IGdq	!	BCD22	y
+5	IGdq	!	BCD23	x
+6	INu}	.	A	1	"x
+7	INu}	.	@	2	"y
+8	INu}	.	?	3	"r
+9	INu}	.	M	4	"s
+:	INu}	.	L	5	"t
+;	INu}	.	K	6	"u
+<	INu}	.	J	7	"q
+=	INu}	.	I	8	"v
+>	INu}	.	D	9	"w
+?	IVOQ	.	8	:10	"r
+@	IVOQ	.	7	:11	"y
+A	IVOQ	.	6	:12	"x
+B	IGdW	.	:16	"|
+C	IGdW	.	:17	#!
+D	IVOQ	.	>	:2	"w
+E	IGdW	.	:20	"~
+F	IGdW	.	:22	"}
+G	IVOQ	.	Q	:23	#"
+H	IVOQ	.	P	:24	##
+I	IVOQ	.	=	:3	"v
+J	IVOQ	.	<	:4	"q
+K	IVOQ	.	;	:5	"u
+L	IVOQ	.	:	:6	"t
+M	IVOQ	.	9	:7	"s
+N	IVOQ	.	S	:8	"z
+O	IVOQ	.	R	:9	"{
+P	INu}	.	H	BCD0	##
+Q	INu}	.	G	BCD1	#"
+R	INu}	.	O	BCD2	"{
+S	INu}	.	N	BCD3	"z
+T	IFkI	.	~10~1	"r
+U	IFkI	.	~11~1	"y
+V	IFkI	.	~12~1	"x
+W	IFkI	.	~23~1	#"
+X	IFkI	.	~24~1	##
+Y	IFkI	.	~2~1	"w
+Z	IFkI	.	~3~1	"v
+[	IFkI	.	~4~1	"q
+\	IFkI	.	~5~1	"u
+]	IFkI	.	~6~1	"t
+^	IFkI	.	~7~1	"s
+_	IFkI	.	~8~1	"z
+`	IFkI	.	~9~1	"{
+a	INu}	|	l	1	$k
+b	INu}	|	k	2	$l
+c	INu}	|	j	3	$e
+d	INu}	|	x	4	$f
+e	INu}	|	w	5	$g
+f	INu}	|	v	6	$h
+g	INu}	|	u	7	$d
+h	INu}	|	t	8	$i
+i	INu}	|	o	9	$j
+j	IVOQ	|	c	:10	$e
+k	IVOQ	|	b	:11	$l
+l	IVOQ	|	a	:12	$k
+m	IGdW	|	:16	$o
+n	IGdW	|	:17	$r
+o	IVOQ	|	i	:2	$j
+p	IGdW	|	:20	$q
+q	IGdW	|	:22	$p
+r	IVOQ	|	|	:23	$s
+s	IVOQ	|	{	:24	$t
+t	IVOQ	|	h	:3	$i
+u	IVOQ	|	g	:4	$d
+v	IVOQ	|	f	:5	$h
+w	IVOQ	|	e	:6	$g
+x	IVOQ	|	d	:7	$f
+y	IVOQ	|	~	:8	$m
+z	IVOQ	|	}	:9	$n
+{	INu}	|	s	BCD0	$t
+|	INu}	|	r	BCD1	$s
+}	INu}	|	z	BCD2	$n
+~	INu}	|	y	BCD3	$m
+"!	IFkI	|	~10~1	$e
+""	IFkI	|	~11~1	$l
+"#	IFkI	|	~12~1	$k
+"$	IFkI	|	~23~1	$s
+"%	IFkI	|	~24~1	$t
+"&	IFkI	|	~2~1	$j
+"'	IFkI	|	~3~1	$i
+"(	IFkI	|	~4~1	$d
+")	IFkI	|	~5~1	$h
+"*	IFkI	|	~6~1	$g
+"+	IFkI	|	~7~1	$f
+",	IFkI	|	~8~1	$m
+"-	IFkI	|	~9~1	$n
+".	INu}	o	"9	1	$N
+"/	INu}	o	"8	2	$O
+"0	INu}	o	"7	3	$H
+"1	INu}	o	"E	4	$I
+"2	INu}	o	"D	5	$J
+"3	INu}	o	"C	6	$K
+"4	INu}	o	"B	7	$G
+"5	INu}	o	"A	8	$L
+"6	INu}	o	"<	9	$M
+"7	IVOQ	o	"0	:10	$H
+"8	IVOQ	o	"/	:11	$O
+"9	IVOQ	o	".	:12	$N
+":	IGdW	o	:16	$R
+";	IGdW	o	:17	$U
+"<	IVOQ	o	"6	:2	$M
+"=	IGdW	o	:20	$T
+">	IGdW	o	:22	$S
+"?	IVOQ	o	"I	:23	$V
+"@	IVOQ	o	"H	:24	$W
+"A	IVOQ	o	"5	:3	$L
+"B	IVOQ	o	"4	:4	$G
+"C	IVOQ	o	"3	:5	$K
+"D	IVOQ	o	"2	:6	$J
+"E	IVOQ	o	"1	:7	$I
+"F	IVOQ	o	"K	:8	$P
+"G	IVOQ	o	"J	:9	$Q
+"H	INu}	o	"@	BCD0	$W
+"I	INu}	o	"?	BCD1	$V
+"J	INu}	o	"G	BCD2	$Q
+"K	INu}	o	"F	BCD3	$P
+"L	Kx.7	o	18	,	-	.	/	1	"O	"P	#x	#y	#z	#{	#u	#v	$D	$H	$I	$J	$K	~10~1	$H
+"M	IFkI	o	~11~1	$O
+"N	Kx.7	o	16	,	-	.	1	"P	#x	#y	#z	#{	#u	#v	$D	$H	$I	$J	$K	~12~1	$N
+"O	V#Pg	o	16	,	-	.	/	1	#x	#y	#z	#{	#u	#v	$D	$H	$I	$J	$K	1	2	~23~1	$V
+"P	Kx.7	o	3	#z	#u	$C	~24~1	$W
+"Q	Kx.7	o	19	,	-	.	/	1	3	"W	"X	#x	#y	#{	#t	#u	#v	$D	$H	$I	$J	$K	~2~1	$M
+"R	Kx.7	o	20	,	-	.	/	1	3	"W	"O	"P	#x	#y	#z	#{	#u	#v	$D	$H	$I	$J	$K	~3~1	$L
+"S	IFkI	o	~4~1	$G
+"T	Kx.7	o	18	,	-	.	1	3	"W	"P	#x	#y	#z	#{	#u	#v	$D	$H	$I	$J	$K	~5~1	$K
+"U	IFkI	o	~6~1	$J
+"V	Kx.7	o	17	,	-	.	/	1	"X	#x	#y	#{	#t	#u	#v	$D	$H	$I	$J	$K	~7~1	$I
+"W	P|nO	o	8	/	0	$D	$H	$I	$J	$L	$N	1	~8~1	$P
+"X	Kx.7	o	3	#z	#{	#u	~9~1	$Q
+"Y	INu}	U	"d	1	#r
+"Z	INu}	U	"c	2	#s
+"[	INu}	U	"b	3	#l
+"\	INu}	U	"p	4	#m
+"]	INu}	U	"o	5	#n
+"^	INu}	U	"n	6	#o
+"_	INu}	U	"m	7	#k
+"`	INu}	U	"l	8	#p
+"a	INu}	U	"g	9	#q
+"b	IVOQ	U	"[	:10	#l
+"c	IVOQ	U	"Z	:11	#s
+"d	IVOQ	U	"Y	:12	#r
+"e	IGdW	U	:16	#v
+"f	IGdW	U	:17	#y
+"g	IVOQ	U	"a	:2	#q
+"h	IGdW	U	:20	#x
+"i	IGdW	U	:22	#w
+"j	IVOQ	U	"t	:23	#z
+"k	IVOQ	U	"s	:24	#{
+"l	IVOQ	U	"`	:3	#p
+"m	IVOQ	U	"_	:4	#k
+"n	IVOQ	U	"^	:5	#o
+"o	IVOQ	U	"]	:6	#n
+"p	IVOQ	U	"\	:7	#m
+"q	IVOQ	U	"v	:8	#t
+"r	IVOQ	U	"u	:9	#u
+"s	INu}	U	"k	BCD0	#{
+"t	INu}	U	"j	BCD1	#z
+"u	INu}	U	"r	BCD2	#u
+"v	INu}	U	"q	BCD3	#t
+"w	IFkI	U	~10~1	#l
+"x	IFkI	U	~11~1	#s
+"y	IFkI	U	~12~1	#r
+"z	IFkI	U	~23~1	#z
+"{	IFkI	U	~24~1	#{
+"|	IFkI	U	~2~1	#q
+"}	IFkI	U	~3~1	#p
+"~	IFkI	U	~4~1	#k
+#!	IFkI	U	~5~1	#o
+#"	IFkI	U	~7~1	#m
+##	IFkI	U	~9~1	#u
+#$	INu}	b	#1	1	$1
+#%	INu}	b	#0	2	$2
+#&	IM}Q	b	#F	2~2	53
+#'	INu}	b	#/	3	$+
+#(	INu}	b	#=	4	$,
+#)	INu}	b	#<	5	$-
+#*	INu}	b	#;	6	$.
+#+	INu}	b	#:	7	$*
+#,	INu}	b	#9	8	$/
+#-	IM}Q	b	#L	8~2	57
+#.	INu}	b	#4	9	$0
+#/	IVOQ	b	#'	:10	$+
+#0	IVOQ	b	#%	:11	$2
+#1	IVOQ	b	#$	:12	$1
+#2	IGdW	b	:16	$5
+#3	IGdW	b	:17	$8
+#4	IVOQ	b	#.	:2	$0
+#5	IGdW	b	:20	$7
+#6	IGdW	b	:22	$6
+#7	IVOQ	b	#A	:23	$9
+#8	IVOQ	b	#@	:24	$:
+#9	IVOQ	b	#,	:3	$/
+#:	IVOQ	b	#+	:4	$*
+#;	IVOQ	b	#*	:5	$.
+#<	IVOQ	b	#)	:6	$-
+#=	IVOQ	b	#(	:7	$,
+#>	IVOQ	b	#C	:8	$3
+#?	IVOQ	b	#B	:9	$4
+#@	INu}	b	#8	BCD0	$:
+#A	INu}	b	#7	BCD1	$9
+#B	INu}	b	#?	BCD2	$4
+#C	INu}	b	#>	BCD3	$3
+#D	[(3!	b	10	,	-	.	#x	#y	#z	#{	#t	#u	#v	1	1	8	~10~1	$+
+#E	[(3!	b	10	,	-	.	#x	#y	#z	#{	#t	#u	#v	1	1	8	~11~1	$2
+#F	L(w1	b	#&	2	#D	#E	~11~2	53
+#G	IFkI	b	~12~1	$1
+#H	IFkI	b	~23~1	$9
+#I	IFkI	b	~24~1	$:
+#J	IFkI	b	~2~1	$0
+#K	[(3!	b	18	,	-	.	/	#x	#y	#z	#{	#t	#u	#v	$D	$H	$I	$J	$K	$O	$C	1	1	8	~3~1	$/
+#L	L(w1	b	#-	1	#K	~3~2	57
+#M	V#Pg	b	8	,	-	#z	#{	#t	#u	$O	$C	1	3	~4~1	$*
+#N	V#Pg	b	6	,	#z	#t	#u	$O	$C	1	4	~5~1	$.
+#O	IFkI	b	~6~1	$-
+#P	IFkI	b	~7~1	$,
+#Q	IFkI	b	~8~1	$3
+#R	IFkI	b	~9~1	$4
+#S	INu}	H	#_	1	#U
+#T	INu}	H	#^	2	#V
+#U	INu}	H	#]	3	#O
+#V	IM}Q	H	#u	3~2	5'
+#W	INu}	H	#k	4	#P
+#X	INu}	H	#j	5	#Q
+#Y	INu}	H	#i	6	#R
+#Z	INu}	H	#h	7	#N
+#[	INu}	H	#g	8	#S
+#\	INu}	H	#b	9	#T
+#]	IVOQ	H	#U	:10	#O
+#^	IVOQ	H	#T	:11	#V
+#_	IVOQ	H	#S	:12	#U
+#`	IGdW	H	:16	#Y
+#a	IGdW	H	:17	#\
+#b	IVOQ	H	#\	:2	#T
+#c	IGdW	H	:20	#[
+#d	IGdW	H	:22	#Z
+#e	IVOQ	H	#o	:23	#]
+#f	IVOQ	H	#n	:24	#^
+#g	IVOQ	H	#[	:3	#S
+#h	IVOQ	H	#Z	:4	#N
+#i	IVOQ	H	#Y	:5	#R
+#j	IVOQ	H	#X	:6	#Q
+#k	IVOQ	H	#W	:7	#P
+#l	IVOQ	H	#q	:8	#W
+#m	IVOQ	H	#p	:9	#X
+#n	INu}	H	#f	BCD0	#^
+#o	INu}	H	#e	BCD1	#]
+#p	INu}	H	#m	BCD2	#X
+#q	INu}	H	#l	BCD3	#W
+#r	IM}Q	H	#z	BCD3~1	4y
+#s	IM}Q	H	#{	BCD3~2	5+
+#t	V#Pg	H	1	+	1	6	~10~1	#O
+#u	Q-YI	H	#V	2	,	#t	1	~10~2	5'
+#v	V#Pg	H	1	+	5	3	4	2	1	5	~12~1	#U
+#w	IFkI	H	~24~1	#^
+#x	V#Pg	H	5	+	,	.	#z	#{	4	3	4	1	2	~3~1	#S
+#y	[(3!	H	4	+	.	#z	#{	1	5	1	2	4	7	3	~5~1	#R
+#z	Q-YI	H	#r	1	.	1	~8~1	4y
+#{	Q-YI	H	#s	1	.	1	~8~2	5+
+#|	INu}	;	$-	1	#8
+#}	INu}	;	$,	2	#9
+#~	INu}	;	$+	3	#2
+$!	INu}	;	$9	4	#3
+$"	INu}	;	$8	5	#4
+$#	IM}Q	;	$L	5~2	5/
+$$	INu}	;	$7	6	#5
+$%	INu}	;	$6	7	#1
+$&	INu}	;	$5	8	#6
+$'	INu}	;	$0	9	#7
+$(	IM}Q	;	$E	9~2	4q
+$)	IM}Q	;	$F	9~3	4u
+$*	IM}Q	;	$G	9~4	4}
+$+	IVOQ	;	#~	:10	#2
+$,	IVOQ	;	#}	:11	#9
+$-	IVOQ	;	#|	:12	#8
+$.	IGdW	;	:16	#<
+$/	IGdW	;	:17	#?
+$0	IVOQ	;	$'	:2	#7
+$1	IGdW	;	:20	#>
+$2	IGdW	;	:22	#=
+$3	IVOQ	;	$>	:23	#@
+$4	IVOQ	;	$<	:24	#A
+$5	IVOQ	;	$&	:3	#6
+$6	IVOQ	;	$%	:4	#1
+$7	IVOQ	;	$$	:5	#5
+$8	IVOQ	;	$"	:6	#4
+$9	IVOQ	;	$!	:7	#3
+$:	IVOQ	;	$B	:8	#:
+$;	IVOQ	;	$?	:9	#;
+$<	INu}	;	$4	BCD0	#A
+$=	IM}Q	;	$C	BCD0~1	4m
+$>	INu}	;	$3	BCD1	#@
+$?	INu}	;	$;	BCD2	#;
+$@	IM}Q	;	$N	BCD2~1	5#
+$A	IM}Q	;	$O	BCD2~2	5;
+$B	INu}	;	$:	BCD3	#:
+$C	Q-YI	;	$=	1	/	1	~24~1	4m
+$D	[(3!	;	4	1	2	$N	$O	3	5	3	4	2	1	5	~2~1	#7
+$E	Q-YI	;	$(	12	-	.	/	#M	#x	#y	#v	$D	$H	$I	$J	$K	1	~2~2	4q
+$F	Q-YI	;	$)	11	-	/	#N	#x	#y	#v	$D	$H	$I	$J	$K	1	~2~3	4u
+$G	Q-YI	;	$*	13	-	.	/	1	"O	#x	#y	#v	$D	$H	$I	$J	$K	1	~2~4	4}
+$H	[(3!	;	4	/	0	2	$C	1	4	3	4	1	2	~3~1	#6
+$I	[(3!	;	2	0	2	2	8	3	4	2	9	10	11	1	5	~4~1	#1
+$J	[(3!	;	3	/	2	$C	1	6	3	4	1	2	10	11	~5~1	#5
+$K	[(3!	;	1	2	1	7	3	4	2	9	11	1	5	~6~1	#4
+$L	Q-YI	;	$#	1	$K	1	~6~2	5/
+$M	IFkI	;	~8~1	#:
+$N	Q-YI	;	$@	1	1	1	~9~1	5#
+$O	L(w1	;	$A	1	1	~9~2	5;

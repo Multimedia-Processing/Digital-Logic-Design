@@ -1,0 +1,85 @@
+NDB006
+The number of symbol table entries is: 13
+The length of the symbol table is: 441
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|full_subtractor_s:39|
+E	|full_subtractor_s:39|half_subtractor:10|
+o	|full_subtractor_s:39|half_subtractor:11|
+";	|full_subtractor_s:42|
+"R	|full_subtractor_s:42|half_subtractor:10|
+"|	|full_subtractor_s:42|half_subtractor:11|
+#H	|full_subtractor_s:41|
+#_	|full_subtractor_s:41|half_subtractor:10|
+$+	|full_subtractor_s:41|half_subtractor:11|
+$U	|full_subtractor_s:40|
+$l	|full_subtractor_s:40|half_subtractor:10|
+%8	|full_subtractor_s:40|half_subtractor:11|
+
+The number of name info structs is : 61
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	5	*	+	,	-	.	A0	w
+#	Ky&|	!	4	*	,	-	.	A1	v
+$	Ky&|	!	3	*	-	.	A2	u
+%	Ky&|	!	2	*	.	A3	t
+&	Ky&|	!	5	*	+	,	-	.	B0	{
+'	Ky&|	!	4	*	,	-	.	B1	z
+(	Ky&|	!	3	*	-	.	B2	y
+)	Ky&|	!	2	*	.	B3	x
+*	XUi[	!	2	2	1	2	Bo	s
++	IGdq	!	Do0	r
+,	IGdq	!	Do1	q
+-	XUi[	!	3	1	2	Do2	p
+.	XUi[	!	8	1	1	Do3	o
+/	IVOQ	.	0	:3	"M
+0	INu}	.	/	Bo	"M
+1	IVOQ	E	5	:1	"W
+2	IVOQ	E	4	:2	"X
+3	IGdW	E	:3	"Y
+4	INu}	E	2	Bo	"X
+5	INu}	E	1	Do	"W
+6	IVOQ	o	:	:1	"c
+7	IVOQ	o	9	:2	"d
+8	IGdW	o	:3	"e
+9	INu}	o	7	Bo	"d
+:	INu}	o	6	Do	"c
+;	IVOQ	$U	<	:3	#o
+<	INu}	$U	;	Bo	#o
+=	IVOQ	$l	A	:1	#x
+>	IVOQ	$l	@	:2	#y
+?	IGdW	$l	:3	#z
+@	INu}	$l	>	Bo	#y
+A	INu}	$l	=	Do	#x
+B	IVOQ	%8	F	:1	$%
+C	IVOQ	%8	E	:2	$&
+D	IGdW	%8	:3	$'
+E	INu}	%8	C	Bo	$&
+F	INu}	%8	B	Do	$%
+G	IVOQ	#H	H	:3	#E
+H	INu}	#H	G	Bo	#E
+I	IVOQ	#_	M	:1	#N
+J	IVOQ	#_	L	:2	#O
+K	IGdW	#_	:3	#P
+L	INu}	#_	J	Bo	#O
+M	INu}	#_	I	Do	#N
+N	IVOQ	$+	R	:1	#Y
+O	IVOQ	$+	Q	:2	#Z
+P	IGdW	$+	:3	#[
+Q	INu}	$+	O	Bo	#Z
+R	INu}	$+	N	Do	#Y
+S	IVOQ	";	T	:3	"y
+T	INu}	";	S	Bo	"y
+U	IVOQ	"R	Y	:1	#$
+V	IVOQ	"R	X	:2	#%
+W	IGdW	"R	:3	#&
+X	INu}	"R	V	Bo	#%
+Y	INu}	"R	U	Do	#$
+Z	IVOQ	"|	^	:1	#/
+[	IVOQ	"|	]	:2	#0
+\	IGdW	"|	:3	#1
+]	INu}	"|	[	Bo	#0
+^	INu}	"|	Z	Do	#/

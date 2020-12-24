@@ -1,0 +1,44 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/09/2005 10:15:45      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "2x1_mux"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "I0"                           : INPUT_PIN  = 4      ; -- LC16
+    "I1"                           : INPUT_PIN  = 5      ; -- LC14
+    "S"                            : INPUT_PIN  = 14     ; -- LC30
+    "Y"                            : OUTPUT_PIN = 41     ; -- LC64
+
+END;
+
+INTERNAL_INFO "2x1_mux"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC64    : LORAX = "G114R0";
+	OH29R0P14 : LORAX = "G5R0,PA2R0C3";
+	OH13R0P5 : LORAX = "G34R0,PA13R0C3";
+	OH15R0P4 : LORAX = "G36R0,PA14R0C3";
+END;

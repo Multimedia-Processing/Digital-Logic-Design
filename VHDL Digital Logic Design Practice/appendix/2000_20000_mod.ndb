@@ -1,0 +1,68 @@
+NDB006
+The number of symbol table entries is: 5
+The length of the symbol table is: 106
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|mod_1000:8|mod_10_s_u:1|
+H	|mod_1000:8|mod_10_s_u:3|
+b	|mod_1000:8|mod_10_s_u:2|
+|	|mod_10_s_u:9|
+
+The number of name info structs is : 52
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&}	!	2	N	"	100Hz_out	p
+#	Ky&}	!	5	J	N	O	"	#	1KHz_out	o
+$	(@>U^	!	4	,	&	*	+	2MHz_in	q
+%	IGdG	!	:4	{
+&	L)p/	.	.	4	*	+	,	&	:1	"A
+'	IGdW	.	:13	"E
+(	IGdW	.	:18	"H
+)	IGdW	.	:19	"F
+*	L)p/	.	/	3	+	,	*	:2	"C
++	L)p/	.	0	2	,	+	:3	"D
+,	L)p/	.	1	6	*	,	2	6	7	8	:4	"B
+-	IGdW	.	:7	"G
+.	INvO	.	&	Q0	"A
+/	INvO	.	*	Q1	"C
+0	INvO	.	+	Q2	"D
+1	INvO	.	,	Q3	"B
+2	L)p/	b	:	4	6	7	8	2	:1	"d
+3	IGdW	b	:13	"h
+4	IGdW	b	:18	"k
+5	IGdW	b	:19	"i
+6	L)p/	b	;	3	7	8	6	:2	"f
+7	L)p/	b	<	2	8	7	:3	"g
+8	L)p/	b	=	6	6	8	>	B	C	D	:4	"e
+9	IGdW	b	:7	"j
+:	INvO	b	2	Q0	"d
+;	INvO	b	6	Q1	"f
+<	INvO	b	7	Q2	"g
+=	INvO	b	8	Q3	"e
+>	L)p/	H	F	4	B	C	D	>	:1	"S
+?	IGdW	H	:13	"W
+@	IGdW	H	:18	"Z
+A	IGdW	H	:19	"X
+B	L)p/	H	G	3	C	D	B	:2	"U
+C	L)p/	H	H	2	D	C	:3	"V
+D	L)p/	H	I	3	B	D	#	:4	"T
+E	IGdW	H	:7	"Y
+F	INvO	H	>	Q0	"S
+G	INvO	H	B	Q1	"U
+H	INvO	H	C	Q2	"V
+I	INvO	H	D	Q3	"T
+J	L)p/	|	R	4	N	O	"	J	:1	"u
+K	IGdW	|	:13	"y
+L	IGdW	|	:18	"|
+M	IGdW	|	:19	"z
+N	L)p/	|	S	3	O	"	N	:2	"w
+O	L)p/	|	T	2	"	O	:3	"x
+P	IVOA	|	U	:4	"v
+Q	IGdW	|	:7	"{
+R	INvO	|	J	Q0	"u
+S	INvO	|	N	Q1	"w
+T	INvO	|	O	Q2	"x
+U	INum	|	P	Q3	"v

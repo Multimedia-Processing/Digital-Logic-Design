@@ -1,0 +1,55 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 43
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	16	4	:14	|
+#	IeEA	!	16	4	:16	~
+$	IGdW	!	:21	"%
+%	IGdW	!	:22	"&
+&	IGdW	!	:23	"'
+'	IGdW	!	:24	"(
+(	IGdW	!	:25	")
+)	IGdW	!	:26	"*
+*	IGdW	!	:27	"+
++	IGdW	!	:28	",
+,	IGdW	!	:29	"-
+-	IGdW	!	:30	".
+.	IGdW	!	:31	"/
+/	IGdW	!	:32	"0
+0	IGdW	!	:33	"1
+1	IGdW	!	:34	"2
+2	IGdW	!	:35	"3
+3	IGdW	!	:36	"4
+4	IGdW	!	:37	"5
+5	IGdW	!	:38	"6
+6	(>*t<	!	9	9	CK	s
+7	(@\6H	!	9	9	2	;	J	CLR	p
+8	IeEZ	!	9	9	J	q
+9	IeEZ	!	9	9	K	r
+:	L8ef	!	9	9	2	;	J	PR	o
+;	Snh-	!	10	12	1	1	Q	t
+<	IFkI	!	~21~1	"%
+=	IFkI	!	~22~1	"&
+>	IFkI	!	~23~1	"'
+?	IFkI	!	~24~1	"(
+@	IFkI	!	~25~1	")
+A	IFkI	!	~26~1	"*
+B	IFkI	!	~27~1	"+
+C	IFkI	!	~28~1	",
+D	IFkI	!	~29~1	"-
+E	IFkI	!	~30~1	".
+F	IFkI	!	~31~1	"/
+G	IFkI	!	~32~1	"0
+H	IFkI	!	~33~1	"1
+I	IFkI	!	~34~1	"2
+J	V#Pg	!	2	;	J	1	1	~36~1	"4
+K	IFkI	!	~37~1	"5
+L	IFkI	!	~38~1	"6

@@ -1,0 +1,119 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 107
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:217	$-
+#	IGdW	!	:218	$.
+$	IGdW	!	:219	$/
+%	IGdW	!	:220	$0
+&	IGdW	!	:221	$1
+'	IGdW	!	:222	$2
+(	IGdW	!	:223	$3
+)	IGdW	!	:224	$4
+*	IGdW	!	:225	$5
++	IGdW	!	:226	$6
+,	IGdW	!	:227	$7
+-	IGdW	!	:228	$8
+.	IGdW	!	:229	$9
+/	IGdW	!	:230	$:
+0	IGdW	!	:231	$;
+1	IGdW	!	:232	$<
+2	IGdW	!	:233	$=
+3	IGdW	!	:234	$>
+4	IGdW	!	:235	$?
+5	IGdW	!	:236	$@
+6	IGdW	!	:237	$A
+7	IGdW	!	:238	$B
+8	IGdW	!	:239	$C
+9	IGdW	!	:240	$D
+:	IGdW	!	:241	$E
+;	IGdW	!	:242	$F
+<	IGdW	!	:243	$G
+=	IGdW	!	:244	$H
+>	IGdW	!	:245	$I
+?	IGdW	!	:246	$J
+@	IGdW	!	:247	$K
+A	IGdW	!	:248	$L
+B	IGdW	!	:249	$M
+C	IGdW	!	:250	$N
+D	IGdW	!	:251	$O
+E	IGdW	!	:252	$P
+F	IGdW	!	:253	$Q
+G	IGdW	!	:254	$R
+H	IGdW	!	:255	$S
+I	IGdW	!	:256	$T
+J	IGdW	!	:257	$U
+K	IGdW	!	:258	$V
+L	IGdW	!	:259	$W
+M	IGdW	!	:260	$X
+N	IGdW	!	:261	$Y
+O	IGdW	!	:262	$Z
+P	IGdW	!	:263	$[
+Q	IGdW	!	:264	$\
+R	IGdW	!	:265	$]
+S	IGdW	!	:266	$^
+T	IGdW	!	:267	$_
+U	IGdW	!	:268	$`
+V	IGdW	!	:269	$a
+W	IGdW	!	:270	$b
+X	IGdW	!	:271	$c
+Y	IGdW	!	:272	$d
+Z	IGdW	!	:273	$e
+[	IGdW	!	:274	$f
+\	IGdW	!	:275	$g
+]	IGdW	!	:276	$h
+^	IGdW	!	:277	$i
+_	IGdW	!	:278	$j
+`	IGdW	!	:279	$k
+a	IGdW	!	:280	$l
+b	IGdW	!	:281	$m
+c	IGdW	!	:282	$n
+d	IGdW	!	:283	$o
+e	IGdW	!	:284	$p
+f	IGdW	!	:285	$q
+g	IGdW	!	:286	$r
+h	IGdW	!	:287	$s
+i	IGdW	!	:288	$t
+j	IGdW	!	:289	$u
+k	IGdW	!	:290	$v
+l	IGdW	!	:291	$w
+m	IGdW	!	:292	$x
+n	IGdW	!	:293	$y
+o	IGdW	!	:294	$z
+p	IGdW	!	:295	${
+q	IGdW	!	:296	$|
+r	IGdW	!	:297	$}
+s	IGdW	!	:298	$~
+t	IGdW	!	:299	%!
+u	IGdW	!	:300	%"
+v	IGdW	!	:301	%#
+w	IGdW	!	:302	%$
+x	IGdW	!	:303	%%
+y	IGdW	!	:304	%&
+z	IGdW	!	:305	%'
+{	IGdW	!	:306	%(
+|	IGdW	!	:307	%)
+}	IGdW	!	:308	%*
+~	IGdW	!	:309	%+
+"!	IGdW	!	:310	%,
+""	IGdW	!	:311	%-
+"#	IGdW	!	:312	%.
+"$	"<R?b	!	9	9	I0	!	I0	v
+"%	"?%_n	!	9	9	1	",	I1	!	I1	u
+"&	"?%_n	!	9	9	2	",	"-	I2	!	I2	t
+"'	"?%_n	!	9	9	2	",	"-	I3	!	I3	s
+"(	"?%_n	!	9	9	3	",	"-	".	I4	!	I4	r
+")	"?%_n	!	9	9	3	",	"-	".	I5	!	I5	q
+"*	"?%_n	!	9	9	3	",	"-	".	I6	!	I6	p
+"+	"?%_n	!	9	9	3	",	"-	".	I7	!	I7	o
+",	"<R?c	!	10	13	Y0	!	Y0	y
+"-	"<R?c	!	10	13	Y1	!	Y1	x
+".	"<R?c	!	10	13	Y2	!	Y2	w

@@ -1,0 +1,94 @@
+NDB006
+The number of symbol table entries is: 13
+The length of the symbol table is: 441
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|full_subtractor_s:39|
+E	|full_subtractor_s:39|half_subtractor:10|
+o	|full_subtractor_s:39|half_subtractor:11|
+";	|full_subtractor_s:42|
+"R	|full_subtractor_s:42|half_subtractor:10|
+"|	|full_subtractor_s:42|half_subtractor:11|
+#H	|full_subtractor_s:41|
+#_	|full_subtractor_s:41|half_subtractor:10|
+$+	|full_subtractor_s:41|half_subtractor:11|
+$U	|full_subtractor_s:40|
+$l	|full_subtractor_s:40|half_subtractor:10|
+%8	|full_subtractor_s:40|half_subtractor:11|
+
+The number of name info structs is : 70
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	8	+	,	-	.	U	e	f	g	A0	w
+#	Ky&|	!	7	+	-	.	U	e	f	g	A1	v
+$	Ky&|	!	6	+	.	/	e	f	g	A2	u
+%	Ky&|	!	2	+	/	A3	t
+&	Ky&|	!	8	+	,	-	.	U	e	f	g	B0	|
+'	Ky&|	!	7	+	-	.	U	e	f	g	B1	{
+(	Ky&|	!	6	+	.	/	e	f	g	B2	z
+)	Ky&|	!	2	+	/	B3	y
+*	Ky&|	!	7	+	,	-	U	e	f	g	Bi	x
++	XUi[	!	1	4	1	2	3	4	Bo	s
+,	IGdq	!	Do0	r
+-	XUi[	!	2	1	4	Do1	q
+.	XUi[	!	2	2	2	3	Do2	p
+/	XUi[	!	1	2	1	2	Do3	o
+0	IVOQ	.	1	:3	"N
+1	INu}	.	0	Bo	"N
+2	IVOQ	E	6	:1	"X
+3	IVOQ	E	5	:2	"Y
+4	IGdW	E	:3	"Z
+5	INu}	E	3	Bo	"Y
+6	INu}	E	2	Do	"X
+7	IVOQ	o	;	:1	"d
+8	IVOQ	o	:	:2	"e
+9	IGdW	o	:3	"f
+:	INu}	o	8	Bo	"e
+;	INu}	o	7	Do	"d
+<	IVOQ	$U	=	:3	#p
+=	INu}	$U	<	Bo	#p
+>	IVOQ	$l	B	:1	#y
+?	IVOQ	$l	A	:2	#z
+@	IGdW	$l	:3	#{
+A	INu}	$l	?	Bo	#z
+B	INu}	$l	>	Do	#y
+C	IVOQ	%8	G	:1	$&
+D	IVOQ	%8	F	:2	$'
+E	IGdW	%8	:3	$(
+F	INu}	%8	D	Bo	$'
+G	INu}	%8	C	Do	$&
+H	IVOQ	#H	I	:3	#F
+I	INu}	#H	H	Bo	#F
+J	IVOQ	#_	N	:1	#O
+K	IVOQ	#_	M	:2	#P
+L	IGdW	#_	:3	#Q
+M	INu}	#_	K	Bo	#P
+N	INu}	#_	J	Do	#O
+O	IVOQ	$+	S	:1	#Z
+P	IVOQ	$+	R	:2	#[
+Q	IGdW	$+	:3	#\
+R	INu}	$+	P	Bo	#[
+S	INu}	$+	O	Do	#Z
+T	IM}Q	$+	U	Do~1	%m
+U	Q-YI	$+	T	1	.	1	~1~1	%m
+V	IVOQ	";	W	:3	"z
+W	INu}	";	V	Bo	"z
+X	IVOQ	"R	\	:1	#%
+Y	IVOQ	"R	[	:2	#&
+Z	IGdW	"R	:3	#'
+[	INu}	"R	Y	Bo	#&
+\	INu}	"R	X	Do	#%
+]	IVOQ	"|	a	:1	#0
+^	IVOQ	"|	`	:2	#1
+_	IGdW	"|	:3	#2
+`	INu}	"|	^	Bo	#1
+a	INu}	"|	]	Do	#0
+b	IM}Q	"|	e	Do~1	%e
+c	IM}Q	"|	f	Do~2	%i
+d	IM}Q	"|	g	Do~3	%q
+e	Q-YI	"|	b	1	/	1	~1~1	%e
+f	Q-YI	"|	c	1	/	1	~1~2	%i
+g	L(w1	"|	d	1	/	~1~3	%q

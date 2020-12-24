@@ -1,0 +1,50 @@
+NDB006
+The number of symbol table entries is: 7
+The length of the symbol table is: 108
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|DIV_2_N:U1|
+;	|DIV_2_N:Lab|
+I	|DIV_2_N:Lab~48|
+Z	|DIV_2_N:Lab~60|
+k	|DIV_2_N:Lab~72|
+|	|DIV_2_N:Lab~84|
+
+The number of name info structs is : 32
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	(@\6H	!	9	9	1	$	CK	p
+#	(@\6H	!	9	9	6	)	(	'	&	%	$	CLR	o
+$	"?%_o	!	10	13	2	%	$	Q0	!	Q0	v
+%	"?%_o	!	10	13	2	&	%	Q1	!	Q1	u
+&	"?%_o	!	10	13	2	'	&	Q2	!	Q2	t
+'	"?%_o	!	10	13	2	(	'	Q3	!	Q3	s
+(	"?%_o	!	10	13	2	)	(	Q4	!	Q4	r
+)	"?%_o	!	10	13	1	)	Q5	!	Q5	q
+*	IeEA	;	16	3	:10	$X
++	IeEA	;	20	5	:16	$^
+,	It0+	;	-	14	1	:4	$R
+-	INum	;	,	Q_temp	$R
+.	IeEA	I	16	3	:10	$r
+/	IeEA	I	20	5	:16	$x
+0	It0+	I	1	14	1	:4	$l
+1	INum	I	0	Q_temp	$l
+2	IeEA	Z	16	3	:10	%.
+3	IeEA	Z	20	5	:16	%4
+4	It0+	Z	5	14	1	:4	%(
+5	INum	Z	4	Q_temp	%(
+6	IeEA	k	16	3	:10	%H
+7	IeEA	k	20	5	:16	%N
+8	It0+	k	9	14	1	:4	%B
+9	INum	k	8	Q_temp	%B
+:	IeEA	|	16	3	:10	%b
+;	IeEA	|	20	5	:16	%h
+<	It0+	|	=	14	1	:4	%\
+=	INum	|	<	Q_temp	%\
+>	IeEA	.	16	3	:10	$=
+?	IeEA	.	20	5	:16	$C
+@	It0+	.	A	14	1	:4	$7
+A	INum	.	@	Q_temp	$7

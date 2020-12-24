@@ -1,0 +1,115 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/16/2005 21:38:28      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "clock_1_2_10hz"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "Clk_2MHz"                     : INPUT_PIN  = 43     ;
+    "F_1Hz"                        : OUTPUT_PIN = 41     ; -- LC64
+    "F_2Hz"                        : OUTPUT_PIN = 39     ; -- LC57
+    "F_10Hz"                       : OUTPUT_PIN = 34     ; -- LC51
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node1" : LOCATION   = LC19   ; -- PIN 20
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node2" : LOCATION   = LC18   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node3" : LOCATION   = LC17   ; -- PIN 21
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node4" : LOCATION   = LC31   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node5" : LOCATION   = LC27   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node6" : LOCATION   = LC26   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder0|result_node7" : LOCATION   = LC20   ; -- PIN 19
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node0" : LOCATION   = LC43   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node1" : LOCATION   = LC44   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node2" : LOCATION   = LC45   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node3" : LOCATION   = LC46   ; -- PIN 31
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node4" : LOCATION   = LC47   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node5" : LOCATION   = LC48   ; -- PIN 32
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node6" : LOCATION   = LC62   ; -- PIN 40
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder1|result_node7" : LOCATION   = LC63   ;
+    "|LPM_ADD_SUB:149|addcore:adder|addcore:adder2|result_node0" : LOCATION   = LC55   ;
+    "|LPM_ADD_SUB:319|addcore:adder|addcore:adder0|result_node1" : LOCATION   = LC56   ; -- PIN 38
+    ":8"                           : LOCATION   = LC61   ;  -- Delay116
+    ":9"                           : LOCATION   = LC60   ;  -- Delay115
+    ":10"                          : LOCATION   = LC59   ;  -- Delay114
+    ":11"                          : LOCATION   = LC50   ;  -- Delay113
+    ":12"                          : LOCATION   = LC53   ; -- PIN 37  -- Delay112
+    ":13"                          : LOCATION   = LC58   ;  -- Delay111
+    ":14"                          : LOCATION   = LC40   ; -- PIN 28  -- Delay110
+    ":15"                          : LOCATION   = LC41   ; -- PIN 29  -- Delay19
+    ":16"                          : LOCATION   = LC42   ;  -- Delay18
+    ":17"                          : LOCATION   = LC33   ; -- PIN 24  -- Delay17
+    ":18"                          : LOCATION   = LC34   ;  -- Delay16
+    ":19"                          : LOCATION   = LC35   ; -- PIN 25  -- Delay15
+    ":20"                          : LOCATION   = LC36   ; -- PIN 26  -- Delay14
+    ":21"                          : LOCATION   = LC37   ; -- PIN 27  -- Delay13
+    ":22"                          : LOCATION   = LC38   ;  -- Delay12
+    ":23"                          : LOCATION   = LC39   ;  -- Delay11
+    ":24"                          : LOCATION   = LC49   ; -- PIN 33  -- Delay10
+    ":296"                         : LOCATION   = LC52   ;  -- Delay21
+    ":297"                         : LOCATION   = LC54   ;  -- Delay20
+
+END;
+
+INTERNAL_INFO "clock_1_2_10hz"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC51    : LORAX = "G31R0,PA3R0C3";
+	LC57    : LORAX = "G78R0,PA24R0C3";
+	LC64    : LORAX = "G114R0";
+	LC61    : LORAX = "G111R0,PA33R0C3,PA29R0C2";
+	LC60    : LORAX = "G81R0,PA22R0C2,PA23R0C3";
+	LC40    : LORAX = "G28R0,PA0R0C3,PA0R0C2";
+	LC41    : LORAX = "G107R0,PA27R0C2,PA35R0C3";
+	LC33    : LORAX = "G58R0,PA11R0C1,PA13R0C2,PA11R0C3";
+	LC36    : LORAX = "G61R0,PA9R0C1,PA9R0C3,PA14R0C2";
+	LC37    : LORAX = "G25R0,PA2R0C1,PA2R0C3,PA2R0C2";
+	LC38    : LORAX = "G26R0,PA1R0C1,PA6R0C3,PA1R0C2";
+	LC39    : LORAX = "G27R0,PA7R0C1,PA7R0C3,PA7R0C2";
+	LC49    : LORAX = "G29R0,PA8R0C1,PA8R0C3,PA8R0C2";
+	LC34    : LORAX = "G59R0,PA10R0C1,PA15R0C2,PA15R0C3";
+	LC26    : LORAX = "G104R0,PA30R0C2";
+	LC35    : LORAX = "G60R0,PA12R0C1,PA12R0C2,PA16R0C3";
+	LC27    : LORAX = "G105R0,PA33R0C2";
+	LC42    : LORAX = "G108R0,PA29R0C3,PA32R0C2";
+	LC43    : LORAX = "G109R0,PA28R0C2";
+	LC59    : LORAX = "G80R0,PA18R0C3,PA25R0C2";
+	LC62    : LORAX = "G112R0,PA30R0C3";
+	LC50    : LORAX = "G30R0,PA5R0C3,PA5R0C2";
+	LC48    : LORAX = "G77R0,PA22R0C3";
+	LC53    : LORAX = "G62R0,PA17R0C3,PA17R0C2";
+	LC47    : LORAX = "G76R0,PA19R0C3";
+	LC58    : LORAX = "G79R0,PA21R0C2,PA21R0C3";
+	LC46    : LORAX = "G75R0,PA20R0C3";
+	LC19    : LORAX = "G56R0,PA11R0C2";
+	LC18    : LORAX = "G55R0,PA10R0C2";
+	LC17    : LORAX = "G54R0,PA16R0C2";
+	LC31    : LORAX = "G72R0,PA19R0C2";
+	LC20    : LORAX = "G57R0,PA9R0C2";
+	LC44    : LORAX = "G110R0,PA31R0C2";
+	LC45    : LORAX = "G74R0,PA18R0C2";
+	LC63    : LORAX = "G113R0,PA27R0C3";
+	LC55    : LORAX = "G64R0,PA12R0C3";
+	LC52    : LORAX = "G32R0,PA1R0C3";
+	LC56    : LORAX = "G65R0,PA10R0C3";
+	LC54    : LORAX = "G63R0,PA14R0C3";
+END;

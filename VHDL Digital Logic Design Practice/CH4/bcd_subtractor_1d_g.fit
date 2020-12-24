@@ -1,0 +1,142 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 03/17/2004 22:17:58      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "bcd_subtractor_1d_g"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "A0"                           : INPUT_PIN  = 12     ; -- LC1
+    "A1"                           : INPUT_PIN  = 4      ; -- LC16
+    "A2"                           : INPUT_PIN  = 21     ; -- LC17
+    "A3"                           : INPUT_PIN  = 20     ; -- LC19
+    "B0"                           : INPUT_PIN  = 11     ; -- LC3
+    "B1"                           : INPUT_PIN  = 9      ; -- LC4
+    "B2"                           : INPUT_PIN  = 8      ; -- LC5
+    "B3"                           : INPUT_PIN  = 6      ; -- LC11
+    "Ci"                           : INPUT_PIN  = 5      ; -- LC14
+    "Co"                           : OUTPUT_PIN = 18     ; -- LC21
+    "S0"                           : OUTPUT_PIN = 16     ; -- LC25
+    "S1"                           : OUTPUT_PIN = 31     ; -- LC46
+    "S2"                           : OUTPUT_PIN = 24     ; -- LC33
+    "S3"                           : OUTPUT_PIN = 34     ; -- LC51
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:1|~8~1" : LOCATION   = LC20   ; -- PIN 19
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:19|half_adder:1|~2~1" : LOCATION   = LC19   ; -- PIN 20
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:19|half_adder:2|~2~1" : LOCATION   = LC39   ;
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:24|half_adder:1|~2~1" : LOCATION   = LC18   ;
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~1" : LOCATION   = LC49   ; -- PIN 33
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~2" : LOCATION   = LC63   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~2
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~3" : LOCATION   = LC52   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~3
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~4" : LOCATION   = LC62   ; -- PIN 40  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~4
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~5" : LOCATION   = LC61   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~5
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~6" : LOCATION   = LC59   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~6
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~7" : LOCATION   = LC28   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~7
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~8" : LOCATION   = LC24   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~8
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~2~9" : LOCATION   = LC23   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|S~9
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~3~1" : LOCATION   = LC22   ;
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~3~2" : LOCATION   = LC50   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|C~2
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~3~3" : LOCATION   = LC27   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|C~3
+    "|bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|~3~4" : LOCATION   = LC26   ;  -- |bcd_adder_g:41|4bit_adder_g:25|full_adder:29|half_adder:2|C~4
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~1" : LOCATION   = LC17   ; -- PIN 21
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~2" : LOCATION   = LC42   ;  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~2
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~3" : LOCATION   = LC34   ;  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~3
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~4" : LOCATION   = LC35   ; -- PIN 25  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~4
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~5" : LOCATION   = LC36   ; -- PIN 26  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~5
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~6" : LOCATION   = LC37   ; -- PIN 27  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~6
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~7" : LOCATION   = LC38   ;  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~7
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|~3~8" : LOCATION   = LC40   ; -- PIN 28  -- |bcd_adder_g:41|4bit_adder_g:36|full_adder:24|half_adder:2|C~8
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~2" : LOCATION   = LC57   ; -- PIN 39
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~3" : LOCATION   = LC64   ; -- PIN 41
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~4" : LOCATION   = LC60   ;
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~5" : LOCATION   = LC58   ;
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~6" : LOCATION   = LC56   ; -- PIN 38
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~7" : LOCATION   = LC55   ;
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~8" : LOCATION   = LC54   ;
+    "|bcd_adder_g:41|4bit_adder_g:36|full_adder:29|half_adder:2|~2~1~9" : LOCATION   = LC53   ; -- PIN 37
+    "|bcd_adder_g:41|~37~1"        : LOCATION   = LC47   ;
+    "|bcd_adder_g:41|~38~1"        : LOCATION   = LC45   ;
+    "|bcd_adder_g:41|~39~1"        : LOCATION   = LC48   ; -- PIN 32
+    "|bcd_adder_g:41|~39~1~2"      : LOCATION   = LC43   ;
+    "|bcd_adder_g:41|~39~1~3"      : LOCATION   = LC41   ; -- PIN 29
+    "|bcd_adder_g:41|~39~1~4"      : LOCATION   = LC44   ;
+
+END;
+
+INTERNAL_INFO "bcd_subtractor_1d_g"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC21    : LORAX = "G21R0";
+	LC51    : LORAX = "G31R0";
+	LC33    : LORAX = "G58R0";
+	LC46    : LORAX = "G75R0";
+	LC25    : LORAX = "G103R0";
+	OH10R0P6 : LORAX = "G2R0,PA3R0C1,PA0R0C2,PA0R0C3";
+	OH4R0P8 : LORAX = "G116R0,PA28R0C1,PA27R0C2,PA28R0C3";
+	OH3R0P9 : LORAX = "G86R0,PA22R0C1,PA22R0C2,PA26R0C3";
+	OH2R0P11 : LORAX = "G85R0,PA21R0C1,PA21R0C2,PA23R0C3";
+	OH16R0P21 : LORAX = "G120R0,PA27R0C1,PA29R0C2,PA27R0C3";
+	OH15R0P4 : LORAX = "G36R0,PA14R0C2,PA14R0C1,PA14R0C3";
+	OH0R0P12 : LORAX = "G83R0,PA18R0C1,PA18R0C2,PA18R0C3";
+	OH13R0P5 : LORAX = "G34R0,PA13R0C2,PA13R0C1,PA13R0C3";
+	OH18R0P20 : LORAX = "G122R0,PA32R0C2,PA32R0C1,PA32R0C3";
+	LC17    : LORAX = "G54R0,PA16R0C3";
+	LC48    : LORAX = "G77R0,PA25R0C2";
+	LC49    : LORAX = "G29R0,PA7R0C3,PA7R0C2";
+	LC39    : LORAX = "G27R0,PA3R0C2";
+	LC19    : LORAX = "G56R0,PA11R0C2";
+	LC22    : LORAX = "G22R0,PA1R0C2";
+	LC45    : LORAX = "G74R0,PA26R0C2";
+	LC18    : LORAX = "G55R0,PA10R0C2";
+	LC20    : LORAX = "G57R0,PA9R0C2";
+	LC47    : LORAX = "G76R0,PA19R0C2";
+	LC57    : LORAX = "G78R0,PA20R0C3";
+	LC63    : LORAX = "G113R0,PA34R0C3";
+	LC64    : LORAX = "G114R0,PA31R0C3";
+	LC52    : LORAX = "G32R0,PA1R0C3";
+	LC60    : LORAX = "G81R0,PA22R0C3";
+	LC62    : LORAX = "G112R0,PA35R0C3";
+	LC58    : LORAX = "G79R0,PA21R0C3";
+	LC61    : LORAX = "G111R0,PA33R0C3";
+	LC56    : LORAX = "G65R0,PA10R0C3";
+	LC59    : LORAX = "G80R0,PA25R0C3";
+	LC55    : LORAX = "G64R0,PA12R0C3";
+	LC28    : LORAX = "G106R0,PA29R0C3";
+	LC54    : LORAX = "G63R0,PA15R0C3";
+	LC24    : LORAX = "G24R0,PA8R0C3";
+	LC42    : LORAX = "G108R0,PA29R0C1";
+	LC34    : LORAX = "G59R0,PA10R0C1";
+	LC35    : LORAX = "G60R0,PA12R0C1";
+	LC36    : LORAX = "G61R0,PA9R0C1";
+	LC50    : LORAX = "G30R0,PA5R0C1";
+	LC43    : LORAX = "G109R0,PA30R0C1";
+	LC37    : LORAX = "G25R0,PA2R0C1";
+	LC27    : LORAX = "G105R0,PA33R0C1";
+	LC41    : LORAX = "G107R0,PA35R0C1";
+	LC38    : LORAX = "G26R0,PA1R0C1";
+	LC53    : LORAX = "G62R0,PA17R0C3";
+	LC26    : LORAX = "G104R0,PA34R0C1";
+	LC23    : LORAX = "G23R0,PA2R0C3";
+	LC44    : LORAX = "G110R0,PA31R0C1";
+	LC40    : LORAX = "G28R0,PA0R0C1";
+END;

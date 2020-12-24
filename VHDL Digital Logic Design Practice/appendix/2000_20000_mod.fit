@@ -1,0 +1,71 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/16/2005 21:34:42      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "2000_20000_mod"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "2MHz_in"                      : INPUT_PIN  = 43     ;
+    "1KHz_out"                     : OUTPUT_PIN = 4      ; -- LC16
+    "100Hz_out"                    : OUTPUT_PIN = 6      ; -- LC11
+    "|mod_10_s_u:9|:1"             : LOCATION   = LC61   ;  -- |mod_10_s_u:9|Q0
+    "|mod_10_s_u:9|:2"             : LOCATION   = LC2    ;  -- |mod_10_s_u:9|Q1
+    "|mod_10_s_u:9|:3"             : LOCATION   = LC5    ; -- PIN 8  -- |mod_10_s_u:9|Q2
+    "|mod_1000:8|mod_10_s_u:1|:1"  : LOCATION   = LC53   ; -- PIN 37  -- |mod_1000:8|mod_10_s_u:1|Q0
+    "|mod_1000:8|mod_10_s_u:1|:2"  : LOCATION   = LC54   ;  -- |mod_1000:8|mod_10_s_u:1|Q1
+    "|mod_1000:8|mod_10_s_u:1|:3"  : LOCATION   = LC55   ;  -- |mod_1000:8|mod_10_s_u:1|Q2
+    "|mod_1000:8|mod_10_s_u:1|:4"  : LOCATION   = LC56   ; -- PIN 38  -- |mod_1000:8|mod_10_s_u:1|Q3
+    "|mod_1000:8|mod_10_s_u:2|:1"  : LOCATION   = LC57   ; -- PIN 39  -- |mod_1000:8|mod_10_s_u:2|Q0
+    "|mod_1000:8|mod_10_s_u:2|:2"  : LOCATION   = LC58   ;  -- |mod_1000:8|mod_10_s_u:2|Q1
+    "|mod_1000:8|mod_10_s_u:2|:3"  : LOCATION   = LC59   ;  -- |mod_1000:8|mod_10_s_u:2|Q2
+    "|mod_1000:8|mod_10_s_u:2|:4"  : LOCATION   = LC60   ;  -- |mod_1000:8|mod_10_s_u:2|Q3
+    "|mod_1000:8|mod_10_s_u:3|:1"  : LOCATION   = LC52   ;  -- |mod_1000:8|mod_10_s_u:3|Q0
+    "|mod_1000:8|mod_10_s_u:3|:2"  : LOCATION   = LC51   ; -- PIN 34  -- |mod_1000:8|mod_10_s_u:3|Q1
+    "|mod_1000:8|mod_10_s_u:3|:3"  : LOCATION   = LC50   ;  -- |mod_1000:8|mod_10_s_u:3|Q2
+    "|mod_1000:8|mod_10_s_u:3|:4"  : LOCATION   = LC49   ; -- PIN 33  -- |mod_1000:8|mod_10_s_u:3|Q3
+
+END;
+
+INTERNAL_INFO "2000_20000_mod"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC16    : LORAX = "G102R0,PA34R0C3,PA34R0C0";
+	LC11    : LORAX = "G68R0,PA23R0C0";
+	LC49    : LORAX = "G29R0,PA7R0C3,PA7R0C0";
+	LC52    : LORAX = "G32R0,PA1R0C3";
+	LC60    : LORAX = "G81R0,PA22R0C3";
+	LC57    : LORAX = "G78R0,PA20R0C3";
+	LC56    : LORAX = "G65R0,PA10R0C3";
+	LC53    : LORAX = "G62R0,PA16R0C3";
+	LC54    : LORAX = "G63R0,PA15R0C3";
+	LC55    : LORAX = "G64R0,PA12R0C3";
+	LC58    : LORAX = "G79R0,PA21R0C3";
+	LC59    : LORAX = "G80R0,PA18R0C3";
+	LC51    : LORAX = "G31R0,PA3R0C3";
+	LC50    : LORAX = "G30R0,PA5R0C3";
+	LC61    : LORAX = "G111R0,PA29R0C0";
+	LC2     : LORAX = "G18R0,PA0R0C0";
+	LC5     : LORAX = "G50R0,PA13R0C0";
+END;

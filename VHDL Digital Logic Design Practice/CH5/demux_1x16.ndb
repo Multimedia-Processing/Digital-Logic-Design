@@ -1,0 +1,98 @@
+NDB006
+The number of symbol table entries is: 6
+The length of the symbol table is: 88
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|Demux_1x4:U1|
+=	|Demux_1x4:U2|
+L	|Demux_1x4:U3|
+[	|Demux_1x4:U4|
+j	|Demux_1x4:U5|
+
+The number of name info structs is : 81
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	L8ef	!	9	9	16	#	$	+	,	-	.	/	0	1	2	%	&	'	(	)	*	I	o
+#	"<R?c	!	11	13	O0	!	O0	"%
+$	"<R?c	!	11	13	O1	!	O1	"$
+%	"<R?c	!	11	13	O10	!	O10	y
+&	"<R?c	!	11	13	O11	!	O11	x
+'	"<R?c	!	11	13	O12	!	O12	w
+(	"<R?c	!	11	13	O13	!	O13	v
+)	"<R?c	!	11	13	O14	!	O14	u
+*	"<R?c	!	11	13	O15	!	O15	t
++	"<R?c	!	11	13	O2	!	O2	"#
+,	"<R?c	!	11	13	O3	!	O3	""
+-	"<R?c	!	11	13	O4	!	O4	"!
+.	"<R?c	!	11	13	O5	!	O5	~
+/	"<R?c	!	11	13	O6	!	O6	}
+0	"<R?c	!	11	13	O7	!	O7	|
+1	"<R?c	!	11	13	O8	!	O8	{
+2	"<R?c	!	11	13	O9	!	O9	z
+3	L8ef	!	10	9	16	#	$	+	,	-	.	/	0	1	2	%	&	'	(	)	*	S0	s
+4	L8ef	!	10	9	16	#	$	+	,	-	.	/	0	1	2	%	&	'	(	)	*	S1	r
+5	L8ef	!	10	9	16	#	$	+	,	-	.	/	0	1	2	%	&	'	(	)	*	S2	q
+6	L8ef	!	10	9	16	#	$	+	,	-	.	/	0	1	2	%	&	'	(	)	*	S3	p
+7	IeEA	.	16	5	:11	.*
+8	IeEA	.	16	5	:12	.+
+9	IeEA	.	16	5	:13	.,
+:	IeEA	.	16	5	:14	.-
+;	IeEA	.	17	5	:17	.0
+<	IeEA	.	17	5	:18	.1
+=	IeEA	.	17	5	:19	.2
+>	IeEA	.	18	5	:22	.5
+?	IeEA	.	18	5	:23	.6
+@	IeEA	.	18	5	:24	.7
+A	IeEA	.	19	5	:26	.9
+B	IeEA	.	19	5	:27	.:
+C	IeEA	=	16	5	:11	.J
+D	IeEA	=	16	5	:12	.K
+E	IeEA	=	16	5	:13	.L
+F	IeEA	=	16	5	:14	.M
+G	IeEA	=	17	5	:17	.P
+H	IeEA	=	17	5	:18	.Q
+I	IeEA	=	17	5	:19	.R
+J	IeEA	=	18	5	:22	.U
+K	IeEA	=	18	5	:23	.V
+L	IeEA	=	18	5	:24	.W
+M	IeEA	=	19	5	:26	.Y
+N	IeEA	=	19	5	:27	.Z
+O	IeEA	L	16	5	:11	.i
+P	IeEA	L	16	5	:12	.j
+Q	IeEA	L	16	5	:13	.k
+R	IeEA	L	16	5	:14	.l
+S	IeEA	L	17	5	:17	.o
+T	IeEA	L	17	5	:18	.p
+U	IeEA	L	17	5	:19	.q
+V	IeEA	L	18	5	:22	.t
+W	IeEA	L	18	5	:23	.u
+X	IeEA	L	18	5	:24	.v
+Y	IeEA	L	19	5	:26	.x
+Z	IeEA	L	19	5	:27	.y
+[	IeEA	[	16	5	:11	/*
+\	IeEA	[	16	5	:12	/+
+]	IeEA	[	16	5	:13	/,
+^	IeEA	[	16	5	:14	/-
+_	IeEA	[	17	5	:17	/0
+`	IeEA	[	17	5	:18	/1
+a	IeEA	[	17	5	:19	/2
+b	IeEA	[	18	5	:22	/5
+c	IeEA	[	18	5	:23	/6
+d	IeEA	[	18	5	:24	/7
+e	IeEA	[	19	5	:26	/9
+f	IeEA	[	19	5	:27	/:
+g	IeEA	j	16	5	:11	/I
+h	IeEA	j	16	5	:12	/J
+i	IeEA	j	16	5	:13	/K
+j	IeEA	j	16	5	:14	/L
+k	IeEA	j	17	5	:17	/O
+l	IeEA	j	17	5	:18	/P
+m	IeEA	j	17	5	:19	/Q
+n	IeEA	j	18	5	:22	/T
+o	IeEA	j	18	5	:23	/U
+p	IeEA	j	18	5	:24	/V
+q	IeEA	j	19	5	:26	/X
+r	IeEA	j	19	5	:27	/Y

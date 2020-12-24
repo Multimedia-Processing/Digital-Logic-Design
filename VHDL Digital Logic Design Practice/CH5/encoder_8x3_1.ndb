@@ -1,0 +1,283 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 271
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:100	"t
+#	IGdW	!	:101	"u
+$	IGdW	!	:102	"v
+%	IGdW	!	:103	"w
+&	IGdW	!	:104	"x
+'	IGdW	!	:105	"y
+(	IGdW	!	:106	"z
+)	IGdW	!	:107	"{
+*	IGdW	!	:108	"|
++	IGdW	!	:109	"}
+,	IGdW	!	:110	"~
+-	IGdW	!	:111	#!
+.	IGdW	!	:112	#"
+/	IGdW	!	:113	##
+0	IGdW	!	:114	#$
+1	IGdW	!	:115	#%
+2	IGdW	!	:116	#&
+3	IGdW	!	:117	#'
+4	IGdW	!	:118	#(
+5	IGdW	!	:119	#)
+6	IGdW	!	:120	#*
+7	IGdW	!	:121	#+
+8	IGdW	!	:122	#,
+9	IGdW	!	:123	#-
+:	IGdW	!	:124	#.
+;	IGdW	!	:125	#/
+<	IGdW	!	:126	#0
+=	IGdW	!	:127	#1
+>	IGdW	!	:128	#2
+?	IGdW	!	:129	#3
+@	IGdW	!	:130	#4
+A	IGdW	!	:131	#5
+B	IGdW	!	:132	#6
+C	IGdW	!	:133	#7
+D	IGdW	!	:134	#8
+E	IGdW	!	:135	#9
+F	IGdW	!	:136	#:
+G	IGdW	!	:137	#;
+H	IGdW	!	:138	#<
+I	IGdW	!	:139	#=
+J	IGdW	!	:140	#>
+K	IGdW	!	:141	#?
+L	IGdW	!	:142	#@
+M	IGdW	!	:143	#A
+N	IGdW	!	:144	#B
+O	IGdW	!	:145	#C
+P	IGdW	!	:146	#D
+Q	IGdW	!	:147	#E
+R	IGdW	!	:148	#F
+S	IGdW	!	:149	#G
+T	IGdW	!	:150	#H
+U	IGdW	!	:151	#I
+V	IGdW	!	:152	#J
+W	IGdW	!	:153	#K
+X	IGdW	!	:154	#L
+Y	IGdW	!	:155	#M
+Z	IGdW	!	:156	#N
+[	IGdW	!	:157	#O
+\	IGdW	!	:158	#P
+]	IGdW	!	:159	#Q
+^	IGdW	!	:160	#R
+_	IGdW	!	:161	#S
+`	IGdW	!	:162	#T
+a	IGdW	!	:163	#U
+b	IGdW	!	:164	#V
+c	IGdW	!	:165	#W
+d	IGdW	!	:166	#X
+e	IGdW	!	:167	#Y
+f	IGdW	!	:168	#Z
+g	IGdW	!	:169	#[
+h	IeEA	!	15	3	:170	#\
+i	IGdW	!	:171	#]
+j	IGdW	!	:172	#^
+k	IGdW	!	:173	#_
+l	IGdW	!	:174	#`
+m	IGdW	!	:175	#a
+n	IGdW	!	:176	#b
+o	IGdW	!	:177	#c
+p	IGdW	!	:178	#d
+q	IGdW	!	:179	#e
+r	IGdW	!	:180	#f
+s	IGdW	!	:181	#g
+t	IGdW	!	:182	#h
+u	IGdW	!	:183	#i
+v	IGdW	!	:184	#j
+w	IGdW	!	:185	#k
+x	IGdW	!	:186	#l
+y	IGdW	!	:187	#m
+z	IGdW	!	:188	#n
+{	IGdW	!	:189	#o
+|	IGdW	!	:190	#p
+}	IGdW	!	:191	#q
+~	IGdW	!	:192	#r
+"!	IGdW	!	:193	#s
+""	IGdW	!	:194	#t
+"#	IGdW	!	:195	#u
+"$	IGdW	!	:196	#v
+"%	IGdW	!	:197	#w
+"&	IGdW	!	:198	#x
+"'	IGdW	!	:199	#y
+"(	IeEA	!	15	3	:20	"$
+")	IGdW	!	:200	#z
+"*	IGdW	!	:201	#{
+"+	IGdW	!	:202	#|
+",	IGdW	!	:203	#}
+"-	IGdW	!	:204	#~
+".	IGdW	!	:205	$!
+"/	IGdW	!	:206	$"
+"0	IGdW	!	:207	$#
+"1	IGdW	!	:208	$$
+"2	IGdW	!	:209	$%
+"3	IeEA	!	15	3	:21	"%
+"4	IGdW	!	:210	$&
+"5	IGdW	!	:211	$'
+"6	IGdW	!	:212	$(
+"7	IGdW	!	:213	$)
+"8	IGdW	!	:214	$*
+"9	IGdW	!	:215	$+
+":	IGdW	!	:216	$,
+";	IGdW	!	:217	$-
+"<	IGdW	!	:218	$.
+"=	IGdW	!	:219	$/
+">	IeEA	!	15	3	:22	"&
+"?	IGdW	!	:220	$0
+"@	IGdW	!	:221	$1
+"A	IeEA	!	15	3	:222	$2
+"B	IGdW	!	:223	$3
+"C	IGdW	!	:224	$4
+"D	IGdW	!	:225	$5
+"E	IGdW	!	:226	$6
+"F	IGdW	!	:227	$7
+"G	IGdW	!	:228	$8
+"H	IGdW	!	:229	$9
+"I	IeEA	!	15	3	:23	"'
+"J	IGdW	!	:230	$:
+"K	IGdW	!	:231	$;
+"L	IGdW	!	:232	$<
+"M	IGdW	!	:233	$=
+"N	IGdW	!	:234	$>
+"O	IGdW	!	:235	$?
+"P	IGdW	!	:236	$@
+"Q	IGdW	!	:237	$A
+"R	IGdW	!	:238	$B
+"S	IGdW	!	:239	$C
+"T	IeEA	!	15	3	:24	"(
+"U	IGdW	!	:240	$D
+"V	IGdW	!	:241	$E
+"W	IGdW	!	:242	$F
+"X	IGdW	!	:243	$G
+"Y	IGdW	!	:244	$H
+"Z	IGdW	!	:245	$I
+"[	IGdW	!	:246	$J
+"\	IGdW	!	:247	$K
+"]	IGdW	!	:248	$L
+"^	IGdW	!	:249	$M
+"_	IeEA	!	15	3	:25	")
+"`	IGdW	!	:250	$N
+"a	IGdW	!	:251	$O
+"b	IGdW	!	:252	$P
+"c	IGdW	!	:253	$Q
+"d	IGdW	!	:254	$R
+"e	IGdW	!	:255	$S
+"f	IGdW	!	:256	$T
+"g	IGdW	!	:257	$U
+"h	IGdW	!	:258	$V
+"i	IGdW	!	:259	$W
+"j	IeEA	!	15	3	:26	"*
+"k	IGdW	!	:260	$X
+"l	IGdW	!	:261	$Y
+"m	IGdW	!	:262	$Z
+"n	IGdW	!	:263	$[
+"o	IGdW	!	:264	$\
+"p	IGdW	!	:265	$]
+"q	IGdW	!	:266	$^
+"r	IGdW	!	:267	$_
+"s	IGdW	!	:268	$`
+"t	IGdW	!	:269	$a
+"u	IeEA	!	15	3	:27	"+
+"v	IGdW	!	:270	$b
+"w	IGdW	!	:271	$c
+"x	IGdW	!	:272	$d
+"y	IGdW	!	:273	$e
+"z	IeEA	!	15	3	:274	$f
+"{	IeEA	!	15	3	:28	",
+"|	IeEA	!	15	3	:29	"-
+"}	IeEA	!	15	3	:30	".
+"~	IeEA	!	15	3	:31	"/
+#!	IeEA	!	15	3	:32	"0
+#"	IeEA	!	15	3	:33	"1
+##	IeEA	!	15	3	:34	"2
+#$	IeEA	!	15	3	:35	"3
+#%	IeEA	!	15	3	:36	"4
+#&	IeEA	!	15	3	:37	"5
+#'	IeEA	!	15	3	:38	"6
+#(	IeEA	!	15	3	:39	"7
+#)	IeEA	!	15	3	:40	"8
+#*	IeEA	!	15	3	:41	"9
+#+	IeEA	!	15	3	:42	":
+#,	IeEA	!	15	3	:43	";
+#-	IeEA	!	15	3	:44	"<
+#.	IeEA	!	15	3	:45	"=
+#/	IeEA	!	15	3	:46	">
+#0	IeEA	!	15	3	:47	"?
+#1	IeEA	!	15	3	:48	"@
+#2	IeEA	!	15	3	:49	"A
+#3	IeEA	!	15	3	:50	"B
+#4	IeEA	!	15	3	:51	"C
+#5	IeEA	!	15	3	:52	"D
+#6	IeEA	!	15	3	:53	"E
+#7	IeEA	!	15	3	:54	"F
+#8	IeEA	!	15	3	:55	"G
+#9	IeEA	!	15	3	:56	"H
+#:	IeEA	!	15	3	:57	"I
+#;	IeEA	!	15	3	:58	"J
+#<	IeEA	!	15	3	:59	"K
+#=	IeEA	!	15	3	:60	"L
+#>	IeEA	!	15	3	:61	"M
+#?	IeEA	!	15	3	:62	"N
+#@	IeEA	!	15	3	:63	"O
+#A	IeEA	!	15	3	:64	"P
+#B	IeEA	!	15	3	:65	"Q
+#C	IeEA	!	15	3	:66	"R
+#D	IeEA	!	15	3	:67	"S
+#E	IeEA	!	15	3	:68	"T
+#F	IeEA	!	15	3	:69	"U
+#G	IeEA	!	15	3	:70	"V
+#H	IeEA	!	15	3	:71	"W
+#I	IeEA	!	15	3	:72	"X
+#J	IeEA	!	15	3	:73	"Y
+#K	IeEA	!	15	3	:74	"Z
+#L	IeEA	!	15	3	:75	"[
+#M	IeEA	!	15	3	:76	"\
+#N	IeEA	!	15	3	:77	"]
+#O	IeEA	!	15	3	:78	"^
+#P	IeEA	!	15	3	:79	"_
+#Q	IeEA	!	15	3	:80	"`
+#R	IeEA	!	15	3	:81	"a
+#S	IeEA	!	15	3	:82	"b
+#T	IeEA	!	15	3	:83	"c
+#U	IeEA	!	15	3	:84	"d
+#V	IeEA	!	15	3	:85	"e
+#W	IeEA	!	15	3	:86	"f
+#X	IeEA	!	15	3	:87	"g
+#Y	IeEA	!	15	3	:88	"h
+#Z	IeEA	!	15	3	:89	"i
+#[	IeEA	!	15	3	:90	"j
+#\	IeEA	!	15	3	:91	"k
+#]	IGdW	!	:92	"l
+#^	IGdW	!	:93	"m
+#_	IGdW	!	:94	"n
+#`	IGdW	!	:95	"o
+#a	IGdW	!	:96	"p
+#b	IGdW	!	:97	"q
+#c	IGdW	!	:98	"r
+#d	IGdW	!	:99	"s
+#e	"?%_n	!	9	9	5	#m	#n	#p	#o	#q	I0	!	I0	v
+#f	"?%_n	!	9	9	8	#m	#n	#p	#o	#q	#r	#s	#t	I1	!	I1	u
+#g	"?%_n	!	9	9	8	#m	#n	#p	#o	#q	#r	#s	#t	I2	!	I2	t
+#h	"?%_n	!	9	9	8	#m	#n	#p	#o	#q	#r	#s	#t	I3	!	I3	s
+#i	"?%_n	!	9	9	8	#m	#n	#p	#o	#q	#r	#s	#t	I4	!	I4	r
+#j	"?%_n	!	9	9	8	#m	#n	#p	#o	#q	#r	#s	#t	I5	!	I5	q
+#k	"?%_n	!	9	9	7	#m	#n	#p	#o	#q	#r	#s	I6	!	I6	p
+#l	"?%_n	!	9	9	6	#m	#n	#p	#o	#q	#r	I7	!	I7	o
+#m	"<R?c	!	10	13	Y0	!	Y0	y
+#n	"<R?c	!	10	13	Y1	!	Y1	x
+#o	"<R?c	!	10	13	Y2	!	Y2	w
+#p	Q<Im	!	10	13	3	#o	#n	#m	9	Y2~1	)R
+#q	P|i%	!	1	#p	1	~268~1	)C
+#r	P|i%	!	1	#p	1	~268~2	)G
+#s	P|i%	!	1	#p	1	~268~3	)K
+#t	P|i%	!	1	#p	1	~268~4	)O

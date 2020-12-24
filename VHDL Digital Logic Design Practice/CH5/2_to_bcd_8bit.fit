@@ -1,0 +1,148 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/09/2005 10:55:22      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "2_to_bcd_8bit"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "B0"                           : INPUT_PIN  = 14     ; -- LC30
+    "B1"                           : INPUT_PIN  = 12     ; -- LC1
+    "B2"                           : INPUT_PIN  = 11     ; -- LC3
+    "B3"                           : INPUT_PIN  = 9      ; -- LC4
+    "B4"                           : INPUT_PIN  = 8      ; -- LC5
+    "B5"                           : INPUT_PIN  = 6      ; -- LC11
+    "B6"                           : INPUT_PIN  = 5      ; -- LC14
+    "B7"                           : INPUT_PIN  = 4      ; -- LC16
+    "BCD00"                        : OUTPUT_PIN = 25     ; -- LC35
+    "BCD01"                        : OUTPUT_PIN = 26     ; -- LC36
+    "BCD02"                        : OUTPUT_PIN = 27     ; -- LC37
+    "BCD03"                        : OUTPUT_PIN = 28     ; -- LC40
+    "BCD10"                        : OUTPUT_PIN = 29     ; -- LC41
+    "BCD11"                        : OUTPUT_PIN = 31     ; -- LC46
+    "BCD12"                        : OUTPUT_PIN = 33     ; -- LC49
+    "BCD13"                        : OUTPUT_PIN = 34     ; -- LC51
+    "BCD20"                        : OUTPUT_PIN = 37     ; -- LC53
+    "BCD21"                        : OUTPUT_PIN = 39     ; -- LC57
+    "BCD22"                        : OUTPUT_PIN = 40     ; -- LC62
+    "BCD23"                        : OUTPUT_PIN = 41     ; -- LC64
+    "|5_add_3:41|~2~1"             : LOCATION   = LC24   ;
+    "|5_add_3:41|~3~1"             : LOCATION   = LC20   ; -- PIN 19
+    "|5_add_3:41|~5~1"             : LOCATION   = LC19   ; -- PIN 20
+    "|5_add_3:41|~7~1"             : LOCATION   = LC22   ;
+    "|5_add_3:41|~8~1"             : LOCATION   = LC18   ;
+    "|5_add_3:41|~9~1"             : LOCATION   = LC43   ;
+    "|5_add_3:41|~10~1"            : LOCATION   = LC17   ; -- PIN 21
+    "|5_add_3:41|~12~1"            : LOCATION   = LC26   ;
+    "|5_add_3:41|~23~1"            : LOCATION   = LC50   ;
+    "|5_add_3:41|~24~1"            : LOCATION   = LC54   ;
+    "|5_add_3:43|~3~1"             : LOCATION   = LC2    ;
+    "|5_add_3:43|~3~2"             : LOCATION   = LC29   ;  -- |5_add_3:43|8~2
+    "|5_add_3:43|~4~1"             : LOCATION   = LC30   ; -- PIN 14
+    "|5_add_3:43|~5~1"             : LOCATION   = LC21   ; -- PIN 18
+    "|5_add_3:43|~10~1"            : LOCATION   = LC15   ;
+    "|5_add_3:43|~11~1"            : LOCATION   = LC13   ;
+    "|5_add_3:43|~11~2"            : LOCATION   = LC1    ; -- PIN 12  -- |5_add_3:43|2~2
+    "|5_add_3:44|~3~1"             : LOCATION   = LC56   ; -- PIN 38
+    "|5_add_3:44|~5~1"             : LOCATION   = LC31   ;
+    "|5_add_3:44|~8~1"             : LOCATION   = LC61   ;  -- |5_add_3:44|BCD3~1
+    "|5_add_3:44|~8~2"             : LOCATION   = LC59   ;  -- |5_add_3:44|BCD3~2
+    "|5_add_3:44|~10~1"            : LOCATION   = LC38   ;
+    "|5_add_3:44|~10~2"            : LOCATION   = LC63   ;  -- |5_add_3:44|3~2
+    "|5_add_3:44|~12~1"            : LOCATION   = LC60   ;
+    "|5_add_3:45|~2~1"             : LOCATION   = LC52   ;
+    "|5_add_3:45|~2~2"             : LOCATION   = LC12   ;  -- |5_add_3:45|9~2
+    "|5_add_3:45|~2~3"             : LOCATION   = LC8    ; -- PIN 7  -- |5_add_3:45|9~3
+    "|5_add_3:45|~2~4"             : LOCATION   = LC4    ; -- PIN 9  -- |5_add_3:45|9~4
+    "|5_add_3:45|~3~1"             : LOCATION   = LC28   ;
+    "|5_add_3:45|~4~1"             : LOCATION   = LC32   ; -- PIN 13
+    "|5_add_3:45|~5~1"             : LOCATION   = LC27   ;
+    "|5_add_3:45|~6~1"             : LOCATION   = LC25   ; -- PIN 16
+    "|5_add_3:45|~6~2"             : LOCATION   = LC6    ;  -- |5_add_3:45|5~2
+    "|5_add_3:45|~9~1"             : LOCATION   = LC3    ; -- PIN 11  -- |5_add_3:45|BCD2~1
+    "|5_add_3:45|~9~2"             : LOCATION   = LC58   ;  -- |5_add_3:45|BCD2~2
+    "|5_add_3:45|~24~1"            : LOCATION   = LC55   ;  -- |5_add_3:45|BCD0~1
+
+END;
+
+INTERNAL_INFO "2_to_bcd_8bit"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC36    : LORAX = "G61R0";
+	LC64    : LORAX = "G114R0";
+	LC62    : LORAX = "G112R0";
+	LC57    : LORAX = "G78R0";
+	LC53    : LORAX = "G62R0";
+	LC51    : LORAX = "G31R0";
+	LC49    : LORAX = "G29R0";
+	LC46    : LORAX = "G75R0";
+	LC41    : LORAX = "G107R0";
+	LC35    : LORAX = "G60R0";
+	LC40    : LORAX = "G28R0";
+	LC37    : LORAX = "G25R0";
+	LC38    : LORAX = "G26R0,PA1R0C2";
+	OH0R0P12 : LORAX = "G83R0,PA18R0C1,PA19R0C2,PA19R0C3";
+	OH2R0P11 : LORAX = "G85R0,PA23R0C2,PA21R0C0,PA23R0C3,PA21R0C1";
+	LC30    : LORAX = "G71R0,PA21R0C2,PA25R0C3";
+	OH15R0P4 : LORAX = "G36R0,PA17R0C3,PA14R0C0,PA17R0C2,PA14R0C1";
+	OH3R0P9 : LORAX = "G86R0,PA22R0C3,PA26R0C2,PA22R0C0,PA22R0C1";
+	OH4R0P8 : LORAX = "G116R0,PA28R0C0,PA28R0C1,PA27R0C2,PA27R0C3";
+	OH10R0P6 : LORAX = "G2R0,PA0R0C0,PA0R0C1,PA3R0C3,PA0R0C2";
+	OH13R0P5 : LORAX = "G34R0,PA13R0C3,PA13R0C0,PA13R0C2,PA13R0C1";
+	LC15    : LORAX = "G101R0,PA33R0C1,PA32R0C2,PA33R0C3";
+	LC2     : LORAX = "G18R0,PA7R0C1,PA7R0C3,PA7R0C2";
+	LC13    : LORAX = "G99R0,PA29R0C1,PA29R0C3,PA28R0C2";
+	LC22    : LORAX = "G22R0,PA1R0C1,PA1R0C3,PA3R0C2";
+	LC24    : LORAX = "G24R0,PA8R0C1,PA8R0C2,PA0R0C3";
+	LC50    : LORAX = "G30R0,PA5R0C1,PA5R0C3,PA5R0C2";
+	LC17    : LORAX = "G54R0,PA16R0C2,PA16R0C3,PA16R0C1";
+	LC20    : LORAX = "G57R0,PA9R0C3,PA9R0C2,PA17R0C1";
+	LC54    : LORAX = "G63R0,PA15R0C3";
+	LC19    : LORAX = "G56R0,PA14R0C3,PA14R0C2,PA11R0C1";
+	LC26    : LORAX = "G104R0,PA30R0C2,PA34R0C1,PA34R0C3";
+	LC21    : LORAX = "G21R0,PA4R0C3,PA4R0C2";
+	LC43    : LORAX = "G109R0,PA30R0C3";
+	LC31    : LORAX = "G72R0,PA24R0C2,PA24R0C3";
+	LC56    : LORAX = "G65R0,PA10R0C3,PA11R0C2";
+	LC60    : LORAX = "G81R0,PA22R0C2";
+	LC32    : LORAX = "G73R0,PA20R0C3";
+	LC18    : LORAX = "G55R0,PA10R0C1,PA10R0C0,PA12R0C3,PA10R0C2";
+	LC25    : LORAX = "G103R0,PA32R0C3";
+	LC27    : LORAX = "G105R0,PA28R0C3,PA33R0C2";
+	LC28    : LORAX = "G106R0,PA31R0C3,PA31R0C2";
+	LC52    : LORAX = "G32R0,PA1R0C0,PA2R0C3";
+	OH29R0P14 : LORAX = "G5R0,PA2R0C2";
+	LC55    : LORAX = "G64R0,PA12R0C2";
+	LC12    : LORAX = "G69R0,PA25R0C1,PA25R0C2,PA26R0C3";
+	LC8     : LORAX = "G53R0,PA11R0C3,PA15R0C2,PA15R0C1";
+	LC61    : LORAX = "G111R0,PA29R0C2";
+	LC4     : LORAX = "G20R0,PA6R0C1,PA6R0C3,PA6R0C2";
+	LC3     : LORAX = "G19R0,PA8R0C3";
+	LC63    : LORAX = "G113R0,PA34R0C2";
+	LC59    : LORAX = "G80R0,PA18R0C2";
+	LC6     : LORAX = "G51R0,PA9R0C1";
+	LC1     : LORAX = "G17R0,PA4R0C0";
+	LC29    : LORAX = "G70R0,PA18R0C0";
+	LC58    : LORAX = "G79R0,PA21R0C3";
+END;

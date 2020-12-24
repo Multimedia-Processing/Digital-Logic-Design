@@ -1,0 +1,307 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 295
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:100	"t
+#	IGdW	!	:101	"u
+$	IGdW	!	:102	"v
+%	IGdW	!	:103	"w
+&	IGdW	!	:104	"x
+'	IGdW	!	:105	"y
+(	IGdW	!	:106	"z
+)	IGdW	!	:107	"{
+*	IGdW	!	:108	"|
++	IGdW	!	:109	"}
+,	IGdW	!	:110	"~
+-	IGdW	!	:111	#!
+.	IGdW	!	:112	#"
+/	IGdW	!	:113	##
+0	IGdW	!	:114	#$
+1	IGdW	!	:115	#%
+2	IGdW	!	:116	#&
+3	IGdW	!	:117	#'
+4	IGdW	!	:118	#(
+5	IGdW	!	:119	#)
+6	IGdW	!	:120	#*
+7	IGdW	!	:121	#+
+8	IGdW	!	:122	#,
+9	IGdW	!	:123	#-
+:	IGdW	!	:124	#.
+;	IGdW	!	:125	#/
+<	IGdW	!	:126	#0
+=	IGdW	!	:127	#1
+>	IGdW	!	:128	#2
+?	IGdW	!	:129	#3
+@	IGdW	!	:130	#4
+A	IGdW	!	:131	#5
+B	IGdW	!	:132	#6
+C	IGdW	!	:133	#7
+D	IGdW	!	:134	#8
+E	IGdW	!	:135	#9
+F	IGdW	!	:136	#:
+G	IGdW	!	:137	#;
+H	IGdW	!	:138	#<
+I	IGdW	!	:139	#=
+J	IGdW	!	:140	#>
+K	IGdW	!	:141	#?
+L	IGdW	!	:142	#@
+M	IGdW	!	:143	#A
+N	IGdW	!	:144	#B
+O	IGdW	!	:145	#C
+P	IGdW	!	:146	#D
+Q	IGdW	!	:147	#E
+R	IGdW	!	:148	#F
+S	IGdW	!	:149	#G
+T	IGdW	!	:150	#H
+U	IGdW	!	:151	#I
+V	IGdW	!	:152	#J
+W	IGdW	!	:153	#K
+X	IGdW	!	:154	#L
+Y	IGdW	!	:155	#M
+Z	IGdW	!	:156	#N
+[	IGdW	!	:157	#O
+\	IGdW	!	:158	#P
+]	IGdW	!	:159	#Q
+^	IGdW	!	:160	#R
+_	IGdW	!	:161	#S
+`	IGdW	!	:162	#T
+a	IGdW	!	:163	#U
+b	IGdW	!	:164	#V
+c	IGdW	!	:165	#W
+d	IGdW	!	:166	#X
+e	IGdW	!	:167	#Y
+f	IGdW	!	:168	#Z
+g	IGdW	!	:169	#[
+h	IGdW	!	:170	#\
+i	IGdW	!	:171	#]
+j	IGdW	!	:172	#^
+k	IGdW	!	:173	#_
+l	IGdW	!	:174	#`
+m	IGdW	!	:175	#a
+n	IGdW	!	:176	#b
+o	IGdW	!	:177	#c
+p	IGdW	!	:178	#d
+q	IGdW	!	:179	#e
+r	IGdW	!	:180	#f
+s	IGdW	!	:181	#g
+t	IGdW	!	:182	#h
+u	IGdW	!	:183	#i
+v	IGdW	!	:184	#j
+w	IGdW	!	:185	#k
+x	IGdW	!	:186	#l
+y	IGdW	!	:187	#m
+z	IGdW	!	:188	#n
+{	IGdW	!	:189	#o
+|	IGdW	!	:190	#p
+}	IGdW	!	:191	#q
+~	IGdW	!	:192	#r
+"!	IGdW	!	:193	#s
+""	IGdW	!	:194	#t
+"#	IGdW	!	:195	#u
+"$	IGdW	!	:196	#v
+"%	IGdW	!	:197	#w
+"&	IGdW	!	:198	#x
+"'	IGdW	!	:199	#y
+"(	IGdW	!	:200	#z
+")	IGdW	!	:201	#{
+"*	IGdW	!	:202	#|
+"+	IGdW	!	:203	#}
+",	IGdW	!	:204	#~
+"-	IGdW	!	:205	$!
+".	IGdW	!	:206	$"
+"/	IGdW	!	:207	$#
+"0	IGdW	!	:208	$$
+"1	IGdW	!	:209	$%
+"2	IGdW	!	:210	$&
+"3	IGdW	!	:211	$'
+"4	IGdW	!	:212	$(
+"5	IGdW	!	:213	$)
+"6	IGdW	!	:214	$*
+"7	IGdW	!	:215	$+
+"8	IGdW	!	:216	$,
+"9	IGdW	!	:217	$-
+":	IGdW	!	:218	$.
+";	IGdW	!	:219	$/
+"<	IGdW	!	:220	$0
+"=	IGdW	!	:221	$1
+">	IGdW	!	:222	$2
+"?	IGdW	!	:223	$3
+"@	IGdW	!	:224	$4
+"A	IGdW	!	:225	$5
+"B	IGdW	!	:226	$6
+"C	IGdW	!	:227	$7
+"D	IGdW	!	:228	$8
+"E	IGdW	!	:229	$9
+"F	IGdW	!	:230	$:
+"G	IGdW	!	:231	$;
+"H	IGdW	!	:232	$<
+"I	IGdW	!	:233	$=
+"J	IGdW	!	:234	$>
+"K	IGdW	!	:235	$?
+"L	IGdW	!	:236	$@
+"M	IGdW	!	:237	$A
+"N	IGdW	!	:238	$B
+"O	IGdW	!	:239	$C
+"P	IGdW	!	:240	$D
+"Q	IGdW	!	:241	$E
+"R	IGdW	!	:242	$F
+"S	IGdW	!	:243	$G
+"T	IGdW	!	:244	$H
+"U	IGdW	!	:245	$I
+"V	IGdW	!	:246	$J
+"W	IGdW	!	:247	$K
+"X	IGdW	!	:248	$L
+"Y	IGdW	!	:249	$M
+"Z	IGdW	!	:250	$N
+"[	IGdW	!	:251	$O
+"\	IGdW	!	:252	$P
+"]	IGdW	!	:253	$Q
+"^	IGdW	!	:254	$R
+"_	IGdW	!	:255	$S
+"`	IGdW	!	:256	$T
+"a	IGdW	!	:257	$U
+"b	IGdW	!	:258	$V
+"c	IGdW	!	:259	$W
+"d	IGdW	!	:260	$X
+"e	IGdW	!	:261	$Y
+"f	IGdW	!	:262	$Z
+"g	IGdW	!	:263	$[
+"h	IGdW	!	:264	$\
+"i	IGdW	!	:265	$]
+"j	IGdW	!	:266	$^
+"k	IGdW	!	:267	$_
+"l	IGdW	!	:268	$`
+"m	IGdW	!	:269	$a
+"n	IGdW	!	:270	$b
+"o	IGdW	!	:271	$c
+"p	IGdW	!	:272	$d
+"q	IGdW	!	:273	$e
+"r	IGdW	!	:274	$f
+"s	IGdW	!	:275	$g
+"t	IGdW	!	:276	$h
+"u	IGdW	!	:277	$i
+"v	IGdW	!	:278	$j
+"w	IGdW	!	:279	$k
+"x	IGdW	!	:280	$l
+"y	IGdW	!	:281	$m
+"z	IGdW	!	:282	$n
+"{	IGdW	!	:283	$o
+"|	IGdW	!	:284	$p
+"}	IGdW	!	:285	$q
+"~	IGdW	!	:286	$r
+#!	IGdW	!	:287	$s
+#"	IGdW	!	:288	$t
+##	IGdW	!	:289	$u
+#$	IGdW	!	:290	$v
+#%	IGdW	!	:291	$w
+#&	IGdW	!	:292	$x
+#'	IGdW	!	:293	$y
+#(	IGdW	!	:294	$z
+#)	IGdW	!	:295	${
+#*	IGdW	!	:296	$|
+#+	IGdW	!	:297	$}
+#,	IGdW	!	:298	$~
+#-	IGdW	!	:299	%!
+#.	IGdW	!	:300	%"
+#/	IGdW	!	:301	%#
+#0	IGdW	!	:302	%$
+#1	IGdW	!	:303	%%
+#2	IGdW	!	:304	%&
+#3	IGdW	!	:305	%'
+#4	IGdW	!	:306	%(
+#5	IGdW	!	:307	%)
+#6	IGdW	!	:308	%*
+#7	IGdW	!	:309	%+
+#8	IGdW	!	:310	%,
+#9	IGdW	!	:311	%-
+#:	IGdW	!	:312	%.
+#;	IGdW	!	:313	%/
+#<	IGdW	!	:314	%0
+#=	IGdW	!	:315	%1
+#>	IGdW	!	:316	%2
+#?	IGdW	!	:317	%3
+#@	IGdW	!	:318	%4
+#A	IGdW	!	:319	%5
+#B	IGdW	!	:320	%6
+#C	IGdW	!	:321	%7
+#D	IGdW	!	:322	%8
+#E	IGdW	!	:323	%9
+#F	IGdW	!	:324	%:
+#G	IGdW	!	:325	%;
+#H	IGdW	!	:326	%<
+#I	IGdW	!	:327	%=
+#J	IGdW	!	:328	%>
+#K	IGdW	!	:329	%?
+#L	IeEA	!	13	1	:47	"?
+#M	IeEA	!	13	1	:48	"@
+#N	IeEA	!	13	1	:49	"A
+#O	IeEA	!	13	1	:50	"B
+#P	IeEA	!	13	1	:51	"C
+#Q	IeEA	!	13	1	:52	"D
+#R	IeEA	!	13	1	:53	"E
+#S	IeEA	!	13	1	:54	"F
+#T	IeEA	!	13	1	:55	"G
+#U	IeEA	!	13	1	:56	"H
+#V	IeEA	!	13	1	:57	"I
+#W	IeEA	!	13	1	:58	"J
+#X	IeEA	!	13	1	:59	"K
+#Y	IeEA	!	13	1	:60	"L
+#Z	IeEA	!	13	1	:61	"M
+#[	IeEA	!	13	1	:62	"N
+#\	IeEA	!	13	1	:63	"O
+#]	IeEA	!	13	1	:64	"P
+#^	IeEA	!	13	1	:65	"Q
+#_	IeEA	!	13	1	:66	"R
+#`	IeEA	!	13	1	:67	"S
+#a	IeEA	!	13	1	:68	"T
+#b	IeEA	!	13	1	:69	"U
+#c	IeEA	!	13	1	:70	"V
+#d	IeEA	!	13	1	:71	"W
+#e	IeEA	!	13	1	:72	"X
+#f	IeEA	!	13	1	:73	"Y
+#g	IeEA	!	13	1	:74	"Z
+#h	IeEA	!	13	1	:75	"[
+#i	IeEA	!	13	1	:76	"\
+#j	IeEA	!	13	1	:77	"]
+#k	IeEA	!	13	1	:78	"^
+#l	IeEA	!	13	1	:79	"_
+#m	IeEA	!	13	1	:80	"`
+#n	IeEA	!	13	1	:81	"a
+#o	IeEA	!	13	1	:82	"b
+#p	IeEA	!	13	1	:83	"c
+#q	IeEA	!	13	1	:84	"d
+#r	IeEA	!	13	1	:85	"e
+#s	IeEA	!	13	1	:86	"f
+#t	IGdW	!	:87	"g
+#u	IGdW	!	:88	"h
+#v	IGdW	!	:89	"i
+#w	IGdW	!	:90	"j
+#x	IGdW	!	:91	"k
+#y	IGdW	!	:92	"l
+#z	IGdW	!	:93	"m
+#{	IGdW	!	:94	"n
+#|	IGdW	!	:95	"o
+#}	IGdW	!	:96	"p
+#~	IGdW	!	:97	"q
+$!	IGdW	!	:98	"r
+$"	IGdW	!	:99	"s
+$#	L8ef	!	9	9	8	$'	$(	$)	$*	$+	$,	$-	$.	A	o
+$$	L8ef	!	9	9	8	$'	$(	$)	$*	$+	$,	$-	$.	B	p
+$%	L8ef	!	9	9	8	$'	$(	$)	$*	$+	$,	$-	$.	C	q
+$&	(@\6H	!	9	9	8	$'	$(	$)	$*	$+	$,	$-	$.	EN	r
+$'	"<R?c	!	10	13	Y0	!	Y0	z
+$(	"<R?c	!	10	13	Y1	!	Y1	y
+$)	"<R?c	!	10	13	Y2	!	Y2	x
+$*	"<R?c	!	10	13	Y3	!	Y3	w
+$+	"<R?c	!	10	13	Y4	!	Y4	v
+$,	"<R?c	!	10	13	Y5	!	Y5	u
+$-	"<R?c	!	10	13	Y6	!	Y6	t
+$.	"<R?c	!	10	13	Y7	!	Y7	s

@@ -1,0 +1,82 @@
+NDB006
+The number of symbol table entries is: 7
+The length of the symbol table is: 212
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|debounce:12|
+<	|2000_20000_mod:13|
+P	|2000_20000_mod:13|mod_1000:8|mod_10_s_u:1|
+|	|2000_20000_mod:13|mod_1000:8|mod_10_s_u:3|
+"J	|2000_20000_mod:13|mod_1000:8|mod_10_s_u:2|
+"v	|2000_20000_mod:13|mod_10_s_u:9|
+
+The number of name info structs is : 64
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	(@>U^	!	4	2	,	0	1	2MHz	t
+#	IGdG	!	:1	~
+$	(@>U^	!	1	&	CLR	o
+%	Ky&|	!	1	&	PR	q
+&	Ky&}	!	1	&	Q	u
+'	Ky&|	!	1	&	R	s
+(	Ky&|	!	1	&	S	p
+)	Ky&|	!	1	]	SW	r
+*	INvO	<	+	1KHz_out	"?
++	L)p/	<	*	4	\	]	_	+	:4	"?
+,	L)p/	P	4	4	0	1	2	,	:1	"c
+-	IGdW	P	:13	"g
+.	IGdW	P	:18	"j
+/	IGdW	P	:19	"h
+0	L)p/	P	5	3	1	2	0	:2	"e
+1	L)p/	P	6	2	2	1	:3	"f
+2	L)p/	P	7	6	0	2	8	<	=	>	:4	"d
+3	IGdW	P	:7	"i
+4	INvO	P	,	Q0	"c
+5	INvO	P	0	Q1	"e
+6	INvO	P	1	Q2	"f
+7	INvO	P	2	Q3	"d
+8	L)p/	"J	@	4	<	=	>	8	:1	#(
+9	IGdW	"J	:13	#,
+:	IGdW	"J	:18	#/
+;	IGdW	"J	:19	#-
+<	L)p/	"J	A	3	=	>	<	:2	#*
+=	L)p/	"J	B	2	>	=	:3	#+
+>	L)p/	"J	C	6	<	>	D	H	I	J	:4	#)
+?	IGdW	"J	:7	#.
+@	INvO	"J	8	Q0	#(
+A	INvO	"J	<	Q1	#*
+B	INvO	"J	=	Q2	#+
+C	INvO	"J	>	Q3	#)
+D	L)p/	|	L	4	H	I	J	D	:1	"u
+E	IGdW	|	:13	"y
+F	IGdW	|	:18	"|
+G	IGdW	|	:19	"z
+H	L)p/	|	M	3	I	J	H	:2	"w
+I	L)p/	|	N	2	J	I	:3	"x
+J	L)p/	|	O	3	H	J	+	:4	"v
+K	IGdW	|	:7	"{
+L	INvO	|	D	Q0	"u
+M	INvO	|	H	Q1	"w
+N	INvO	|	I	Q2	"x
+O	INvO	|	J	Q3	"v
+P	IVOA	"v	X	:1	#9
+Q	IGdW	"v	:13	#=
+R	IGdW	"v	:18	#@
+S	IGdW	"v	:19	#>
+T	IVOA	"v	Y	:2	#;
+U	IVOA	"v	Z	:3	#<
+V	IVOA	"v	[	:4	#:
+W	IGdW	"v	:7	#?
+X	INum	"v	P	Q0	#9
+Y	INum	"v	T	Q1	#;
+Z	INum	"v	U	Q2	#<
+[	INum	"v	V	Q3	#:
+\	L)p/	.	a	2	\	&	:1	")
+]	Ky'5	.	2	\	_	:2	"*
+^	IGdW	.	:26	"-
+_	Ky'5	.	1	\	:3	"+
+`	IGdW	.	:4	",
+a	INvO	.	\	SW_out	")

@@ -1,0 +1,52 @@
+NDB006
+The number of symbol table entries is: 5
+The length of the symbol table is: 69
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|Half_add:U1|
+<	|Full_add:U2|
+J	|Full_add:U3|
+X	|Full_add:U4|
+
+The number of name info structs is : 36
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	"?%_n	!	9	9	5	*	+	,	-	.	A0	!	A0	r
+#	"?%_n	!	9	9	4	*	,	-	.	A1	!	A1	q
+$	"?%_n	!	9	9	3	*	-	.	A2	!	A2	p
+%	"?%_n	!	9	9	2	*	.	A3	!	A3	o
+&	"?%_n	!	9	9	5	*	+	,	-	.	B0	!	B0	v
+'	"?%_n	!	9	9	4	*	,	-	.	B1	!	B1	u
+(	"?%_n	!	9	9	3	*	-	.	B2	!	B2	t
+)	"?%_n	!	9	9	2	*	.	B3	!	B3	s
+*	XsJE	!	11	13	3	1	1	Cout	{
++	"<R?c	!	10	13	S0	!	S0	z
+,	"<R?c	!	10	13	S1	!	S1	y
+-	"K`DM	!	10	13	3	1	1	S2	!	S2	x
+.	"AW!{	!	10	13	9	S3	!	S3	w
+/	IeEA	<	15	3	:13	#U
+0	IeEA	<	15	3	:14	#V
+1	IeEA	<	15	3	:15	#W
+2	IeEA	<	15	3	:16	#X
+3	IeEA	<	15	3	:17	#Y
+4	IeEA	<	14	3	:7	#O
+5	IeEA	<	14	3	:8	#P
+6	IeEA	J	15	3	:13	#k
+7	IeEA	J	15	3	:14	#l
+8	IeEA	J	15	3	:15	#m
+9	IeEA	J	15	3	:16	#n
+:	IeEA	J	15	3	:17	#o
+;	IeEA	J	14	3	:7	#e
+<	IeEA	J	14	3	:8	#f
+=	IeEA	X	15	3	:13	$"
+>	IeEA	X	15	3	:14	$#
+?	IeEA	X	15	3	:15	$$
+@	IeEA	X	15	3	:16	$%
+A	IeEA	X	15	3	:17	$&
+B	IeEA	X	14	3	:7	#z
+C	IeEA	X	14	3	:8	#{
+D	IeEA	.	14	3	:5	#B
+E	IeEA	.	15	3	:6	#C

@@ -1,0 +1,104 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 92
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	20	3	:100	"t
+#	IeEA	!	20	3	:101	"u
+$	IeEA	!	20	3	:102	"v
+%	IGdW	!	:103	"w
+&	IGdW	!	:104	"x
+'	IGdW	!	:105	"y
+(	IGdW	!	:106	"z
+)	IGdW	!	:107	"{
+*	IGdW	!	:108	"|
++	IGdW	!	:109	"}
+,	IGdW	!	:110	"~
+-	IGdW	!	:111	#!
+.	IGdW	!	:112	#"
+/	IGdW	!	:113	##
+0	IGdW	!	:114	#$
+1	IGdW	!	:115	#%
+2	IGdW	!	:116	#&
+3	IGdW	!	:117	#'
+4	IGdW	!	:118	#(
+5	IGdW	!	:119	#)
+6	IGdW	!	:120	#*
+7	IGdW	!	:121	#+
+8	IGdW	!	:122	#,
+9	IGdW	!	:123	#-
+:	IGdW	!	:124	#.
+;	IGdW	!	:125	#/
+<	IGdW	!	:126	#0
+=	IGdW	!	:127	#1
+>	IGdW	!	:128	#2
+?	IGdW	!	:129	#3
+@	IGdW	!	:130	#4
+A	IGdW	!	:131	#5
+B	IGdW	!	:132	#6
+C	IeEA	!	15	3	:26	"*
+D	IeEA	!	15	3	:27	"+
+E	IeEA	!	15	3	:28	",
+F	IeEA	!	15	3	:29	"-
+G	IeEA	!	15	3	:30	".
+H	IeEA	!	15	3	:31	"/
+I	IeEA	!	15	3	:32	"0
+J	IeEA	!	15	3	:33	"1
+K	IeEA	!	15	3	:34	"2
+L	IeEA	!	15	3	:35	"3
+M	IeEA	!	15	3	:36	"4
+N	IeEA	!	15	3	:37	"5
+O	IeEA	!	15	3	:38	"6
+P	IeEA	!	15	3	:39	"7
+Q	IGdW	!	:40	"8
+R	IGdW	!	:41	"9
+S	IGdW	!	:42	":
+T	IGdW	!	:43	";
+U	IGdW	!	:44	"<
+V	IGdW	!	:45	"=
+W	IGdW	!	:46	">
+X	IGdW	!	:47	"?
+Y	IGdW	!	:48	"@
+Z	IGdW	!	:49	"A
+[	IGdW	!	:50	"B
+\	IGdW	!	:51	"C
+]	IGdW	!	:52	"D
+^	IGdW	!	:53	"E
+_	IGdW	!	:54	"F
+`	IGdW	!	:55	"G
+a	IGdW	!	:56	"H
+b	IGdW	!	:57	"I
+c	IGdW	!	:58	"J
+d	IGdW	!	:59	"K
+e	IGdW	!	:60	"L
+f	IGdW	!	:61	"M
+g	IGdW	!	:62	"N
+h	IGdW	!	:63	"O
+i	IGdW	!	:64	"P
+j	IGdW	!	:65	"Q
+k	IGdW	!	:66	"R
+l	IGdW	!	:67	"S
+m	IGdW	!	:68	"T
+n	IGdW	!	:69	"U
+o	IeEA	!	20	3	:90	"j
+p	IeEA	!	20	3	:91	"k
+q	IeEA	!	20	3	:92	"l
+r	IeEA	!	20	3	:93	"m
+s	IeEA	!	20	3	:94	"n
+t	IeEA	!	20	3	:95	"o
+u	IeEA	!	20	3	:96	"p
+v	IeEA	!	20	3	:97	"q
+w	IeEA	!	20	3	:98	"r
+x	IeEA	!	20	3	:99	"s
+y	L8ef	!	9	10	2	|	}	A	o
+z	L8ef	!	9	10	2	|	}	B	p
+{	L8ef	!	9	10	2	|	}	Bi	q
+|	IeE[	!	10	10	Bo	s
+}	IeE[	!	10	10	Do	r

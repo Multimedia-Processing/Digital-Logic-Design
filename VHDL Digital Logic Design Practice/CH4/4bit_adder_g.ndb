@@ -1,0 +1,96 @@
+NDB006
+The number of symbol table entries is: 9
+The length of the symbol table is: 215
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|full_adder:29|
+>	|full_adder:29|half_subtractor:13|
+a	|full_adder:24|
+q	|full_adder:24|half_subtractor:13|
+"6	|full_adder:19|
+"F	|full_adder:19|half_subtractor:13|
+"i	|full_adder:1|
+"x	|full_adder:1|half_subtractor:13|
+
+The number of name info structs is : 76
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	Ky&|	!	8	+	Y	Z	k	l	m	,	-	A0	w
+#	Ky&|	!	7	+	Y	Z	k	l	m	-	A1	t
+$	Ky&|	!	5	+	k	l	m	.	A2	r
+%	Ky&|	!	2	+	/	A3	o
+&	Ky&|	!	8	+	Y	Z	k	l	m	,	-	B0	v
+'	Ky&|	!	7	+	Y	Z	k	l	m	-	B1	u
+(	Ky&|	!	4	+	l	m	.	B2	s
+)	Ky&|	!	2	+	/	B3	q
+*	Ky&|	!	7	+	Y	k	l	m	,	-	C0	p
++	NLG+	!	5	C3	y
+,	IGdq	!	S0	|
+-	NLG+	!	3	S1	{
+.	NLG+	!	2	S2	z
+/	NLG+	!	2	S3	x
+0	IGdW	"6	:1	#(
+1	IVOQ	"6	<	:2	#)
+2	IGdW	"6	:3	#*
+3	IGdW	"6	:4	#,
+4	IGdW	"6	:5	#+
+5	IVOQ	"6	6	:6	#-
+6	INu}	"6	5	Co	#-
+7	IVOQ	"F	;	:1	#6
+8	IVOQ	"F	:	:2	#7
+9	IGdW	"F	:3	#8
+:	INu}	"F	8	Bo	#7
+;	INu}	"F	7	Do	#6
+<	INu}	"6	1	So	#)
+=	IGdW	"i	:1	#G
+>	IVOQ	"i	I	:2	#H
+?	IGdW	"i	:3	#I
+@	IGdW	"i	:4	#K
+A	IGdW	"i	:5	#J
+B	IVOQ	"i	C	:6	#L
+C	INu}	"i	B	Co	#L
+D	IVOQ	"x	H	:1	#U
+E	IVOQ	"x	G	:2	#V
+F	IGdW	"x	:3	#W
+G	INu}	"x	E	Bo	#V
+H	INu}	"x	D	Do	#U
+I	INu}	"i	>	So	#H
+J	IGdW	a	:1	"g
+K	IVOQ	a	V	:2	"h
+L	IGdW	a	:3	"i
+M	IGdW	a	:4	"k
+N	IGdW	a	:5	"j
+O	IVOQ	a	P	:6	"l
+P	INu}	a	O	Co	"l
+Q	IVOQ	q	U	:1	"u
+R	IVOQ	q	T	:2	"v
+S	IGdW	q	:3	"w
+T	INu}	q	R	Bo	"v
+U	INu}	q	Q	Do	"u
+V	INu}	a	K	So	"h
+W	IM}Q	a	Y	So~1	%,
+X	IM}Q	a	Z	So~2	%4
+Y	Q-YI	a	W	1	.	1	~2~1	%,
+Z	L(w1	a	X	1	.	~2~2	%4
+[	IGdW	.	:1	"F
+\	IVOQ	.	g	:2	"G
+]	IGdW	.	:3	"H
+^	IGdW	.	:4	"J
+_	IGdW	.	:5	"I
+`	IVOQ	.	a	:6	"K
+a	INu}	.	`	Co	"K
+b	IVOQ	>	f	:1	"U
+c	IVOQ	>	e	:2	"V
+d	IGdW	>	:3	"W
+e	INu}	>	c	Bo	"V
+f	INu}	>	b	Do	"U
+g	INu}	.	\	So	"G
+h	IM}Q	.	k	So~1	%$
+i	IM}Q	.	l	So~2	%(
+j	IM}Q	.	m	So~3	%0
+k	Q-YI	.	h	1	/	1	~2~1	%$
+l	Q-YI	.	i	1	/	1	~2~2	%(
+m	Q-YI	.	j	1	/	1	~2~3	%0

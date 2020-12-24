@@ -1,0 +1,197 @@
+NDB006
+The number of symbol table entries is: 3
+The length of the symbol table is: 76
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|LPM_ADD_SUB:43|
+?	|LPM_ADD_SUB:43|addcore:adder|addcore:adder0|
+
+The number of name info structs is : 183
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	It0+	!	-	14	1	:10	"+
+#	IeEA	!	16	4	:22	"7
+$	It0+	!	0	14	1	:7	"(
+%	It0+	!	/	14	1	:8	")
+&	It0+	!	.	14	1	:9	"*
+'	(@\6H	!	9	9	4	,	+	*	)	CK	p
+(	(@\6H	!	9	9	4	,	+	*	)	CLR	o
+)	"?%_o	!	10	13	4	*	+	,	)	Q0	!	Q0	t
+*	"?%_o	!	10	13	3	+	,	*	Q1	!	Q1	s
++	"?%_o	!	10	13	2	,	+	Q2	!	Q2	r
+,	"?%_o	!	10	13	1	,	Q3	!	Q3	q
+-	"<;ou	!	"	Q_temp0	!	Q_temp0	"+
+.	"<;ou	!	&	Q_temp1	!	Q_temp1	"*
+/	"<;ou	!	%	Q_temp2	!	Q_temp2	")
+0	"<;ou	!	$	Q_temp3	!	Q_temp3	"(
+1	IeEA	.	704	78	:105	#\
+2	IeEA	.	704	78	:106	#]
+3	IeEA	.	704	56	:107	#^
+4	IeEA	.	705	35	:108	#_
+5	IeEA	.	704	91	:109	#`
+6	IeEA	.	704	91	:110	#a
+7	IeEA	?	196	33	:141	%Z
+8	IeEA	?	196	63	:142	%[
+9	IeEA	?	196	49	:143	%\
+:	IeEA	?	197	33	:144	%]
+;	IeEA	?	197	65	:145	%^
+<	IeEA	?	198	22	:146	%_
+=	IeEA	?	197	81	:147	%`
+>	IeEA	?	197	49	:148	%a
+?	IeEA	?	196	33	:149	%b
+@	IeEA	?	196	63	:150	%c
+A	IeEA	?	196	49	:151	%d
+B	IeEA	?	197	33	:152	%e
+C	IeEA	?	197	65	:153	%f
+D	IeEA	?	198	22	:154	%g
+E	IeEA	?	197	81	:155	%h
+F	IeEA	?	197	49	:156	%i
+G	IeEA	?	196	33	:157	%j
+H	IeEA	?	196	63	:158	%k
+I	IeEA	?	196	49	:159	%l
+J	IeEA	?	197	33	:160	%m
+K	IeEA	?	197	65	:161	%n
+L	IeEA	?	198	22	:162	%o
+M	IeEA	?	197	81	:163	%p
+N	IeEA	?	197	49	:164	%q
+O	IeEA	?	196	33	:165	%r
+P	IeEA	?	196	63	:166	%s
+Q	IeEA	?	196	49	:167	%t
+R	IeEA	?	197	33	:168	%u
+S	IeEA	?	197	65	:169	%v
+T	IeEA	?	198	22	:170	%w
+U	IeEA	?	197	81	:171	%x
+V	IeEA	?	197	49	:172	%y
+W	IeEA	?	201	53	:173	%z
+X	IeEA	?	201	38	:174	%{
+Y	IeEA	?	202	56	:176	%}
+Z	IeEA	?	202	40	:177	%~
+[	IeEA	?	202	25	:178	&!
+\	IeEA	?	203	25	:179	&"
+]	IeEA	?	203	40	:180	&#
+^	IeEA	?	203	55	:181	&$
+_	IeEA	?	348	17	:213	&D
+`	IeEA	?	350	25	:215	&F
+a	IeEA	?	350	16	:216	&G
+b	IeEA	?	360	28	:220	&K
+c	IeEA	?	361	28	:222	&M
+d	IeEA	?	366	29	:224	&O
+e	IeEA	?	367	29	:226	&Q
+f	IeEA	?	378	30	:232	&W
+g	IeEA	?	379	31	:234	&Y
+h	IeEA	?	380	31	:236	&[
+i	IeEA	?	387	29	:238	&]
+j	IeEA	?	387	38	:239	&^
+k	IeEA	?	392	32	:240	&_
+l	IeEA	?	392	32	:241	&`
+m	IeEA	?	392	42	:242	&a
+n	IeEA	?	392	32	:243	&b
+o	IeEA	?	392	32	:244	&c
+p	IeEA	?	392	42	:245	&d
+q	IeEA	?	390	27	:246	&e
+r	IeEA	?	392	32	:247	&f
+s	IeEA	?	392	32	:248	&g
+t	IeEA	?	392	42	:249	&h
+u	IeEA	?	392	32	:250	&i
+v	IeEA	?	392	32	:251	&j
+w	IeEA	?	392	42	:252	&k
+x	IeEA	?	392	32	:253	&l
+y	IeEA	?	392	32	:254	&m
+z	IeEA	?	392	42	:255	&n
+{	IeEA	?	392	32	:256	&o
+|	IeEA	?	392	32	:257	&p
+}	IeEA	?	392	42	:258	&q
+~	IeEA	?	397	34	:259	&r
+"!	IeEA	?	397	34	:260	&s
+""	IeEA	?	397	43	:261	&t
+"#	IeEA	?	397	24	:262	&u
+"$	IeEA	?	165	5	cout_node	%P
+"%	IeEA	?	366	20	g2c1	&P
+"&	IeEA	?	367	20	g2c2	&R
+"'	IeEA	?	159	9	g2cp1	%>
+"(	IeEA	?	159	9	g2cp2	%=
+")	IeEA	?	348	17	g3	&E
+"*	IeEA	?	158	5	g4	%<
+"+	IeEA	?	360	19	gc1	&L
+",	IeEA	?	361	19	gc2	&N
+"-	IeEA	?	160	8	gcp2	%?
+".	IeEA	?	168	14	genr_node0	%X
+"/	IeEA	?	168	14	genr_node1	%W
+"0	IeEA	?	168	14	genr_node2	%V
+"1	IeEA	?	168	14	genr_node3	%U
+"2	IeEA	?	331	22	gn0	&'
+"3	IeEA	?	338	23	gn1	&*
+"4	IeEA	?	338	23	gn2	&-
+"5	IeEA	?	338	23	gn3	&0
+"6	IeEA	?	338	23	gn4	&3
+"7	IeEA	?	338	23	gn5	&6
+"8	IeEA	?	338	23	gn6	&9
+"9	IeEA	?	338	23	gn7	&<
+":	IeEA	?	201	22	gp0	%|
+";	IeEA	?	148	7	gs1	$p
+"<	IeEA	?	148	7	gs2	$o
+"=	IeEA	?	148	7	gs3	$n
+">	IeEA	?	148	7	gs4	$m
+"?	IeEA	?	148	7	gs5	$l
+"@	IeEA	?	148	7	gs6	$k
+"A	IeEA	?	148	7	gs7	$j
+"B	IeEA	?	354	17	p2c0	&H
+"C	IeEA	?	355	21	p2c1	&I
+"D	IeEA	?	356	21	p2c2	&J
+"E	IeEA	?	343	20	pc0	&=
+"F	IeEA	?	345	21	pc1	&>
+"G	IeEA	?	345	21	pc2	&?
+"H	IeEA	?	345	21	pc3	&@
+"I	IeEA	?	345	21	pc4	&A
+"J	IeEA	?	345	21	pc5	&B
+"K	IeEA	?	345	21	pc6	&C
+"L	IeEA	?	328	22	pp0	&%
+"M	IeEA	?	335	23	pp1	&(
+"N	IeEA	?	335	23	pp2	&+
+"O	IeEA	?	335	23	pp3	&.
+"P	IeEA	?	335	23	pp4	&1
+"Q	IeEA	?	335	23	pp5	&4
+"R	IeEA	?	335	23	pp6	&7
+"S	IeEA	?	335	23	pp7	&:
+"T	IeEA	?	167	15	prop_node0	%T
+"U	IeEA	?	167	15	prop_node1	%S
+"V	IeEA	?	167	15	prop_node2	%R
+"W	IeEA	?	167	15	prop_node3	%Q
+"X	IeEA	?	150	7	ps0	%"
+"Y	IeEA	?	150	7	ps1	%!
+"Z	IeEA	?	150	7	ps2	$~
+"[	IeEA	?	150	7	ps3	$}
+"\	IeEA	?	150	7	ps4	$|
+"]	IeEA	?	150	7	ps5	${
+"^	IeEA	?	150	7	ps6	$z
+"_	IeEA	?	150	7	ps7	$y
+"`	IeEA	?	330	12	psi0	&&
+"a	IeEA	?	337	13	psi1	&)
+"b	IeEA	?	337	13	psi2	&,
+"c	IeEA	?	337	13	psi3	&/
+"d	IeEA	?	337	13	psi4	&2
+"e	IeEA	?	337	13	psi5	&5
+"f	IeEA	?	337	13	psi6	&8
+"g	IeEA	?	337	13	psi7	&;
+"h	IeEA	?	164	16	result_node0	%O
+"i	IeEA	?	164	16	result_node1	%N
+"j	IeEA	?	164	16	result_node2	%M
+"k	IeEA	?	164	16	result_node3	%L
+"l	IeEA	?	164	16	result_node4	%K
+"m	IeEA	?	164	16	result_node5	%J
+"n	IeEA	?	164	16	result_node6	%I
+"o	IeEA	?	164	16	result_node7	%H
+"p	IeEA	?	374	29	tot_cin_node0	&S
+"q	IeEA	?	375	29	tot_cin_node1	&T
+"r	IeEA	?	376	30	tot_cin_node2	&U
+"s	IeEA	?	377	26	tot_cin_node3	&V
+"t	IeEA	?	378	38	tot_cin_node4	&X
+"u	IeEA	?	379	39	tot_cin_node5	&Z
+"v	IeEA	?	380	39	tot_cin_node6	&\
+"w	IeEA	.	114	14	datab_node0	#U
+"x	IeEA	.	114	14	datab_node1	#T
+"y	IeEA	.	114	14	datab_node2	#S
+"z	IeEA	.	114	14	datab_node3	#R

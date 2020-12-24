@@ -1,0 +1,129 @@
+NDB006
+The number of symbol table entries is: 4
+The length of the symbol table is: 51
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|t_ff1:U1|
+9	|t_ff1:Lab|
+E	|t_ff1:Lab~46|
+
+The number of name info structs is : 114
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IeEA	!	21	3	:53	"Q
+#	IeEA	!	21	3	:54	"R
+$	IeEA	!	21	3	:55	"S
+%	IeEA	!	21	3	:56	"T
+&	IeEA	!	21	3	:57	"U
+'	IeEA	!	21	3	:58	"V
+(	IeEA	!	21	3	:59	"W
+)	IeEA	!	21	3	:60	"X
+*	IeEA	!	21	3	:61	"Y
++	IeEA	!	21	3	:62	"Z
+,	IeEA	!	21	3	:63	"[
+-	IeEA	!	21	3	:64	"\
+.	IeEA	!	21	3	:65	"]
+/	IGdW	!	:66	"^
+0	IGdW	!	:67	"_
+1	IGdW	!	:68	"`
+2	IGdW	!	:69	"a
+3	IGdW	!	:70	"b
+4	IGdW	!	:71	"c
+5	IGdW	!	:72	"d
+6	IGdW	!	:73	"e
+7	IGdW	!	:74	"f
+8	IGdW	!	:75	"g
+9	IGdW	!	:76	"h
+:	IGdW	!	:77	"i
+;	(@\6H	!	9	9	1	"!	CK	o
+<	"<R?c	!	10	9	Q0	!	Q0	r
+=	"<R?c	!	10	9	Q1	!	Q1	q
+>	"<R?c	!	10	9	Q2	!	Q2	p
+?	IeEA	9	17	4	:10	#L
+@	IeEA	9	20	9	:16	#R
+A	IGdW	9	:23	#Y
+B	IGdW	9	:24	#Z
+C	IGdW	9	:25	#[
+D	IGdW	9	:26	#\
+E	IGdW	9	:27	#]
+F	IGdW	9	:28	#^
+G	IGdW	9	:29	#_
+H	IGdW	9	:30	#`
+I	IGdW	9	:31	#a
+J	IGdW	9	:32	#b
+K	IGdW	9	:33	#c
+L	IGdW	9	:34	#d
+M	QL31	9	N	14	1	4	=	f	"3	M	1	:4	#F
+N	INvO	9	M	Q	#F
+O	IFkI	9	~26~1	#\
+P	IFkI	9	~27~1	#]
+Q	IFkI	9	~28~1	#^
+R	IFkI	9	~29~1	#_
+S	IFkI	9	~30~1	#`
+T	IFkI	9	~31~1	#a
+U	IFkI	9	~32~1	#b
+V	IFkI	9	~33~1	#c
+W	IFkI	9	~34~1	#d
+X	IeEA	E	17	4	:10	#r
+Y	IeEA	E	20	9	:16	#x
+Z	IGdW	E	:23	$!
+[	IGdW	E	:24	$"
+\	IGdW	E	:25	$#
+]	IGdW	E	:26	$$
+^	IGdW	E	:27	$%
+_	IGdW	E	:28	$&
+`	IGdW	E	:29	$'
+a	IGdW	E	:30	$(
+b	IGdW	E	:31	$)
+c	IGdW	E	:32	$*
+d	IGdW	E	:33	$+
+e	IGdW	E	:34	$,
+f	QL31	E	g	14	1	3	>	n	f	1	:4	#l
+g	INvO	E	f	Q	#l
+h	IFkI	E	~26~1	$$
+i	IFkI	E	~27~1	$%
+j	IFkI	E	~28~1	$&
+k	IFkI	E	~29~1	$'
+l	IFkI	E	~30~1	$(
+m	IFkI	E	~31~1	$)
+n	Kx.7	E	1	"3	~32~1	$*
+o	IFkI	E	~33~1	$+
+p	IFkI	E	~34~1	$,
+q	IeEA	.	17	4	:10	#%
+r	IeEA	.	20	9	:16	#+
+s	IGdW	.	:23	#2
+t	IGdW	.	:24	#3
+u	IGdW	.	:25	#4
+v	IGdW	.	:26	#5
+w	IGdW	.	:27	#6
+x	IGdW	.	:28	#7
+y	IGdW	.	:29	#8
+z	IGdW	.	:30	#9
+{	IGdW	.	:31	#:
+|	IGdW	.	:32	#;
+}	IGdW	.	:33	#<
+~	IGdW	.	:34	#=
+"!	LGPw	.	""	14	1	3	<	M	"!	:4	"}
+""	INvO	.	"!	Q	"}
+"#	IdL3	!	21	3	~53~1	"Q
+"$	IdL3	!	21	3	~54~1	"R
+"%	IdL3	!	21	3	~55~1	"S
+"&	IdL3	!	21	3	~57~1	"U
+"'	IdL3	!	21	3	~58~1	"V
+"(	IdL3	!	21	3	~59~1	"W
+")	IdL3	!	21	3	~60~1	"X
+"*	IdL3	!	21	3	~62~1	"Z
+"+	IFkI	!	~66~1	"^
+",	IFkI	!	~67~1	"_
+"-	IFkI	!	~68~1	"`
+".	IFkI	!	~69~1	"a
+"/	IFkI	!	~70~1	"b
+"0	IFkI	!	~71~1	"c
+"1	IFkI	!	~72~1	"d
+"2	IFkI	!	~73~1	"e
+"3	Kx.7	!	8	<	=	>	M	f	n	"!	"3	~75~1	"g
+"4	IFkI	!	~76~1	"h
+"5	IFkI	!	~77~1	"i

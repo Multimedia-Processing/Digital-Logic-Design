@@ -1,0 +1,56 @@
+NDB006
+The number of symbol table entries is: 4
+The length of the symbol table is: 58
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|mod_10_s_u:1|
+=	|mod_10_s_u:2|
+L	|mod_10_s_u:3|
+
+The number of name info structs is : 41
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:10	"'
+#	IGdW	!	:8	"%
+$	IGdW	!	:9	"&
+%	(@>U^	!	4	-	'	+	,	CK_in	o
+&	Ky&}	!	2	&	C	CK_out	p
+'	L)p/	.	/	4	+	,	-	'	:1	"2
+(	IGdW	.	:13	"6
+)	IGdW	.	:18	"9
+*	IGdW	.	:19	"7
++	L)p/	.	0	3	,	-	+	:2	"4
+,	L)p/	.	1	2	-	,	:3	"5
+-	L)p/	.	2	6	+	-	3	7	8	9	:4	"3
+.	IGdW	.	:7	"8
+/	INvO	.	'	Q0	"2
+0	INvO	.	+	Q1	"4
+1	INvO	.	,	Q2	"5
+2	INvO	.	-	Q3	"3
+3	L)p/	=	;	4	7	8	9	3	:1	"D
+4	IGdW	=	:13	"H
+5	IGdW	=	:18	"K
+6	IGdW	=	:19	"I
+7	L)p/	=	<	3	8	9	7	:2	"F
+8	L)p/	=	=	2	9	8	:3	"G
+9	L)p/	=	>	6	&	7	9	?	C	D	:4	"E
+:	IGdW	=	:7	"J
+;	INvO	=	3	Q0	"D
+<	INvO	=	7	Q1	"F
+=	INvO	=	8	Q2	"G
+>	INvO	=	9	Q3	"E
+?	L)p/	L	G	4	&	C	D	?	:1	"U
+@	IGdW	L	:13	"Y
+A	IGdW	L	:18	"\
+B	IGdW	L	:19	"Z
+C	L)p/	L	H	3	&	D	C	:2	"W
+D	L)p/	L	I	2	&	D	:3	"X
+E	IVOA	L	J	:4	"V
+F	IGdW	L	:7	"[
+G	INvO	L	?	Q0	"U
+H	INvO	L	C	Q1	"W
+I	INvO	L	D	Q2	"X
+J	INum	L	E	Q3	"V

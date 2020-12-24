@@ -1,0 +1,61 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 49
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:100	"t
+#	IGdW	!	:101	"u
+$	IGdW	!	:102	"v
+%	IGdW	!	:103	"w
+&	IGdW	!	:104	"x
+'	IGdW	!	:105	"y
+(	IGdW	!	:106	"z
+)	IeEA	!	16	1	:20	"$
+*	IeEA	!	16	1	:22	"&
++	IeEA	!	22	5	:48	"@
+,	IeEA	!	22	5	:50	"B
+-	IeEA	!	22	5	:51	"C
+.	IeEA	!	22	5	:53	"E
+/	IeEA	!	22	5	:55	"G
+0	IeEA	!	22	5	:58	"J
+1	IeEA	!	22	5	:59	"K
+2	IeEA	!	22	5	:62	"N
+3	It0+	!	P	14	1	:7	u
+4	IeEA	!	29	12	:74	"Z
+5	IGdW	!	:77	"]
+6	IGdW	!	:78	"^
+7	IGdW	!	:79	"_
+8	IGdW	!	:80	"`
+9	IGdW	!	:81	"a
+:	IGdW	!	:82	"b
+;	IGdW	!	:83	"c
+<	IGdW	!	:84	"d
+=	IGdW	!	:85	"e
+>	IGdW	!	:86	"f
+?	IGdW	!	:87	"g
+@	IGdW	!	:88	"h
+A	IGdW	!	:89	"i
+B	IGdW	!	:90	"j
+C	IGdW	!	:91	"k
+D	IGdW	!	:92	"l
+E	IGdW	!	:93	"m
+F	IGdW	!	:94	"n
+G	IGdW	!	:95	"o
+H	IGdW	!	:96	"p
+I	IGdW	!	:97	"q
+J	IGdW	!	:98	"r
+K	IGdW	!	:99	"s
+L	(@\6H	!	9	9	1	O	CK	s
+M	(@\6H	!	9	9	1	O	CLR	p
+N	L8ef	!	9	9	1	O	PR	o
+O	L8eg	!	10	13	1	O	Q	t
+P	INum	!	3	Q_temp	u
+Q	L8ef	!	9	9	1	O	R	r
+R	L8ef	!	9	9	1	O	S	q

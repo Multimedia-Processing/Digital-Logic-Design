@@ -1,0 +1,97 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 10.2 07/10/2002            
+-- Compiled: 04/09/2005 18:07:38      
+
+-- Copyright (C) 1988-2002 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "mod_1000_s_u"
+BEGIN
+
+    DEVICE = "EPM3064ALC44-4";
+
+    "CK"                           : INPUT_PIN  = 43     ;
+    "CLR"                          : INPUT_PIN  = 1      ;
+    "Di0"                          : INPUT_PIN  = 5      ; -- LC14
+    "Di1"                          : INPUT_PIN  = 21     ; -- LC17
+    "Di2"                          : INPUT_PIN  = 4      ; -- LC16
+    "Di3"                          : INPUT_PIN  = 18     ; -- LC21
+    "Di4"                          : INPUT_PIN  = 19     ; -- LC20
+    "Di5"                          : INPUT_PIN  = 20     ; -- LC19
+    "Di6"                          : INPUT_PIN  = 6      ; -- LC11
+    "Di7"                          : INPUT_PIN  = 8      ; -- LC5
+    "Di8"                          : INPUT_PIN  = 9      ; -- LC4
+    "Di9"                          : INPUT_PIN  = 11     ; -- LC3
+    "LOAD"                         : INPUT_PIN  = 12     ; -- LC1
+    "Q0"                           : OUTPUT_PIN = 24     ; -- LC33
+    "Q1"                           : OUTPUT_PIN = 25     ; -- LC35
+    "Q2"                           : OUTPUT_PIN = 33     ; -- LC49
+    "Q3"                           : OUTPUT_PIN = 40     ; -- LC62
+    "Q4"                           : OUTPUT_PIN = 37     ; -- LC53
+    "Q5"                           : OUTPUT_PIN = 34     ; -- LC51
+    "Q6"                           : OUTPUT_PIN = 41     ; -- LC64
+    "Q7"                           : OUTPUT_PIN = 39     ; -- LC57
+    "Q8"                           : OUTPUT_PIN = 27     ; -- LC37
+    "Q9"                           : OUTPUT_PIN = 26     ; -- LC36
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node2" : LOCATION   = LC58   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node3" : LOCATION   = LC60   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node4" : LOCATION   = LC56   ; -- PIN 38
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node5" : LOCATION   = LC52   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node6" : LOCATION   = LC50   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder0|result_node7" : LOCATION   = LC61   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder1|result_node0" : LOCATION   = LC55   ;
+    "|LPM_ADD_SUB:105|addcore:adder|addcore:adder1|result_node1" : LOCATION   = LC59   ;
+
+END;
+
+INTERNAL_INFO "mod_1000_s_u"
+BEGIN
+	DEVICE = EPM3064ALC44-4;
+	LC36    : LORAX = "G61R0,PA9R0C2,PA9R0C3";
+	LC37    : LORAX = "G25R0,PA2R0C2,PA2R0C3";
+	LC57    : LORAX = "G78R0,PA24R0C2,PA24R0C3";
+	LC64    : LORAX = "G114R0,PA31R0C2,PA31R0C3";
+	LC51    : LORAX = "G31R0,PA3R0C2,PA3R0C3";
+	LC53    : LORAX = "G62R0,PA16R0C3,PA17R0C2";
+	LC62    : LORAX = "G112R0,PA30R0C2,PA30R0C3";
+	LC49    : LORAX = "G29R0,PA7R0C2,PA7R0C3";
+	LC35    : LORAX = "G60R0,PA12R0C3,PA16R0C2";
+	LC33    : LORAX = "G58R0,PA11R0C2,PA11R0C3";
+	OH66R0P1 : LORAX = "G49R0,PA15R0C2,PA15R0C3";
+	OH0R0P12 : LORAX = "G83R0,PA18R0C3,PA18R0C2";
+	LC59    : LORAX = "G80R0,PA25R0C2";
+	OH2R0P11 : LORAX = "G85R0,PA21R0C2";
+	LC55    : LORAX = "G64R0,PA12R0C2";
+	OH3R0P9 : LORAX = "G86R0,PA22R0C2";
+	LC61    : LORAX = "G111R0,PA29R0C3";
+	OH4R0P8 : LORAX = "G116R0,PA27R0C3";
+	LC50    : LORAX = "G30R0,PA5R0C3";
+	OH10R0P6 : LORAX = "G2R0,PA0R0C3";
+	LC52    : LORAX = "G32R0,PA1R0C3";
+	OH18R0P20 : LORAX = "G122R0,PA32R0C3";
+	LC56    : LORAX = "G65R0,PA10R0C3";
+	OH19R0P19 : LORAX = "G123R0,PA33R0C3";
+	LC60    : LORAX = "G81R0,PA22R0C3";
+	OH20R0P18 : LORAX = "G87R0,PA20R0C3";
+	LC58    : LORAX = "G79R0,PA21R0C3";
+	OH15R0P4 : LORAX = "G36R0,PA14R0C3";
+	OH16R0P21 : LORAX = "G120R0,PA29R0C2";
+	OH13R0P5 : LORAX = "G34R0,PA13R0C2";
+END;
