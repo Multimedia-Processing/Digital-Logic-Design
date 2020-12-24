@@ -5,20 +5,19 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 
 HEADER
@@ -26,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 8000.0;
+	DATA_DURATION = 4000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 1000.0;
@@ -80,7 +79,7 @@ TRANSITION_LIST("A")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
+			REPEAT = 1;
 			LEVEL 0 FOR 2000.0;
 			LEVEL 1 FOR 2000.0;
 		}
@@ -94,7 +93,7 @@ TRANSITION_LIST("B")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 4;
+			REPEAT = 2;
 			LEVEL 0 FOR 1000.0;
 			LEVEL 1 FOR 1000.0;
 		}
@@ -106,8 +105,7 @@ TRANSITION_LIST("Bo")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 7001.0;
+		LEVEL X FOR 4000.0;
 	}
 }
 
@@ -116,8 +114,7 @@ TRANSITION_LIST("Do")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 999.0;
-		LEVEL 0 FOR 7001.0;
+		LEVEL X FOR 4000.0;
 	}
 }
 
@@ -125,7 +122,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 }
@@ -134,7 +131,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
 }
@@ -143,7 +140,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Bo";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
 }
@@ -152,14 +149,14 @@ DISPLAY_LINE
 {
 	CHANNEL = "Do";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Hexadecimal;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 }
 
 TIME_BAR
 {
-	TIME = 0;
+	TIME = 15975;
 	MASTER = TRUE;
 }
 ;

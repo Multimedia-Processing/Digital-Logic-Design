@@ -5,31 +5,42 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 
 HEADER
 {
 	VERSION = 1;
 	TIME_UNIT = ns;
+	PRINT_OPTIONS = "Print_options_version 6\
+range_start 0ps\
+range_end 100.0ms\
+width 1\
+names_percentage 25\
+comments 1\
+grid_lines 1\
+time_bars 1\
+name_every_page 0\
+expand_groups 0\
+print_all 1\
+print_row_height 100";
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
-	SIMULATION_TIME = 0.0;
+	DATA_DURATION = 100000000.0;
+	SIMULATION_TIME = 100000000.0;
 	GRID_PHASE = 0.0;
-	GRID_PERIOD = 10.0;
+	GRID_PERIOD = 200000.0;
 	GRID_DUTY_CYCLE = 50;
 }
 
@@ -53,7 +64,7 @@ SIGNAL("SW_out")
 	PARENT = "";
 }
 
-SIGNAL("CLK")
+SIGNAL("1kHz_in")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -68,25 +79,37 @@ TRANSITION_LIST("SW_in")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 261.0;
-		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 9800000.0;
+		LEVEL 1 FOR 200000.0;
 		NODE
 		{
-			REPEAT = 8;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 200000.0;
+			LEVEL 1 FOR 200000.0;
 		}
-		LEVEL 0 FOR 1.0;
-		LEVEL 1 FOR 391.0;
-		LEVEL 0 FOR 1.0;
-		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 200000.0;
+		LEVEL 1 FOR 200000.0;
 		NODE
 		{
-			REPEAT = 14;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
+			REPEAT = 6;
+			LEVEL 0 FOR 200000.0;
+			LEVEL 1 FOR 200000.0;
 		}
-		LEVEL 0 FOR 300.0;
+		LEVEL 0 FOR 200000.0;
+		LEVEL 1 FOR 45000000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 200000.0;
+			LEVEL 1 FOR 200000.0;
+			NODE
+			{
+				REPEAT = 11;
+				LEVEL 0 FOR 200000.0;
+				LEVEL 1 FOR 200000.0;
+			}
+		}
+		LEVEL 0 FOR 36000000.0;
 	}
 }
 
@@ -95,11 +118,13 @@ TRANSITION_LIST("SW_out")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 15500008.767;
+		LEVEL 1 FOR 51000000.0;
+		LEVEL 0 FOR 33499991.233;
 	}
 }
 
-TRANSITION_LIST("CLK")
+TRANSITION_LIST("1kHz_in")
 {
 	NODE
 	{
@@ -107,8 +132,8 @@ TRANSITION_LIST("CLK")
 		NODE
 		{
 			REPEAT = 100;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			LEVEL 0 FOR 500000.0;
+			LEVEL 1 FOR 500000.0;
 		}
 	}
 }
@@ -124,7 +149,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "CLK";
+	CHANNEL = "1kHz_in";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 1;
@@ -142,7 +167,7 @@ DISPLAY_LINE
 
 TIME_BAR
 {
-	TIME = 0;
+	TIME = 15407262021;
 	MASTER = TRUE;
 }
 ;

@@ -5,20 +5,19 @@ the Block Editor! File corruption is VERY likely to occur.
 */
 
 /*
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 
 HEADER
@@ -26,7 +25,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 24000.0;
+	DATA_DURATION = 20000.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 1000.0;
@@ -100,7 +99,7 @@ TRANSITION_LIST("CK")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 12;
+			REPEAT = 10;
 			LEVEL 0 FOR 1000.0;
 			LEVEL 1 FOR 1000.0;
 		}
@@ -114,7 +113,7 @@ TRANSITION_LIST("CLR")
 		REPEAT = 1;
 		LEVEL 1 FOR 4000.0;
 		LEVEL 0 FOR 1000.0;
-		LEVEL 1 FOR 19000.0;
+		LEVEL 1 FOR 15000.0;
 	}
 }
 
@@ -124,7 +123,7 @@ TRANSITION_LIST("PR")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 1000.0;
-		LEVEL 1 FOR 23000.0;
+		LEVEL 1 FOR 19000.0;
 	}
 }
 
@@ -133,7 +132,7 @@ TRANSITION_LIST("Q")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 24000.0;
+		LEVEL X FOR 20000.0;
 	}
 }
 
@@ -144,8 +143,8 @@ TRANSITION_LIST("R")
 		REPEAT = 1;
 		LEVEL 0 FOR 10000.0;
 		LEVEL 1 FOR 2000.0;
-		LEVEL 0 FOR 4000.0;
-		LEVEL 1 FOR 8000.0;
+		LEVEL 0 FOR 2000.0;
+		LEVEL 1 FOR 6000.0;
 	}
 }
 
@@ -156,8 +155,8 @@ TRANSITION_LIST("S")
 		REPEAT = 1;
 		LEVEL 0 FOR 6000.0;
 		LEVEL 1 FOR 2000.0;
-		LEVEL 0 FOR 8000.0;
-		LEVEL 1 FOR 8000.0;
+		LEVEL 0 FOR 6000.0;
+		LEVEL 1 FOR 6000.0;
 	}
 }
 
@@ -165,7 +164,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "CLR";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 }
@@ -174,7 +173,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "PR";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
 }
@@ -183,7 +182,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "CK";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
 }
@@ -192,7 +191,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 }
@@ -201,7 +200,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "R";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
 }
@@ -210,14 +209,14 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
 }
 
 TIME_BAR
 {
-	TIME = 0;
+	TIME = 15975;
 	MASTER = TRUE;
 }
 ;
