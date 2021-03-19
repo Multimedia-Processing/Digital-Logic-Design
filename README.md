@@ -6,8 +6,12 @@
 - 《VHDL數位邏輯設計入門實務》，VHDL Digital Logic Design Practice
 - 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
 - 《軟核心處理器設計 從ARM9到FPGA》
+- 《邏輯設計 第二版》
+- 《計算機系統結構》
 
 依序將不同的書籍內的範例製作出來，並將問題與過程紀錄，以及該書籍的相關[檔案下載](https://drive.google.com/drive/folders/1AohDcrRu37FK9o0uxK_jb0OreTGIpofw)。
+
+吳晨知 著
 
 
 # 目錄
@@ -156,3 +160,5 @@ sudo apt-get install libxft2 libxft2:i386 lib32ncurses5
 - [Xilinx Vivado](https://wiki.archlinux.org/index.php/Xilinx_Vivado)
 - [在 Gentoo Linux 安裝 Vivado 2020.1](https://coldnew.github.io/16cb6a8e/)
 - [Installation of Vivado 2020.1 under Centos 7.8 fails](https://forums.xilinx.com/t5/Installation-and-Licensing/Installation-of-Vivado-2020-1-under-Centos-7-8-fails/td-p/1115482)
+- 《邏輯設計 第二版》
+- 《計算機系統結構》
