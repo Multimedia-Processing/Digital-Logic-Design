@@ -61,6 +61,7 @@ hc_output/
 *.str
 *.jou
 vivado_*.zip
+.Xil
 
 ##	Python
 # Byte-compiled / optimized / DLL files
