@@ -2,15 +2,10 @@
 
 吳晨知 著
 
+# 序
+
 # 目錄
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-<!-- code_chunk_output -->
-
-- [數位邏輯設計](#數位邏輯設計)
-- [目錄](#目錄)
-- [序](#序)
-
-<!-- /code_chunk_output -->
-
-# 序
+- 開發環境建置
+- 數位系統與二進位數
+- 暫存器轉移
