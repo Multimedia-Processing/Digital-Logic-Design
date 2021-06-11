@@ -55,7 +55,6 @@ hc_output/
 *.ip_user_files/
 *.runs/
 *.sim/
-*.srcs/
 *.ioplanning/
 *.out
 *.str
