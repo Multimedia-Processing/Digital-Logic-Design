@@ -1,0 +1,19 @@
+site_name: Digital Logic Design
+theme:
+  name: material
+  nav_style: dark
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+repo_url: https://gitlab.com/Multimedia-Processing/Digital-Logic-Design
+plugins:
+  - search
+authors: Chenzhi Wu
+nav:
+  - Home: 'README.md'
+  - 課程:
+    - '1-devlop-venv-build.md'
+    - '2-數位系統與二進位數.md'
+markdown_extensions:
+  - smarty
