@@ -2,4 +2,4 @@
 
 吳晨知 著
 
-[開始閱讀](docs/index.md)
+[開始閱讀](docs/README.md)
