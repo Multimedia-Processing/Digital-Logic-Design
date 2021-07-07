@@ -6,14 +6,32 @@ theme:
   hljs_languages:
     - yaml
     - rust
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
 repo_url: https://gitlab.com/Multimedia-Processing/Digital-Logic-Design
 plugins:
   - search
 authors: Chenzhi Wu
 nav:
   - Home: 'README.md'
-  - 課程:
-    - '1-devlop-venv-build.md'
-    - '2-數位系統與二進位數.md'
+  - 1 開發環境建置: 1-開發環境建置/1-devlop-venv-build.md
+  - 2 數位邏輯設計:
+    - 第2章 數位系統與二進位數: '2-數位邏輯設計/數位系統與二進位數.md'
+  - 3 可程式規劃裝置: 可程式規劃裝置.md
+  - 4 計算機系統結構:
+    - 第1章 暫存器傳遞語言: 4-計算機系統結構/1-暫存器傳遞語言.md
+    - 第2章 暫存器間的資料傳遞: 4-計算機系統結構/2-暫存器間的資料傳遞.md
+    - 第3章 微運算: 4-計算機系統結構/3-microoperation.md
+    - 第4章 算術邏輯移位單元: 4-計算機系統結構/4-算術邏輯移位單元.md
+  - 5 現代處理器架構: 現代處理器架構.md
+  - 6 新一代處理器架構: 新一代處理器架構.md
 markdown_extensions:
   - smarty
+  - mdx_truly_sane_lists
