@@ -1,0 +1,7 @@
+mkdocs-bootstrap
+mkdocs-webcontext-plugin
+mkdocs-mdpo-plugin
+mkdocs-markdownextradata-plugin
+mkdocs-gitlab-plugin
+mkdocs-i18n
+mkdocs-material
