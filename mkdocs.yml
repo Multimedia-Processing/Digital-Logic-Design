@@ -9,12 +9,12 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+        name: Switch to dark mode
+        icon: material/toggle-switch
     - scheme: slate
       toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+        name: Switch to light mode
+        icon: material/toggle-switch-off-outline
 repo_url: https://gitlab.com/Multimedia-Processing/Digital-Logic-Design
 plugins:
   - search
