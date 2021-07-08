@@ -10,25 +10,25 @@ theme:
     - scheme: default
       toggle:
         name: Switch to dark mode
-        icon: material/toggle-switch
+        icon: material/toggle-switch-off-outline
     - scheme: slate
       toggle:
         name: Switch to light mode
-        icon: material/toggle-switch-off-outline
-repo_url: https://gitlab.com/Multimedia-Processing/Digital-Logic-Design
+        icon: material/toggle-switch
+repo_url: https://github.com/Uesugi-Summer-Sea/Agile-Tree-Climbing-Manual
 plugins:
   - search
 authors: Chenzhi Wu
 nav:
-  - 序: 'README.md'
-  - 1 硬體描述語言:
+  - 序曲: 'README.md'
+  - 第1部曲 硬體描述語言:
     - 簡介: 1-硬體描述語言/README.md
     - 開發環境建置: 1-硬體描述語言/1-開發環境建置.md
     - 硬體描述語言: 1-硬體描述語言/1-devlop-venv-build.md
     - VerilogHDL: 1-硬體描述語言/1-devlop-venv-build.md
     - VHDL: 1-硬體描述語言/1-devlop-venv-build.md
     - SystemVerilog: 1-硬體描述語言/1-devlop-venv-build.md
-  - 2 數位邏輯設計:
+  - 第2部曲 數位邏輯設計:
     - 簡介: 2-數位邏輯設計/README.md
     - 第2章 數位系統與二進位數: 2-數位邏輯設計/1-數位系統與二進位數.md
     - 第1章 數位系統與二進位數: 2-數位邏輯設計/1-數位系統與二進位數.md
@@ -40,15 +40,15 @@ nav:
     - 第7章 計數器: 2-數位邏輯設計/7-計數器.md
     - 第8章 暫存器轉移階層設計: 2-數位邏輯設計/8-暫存器轉移階層設計.md
     - 第13章 應用與範例: 2-數位邏輯設計/13-應用與範例.md
-  - 3 可程式規劃裝置: 3-可程式規劃裝置/README.md
-  - 4 計算機系統結構:
+  - 第3部曲 可程式規劃裝置: 3-可程式規劃裝置/README.md
+  - 第4部曲 計算機系統結構:
     - 簡介: 4-計算機系統結構/README.md
     - 第1章 暫存器傳遞語言: 4-計算機系統結構/1-暫存器傳遞語言.md
     - 第2章 暫存器間的資料傳遞: 4-計算機系統結構/2-暫存器間的資料傳遞.md
     - 第3章 微運算: 4-計算機系統結構/3-microoperation.md
     - 第4章 算術邏輯移位單元: 4-計算機系統結構/4-算術邏輯移位單元.md
-  - 5 現代處理器架構: 5-現代處理器架構/README.md
-  - 6 新一代處理器架構: 6-新一代處理器架構/README.md
+  - 第5部曲 現代處理器架構: 5-現代處理器架構/README.md
+  - 第6部曲 新一代處理器架構: 6-新一代處理器架構/README.md
 markdown_extensions:
   - smarty
   - mdx_truly_sane_lists
