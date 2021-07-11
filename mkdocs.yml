@@ -1,6 +1,11 @@
-site_name: Digital Logic Design
+site_name: 數位邏輯設計
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  extra:
+    homepage: https://digital-logic-design.readthedocs.io
+  language: zh-TW
   nav_style: dark
   highlightjs: true
   hljs_languages:
@@ -10,24 +15,39 @@ theme:
     - scheme: default
       toggle:
         name: Switch to dark mode
-        icon: material/toggle-switch-off-outline
+        icon: material/toggle-switch
+      primary: indigo
     - scheme: slate
       toggle:
         name: Switch to light mode
-        icon: material/toggle-switch
-repo_url: https://github.com/Uesugi-Summer-Sea/Agile-Tree-Climbing-Manual
+        icon: material/toggle-switch-off-outline
+      primary: red
+  features:
+    # - navigation.instant # 當點擊其他頁面時網頁不會重新整理且表留只在首頁
+    - navigation.tracking
+    # - navigation.tabs # 目錄橫放至頂端
+    # - navigation.tabs.sticky # 目錄橫放至頂端
+    # - navigation.sections # 左側目錄全部攤開
+    - navigation.expand # 左側目錄全部攤開但可以收合
+    - navigation.top
+    # - toc.integrate # 右側目錄加入至左側目錄
+    - search.suggest # 建議搜尋功能
+    # - navigation.indexes # 只顯示部份索引
+    - search.highlight
+    - search.share
+repo_url: https://github.com/Multimedia-Processing/Digital-Logic-Design
 plugins:
   - search
 authors: Chenzhi Wu
 nav:
-  - 序曲: 'README.md'
+  - 序曲: README.md
   - 第1部曲 硬體描述語言:
     - 簡介: 1-硬體描述語言/README.md
-    - 開發環境建置: 1-硬體描述語言/1-開發環境建置.md
-    - 硬體描述語言: 1-硬體描述語言/1-devlop-venv-build.md
-    - VerilogHDL: 1-硬體描述語言/1-devlop-venv-build.md
-    - VHDL: 1-硬體描述語言/1-devlop-venv-build.md
-    - SystemVerilog: 1-硬體描述語言/1-devlop-venv-build.md
+    - 第1章 開發環境建置: 1-硬體描述語言/1-開發環境建置.md
+    - 第2章 開發流程: 1-硬體描述語言/2-開發流程.md
+    - 第3章 VerilogHDL: 1-硬體描述語言/3-VerilogHDL.md
+    - 第4章 VHDL: 1-硬體描述語言/4-VHDL.md
+    - 第5章 SystemVerilog: 1-硬體描述語言/5-SystemVerilog.md
   - 第2部曲 數位邏輯設計:
     - 簡介: 2-數位邏輯設計/README.md
     - 第2章 數位系統與二進位數: 2-數位邏輯設計/1-數位系統與二進位數.md
@@ -40,15 +60,29 @@ nav:
     - 第7章 計數器: 2-數位邏輯設計/7-計數器.md
     - 第8章 暫存器轉移階層設計: 2-數位邏輯設計/8-暫存器轉移階層設計.md
     - 第13章 應用與範例: 2-數位邏輯設計/13-應用與範例.md
-  - 第3部曲 可程式規劃裝置: 3-可程式規劃裝置/README.md
+  - 第3部曲 可程式規劃裝置:
+    - 簡介: 3-可程式規劃裝置/README.md
   - 第4部曲 計算機系統結構:
     - 簡介: 4-計算機系統結構/README.md
     - 第1章 暫存器傳遞語言: 4-計算機系統結構/1-暫存器傳遞語言.md
     - 第2章 暫存器間的資料傳遞: 4-計算機系統結構/2-暫存器間的資料傳遞.md
-    - 第3章 微運算: 4-計算機系統結構/3-microoperation.md
+    - 第3章 微運算: 4-計算機系統結構/3-微運算.md
     - 第4章 算術邏輯移位單元: 4-計算機系統結構/4-算術邏輯移位單元.md
-  - 第5部曲 現代處理器架構: 5-現代處理器架構/README.md
-  - 第6部曲 新一代處理器架構: 6-新一代處理器架構/README.md
+  - 第5部曲 現代處理器架構:
+    - 簡介: 5-現代處理器架構/README.md
+  - 第6部曲 新一代處理器架構:
+    - 簡介: 6-新一代處理器架構/README.md
+  - 附件:
+    - 參考資料: 7-附件/1-參考資料.md
+    - 索引: 7-附件/2-索引.md
 markdown_extensions:
+  - meta
   - smarty
   - mdx_truly_sane_lists
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      toc_depth: 7
