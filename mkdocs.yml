@@ -21,7 +21,7 @@ theme:
       toggle:
         name: Switch to light mode
         icon: material/toggle-switch-off-outline
-      primary: red
+      primary: grey
   features:
     # - navigation.instant # 當點擊其他頁面時網頁不會重新整理且表留只在首頁
     - navigation.tracking
@@ -38,13 +38,15 @@ theme:
 repo_url: https://github.com/Multimedia-Processing/Digital-Logic-Design
 plugins:
   - search
+  - mermaid2
+
 authors: Chenzhi Wu
 nav:
   - 序曲: README.md
   - 第1部曲 硬體描述語言:
     - 簡介: 1-硬體描述語言/README.md
     - 第1章 開發環境建置: 1-硬體描述語言/1-開發環境建置.md
-    - 第2章 開發流程: 1-硬體描述語言/2-開發流程.md
+    - 第2章 數位電路設計流程: 1-硬體描述語言/2-數位電路設計流程.md
     - 第3章 VerilogHDL: 1-硬體描述語言/3-VerilogHDL.md
     - 第4章 VHDL: 1-硬體描述語言/4-VHDL.md
     - 第5章 SystemVerilog: 1-硬體描述語言/5-SystemVerilog.md
@@ -85,4 +87,11 @@ markdown_extensions:
   - toc:
       permalink: true
       slugify: !!python/name:pymdownx.slugs.uslugify
-      toc_depth: 7
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
