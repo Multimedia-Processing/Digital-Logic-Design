@@ -1,3 +1,14 @@
+## 版權聲明
+![](https://creativecommons.org/images/deed/svg/cc_white.svg)![](https://creativecommons.org/images/deed/svg/attribution_icon_white.svg)![](https://creativecommons.org/images/deed/svg/sa_white.svg)
+
+姓名標示-相同方式分享 3.0 台灣 (CC BY-SA 3.0 TW)
+
+姓名標示-相同方式分享 4.0 國際 (CC BY-SA 4.0)
+
+MIT License
+
+吳晨知 著
+
 ## 序
 當初這本數位邏輯設計其實是我的個人的筆記，因為想要製作與設計CPU作為畢業專題，而這份專題也將延續至博士甚至出社會後持續更新的專案，而此專案引出相關議題與創意將會帶來無限的可能性。
 
