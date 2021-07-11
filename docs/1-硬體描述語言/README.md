@@ -1,16 +1,18 @@
-# 開始之前
-這是相當重要的一個課題與內容，好的開發環境將帶來好的開發體驗，因此本章將說明如何使用市面上的整合開發環境與軟體，協助各位讀者在實作上可以順心與順手。也會盡可能的介紹與說明可以如何讓開發提供廣大社群參與。
+## 簡介
+本書是透過「硬體描述語言」(HDL, Hardware Description Language)程式設計方式實現數位積體電路，因此本書的第一部曲是直接介紹與講解「硬體描述語言」(HDL, Hardware Description Language)的知識與技術。
 
-使用Verilog、SystemVerilog與VHDL學習數位邏輯設計，並通過Altera Cyclone V SoC Kit、Altera Cyclone III DE0與Xilinx實作與學習，將參考以下書籍：
+現在數位積體電路設計中，已經不像過去單純靠著雙手將設計內容畫出來，會善用科技與工具來輔助設計與驗證，加速公司開發週期應付市場變化，這也就是現在常見的「設計自動化」(EDA, Electronic Design Automation)工具，因此學完後會發現透過工具通通幫你跑完在學習中很瑣碎與重複性的作業，因此本書也會透過「設計自動化」工具來幫助來幫助各位了解。
 
-- 《數位邏輯實習 FPGA篇》，Digital Logic Practice by FPGA
-- 《Verilog硬體描述語言實務 第二版》，VerilogHDL Practice TWOTH EDITION
-- 《VHDL數位邏輯設計入門實務》，VHDL Digital Logic Design Practice
-- 《數位邏輯設計 第六版》，Digital Design With an Introduction to the Verilog HDL, VHDL, and SystemVerilog SIXTH EDITION
-- 《軟核心處理器設計 從ARM9到FPGA》
-- 《邏輯設計 第二版》，Digital Logic TWOTH EDITION, 伍天祿，宋正熙 著
-- 《計算機系統結構》，Computer system architecture, 呂紹偉，吳淑錦 譯， M. Morris Mano 著
-- 《邏輯與計算機設計》，Logic and computer design fundamentals., MANO KIME, 凱昭江，林丙范 譯， M. Morris Mano, Charles 著
-- 《數位邏輯設計 第五版》，Fundamentals of Digital Design FIFTH EDITION. 顏培仁，周靜娟，呂明峰，陳啟文 譯. Charles H. Roth, Jr. 著.
+先帶各位讀者安裝「整合開發環境」(IDE, Integrated Development Environment)與建立「設計自動化」(EDA, Electronic Design Automation)工具，除了常見 Xilinx 與 Altera 的「整合開發環境」與「設計自動化」工具外，還提供由開放原始碼所組成的「整合開發環境」與「設計自動化」工具，做出一個CI/CD的自動化流程。
 
-依序將不同的書籍內的範例製作出來，並將問題與過程紀錄，以及該書籍的相關[檔案下載](https://drive.google.com/drive/folders/1AohDcrRu37FK9o0uxK_jb0OreTGIpofw)。
+接下來簡單介紹數位邏輯電路設計，也就是稍微介紹在積體電路中會有「離散電路」、「可程式規劃裝置」、「專門用途積體電路」三種方式設計，而我們會採用「可程式規劃裝置」搭配「硬體描述語言」(HDL, Hardware Description Language)方式設計與驗證。
+
+在數位電路設計流程中會詳細解析目前整個半導體產業的設計流程，以及數位邏輯設計與VerilogHDL在半導體產業佔哪一塊，提供有興趣學且想要當工作的人了解在這個產業是如何。另外會說明界面介紹、重點操作說明，以及三大工具的差異性。
+
+此序曲專注於開發流程、語法教學、功能模擬、自動化流程，會先說明整個開發流程，後對 VerilogHDL 、 VHDL 、 SystemVerilog 的語法教學與示範，並說明如何撰寫測試檔案進行「功能模擬」(Functional Simulation)，實作CI/CD的自動化工作流程，而數位邏輯的理論與實作將帶到「數位邏輯設計」來讓各位了解。
+
+有時會出現開發工具會有出錯的現象，理論基礎就相當的重要，這時身為工程師的你就要一層一層抽絲剝繭找到問題，這時理論基礎就很重要。
+
+這也是為什麼課程中同時有實作內容，如果可以我會希望此專案可以透過Python來得出運算結果，這樣就可以東西產生東西出來。
+
+## 數位邏輯電路設計簡介
