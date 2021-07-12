@@ -36,6 +36,7 @@ MIT License
   - [第3章 VerilogHDL](1-硬體描述語言/3-VerilogHDL.md)
   - [第4章 VHDL](1-硬體描述語言/4-VHDL.md)
   - [第5章 SystemVerilog](1-硬體描述語言/5-SystemVerilog.md)
+  - 第6章 持續整合與持續佈署
 - [第2部曲 數位邏輯設計](2-數位邏輯設計/README.md)
   - [簡介](2-數位邏輯設計/README.md)
   - [第2章 數位系統與二進位數](2-數位邏輯設計/1-數位系統與二進位數.md)
