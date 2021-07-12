@@ -52,7 +52,6 @@ nav:
     - 第5章 SystemVerilog: 1-硬體描述語言/5-SystemVerilog.md
   - 第2部曲 數位邏輯設計:
     - 簡介: 2-數位邏輯設計/README.md
-    - 第2章 數位系統與二進位數: 2-數位邏輯設計/1-數位系統與二進位數.md
     - 第1章 數位系統與二進位數: 2-數位邏輯設計/1-數位系統與二進位數.md
     - 第2章 布林代數與邏輯閘: 2-數位邏輯設計/2-布林代數與邏輯閘.md
     - 第3章 邏輯閘層次簡化: 2-數位邏輯設計/3-邏輯閘層次簡化.md
@@ -91,7 +90,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid_custom
+          format: !!python/name:mermaid2.fence_mermaid
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
