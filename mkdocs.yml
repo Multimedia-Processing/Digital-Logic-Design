@@ -16,12 +16,12 @@ theme:
       toggle:
         name: Switch to dark mode
         icon: material/toggle-switch
-      primary: indigo
+      primary: blue
     - scheme: slate
       toggle:
         name: Switch to light mode
         icon: material/toggle-switch-off-outline
-      primary: grey
+      primary: blue
   features:
     # - navigation.instant # 當點擊其他頁面時網頁不會重新整理且表留只在首頁
     - navigation.tracking
