@@ -29,14 +29,15 @@ MIT License
 
 ## 目錄
 - [序曲](README.md)
-- [第1部曲 硬體描述語言](Digital-Logic-Design/docs/1-硬體描述語言/README.md)
-  - [簡介](Digital-Logic-Design/docs/1-硬體描述語言/README.md)
-  - [第1章 開發環境建置](Digital-Logic-Design/docs/1-硬體描述語言/1-開發環境建置.md)
-  - [第2章 數位電路設計流程](Digital-Logic-Design/docs/1-硬體描述語言/2-數位電路設計流程.md)
-  - [第3章 VerilogHDL](Digital-Logic-Design/docs/1-硬體描述語言/3-VerilogHDL.md)
-  - [第4章 VHDL](Digital-Logic-Design/docs/1-硬體描述語言/4-VHDL.md)
-  - [第5章 SystemVerilog](Digital-Logic-Design/docs/1-硬體描述語言/5-SystemVerilog.md)
-  - 第6章 持續整合與持續佈署
+- [第1部曲 硬體描述語言](1-硬體描述語言/README.md)
+  - [簡介](1-硬體描述語言/README.md)
+  - [第1章 開發環境建置](1-硬體描述語言/1-開發環境建置.md)
+  - [第2章 數位電路設計流程](1-硬體描述語言/2-數位電路設計流程.md)
+  - [第3章 VerilogHDL](1-硬體描述語言/3-VerilogHDL.md)
+  - [第4章 VHDL](1-硬體描述語言/4-VHDL.md)
+  - [第5章 SystemVerilog](1-硬體描述語言/5-SystemVerilog.md)
+  - [第6章 HDL](1-硬體描述語言/5-HDL.md)
+  - [第7章 持續整合與持續佈署](1-硬體描述語言/5-持續整合與持續佈署.md)
 - [第2部曲 數位邏輯設計](2-數位邏輯設計/README.md)
   - [簡介](2-數位邏輯設計/README.md)
   - [第1章 數位系統與二進位數](2-數位邏輯設計/1-數位系統與二進位數.md)
