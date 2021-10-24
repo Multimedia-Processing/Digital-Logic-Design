@@ -1,0 +1,1 @@
+[SR型](Digital-Logic-Design/docs/knowledge-network-database-repository/SR型.md)其實就是[[Digital-Logic-Design/docs/knowledge-network-database-repository/拴鎖器]]，而T型、D型、JK型就是將[SR型](Digital-Logic-Design/docs/knowledge-network-database-repository/SR型.md)缺點改進所製作出來的[正反器](Digital-Logic-Design/docs/knowledge-network-database-repository/正反器.md)。
