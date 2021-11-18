@@ -63,6 +63,9 @@ hc_output/
 vivado_*.zip
 .Xil
 
+## Icarus Verilog
+*.vvp
+
 ##	Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
