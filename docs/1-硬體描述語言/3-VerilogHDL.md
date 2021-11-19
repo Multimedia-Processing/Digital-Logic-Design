@@ -101,3 +101,83 @@ end
 
 ## 暫存器轉換層次
 「暫存器轉換層次」(RTL, Register Transfer Level)是一個在暫存器描述的方式做設計的一種描述方式，主要講述暫存器的資料移動設計，在大型的硬體描述語言設計中會使用到。
+
+## 編譯指令與系統任務
+### 編譯指令
+「編譯指令」(Compiler Directive)針對編譯時的指令，對於電路設計提供更方便與彈性的設計，其中包含了 `'include` 、 `'timescale` 、 `'define` 、 `'undef` 、 `'resetall` 與條件編譯指令。
+
+註* 由於Markdown無法呈現對於特殊單引號字元的呈現，因此在文字描述內會將前面的
+
+```
+`
+```
+
+暫時改為單引號 `'` ，例如：
+
+```
+此指令為 `include ，用於匯入。
+```
+
+會改為「此指令為 `'include` ，用於匯入。」或使用 code 的描述方式來取代。
+
+#### include
+可以用於匯入他人設計的 IC ，類似於 C 語言的 `#include <.h>` 的指令，只是將 `#` 上會改為特殊單引號。
+
+```
+這個字元 -> "`"
+```
+
+特殊字元。
+
+#### timescale
+設定模擬時間的基本單位與精準度，基本使用如下。
+
+```verilog
+`'timescale 時間單位 / 時間精準度
+```
+
+- **時間單位：** 時間單位以及時間精準度的單位，應該要以 0 以上的整數。
+- **時間精準度：** 模擬時間與延遲時間的精準度，數字不能大於時間單位。
+
+可以使用的單位可以為 `s` 、 `ms` 、 `us` 、 `ns` 、 `ps` 、 `fs`
+
+例如：
+
+```verilog aaa.v
+`timescale 1ns / 1ps
+// `timescale 時間單位 1 奈秒 / 時間精準度 1 皮秒
+
+module adder_one_assign_test ();
+reg a, b, ci;
+wire co, sum;
+integer i;
+
+adder_one_assign UUT (.a(a), .b(b), .ci(ci), .co(co), .sum(sum));
+
+initial begin
+  for (i = 0; i < 8; i = i + 1)
+    begin
+      {a, b, ci} = i[2:0];
+      #10;
+    end
+end
+
+initial begin
+  #80;
+  $finish;
+end
+
+
+endmodule // adder_one_assign_test
+```
+
+給隔 $`10ns`$ 會對 `i` 變數做加 1 的動作，到第 $`80ns`$ 時會停下來運作。
+
+實際運作圖片
+
+![2021-11-19 16-51-55 的螢幕擷圖](https://i.imgur.com/S7gt6nE.png)
+
+## 任務
+
+### signed
+通過 `signed` 宣告可以進行有號數運算，而 `$signed` 則產生有號數輸出訊號，因此來快速解決設計上需要思考有號數的運算。
