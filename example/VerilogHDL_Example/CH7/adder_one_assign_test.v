@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "adder_one_assign.v"
 
 module adder_one_assign_test ();
 reg a, b, ci;
