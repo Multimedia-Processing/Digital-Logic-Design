@@ -61,7 +61,9 @@ hc_output/
 *.str
 *.jou
 vivado_*.zip
-.Xil
+.Xil/
+*.xdc
+*.xpr
 
 ## Icarus Verilog
 *.vvp
