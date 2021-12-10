@@ -3,7 +3,7 @@
 
 module adder_8_assign_signed_test ();
 reg [7:0] a, b;
-reg [8:0] s;
+wire [8:0] s;
 integer i;
 
 adder_8_assign_signed UUT (.a(a), .b(b), .s(s));
