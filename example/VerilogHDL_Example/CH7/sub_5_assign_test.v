@@ -2,33 +2,23 @@
 `include "sub_5_assign.v"
 
 module sub_5_assign_test ();
-reg signed [4:0] a, b
-reg c, d;
-wire signed [5:0] s1, s2;
+reg [4:0] a, b;
+wire [5:0] s;
 integer i;
 
-sub_5_assign UUT (.a(a), .b(b), .c(c), .d(d), .s1(s1), .s2(s2));
+sub_5_assign UUT (.a(a), .b(b), .s(s));
 
 initial begin
-  for (i = 0; i < 16; i = i + 1)
+  for (i = 0; i < 32; i = i + 1)
     begin
-      a = i * (-1 ** i);
-      b = (i - 1) * (-1 ** (i - 1));
+      a = i[4:0] + i[4:0];
+      b = i[4:0];
       #10;
     end
 end
 
 initial begin
-  for (i = 0; i < 16; i = i + 1)
-    begin
-      c = i * (-1 ** i);
-      d = (i - 1) * (-1 ** (i - 1));
-      #10;
-    end
-end
-
-initial begin
-  #80;
+  #320;
   $finish;
 end
 
