@@ -1,9 +1,7 @@
-module div_4_assign (a, b, c, d, s1, s2);
-input signed [3:0] a, b;
-input [3:0] c, d;
-output signed [4:0] s1, s2;
+module div_8_assign (a, b, s);
+input signed [7:0] a, b;
+output signed [8:0] s;
 
-assign s1 = (a / b);
-assign s2 = ($signed(a) / $signed(b));
+assign s = c / d;
 
-endmodule // div_4_assign
+endmodule // div_8_assign
