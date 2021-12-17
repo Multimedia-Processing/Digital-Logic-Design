@@ -1,9 +1,7 @@
-module sub_5_assign (a, b, c, d, s1, s2);
-input signed [4:0] a, b;
-input [4:0] c, d;
-output signed [5:0] s1, s2;
+module sub_5_assign (a, b, s);
+input [4:0] a, b;
+output [4:0] s;
 
-assign s1 = (a - b);
-assign s2 = ($signed(a) - $signed(b));
+assign s1 = a - b;
 
 endmodule // sub_5_assign
