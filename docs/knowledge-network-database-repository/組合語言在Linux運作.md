@@ -87,3 +87,59 @@ message:
 
 eax 32 位元
 rax 64 位元
+
+記憶體有擴充，所以r13~r14儲存起來
+
+乘法透過移項的方式來做次方運算，來加速組合語言運算。
+
+
+
+
+$`f(n) = n!`$
+
+```math
+
+```
+
+遞迴需要自己處理堆疊，所以一般都是交給C語言。
+
+```c
+int f(int n) {
+  if(n <= 1) {
+    return 1;
+  } else {
+    return n * f(n - 1)
+  }
+}
+```
+
+```as
+# ----------------------------------------------------------------------------
+# A 64-bit recursive implementation of the function
+#
+#     uint64_t factorial(unsigned n)
+#
+# implemented recursively
+# ----------------------------------------------------------------------------
+
+        .globl  factorial
+
+        .text
+factorial:
+        cmp     $1, %rdi                # n <= 1?
+        jnbe    L1                      # if not, go do a recursive call
+        mov     $1, %rax                # otherwise return 1
+        ret
+L1:
+        push    %rdi                    # save n on stack (also aligns %rsp!)
+        dec     %rdi                    # n-1
+        call    factorial               # factorial(n-1), result goes in %rax
+        pop     %rdi                    # restore n
+        imul    %rdi, %rax              # n * factorial(n-1), stored in %rax
+        ret
+
+```
+
+可以使用 `-S` 來將 C 語言產生組合語言。
+
+通常組合語言有專門的浮點數運算。
