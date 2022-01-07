@@ -2,9 +2,9 @@ Teaname
 
 MingW
 
-在 Linux 上面執行[組合語言](Digital-Logic-Design/docs/knowledge-network-database-repository/組合語言.md)。
+在 Linux 上面執行[組合語言](/docs/knowledge-network-database-repository/組合語言.md)。
 
-不管是在 Windows 或者 Linux 上面運作[組合語言](Digital-Logic-Design/docs/knowledge-network-database-repository/組合語言.md)，第一要先組譯，再來連結，最後執行。
+不管是在 Windows 或者 Linux 上面運作[組合語言](/docs/knowledge-network-database-repository/組合語言.md)，第一要先組譯，再來連結，最後執行。
 
 因此實際 C 語言在編譯的過程是：
 
@@ -13,7 +13,7 @@ MingW
 3. 連結
 4. 執行
 
-以下是實際執行[組合語言](Digital-Logic-Design/docs/knowledge-network-database-repository/組合語言.md)的範例：
+以下是實際執行[組合語言](/docs/knowledge-network-database-repository/組合語言.md)的範例：
 
 ```
 gcc -c hello.s
@@ -79,9 +79,9 @@ message:
 .endm
 ```
 
-可以透過寫[巨集](Digital-Logic-Design/docs/knowledge-network-database-repository/巨集.md)的方式來增進撰寫[組合語言](Digital-Logic-Design/docs/knowledge-network-database-repository/組合語言.md)的速度與便利行。
+可以透過寫[巨集](/docs/knowledge-network-database-repository/巨集.md)的方式來增進撰寫[組合語言](/docs/knowledge-network-database-repository/組合語言.md)的速度與便利行。
 
-[組合語言](Digital-Logic-Design/docs/knowledge-network-database-repository/組合語言.md)的[巨集](Digital-Logic-Design/docs/knowledge-network-database-repository/巨集.md)會比函式好用一些。
+[組合語言](/docs/knowledge-network-database-repository/組合語言.md)的[巨集](/docs/knowledge-network-database-repository/巨集.md)會比函式好用一些。
 
 整數參數、指標，有放置順序，不夠放要放到堆疊裡面。
 

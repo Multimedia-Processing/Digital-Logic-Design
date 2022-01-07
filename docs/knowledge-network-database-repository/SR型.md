@@ -1,1 +1,1 @@
-[SR型正反器](Digital-Logic-Design/docs/knowledge-network-database-repository/SR型正反器.md)
+[SR型正反器](/docs/knowledge-network-database-repository/SR型正反器.md)

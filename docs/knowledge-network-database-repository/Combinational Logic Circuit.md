@@ -1,1 +1,1 @@
-[組合邏輯電路](Digital-Logic-Design/docs/knowledge-network-database-repository/組合邏輯電路.md)
+[組合邏輯電路](/docs/knowledge-network-database-repository/組合邏輯電路.md)

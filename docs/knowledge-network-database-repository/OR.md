@@ -1,1 +1,1 @@
-[[Digital-Logic-Design/docs/knowledge-network-database-repository/或閘]]
+[[/docs/knowledge-network-database-repository/或閘]]
