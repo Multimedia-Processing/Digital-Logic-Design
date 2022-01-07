@@ -1,5 +1,4 @@
 
-`timescale 1ns/1ps
 
 module T;
     reg [7:0] D1 = 8'b01011111;
@@ -11,7 +10,7 @@ module T;
         .D1(D1),
         .D2(D2),
         .Eq(Eq));
-  
+
     initial
     begin
       #2000 // Final time:  2000 ns
@@ -121,4 +120,3 @@ module T;
     end
 
 endmodule
-

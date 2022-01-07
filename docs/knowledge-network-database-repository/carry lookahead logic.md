@@ -1,1 +1,1 @@
-[前瞻進位邏輯](Digital-Logic-Design/docs/knowledge-network-database-repository/前瞻進位邏輯.md)
+[前瞻進位邏輯](/docs/knowledge-network-database-repository/前瞻進位邏輯.md)

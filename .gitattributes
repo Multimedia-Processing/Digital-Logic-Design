@@ -1,0 +1,453 @@
+# 自動把text的斷行做一致化
+* text=auto
+
+# Basic .gitattributes for a python repo.
+
+# Source files
+# ============
+*.pxd    text eol=lf diff=python
+*.py     text eol=lf diff=python
+*.py3    text eol=lf diff=python
+*.pyw    text eol=lf diff=python
+*.pyx    text eol=lf diff=python
+*.pyz    text eol=lf diff=python
+*.pyi    text eol=lf diff=python
+
+# HDL
+# ============
+*.v      text eol=lf
+*.hdl    text eol=lf
+*.vhd    text eol=lf
+*.vvp    text eol=lf
+
+# Binary files
+# ============
+*.db     binary
+*.p      binary
+*.pkl    binary
+*.pickle binary
+*.pyc    binary export-ignore
+*.pyo    binary export-ignore
+*.pyd    binary
+
+# Jupyter notebook
+*.ipynb  text
+
+# Note: .db, .p, and .pkl files are associated
+# with the python modules ``pickle``, ``dbm.*``,
+# ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
+# (among others).
+
+# ==========
+
+# Sources
+*.c     text eol=lf diff=c
+*.cc    text eol=lf diff=cpp
+*.cxx   text eol=lf diff=cpp
+*.cpp   text eol=lf diff=cpp
+*.c++   text eol=lf diff=cpp
+*.hpp   text eol=lf diff=cpp
+*.h     text eol=lf diff=c
+*.h++   text eol=lf diff=cpp
+*.hh    text eol=lf diff=cpp
+
+# Compiled Object files
+*.slo   binary
+*.lo    binary
+*.o     binary
+*.obj   binary
+
+# Precompiled Headers
+*.gch   binary
+*.pch   binary
+
+# Compiled Dynamic libraries
+*.so    binary
+*.dylib binary
+*.dll   binary
+
+# Compiled Static libraries
+*.lai   binary
+*.la    binary
+*.a     binary
+*.lib   binary
+
+# Executables
+*.exe   binary
+*.out   binary
+*.app   binary
+
+# ==========
+
+# 文件類型
+*.markdown text eol=lf
+*.md text eol=lf
+*.mdwn text eol=lf
+*.mdown text eol=lf
+*.mkd text eol=lf
+*.mkdn text eol=lf
+*.mdtxt text eol=lf
+*.mdtext eol=lf text eol=lf
+*.txt text eol=lf
+AUTHORS text eol=lf
+CHANGELOG text eol=lf
+CHANGES text eol=lf
+CONTRIBUTING text eol=lf
+COPYING text eol=lf
+copyright text eol=lf
+*COPYRIGHT* text eol=lf
+INSTALL text eol=lf
+license text eol=lf
+LICENSE text eol=lf
+NEWS text eol=lf
+readme text eol=lf
+*README* text eol=lf
+TODO text eol=lf
+
+# 程式碼類型
+*.bat text eol=crlf
+*.coffee text eol=lf
+*.css text eol=lf
+*.htm text eol=lf
+*.html text eol=lf
+*.inc text eol=lf
+*.ini text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.jsx text eol=lf
+*.less text eol=lf
+*.od text eol=lf
+*.onlydata text eol=lf
+*.php text eol=lf
+*.pl text eol=lf
+*.py text eol=lf
+*.rb text eol=lf
+*.sass text eol=lf
+*.scm text eol=lf
+*.scss text eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
+*.styl text eol=lf
+*.tag text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.xml text eol=lf
+*.xhtml text eol=lf
+*.cs text eol=lf diff=csharp
+*.dockerignore text eol=lf
+Dockerfile text eol=lf
+
+# linter
+.csslintrc text
+.eslintrc text
+.jscsrc text
+.jshintrc text
+.jshintignore text
+.stylelintrc text
+.stylecop text
+
+# 設定類型
+*.bowerrc text eol=lf
+*.cnf text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+.browserslistrc text eol=lf
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitconfig text eol=lf
+.gitignore text eol=lf
+.htaccess text eol=lf
+*.npmignore text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+browserslist text eol=lf
+Makefile text eol=lf
+makefile text eol=lf
+*.ps1 text eol=lf
+
+# Word 格式
+*.doc diff=astextplain
+*.dotx diff=astextplain
+*.odt diff=astextplain
+*.ott diff=astextplain
+*.fodt diff=astextplain
+*.uot diff=astextplain
+*.dot diff=astextplain
+*.docx diff=astextplain
+*.docm diff=astextplain
+*.pdf diff=astextplain
+*.rtf diff=astextplain
+
+# PowerPint 格式
+*.pptx -text
+*.ppt -text
+*.pot -text
+*.pps -text
+*.ppsx -text
+*.potx -text
+*.potm -text
+*.odp -text
+*.otp -text
+*.odg -text
+*.fodp -text
+*.uop -text
+
+# Excel 格式
+*.ods -text
+*.ots -text
+*.xlsx -text
+*.xls -text
+*.xlsm -text
+*.xlt -text
+*.xlts -text
+*.uos -text
+
+# binary 類型
+# ===========
+
+# 圖像
+*.ai binary
+*.jp2 binary
+*.jpx binary
+*.png binary
+*.psb binary
+*.svg binary
+*.svgz binary
+*.wbmp binary
+*.jpg binary
+*.jpeg binary
+*.jpe binary
+*.png binary
+*.cr2 binary
+*.tiff binary
+*.tif binary
+*.xcf binary
+*.pix binary
+*.matte binary
+*.mask binary
+*.alpha binary
+*.als binary
+*.fli binary
+*.flc binary
+*.xcf.bz2 binary
+*.xcfbz2 binary
+*.xcf.gz binary
+*.xcfgz binary
+*.dds binary
+*.dcm binary
+*.dicom binary
+*.eps binary
+*.fit binary
+*.fits binary
+*.gif binary
+*.avif binary
+*.heic binary
+*.heif binary
+*.bmp binary
+*.cel binary
+*.ico binary
+*.mng binary
+*.exr binary
+*.pbm binary
+*.pfm binary
+*.pgm binary
+*.psd binary
+*.pnm binary
+*.ps binary
+*.ppm binary
+*.hdr binary
+*.data binary
+*.raw binary
+*.webp binary
+*.ddd binary
+
+# 音訊
+*.mp2 binary
+*.acc binary
+*.m4p binary
+*.m4a binary
+*.wav binary
+*.mpc binary
+*.mp3 binary
+*.ra binary
+*.mid binary
+*.midi binary
+*.wma binary
+*.kar binary
+
+# 影音
+*.ogg binary
+
+# 影片
+*.3gpp binary
+*.3gp binary
+*.as binary
+*.asf binary
+*.asx binary
+*.fla binary
+*.flv binary
+*.m4v binary
+*.mng binary
+*.mov binary
+*.mp4 binary
+*.mpeg binary
+*.mpg binary
+*.swc binary
+*.swf binary
+*.webm binary
+
+## FONTS 字型
+*.ttf binary
+*.eot binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# 壓縮格式
+*.0 binary
+*.000 binary
+*.001 binary
+*.7z binary
+*.ace binary
+*.ain binary
+*.alz binary
+*.apz binary
+*.ar binary
+*.arc binary
+*.ari binary
+*.arj binary
+*.axx binary
+*.bh binary
+*.bhx binary
+*.boo binary
+*.bz binary
+*.bza binary
+*.bz2 binary
+*.c00 binary
+*.c01 binary
+*.c02 binary
+*.cab binary
+*.car binary
+*.cbr binary
+*.cbz binary
+*.cp9 binary
+*.cpgz binary
+*.cpt binary
+*.dar binary
+*.dd binary
+*.dgc binary
+*.efw binary
+*.f binary
+*.gca binary
+*.gz binary
+*.ha binary
+*.hbc binary
+*.hbc2 binary
+*.hbe binary
+*.hki binary
+*.hki1 binary
+*.hki2 binary
+*.hki3 binary
+*.hpk binary
+*.hyp binary
+*.ice binary
+*.imp binary
+*.ipk binary
+*.ish binary
+*.jar binary
+*.jgz binary
+*.jic binary
+*.kgb binary
+*.kz binary
+*.lbr binary
+*.lha binary
+*.lnx binary
+*.lqr binary
+*.lz4 binary
+*.lzh binary
+*.lzm binary
+*.lzma binary
+*.lzo binary
+*.lzx binary
+*.mint binary
+*.mou binary
+*.mpkg binary
+*.mzp binary
+*.nz binary
+*.p7m binary
+*.package binary
+*.pae binary
+*.pak binary
+*.paq6 binary
+*.paq7 binary
+*.paq8 binary
+*.par binary
+*.par2 binary
+*.pbi binary
+*.pcv binary
+*.pea binary
+*.pf binary
+*.pim binary
+*.pit binary
+*.piz binary
+*.puz binary
+*.pwa binary
+*.qda binary
+*.r00 binary
+*.r01 binary
+*.r02 binary
+*.r03 binary
+*.rar binary
+*.rk binary
+*.rnc binary
+*.rpm binary
+*.rte binary
+*.rz binary
+*.rzs binary
+*.s00 binary
+*.s01 binary
+*.s02 binary
+*.s7z binary
+*.sar binary
+*.sdn binary
+*.sea binary
+*.sfs binary
+*.sfx binary
+*.shar binary
+*.shk binary
+*.shr binary
+*.sit binary
+*.sitx binary
+*.spt binary
+*.sqx binary
+*.sqz binary
+*.tar binary
+*.taz binary
+*.tbz binary
+*.tbz2 binary
+*.tgz binary
+*.tlz binary
+*.tlz4 binary
+*.txz binary
+*.uc2 binary
+*.uha binary
+*.uue binary
+*.wot binary
+*.xef binary
+*.xx binary
+*.xxe binary
+*.xz binary
+*.y binary
+*.yz binary
+*.yz1 binary
+*.z binary
+*.zap binary
+*.zip binary
+*.zipx binary
+*.zix binary
+*.zoo binary
+*.zz binary
+
+# 執行檔
+*.exe binary
+*.msi binary

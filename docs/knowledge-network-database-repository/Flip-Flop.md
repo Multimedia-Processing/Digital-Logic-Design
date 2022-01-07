@@ -1,1 +1,1 @@
-[[Digital-Logic-Design/docs/knowledge-network-database-repository/正反器]]
+[[/docs/knowledge-network-database-repository/正反器]]

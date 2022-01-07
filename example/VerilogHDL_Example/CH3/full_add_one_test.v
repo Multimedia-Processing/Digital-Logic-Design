@@ -1,5 +1,6 @@
-module full_add_one_test ();
 `timescale 1ns / 1ps
+
+module full_add_one_test ();
 
 reg A = 0'b0;
 reg B = 0'b0;

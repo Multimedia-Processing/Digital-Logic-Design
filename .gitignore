@@ -56,12 +56,18 @@ hc_output/
 *.ip_user_files/
 *.runs/
 *.sim/
+*.srcs/
 *.ioplanning/
 *.out
 *.str
 *.jou
 vivado_*.zip
-.Xil
+.Xil/
+*.xdc
+*.xpr
+
+## Icarus Verilog
+*.vvp
 
 ##	Python
 # Byte-compiled / optimized / DLL files
