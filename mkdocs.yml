@@ -94,17 +94,18 @@ nav:
     - 第N章 多處理器系統: 4-計算機系統結構/README.md
   - 第5部曲 現代處理器架構:
     - 簡介: 5-現代處理器架構/README.md
-    - 第N章 x86: 5-現代處理器架構/README.md
-    - 第N章 ARM: 5-現代處理器架構/README.md
-    - 第N章 RISV-V: 5-現代處理器架構/README.md
-    - 第N章 MIPS: 5-現代處理器架構/README.md
-    - 第N章 PowerPC: 5-現代處理器架構/README.md
-    - 第N章 系統程式設計: 5-現代處理器架構/README.md
+    - 第1章 x86: 5-現代處理器架構/1-x86.md
+    - 第2章 ARM: 5-現代處理器架構/2-ARM.md
+    - 第3章 RISV-V: 5-現代處理器架構/3-RISV.md
+    - 第4章 MIPS: 5-現代處理器架構/4-MIPS.md
+    - 第5章 PowerPC: 5-現代處理器架構/5-PowerPC.md
+    - 第6章 系統程式設計: 5-現代處理器架構/20-系統程式設計.md
   - 第6部曲 新一代處理器架構:
     - 簡介: 6-新一代處理器架構/README.md
   - 附件:
-    - 參考資料: /docs/7-附件/1-參考資料.md
-    - 索引: /docs/7-附件/2-索引.md
+    - 參考資料: 7-附件/1-參考資料.md
+    - 索引: 7-附件/2-索引.md
+  - WiKi: WiKi/
 markdown_extensions:
   - meta
   - smarty
