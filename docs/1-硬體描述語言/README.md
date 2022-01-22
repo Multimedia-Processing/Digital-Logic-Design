@@ -7,3 +7,5 @@
 - **第5章 SystemVerilog：** 針對重點語法、觀念、知識與常見問題進行說明，以及撰寫測試檔案進行「功能模擬」(Functional Simulation)。
 - **第6章 HDL：** 此為 Nand2T 所設計的語法，針對重點語法、觀念、知識與常見問進行說明，至於測試檔的撰寫是不會有的，因為該網站都已經幫你將工具都設計好了。
 - **第6章 持續整合與持續佈署：** 最後做出一個CI/CD的自動化流程，可以在完成後分別在GitLab與GitHub擁有自動化檢查與功能模擬的開發環境。
+
+Tag: #數位邏輯設計 #數位邏輯 #digital-logic #digital-logic-design #DigitalLogic #DigitalLogicDesign #digitallogic #digitallogicdesign #硬體描述語言 #hdl #HDL #簡介 #HardwareDescriptionLanguage #Hardware-Description-Language
