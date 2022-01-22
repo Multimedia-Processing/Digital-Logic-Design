@@ -181,3 +181,5 @@ endmodule // adder_one_assign_test
 
 ### signed
 通過 `signed` 宣告可以進行有號數運算，而 `$signed` 則產生有號數輸出訊號，因此來快速解決設計上需要思考有號數的運算。
+
+Tag: #數位邏輯設計 #數位邏輯 #digital-logic #digital-logic-design #DigitalLogic #DigitalLogicDesign #digitallogic #digitallogicdesign #硬體描述語言 #hdl #HDL #verilog #verilogHDL
