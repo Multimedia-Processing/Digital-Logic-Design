@@ -9,3 +9,7 @@ CPU是[暫存器](/docs/knowledge-network-database-repository/暫存器.md)、[�
 另外，因為不會提供每個[暫存器](/docs/knowledge-network-database-repository/暫存器.md)或各個單元都用個別[匯流排](/docs/knowledge-network-database-repository/匯流排.md)連結，這樣是不合成本的，因此都會用[公共匯流排系統](/docs/knowledge-network-database-repository/公共匯流排系統.md)有效的規劃[匯流排](/docs/knowledge-network-database-repository/匯流排.md)的與資料的流向。
 
 [控制單元](/docs/knowledge-network-database-repository/控制單元.md)，有分成「固線式控制」與「微程式控制」。
+
+---
+
+Tag: #數位邏輯設計 #數位邏輯 #digital-logic #digital-logic-design #DigitalLogic #DigitalLogicDesign #digitallogic #digitallogicdesign 

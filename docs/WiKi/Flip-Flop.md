@@ -1,1 +1,1 @@
-[[/docs/knowledge-network-database-repository/正反器]]
+[正反器](正反器.md)

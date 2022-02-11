@@ -143,3 +143,7 @@ L1:
 可以使用 `-S` 來將 C 語言產生組合語言。
 
 通常組合語言有專門的浮點數運算。
+
+---
+
+Tag: #數位邏輯設計 #數位邏輯 #digital-logic #digital-logic-design #DigitalLogic #DigitalLogicDesign #digitallogic #digitallogicdesign 

@@ -10,3 +10,7 @@ Clock \ Rate_B = \frac {Clock \ Cycles_B} {CPU time_B}
 ```
 
 ![](attachment/Pasted%20image%2020211203094355.png)
+
+---
+
+Tag: #數位邏輯設計 #數位邏輯 #digital-logic #digital-logic-design #DigitalLogic #DigitalLogicDesign #digitallogic #digitallogicdesign 
