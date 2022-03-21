@@ -1,30 +1,30 @@
 `timescale 1ns / 1ps
+`include "full_adder_one.v"
 
-module full_add_one_test ();
+module full_adder_one_test ();
 
-reg A = 0'b0;
-reg B = 0'b0;
-reg Ci = 0'b0;
+reg a = 1'b0;
+reg b = 1'b0;
+reg ci = 1'b0;
 
-wire Co, S;
+wire co, s;
 
-full_add_one UUT (.A(A), .B(B), .Ci(Ci), .Co(Co), .S(S));
+full_add_one UUT (a, b, ci, co, s);
 
 initial begin
-  #100; A = 0'b0; B = 0'b0; Ci = 0'b1;
-  #100; A = 0'b0; B = 0'b1; Ci = 0'b0;
-  #100; A = 0'b0; B = 0'b1; Ci = 0'b1;
-  #100; A = 0'b1; B = 0'b0; Ci = 0'b0;
-  #100; A = 0'b1; B = 0'b0; Ci = 0'b1;
-  #100; A = 0'b1; B = 0'b1; Ci = 0'b0;
-  #100; A = 0'b1; B = 0'b1; Ci = 0'b1;
+  #100; {a, b, ci} = 3'b001;
+  #100; {a, b, ci} = 3'b010;
+  #100; {a, b, ci} = 3'b011;
+  #100; {a, b, ci} = 3'b100;
+  #100; {a, b, ci} = 3'b101;
+  #100; {a, b, ci} = 3'b110;
+  #100; {a, b, ci} = 3'b111;
 
 end
 
 initial begin
   #900;
   $stop;
-
 end
 
 endmodule // full_add_one_test
