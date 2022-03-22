@@ -1,0 +1,105 @@
+# 組合語言的函數呼叫
+
+* [你所不知道的C語言：函式呼叫篇](https://hackmd.io/s/SJ6hRj-zg)
+
+## 組合語言常見的幾種函數呼叫方式
+
+C 語言
+
+```
+z = mult(x, y)
+
+...
+
+int mult(int a, int b) { ... }
+
+```
+
+組合語言
+
+```
+使用暫存器傳遞參數            使用堆疊傳遞參數 1       使用堆疊傳遞參數 2
+
+LD R1, x                     PUSH R1, x             PUSH R1, x
+LD R2, y                     PUSH R2, y             PUSH R2, y
+CALL mult                    CALL mult              CALL mult
+
+mult:                    
+// calculate R1 = R1*R2      POP R1, b              MOV FP, SP
+                             POP R2, a              // access a by FP-2
+// ....                                             // access b by FP-1
+  RET
+```
+
+## Hack CPU 實作函數呼叫
+
+```
+使用暫存器傳遞參數
+// LD R1, x
+@x
+D=M
+@R1
+M=D
+// LD R2, y
+@y
+D=M
+@R2
+M=D
+// CALL mult
+@multNext
+D=A
+@SP
+M=D
+M=M+1
+
+@mult
+0; JMP
+(multNext)
+
+...
+
+(mult)
+// calculate R1 = R1*R2 
+
+// RET
+@multNext
+0; JMP
+```
+
+## Hack 虛擬機的函數呼叫
+
+* https://github.com/cccbook/sp/blob/master/code/nand2tetris/08/FunctionCalls/FibonacciElement/Main.vm
+
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/08/FunctionCalls/FibonacciElement/Main.vm
+
+// Computes the n'th element of the Fibonacci series, recursively.
+// n is given in argument[0].  Called by the Sys.init function 
+// (part of the Sys.vm file), which also pushes the argument[0] 
+// parameter before this code starts running.
+
+function Main.fibonacci 0
+push argument 0
+push constant 2
+lt                     // check if n < 2
+if-goto IF_TRUE
+goto IF_FALSE
+label IF_TRUE          // if n<2, return n
+push argument 0        
+return
+label IF_FALSE         // if n>=2, return fib(n-2)+fib(n-1)
+push argument 0
+push constant 2
+sub
+call Main.fibonacci 1  // compute fib(n-2)
+push argument 0
+push constant 1
+sub
+call Main.fibonacci 1  // compute fib(n-1)
+add                    // return fib(n-1) + fib(n-2)
+return
+
+```
