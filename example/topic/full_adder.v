@@ -10,4 +10,4 @@ and (a_ci, a, ci);
 and (b_ci, b, ci);
 or (carry, a_b, a_ci, b_ci);
 
-endmodule // full_addr
+endmodule // full_adder

@@ -5,4 +5,4 @@ output sum, carry;
 xor (sum, a, b);
 and (carry, a, b);
 
-endmodule // half_addr
+endmodule // half_adder

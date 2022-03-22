@@ -3,7 +3,7 @@ module full_adder_test ();
   wire sum, carry;
   integer number1, number2, number3;
 
-  full_addr UUT (a, b, ci, sum, carry);
+  full_adder UUT (a, b, ci, sum, carry);
 
   initial begin
     for (number1 = 0; number1 < 2; number1 = number1 + 1)
@@ -22,4 +22,4 @@ module full_adder_test ();
     $finish;
   end
 
-endmodule // full_addr_test
+endmodule // full_adder_test

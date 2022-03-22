@@ -18,4 +18,4 @@ module half_adder_test ();
     $finish;
   end
 
-endmodule // half_addr_test
+endmodule // half_adder_test
