@@ -104,36 +104,20 @@ end
 
 ## 編譯指令與系統任務
 ### 編譯指令
-「編譯指令」(Compiler Directive)針對編譯時的指令，對於電路設計提供更方便與彈性的設計，其中包含了 `'include` 、 `'timescale` 、 `'define` 、 `'undef` 、 `'resetall` 與條件編譯指令。
+「編譯指令」(Compiler Directive)針對編譯時的指令，對於電路設計提供更方便與彈性的設計，其中包含了 <code>&grave;include</code> 、 <code>&grave;timescale</code> 、 <code>&grave;define</code> 、 <code>&grave;undef</code> 、 <code>&grave;resetall</code> 與條件編譯指令。
 
-註* 由於Markdown無法呈現對於特殊單引號字元的呈現，因此在文字描述內會將前面的
+#### &grave;include
+<code>&grave;include</code> 可以用於匯入他人設計的 IC ，類似於 C 語言的 `#include <.h>` 的指令，只是將 `#` 上會改為「重音符號」 <code>&grave;</code>， `<>` 改為 `""` 。
 
-```
-`
-```
-
-暫時改為單引號 `'` ，例如：
-
-```
-此指令為 `include ，用於匯入。
+```verilog
+`include "verilog_file.v"
 ```
 
-會改為「此指令為 `'include` ，用於匯入。」或使用 code 的描述方式來取代。
-
-#### include
-可以用於匯入他人設計的 IC ，類似於 C 語言的 `#include <.h>` 的指令，只是將 `#` 上會改為特殊單引號。
-
-```
-這個字元 -> "`"
-```
-
-特殊字元。
-
-#### timescale
+#### &grave;timescale
 設定模擬時間的基本單位與精準度，基本使用如下。
 
 ```verilog
-`'timescale 時間單位 / 時間精準度
+`timescale 時間單位 / 時間精準度
 ```
 
 - **時間單位：** 時間單位以及時間精準度的單位，應該要以 0 以上的整數。
