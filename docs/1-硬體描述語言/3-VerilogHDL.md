@@ -127,7 +127,7 @@ end
 
 例如：
 
-```verilog aaa.v
+```verilog
 `timescale 1ns / 1ps
 // `timescale 時間單位 1 奈秒 / 時間精準度 1 皮秒
 
