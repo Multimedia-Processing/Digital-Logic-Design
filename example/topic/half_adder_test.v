@@ -2,10 +2,10 @@
 
 module half_adder_test ();
   reg a, b;
-  wire sum, carry;
+  wire sub, borrow;
   integer number1, number2;
 
-  half_adder UUT (a, b, sum, carry);
+  half_adder UUT (a, b, sub, borrow);
 
   initial begin
     for (number1 = 0; number1 < 2; number1 = number1 + 1)
@@ -14,7 +14,7 @@ module half_adder_test ();
           begin
             a = number1;
             b = number2;
-            $monitor("| %b | %b | %b | %b |", a, b, sum, carry);
+            $monitor("| %b | %b | %b | %b |", a, b, sub, borrow);
             #10;
           end
       end

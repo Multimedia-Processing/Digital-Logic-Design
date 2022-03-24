@@ -1,8 +1,8 @@
-module half_adder (a, b, sum, carry);
+module half_adder (a, b, sum, borrow);
 input a, b;
-output sum, carry;
+output sum, borrow;
 
 xor (sum, a, b);
-and (carry, a, b);
+and (borrow, a, b);
 
 endmodule // half_adder
