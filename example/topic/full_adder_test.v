@@ -17,9 +17,8 @@ module full_adder_test ();
                 a = number1;
                 b = number2;
                 ci = number3;
-                #10;
                 $monitor("| %b | %b | %b | %b | %b |", a, b, ci, sum, carry);
-
+                #10;
               end
           end
       end
