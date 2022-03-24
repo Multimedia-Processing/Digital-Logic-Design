@@ -1,9 +1,13 @@
-module full_adder_4_bit_test ();
-  reg [3:0] a, b, ci;
-  wire [4:0] sum;
-  integer number1, number2;
+`include "full_adder_4_bit.v"
 
-  full_adder_4_bit UUT (a, b, ci, sum);
+module full_adder_4_bit_test ();
+  reg [3:0] a, b;
+  reg ci;
+  wire [3:0] sum;
+  wire co;
+  integer number1, number2, number3;
+
+  full_adder_4_bit UUT (a, b, ci, sum, co);
 
   initial begin
     for (number1 = 0; number1 < 16; number1 = number1 + 1)
@@ -15,6 +19,7 @@ module full_adder_4_bit_test ();
                 a = number1;
                 b = number2;
                 ci = number3;
+                $monitor("| %d | %d | %b | %d | %b |", a, b, ci, sum, co);
                 #10;
               end
           end
