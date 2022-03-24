@@ -19,6 +19,7 @@ endmodule // module_name
 ## 資料類型
 
 ## 邏輯閘層次
+「邏輯閘層次」()
 
 ## 資料流層次
 「資料流層次」(Dataflow Level)
