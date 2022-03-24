@@ -63,7 +63,7 @@ hc_output/
 *.jou
 vivado_*.zip
 .Xil/
-*.xdc
+!*.xdc
 *.xpr
 
 ## Icarus Verilog
