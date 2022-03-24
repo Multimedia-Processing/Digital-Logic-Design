@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 2020/10/28 15:36:36
-// Design Name: 
+// Design Name:
 // Module Name: upcounter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 module upcounter(
 input clock, reset,
@@ -26,7 +26,7 @@ output reg [7:0] seg = 8'd0
 reg [26:0] cnt = 27'd1;
 reg [3:0] num = 4'd0;
 reg clock_1hz = 1'd1;
-//100MHz °£ÀW 1Hz
+//100MHz é™¤é » 1Hz
 always@(posedge clock, negedge reset)
     if(!reset)
         cnt = 27'd1;
@@ -41,7 +41,7 @@ always@(posedge clock, negedge reset)
         clock_1hz = 1'd1;
     else
         clock_1hz = 1'd0;
-//¤W¼Æ
+//ä¸Šæ•¸
 always@(posedge clock_1hz, negedge reset)
     if(!reset)
         num = 4'd0;
@@ -49,7 +49,7 @@ always@(posedge clock_1hz, negedge reset)
         num = 4'd0;
     else
         num = num + 4'd1;
-//¤C¬q¸Ñ½X
+//ä¸ƒæ®µè§£ç¢¼
 always@(num) begin
 an = 4'b0001;
     case(num)
