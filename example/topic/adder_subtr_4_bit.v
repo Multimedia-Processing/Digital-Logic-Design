@@ -2,11 +2,11 @@
 
 module adder_subtr_4_bit (a, b, k, sum, co);
 
-input [3:0] a, b;
+input signed [3:0] a, b;
 input k;
-output [3:0] sum;
+output signed [3:0] sum;
 output co;
-wire [3:0] add_sub;
+wire signed [3:0] add_sub;
 
 
 xor xor0(add_sub[0], b[0], k);
