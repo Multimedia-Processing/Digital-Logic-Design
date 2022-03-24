@@ -1,9 +1,9 @@
-module full_adder_4_bit_test ();
+module half_subtr_test ();
   reg [3:0] a, b;
   wire [4:0] sum;
   integer number1, number2;
 
-  full_adder_4_bit UUT (a, b, sum);
+  half_subtr UUT (a, b, sum);
 
   initial begin
     for (number1 = 0; number1 < 16; number1 = number1 + 1)
@@ -18,4 +18,4 @@ module full_adder_4_bit_test ();
     $finish;
   end
 
-endmodule // full_adder_4_bit_test
+endmodule // half_subtr_test

@@ -1,7 +1,4 @@
-`include "full_adder.v"
-`include "half_adder.v"
-
-module half_adder_4_bit (a, b, sum);
+module half_subtr (a, b, sum);
 
 input [3:0] a, b;
 output [4:0] sum;
@@ -12,4 +9,4 @@ full_adder adder2(a[1], b[1], carry1, sum[1], carry2);
 full_adder adder3(a[2], b[2], carry2, sum[2], carry3);
 full_adder adder4(a[3], b[3], carry3, sum[3], sum[4]);
 
-endmodule // half_adder_4_bit
+endmodule // half_subtr
