@@ -1,3 +1,5 @@
+`include "full_adder.v"
+
 module full_adder_test ();
   reg a, b, ci;
   wire sum, carry;
@@ -16,6 +18,8 @@ module full_adder_test ();
                 b = number2;
                 ci = number3;
                 #10;
+                $monitor("| %b | %b | %b | %b | %b |", a, b, ci, sum, carry);
+
               end
           end
       end
