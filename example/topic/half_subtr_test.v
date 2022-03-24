@@ -1,18 +1,21 @@
+`include "half_subtr.v"
+
 module half_subtr_test ();
-  reg [3:0] a, b;
-  wire [4:0] sum;
+  reg a, b;
+  wire sub, carry;
   integer number1, number2;
 
-  half_subtr UUT (a, b, sum);
+  half_subtr UUT (a, b, sub, carry);
 
   initial begin
-    for (number1 = 0; number1 < 16; number1 = number1 + 1)
+    for (number1 = 0; number1 < 2; number1 = number1 + 1)
       begin
-        for (number2 = 0; number2 < 16; number2 = number2 + 1)
+        for (number2 = 0; number2 < 2; number2 = number2 + 1)
           begin
-              a = number1;
-              b = number2;
-              #10;
+            a = number1;
+            b = number2;
+            $monitor("| %b | %b | %b | %b |", a, b, sub, carry);
+            #10;
           end
       end
     $finish;
