@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 2021/11/29 17:39:08
-// Design Name: 
+// Design Name:
 // Module Name: updowncounter
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -29,7 +29,7 @@ output reg [7:0] seg = 8'd0
 reg [25:0] cnt = 26'd1;
 reg [3:0] num = 4'd0;
 reg clock_1hz = 1'd1;
-//100MHz °£ÀW 1Hz
+//100MHz é™¤é » 1Hz
 always@(posedge clock, negedge reset)
     if(!reset) begin
         cnt = 26'd1;
@@ -39,23 +39,23 @@ always@(posedge clock, negedge reset)
         cnt = 26'd1;
     end else
         cnt = cnt + 26'd1;
-//¤W¤U¼Æ
+//ä¸Šä¸‹æ•¸
 always@(posedge clock_1hz, posedge reset)
     if(!reset)
         num = 4'd0;
-    else if(sel)	//sel = 1 ¤W¼Æ
+    else if(sel)	//sel = 1 ä¸Šæ•¸
         if(num == 4'd9) begin
             num = 4'd8;
             sel = 1'd0;
         end else
             num = num + 4'd1;
-    else	//sel = 0 ¤U¼Æ
+    else	//sel = 0 ä¸‹æ•¸
         if(num == 4'd0) begin
             num = 4'd1;
             sel = 1'd1;
         end else
             num = num - 4'd1;
-//¤C¬q¸Ñ½X
+//ä¸ƒæ®µè§£ç¢¼
 always@(num) begin
 an = 4'b0001;
     case(num)
