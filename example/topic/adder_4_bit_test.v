@@ -1,13 +1,13 @@
-`include "full_adder_4_bit.v"
+`include "adder_4_bit.v"
 
-module full_adder_4_bit_test ();
+module adder_4_bit_test ();
   reg [3:0] a, b;
   reg ci;
   wire [3:0] sum;
   wire co;
   integer number1, number2, number3;
 
-  full_adder_4_bit UUT (a, b, ci, sum, co);
+  adder_4_bit UUT (a, b, ci, sum, co);
 
   initial begin
     for (number1 = 0; number1 < 16; number1 = number1 + 1)
@@ -27,4 +27,4 @@ module full_adder_4_bit_test ();
     $finish;
   end
 
-endmodule // full_adder_4_bit_test
+endmodule // adder_4_bit_test
