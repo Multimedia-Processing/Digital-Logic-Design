@@ -17,6 +17,7 @@ module shift_test ();
 
         #10;
     end
+    $finish;
   end
 
 endmodule // shift_test
