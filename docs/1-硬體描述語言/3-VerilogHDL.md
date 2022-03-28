@@ -18,6 +18,14 @@ endmodule // module_name
 
 ## 資料類型
 
+### parameter
+`parameter` 關鍵字用於設定為參數資料。
+
+```verilog
+parameter parameter_type parameter_name = parameter_value,
+
+```
+
 ## 邏輯閘層次
 「邏輯閘層次」()
 
