@@ -1,10 +1,10 @@
-module half_subtr (a, b, sub, carry);
+module half_subtr (a, b, sub, borrow);
 
 input a, b;
-output sub, carry;
+output sub, borrow;
 
 xor (sub, a, b);
 not (a_bar, a);
-and (carry, a_bar, b);
+and (borrow, a_bar, b);
 
 endmodule // half_subtr

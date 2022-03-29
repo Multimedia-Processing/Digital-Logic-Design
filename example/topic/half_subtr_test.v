@@ -2,10 +2,10 @@
 
 module half_subtr_test ();
   reg a, b;
-  wire sub, carry;
+  wire sub, borrow;
   integer number1, number2;
 
-  half_subtr UUT (a, b, sub, carry);
+  half_subtr UUT (a, b, sub, borrow);
 
   initial begin
     for (number1 = 0; number1 < 2; number1 = number1 + 1)
@@ -14,7 +14,7 @@ module half_subtr_test ();
           begin
             a = number1;
             b = number2;
-            $monitor("| %b | %b | %b | %b |", a, b, sub, carry);
+            $monitor("| %b | %b | %b | %b |", a, b, sub, borrow);
             #10;
           end
       end

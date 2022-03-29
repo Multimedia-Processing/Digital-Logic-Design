@@ -10,9 +10,9 @@ module adder_4_bit_test ();
   adder_4_bit UUT (a, b, ci, sum, co);
 
   initial begin
-    for (number1 = 0; number1 < 16; number1 = number1 + 1)
+    for (number1 = 0; number1 < 16; number1 = number1 + 6)
       begin
-        for (number2 = 0; number2 < 16; number2 = number2 + 1)
+        for (number2 = 0; number2 < 16; number2 = number2 + 7)
           begin
             for (number3 = 0; number3 < 2; number3 = number3 + 1)
               begin
