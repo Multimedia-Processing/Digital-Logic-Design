@@ -9,7 +9,7 @@
 
 ### 一位元半加法器
 
-Verilog程式碼
+Verilog程式碼 Gate
 
 ```verilog
 module half_adder (a, b, sum, carry);
@@ -66,7 +66,7 @@ endmodule // half_subtr_test
 
 使用AND邏輯閘做出來。
 
-Verilog程式碼
+Verilog程式碼 gate
 
 ```verilog
 module full_adder (a, b, ci, sum, carry);
@@ -119,7 +119,7 @@ endmodule // full_adder_test
 
 ```
 
-Verilog程式碼
+Verilog程式碼 Assign
 
 ```verilog
 module adder_one_assign (a, b, ci, co, sum);
@@ -163,7 +163,7 @@ endmodule // adder_one_assign_test
 
 ```
 
-Verilog程式碼
+Verilog程式碼 If
 
 ```verilog
 module adder_one_if (a, b, ci, co, sum);
@@ -233,7 +233,7 @@ endmodule // adder_one_if_test
 
 使用兩個半加器組成全加器，這樣的作法就有點算是漣波加法器的作法，只是是在1位元就這麼做。
 
-Verilog程式碼
+Verilog程式碼 Gate
 
 ```verilog
 ```
@@ -249,7 +249,7 @@ Verilog測試檔案
 
 #### 4位元漣波加法器
 
-Verilog程式碼
+Verilog程式碼 Gate
 
 ```verilog
 `include "full_adder.v"
@@ -310,7 +310,7 @@ endmodule // full_adder_4_bit_test
 ### 4位元加法器
 透過 `assign` 的連續指定方式，設計加法器。
 
-Verilog程式碼
+Verilog程式碼 Gate
 
 ```verilog
 module adder_four (sum, co, a, b, ci);
