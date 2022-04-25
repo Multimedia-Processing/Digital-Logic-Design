@@ -23,7 +23,6 @@ endmodule // module_name
 
 ```verilog
 parameter parameter_type parameter_name = parameter_value,
-
 ```
 
 ## 邏輯閘層次
