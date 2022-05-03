@@ -1,31 +1,14 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 2020/10/28 15:36:36
-// Design Name:
-// Module Name: upcounter
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
-module upcounter(
-input clock, reset,
-output reg [3:0] an = 4'b0001,
-output reg [7:0] seg = 8'd0
-);
+
+
+module upcounter(clock, reset, an, seg);
+input clock, reset;
+output reg [3:0] an = 4'b0001;
+output reg [7:0] seg = 8'd0;
 reg [26:0] cnt = 27'd1;
 reg [3:0] num = 4'd0;
 reg clock_1hz = 1'd1;
+
 //100MHz 除頻 1Hz
 always@(posedge clock, negedge reset)
     if(!reset)
@@ -41,6 +24,7 @@ always@(posedge clock, negedge reset)
         clock_1hz = 1'd1;
     else
         clock_1hz = 1'd0;
+
 //上數
 always@(posedge clock_1hz, negedge reset)
     if(!reset)
