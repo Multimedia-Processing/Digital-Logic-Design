@@ -12,8 +12,8 @@ always @ (posedge clock) begin
     register[1] = register[0];
     register[0] = in;
   end
-assign out = register[3];
-
 end
+
+assign out = register[3];
 
 endmodule // siso_shift_register
