@@ -5,8 +5,12 @@ output [3:0] q;
 reg [3:0] q;
 
 always @ (posedge clock) begin
-  if (reset | (q == 9)) begin
+  if (reset) begin
     q = 0;
+
+  end else if (q == 9) begin
+    q = 0;
+
   end else begin
     q = q + 1;
   end
