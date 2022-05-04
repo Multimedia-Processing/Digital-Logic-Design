@@ -26,7 +26,7 @@ parameter parameter_type parameter_name = parameter_value,
 ```
 
 ## 邏輯閘層次
-「邏輯閘層次」()
+「邏輯閘層次」(Gate Level)
 
 ## 資料流層次
 「資料流層次」(Dataflow Level)
