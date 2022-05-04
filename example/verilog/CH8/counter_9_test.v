@@ -12,11 +12,15 @@ module counter_9_test ();
   counter_9 UUT (clock, reset, q);
 
   initial begin
+    clock = 1'b1;
+    reset = 1'b1;
+    #10;
     reset = 1'b0;
+
     #5;
-    $display("| clock | reset |  q   |");
+    $display("| clock | reset |  q |");
     for (number = 0; number < 100; number = number + 1) begin
-      $monitor("|   %b   |   %b   | %b |", clock, reset, q);
+      $monitor("|   %b   |   %b   | %d |", clock, reset, q);
       #10;
     end
     $finish;
