@@ -1,7 +1,7 @@
 module seven_segment_display (data, display);
 input [3:0] data;
-output [7:0] display;
-reg [7:0] display;
+output [6:0] display;
+reg [6:0] display;
 
 
 always @ (data) begin
