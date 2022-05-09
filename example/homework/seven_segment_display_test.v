@@ -2,13 +2,13 @@
 
 module seven_segment_display_test ();
   reg [3:0] data;
-  wire [7:0] display;
+  wire [6:0] display;
   integer number;
 
   seven_segment_display UUT (data, display);
 
   initial begin
-    $display("| data | display  |");
+    $display("| data | display |");
     for (number = 0; number < 16; number = number + 1)
       begin
         data = number;
