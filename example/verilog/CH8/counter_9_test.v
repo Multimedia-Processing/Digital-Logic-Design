@@ -27,6 +27,13 @@ module counter_9_test ();
   end
 
   initial begin
+    #255;
+    reset = 1'b1;
+    #20;
+    reset = 1'b0;
+  end
+
+  initial begin
     #OFFSET;
     forever
       begin
