@@ -23,6 +23,14 @@ module down_counter_test ();
     $finish;
   end
 
+  initial begin
+    #250;
+    reset = 1'b1;
+    #20;
+    reset = 1'b0;
+
+  end
+
   always begin
     #10;
     clock = ~clock;
