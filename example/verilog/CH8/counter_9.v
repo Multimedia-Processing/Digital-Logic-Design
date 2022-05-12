@@ -6,10 +6,10 @@ reg [3:0] q;
 
 always @ (posedge clock) begin
   if (reset) begin
-    q = 0;
+    q = 1;
 
   end else if (q == 9) begin
-    q = 0;
+    q = 1;
 
   end else begin
     q = q + 1;
