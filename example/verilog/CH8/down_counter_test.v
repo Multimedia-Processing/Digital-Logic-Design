@@ -16,7 +16,7 @@ module down_counter_test ();
 
     #5;
     $display("| clock | reset |  q |");
-    for (number = 0; number < 100; number = number + 1) begin
+    for (number = 0; number < 50; number = number + 1) begin
       $monitor("|   %b   |   %b   | %d |", clock, reset, q);
       #10;
     end
