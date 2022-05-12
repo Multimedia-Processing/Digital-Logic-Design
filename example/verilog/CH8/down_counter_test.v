@@ -3,11 +3,7 @@
 module down_counter_test ();
   reg clock, reset;
   integer number;
-  wire [5:0] q;
-
-  parameter PERIOD = 20;
-  parameter real DUTY_CYCLE = 0.5;
-  parameter OFFSET = 0;
+  wire [3:0] q;
 
   down_counter UUT (clock, reset, q);
 
