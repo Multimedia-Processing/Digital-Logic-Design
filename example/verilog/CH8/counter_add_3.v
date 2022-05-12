@@ -8,7 +8,7 @@ always @ (posedge clock) begin
   if (reset | (q == 51)) begin
     q = 0;
   end else begin
-    q = q + 3;
+    q += 3;
   end
 end
 
