@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 `include "full_subtr.v"
 
 module full_subtr_test ();
