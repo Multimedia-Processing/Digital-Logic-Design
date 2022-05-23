@@ -1,4 +1,7 @@
 module traffic_lights ();
+`include "seven_segment_display_assign.v"
+`include "binary_to_bcd.v"
+`include "decoder_6x20.v"
 
 endmodule // traffic_lights
 
