@@ -22,6 +22,22 @@ seven_segment_display_assign seven_seg_row_1(row_bcd[4:7], row_display[6:13]);
 seven_segment_display_assign seven_seg_column_0(column_bcd[0:3], column_display[0:6]);
 seven_segment_display_assign seven_seg_column_1(column_bcd[4:7], column_display[6:13]);
 
+always @ (posedge clock) begin
+  if (28 < coder <= 32) begin
+    row_display = 0;
+    {row_traffic_lights, column_traffic_lights} = decoder[8:19];
+
+  end else if (60 < coder <= 64) begin
+    row_display = 0;
+    {row_traffic_lights, column_traffic_lights} = decoder[8:19];
+
+  end else begin
+    {row_traffic_lights, column_traffic_lights} = decoder[8:19];
+
+  end
+end
+
+
 endmodule // traffic_lights
 
 module down_counter (clock, reset, q);
