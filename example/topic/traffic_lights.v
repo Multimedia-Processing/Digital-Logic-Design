@@ -1,8 +1,9 @@
-module traffic_lights ();
 `include "seven_segment_display_assign.v"
 `include "binary_to_bcd.v"
 `include "decoder_6x20.v"
 
+module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
+  row_display, column_display);
 endmodule // traffic_lights
 
 module down_counter (clock, reset, q);
