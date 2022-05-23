@@ -1,4 +1,6 @@
-module frequency_divder_32_test (clock, reset, out);
+`include "frequency_divder_32.v"
+
+module frequency_divder_32_test ();
   reg clock;
   reg reset;
 
