@@ -5,18 +5,18 @@ module frequency_divder_32 (clock, reset, out);
   output out;
 
   reg out;
-  reg [4:0];
+  reg [3:0] diver;
 
   parameter count = 16;
 
   always @ (posedge clock) begin
     if (~reset) begin
-      a = 0;
+      diver = 0;
     end else begin
-      if (a < count - 1) begin
-        a += 1;
+      if (diver < count - 1) begin
+        diver += 1;
       end else begin
-        a = 0;
+        diver = 0;
       end
     end
 
@@ -27,7 +27,11 @@ module frequency_divder_32 (clock, reset, out);
     if (~reset) begin
       out = 1'b0;
     end else begin
-      out = out;
+      if (diver == count - 1) begin
+        out = ~out;
+      end else begin
+        out = out;
+      end
     end
   end
 
