@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 `include "full_adder.v"
 
 module full_adder_test ();

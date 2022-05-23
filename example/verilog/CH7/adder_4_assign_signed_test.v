@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 `include "adder_4_assign_signed.v"
 
 module adder_4_assign_signed_test ();
