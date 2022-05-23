@@ -13,6 +13,15 @@ reg [5:0] coder;
 reg [19:0] decoder;
 wire [7:0] row_bcd, column_bcd;
 
+down_counter count (clock, reset, coder);
+decoder_6x20 dcode (clock, reset, coder, decoder);
+binary_to_bcd row_bcd_circuit(decoder[0:6], row_bcd);
+binary_to_bcd column_bcd_circuit(decoder[0:7], column_bcd);
+seven_segment_display_assign seven_seg_row_0(row_bcd[0:3], row_display[0:6]);
+seven_segment_display_assign seven_seg_row_1(row_bcd[4:7], row_display[6:13]);
+seven_segment_display_assign seven_seg_column_0(column_bcd[0:3], column_display[0:6]);
+seven_segment_display_assign seven_seg_column_1(column_bcd[4:7], column_display[6:13]);
+
 endmodule // traffic_lights
 
 module down_counter (clock, reset, q);
