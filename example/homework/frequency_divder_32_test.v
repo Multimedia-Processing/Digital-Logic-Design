@@ -16,10 +16,15 @@ module frequency_divder_32_test ();
 
     reset = 1'b1;
 
+    $display("| clock | reset | out |");
+
   end
 
   always begin
-    #10;
+    #5;
+    $monitor("|   %b   |   %b   |  %b  |", clock, reset, out);
+
+    #5;
     clock = ~clock;
   end
 
