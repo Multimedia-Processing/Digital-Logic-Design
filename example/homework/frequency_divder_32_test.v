@@ -3,6 +3,9 @@
 module frequency_divder_32_test ();
   reg clock;
   reg reset;
+  wire out;
+
+  integer number;
 
   frequency_divder_32 UUT (clock, reset, out);
 
