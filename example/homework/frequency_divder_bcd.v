@@ -17,9 +17,9 @@ module frequency_divder_bcd (clock, reset, out);
   // 形成對稱方波
   always @ (diver) begin
     if (diver < 5) begin
-      out = 0;
-    end else begin
       out = 1;
+    end else begin
+      out = 0;
     end
   end
 
