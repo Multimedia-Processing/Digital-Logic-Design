@@ -22,7 +22,7 @@ module frequency_divder_32 (clock, reset, out);
 
   end
 
-
+  // 產生工作週期 0.03125 波形
   always @ (posedge clock) begin
     if (~reset) begin
       out = 1'b0;
