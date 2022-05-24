@@ -29,7 +29,7 @@ module frequency_divder_32_test ();
   end
 
   initial begin
-    #100000;
+    #1000;
     $finish;
   end
 
