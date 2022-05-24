@@ -7,7 +7,7 @@ module frequency_divder_32 (clock, reset, out);
   reg out;
   reg [3:0] diver;
 
-  parameter count = 16;
+  parameter count = 32;
 
   always @ (posedge clock) begin
     if (~reset) begin
