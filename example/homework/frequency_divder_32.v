@@ -1,11 +1,9 @@
-// 32除頻器
-
 module frequency_divder_32 (clock, reset, out);
   input clock, reset;
   output out;
 
   reg out;
-  reg [3:0] diver;
+  reg [4:0] diver;
 
   parameter count = 32;
 
