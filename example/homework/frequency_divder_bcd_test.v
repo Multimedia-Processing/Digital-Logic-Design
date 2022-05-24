@@ -1,6 +1,6 @@
 `include "frequency_divder_bcd.v"
 
-module frequency_divder_32_test ();
+module frequency_divder_bcd_test ();
   reg clock;
   reg reset;
   wire out;
@@ -33,4 +33,4 @@ module frequency_divder_32_test ();
     $finish;
   end
 
-endmodule // frequency_divder_32_test
+endmodule // frequency_divder_bcd_test
