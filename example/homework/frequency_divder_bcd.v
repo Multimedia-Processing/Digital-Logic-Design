@@ -10,7 +10,7 @@ module frequency_divder_bcd (clock, reset, out);
     if (~reset || diver == 9) begin
       diver = 0;
     end else begin
-      diver += 1;
+      diver = diver + 1;
     end
   end
 
