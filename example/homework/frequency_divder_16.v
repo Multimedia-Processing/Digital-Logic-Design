@@ -1,4 +1,4 @@
-// 32除頻器
+// 16除頻器
 
 module frequency_divder_16 (clock, reset, out);
   input clock, reset;
@@ -7,7 +7,7 @@ module frequency_divder_16 (clock, reset, out);
   reg out;
   reg [3:0] diver;
 
-  parameter count = 16;
+  parameter count = 8;
 
   always @ (posedge clock) begin
     if (~reset) begin
