@@ -10,7 +10,7 @@ module frequency_divder_32_duty_cycle_25 (clock, reset, out);
     if (~reset || diver == 32) begin
       diver = 0;
     end else begin
-      diver += 1;
+      diver = diver + 1;
     end
   end
 

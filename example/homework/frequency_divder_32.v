@@ -1,3 +1,5 @@
+// 32除頻器
+
 module frequency_divder_32 (clock, reset, out);
   input clock, reset;
   output out;
@@ -5,7 +7,7 @@ module frequency_divder_32 (clock, reset, out);
   reg out;
   reg [4:0] diver;
 
-  parameter count = 32;
+  parameter count = 16;
 
   always @ (posedge clock) begin
     if (~reset) begin
@@ -20,8 +22,8 @@ module frequency_divder_32 (clock, reset, out);
 
   end
 
-  // 產生工作週期 0.03125 波形
-  always @ (posedge clock) begin
+  // 產生工作週期 0.5 波形
+  always @ (diver) begin
     if (~reset) begin
       out = 1'b0;
     end else begin

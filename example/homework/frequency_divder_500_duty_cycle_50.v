@@ -10,7 +10,7 @@ module frequency_divder_500_duty_cycle_50 (clock, reset, out);
     if (~reset || diver == 500) begin
       diver = 0;
     end else begin
-      diver += 1;
+      diver = diver + 1;
     end
   end
 

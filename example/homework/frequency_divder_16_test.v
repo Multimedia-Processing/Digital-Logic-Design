@@ -5,8 +5,6 @@ module frequency_divder_16_test ();
   reg reset;
   wire out;
 
-  integer number;
-
   frequency_divder_16 UUT (clock, reset, out);
 
   initial begin
