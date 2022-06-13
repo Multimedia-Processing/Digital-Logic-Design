@@ -15,16 +15,16 @@ module frequency_divder_bcd (clock, reset, out);
     if (~reset || diver == 9) begin
       diver = 0;
     end else begin
-      diver += 1;
+      diver = diver + 1;
     end
   end
 
   // 形成對稱方波
   always @ (diver) begin
     if (diver < 5) begin
-      out = 0;
-    end else begin
       out = 1;
+    end else begin
+      out = 0;
     end
   end
 
@@ -79,7 +79,7 @@ endmodule // frequency_divder_bcd_test
 ### 除16除頻器
 
 ```verilog
-// 32除頻器
+// 16除頻器
 
 module frequency_divder_16 (clock, reset, out);
   input clock, reset;
@@ -88,23 +88,22 @@ module frequency_divder_16 (clock, reset, out);
   reg out;
   reg [3:0] diver;
 
-  parameter count = 16;
+  parameter count = 8;
 
   always @ (posedge clock) begin
     if (~reset) begin
       diver = 0;
     end else begin
       if (diver < count - 1) begin
-        diver += 1;
+        diver = diver + 1;
       end else begin
         diver = 0;
       end
     end
-
   end
 
-  // 產生工作週期 0.03125 波形
-  always @ (posedge clock) begin
+  // 產生工作週期 0.5 波形
+  always @ (diver) begin
     if (~reset) begin
       out = 1'b0;
     end else begin
@@ -128,8 +127,6 @@ module frequency_divder_16_test ();
   reg clock;
   reg reset;
   wire out;
-
-  integer number;
 
   frequency_divder_16 UUT (clock, reset, out);
 
@@ -167,6 +164,8 @@ endmodule // frequency_divder_16_test
 ### 除32除頻器
 
 ```verilog
+// 32除頻器
+
 module frequency_divder_32 (clock, reset, out);
   input clock, reset;
   output out;
@@ -174,7 +173,7 @@ module frequency_divder_32 (clock, reset, out);
   reg out;
   reg [4:0] diver;
 
-  parameter count = 32;
+  parameter count = 16;
 
   always @ (posedge clock) begin
     if (~reset) begin
@@ -189,8 +188,8 @@ module frequency_divder_32 (clock, reset, out);
 
   end
 
-  // 產生工作週期 0.03125 波形
-  always @ (posedge clock) begin
+  // 產生工作週期 0.5 波形
+  always @ (diver) begin
     if (~reset) begin
       out = 1'b0;
     end else begin
@@ -239,7 +238,7 @@ module frequency_divder_32_test ();
   end
 
   initial begin
-    #6400;
+    #6500;
     $finish;
   end
 
@@ -313,7 +312,7 @@ module frequency_divder_32_duty_cycle_50_test ();
   end
 
   initial begin
-    #6400;
+    #6500;
     $finish;
   end
 
@@ -346,9 +345,9 @@ module frequency_divder_500_duty_cycle_50 (clock, reset, out);
   // 形成對稱方波
   always @ (diver) begin
     if (diver < 250) begin
-      out = 1;
-    end else begin
       out = 0;
+    end else begin
+      out = 1;
     end
   end
 
@@ -396,10 +395,6 @@ endmodule // frequency_divder_500_duty_cycle_50_test
 
 測試結果
 
-![](assets/63cab71c.png)
-
-![](assets/06b4f573.png)
-
 ### 工作週期百分之 25 除 32 除頻器
 
 ```verilog
@@ -415,7 +410,7 @@ module frequency_divder_32_duty_cycle_25 (clock, reset, out);
     if (~reset || diver == 32) begin
       diver = 0;
     end else begin
-      diver += 1;
+      diver = diver + 1;
     end
   end
 
@@ -463,7 +458,7 @@ module frequency_divder_32_duty_cycle_25_test ();
   end
 
   initial begin
-    #6400;
+    #6500;
     $finish;
   end
 
@@ -471,3 +466,5 @@ endmodule // frequency_divder_32_duty_cycle_25_test
 ```
 
 測試結果
+
+![](assets/a1e30f44.png)
