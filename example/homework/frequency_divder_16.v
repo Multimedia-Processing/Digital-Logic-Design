@@ -21,7 +21,7 @@ module frequency_divder_16 (clock, reset, out);
     end
   end
 
-  // 產生工作週期 0.03125 波形
+  // 產生工作週期 0.5 波形
   always @ (diver) begin
     if (~reset) begin
       out = 1'b0;
