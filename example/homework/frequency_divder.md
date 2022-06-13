@@ -395,6 +395,8 @@ endmodule // frequency_divder_500_duty_cycle_50_test
 
 測試結果
 
+![](assets/453cc069.png)
+
 ### 工作週期百分之 25 除 32 除頻器
 
 ```verilog
