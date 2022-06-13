@@ -4,7 +4,7 @@ module detector_f628_test ();
   reg clock, clear, in;
   reg [15:0] data;
   wire [15:0] out;
-  integer number1, number2;
+  integer number;
 
   detector_f628 UUT (clock, clear, in, out, q);
 
@@ -18,26 +18,18 @@ module detector_f628_test ();
     #5;
     clear = 1'b0;
 
-    #10;
+    #20;
 
-    for (number1 = 0; number1 < 65536; number1 = number1 + 16384) begin
-      data = number1;
-      for (number2 = 0; number2 < 16; number2 = number2 + 1) begin
-        in = data[number2];
-        #10;
-      end
+    data = 16'hf628;
+    for (number = 16; number > 0; number = number - 1) begin
+      in = data[number - 1];
+      #20;
     end
+    #20;
     clear = 1'b1;
-    #10;
+    #20;
     clear = 1'b0;
-    #10;
-    for (number1 = 0; number1 < 65536; number1 = number1 + 16384) begin
-      data = number1;
-      for (number2 = 0; number2 < 16; number2 = number2 + 1) begin
-        in = data[number2];
-        #10;
-      end
-    end
+    #20;
     $finish;
   end
   always begin

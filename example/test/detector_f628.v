@@ -6,8 +6,8 @@ module detector_f628 (clock, clear, in, out, q);
   reg [15:0] out;
 
   always @ (posedge clock) begin
-    if (clock) begin
-      out = 3'd0;
+    if (clear) begin
+      out = 16'b0;
     end else begin
       out[15] = out[14];
       out[14] = out[13];
@@ -19,7 +19,8 @@ module detector_f628 (clock, clear, in, out, q);
       out[8] = out[7];
       out[7] = out[6];
       out[6] = out[5];
-      out[5] = out[3];
+      out[5] = out[4];
+      out[4] = out[3];
       out[3] = out[2];
       out[2] = out[1];
       out[1] = out[0];
