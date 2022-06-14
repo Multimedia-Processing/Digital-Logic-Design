@@ -9,7 +9,7 @@ module detector_f628_test ();
   detector_f628 UUT (clock, clear, in, out, q);
 
   initial begin
-    $display("| clock | clear | in | out | q |");
+    $display("| clock | clear | in |        out         | q |");
 
     in = 1'b0;
     clock = 1'b1;
