@@ -6,7 +6,7 @@ module detector_3_bits (clock, clear, in, out, q);
   reg [2:0] out;
 
   always @ (posedge clock) begin
-    if (clock) begin
+    if (clear) begin
       out = 3'd0;
     end else begin
       out[2] = out[1];
