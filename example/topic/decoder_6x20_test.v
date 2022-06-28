@@ -2,12 +2,14 @@
 
 module decoder_6x20_test ();
   reg clock, reset;
+  reg [5:0] coder;
   integer number;
-  wire [6:0] display;
+  wire [19:0] decoder;
 
   decoder_6x20 UUT (clock, reset, coder, decoder);
 
   initial begin
+    $display("| clock | reset | coder | decoder |");
     clock = 1'b1;
     reset = 1'b1;
 
@@ -15,9 +17,8 @@ module decoder_6x20_test ();
     reset = 1'b0;
 
     #5;
-    $display("| clock | reset | display |");
-    for (number = 0; number < 50; number = number + 1) begin
-      $monitor("|   %b   |   %b   | %b | %b |", clock, reset, coder, decoder);
+    for (number = 0; number < 65; number = number + 1) begin
+      coder = number;
       #10;
     end
     $finish;
@@ -32,7 +33,9 @@ module decoder_6x20_test ();
   end
 
   always begin
-    #10;
+    #5;
+    $monitor("|   %b   |   %b   | %b | %b |", clock, reset, coder, decoder);
+    #5;
     clock = ~clock;
   end
 
