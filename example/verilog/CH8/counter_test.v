@@ -8,6 +8,7 @@ module counter_test ();
   counter UUT (clock, reset, q);
 
   initial begin
+    $display("| clock | reset |  q |");
     clock = 1'b1;
     reset = 1'b1;
 
@@ -15,7 +16,6 @@ module counter_test ();
     reset = 1'b0;
 
     #5;
-    $display("| clock | reset |  q |");
     for (number = 0; number < 50; number = number + 1) begin
       $monitor("|   %b   |   %b   | %d |", clock, reset, q);
       #10;
