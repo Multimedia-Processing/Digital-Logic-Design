@@ -19,7 +19,7 @@ module decoder_6x20_test ();
     #5;
     for (number = 0; number < 65; number = number + 1) begin
       coder = number;
-      #10;
+      #20;
     end
     $finish;
   end
@@ -34,7 +34,7 @@ module decoder_6x20_test ();
 
   always begin
     #5;
-    $monitor("|   %b   |   %b   | %b | %b |", clock, reset, coder, decoder);
+    $monitor("|   %b   |   %b   | %d | %b |", clock, reset, coder, decoder);
     #5;
     clock = ~clock;
   end
