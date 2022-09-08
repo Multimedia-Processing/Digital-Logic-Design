@@ -32,7 +32,7 @@ module counter_down_64_test ();
 
   always begin
     #5;
-    $monitor("|   %b   |   %b   | %b |", clock, reset, q);
+    $monitor("|   %b   |   %b   | %d |", clock, reset, q);
 
     #5;
     clock = ~clock;
