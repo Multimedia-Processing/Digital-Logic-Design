@@ -180,6 +180,11 @@ endmodule // adder_one_assign_test
 
 ## 任務
 
+```
+$dumpfile("simple.vcd");
+$dumpvars(0,sklansky_add_tb);
+```
+
 ### signed
 通過 `signed` 宣告可以進行有號數運算，而 `$signed` 則產生有號數輸出訊號，因此來快速解決設計上需要思考有號數的運算。
 
