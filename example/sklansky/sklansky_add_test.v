@@ -22,17 +22,18 @@ module sklansky_add_tb;
     assign Co_ok = test_Cout ^ Cout;
     initial begin
         Cin = 0;
+        $display("| A | B | Cin | Cout |");
 
-        $dumpfile("simple.vcd");
-        $dumpvars(0,sklansky_add_tb);
         for (A = 0;A < 1<<maxBit+1;A = A + 1) begin
             for (B = 0;B < 1<<maxBit+1;B = B + 1) begin
+                $monitor("| %d | %d | %d | %d | %d |", A, B, Cin, S, Cout);
                 #10;
             end
         end
         Cin = 1;
         for (A = 0;A < 1<<maxBit+1;A = A + 1) begin
             for (B = 0;B < 1<<maxBit+1;B = B + 1) begin
+                $monitor("| %d | %d | %d | %d | %d |", A, B, Cin, S, Cout);
                 #10;
             end
         end
