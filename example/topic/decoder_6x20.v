@@ -13,7 +13,7 @@ module decoder_6x20 (clock, reset, coder, decoder);
       column_traffic_lights = 0;
 
     end else if (0 <= coder && coder < 28) begin
-      row_binary += 1;
+      row_binary = coder;
       column_binary = 0;
       row_traffic_lights = 3'b001;
       column_traffic_lights = 3'b100;
@@ -26,7 +26,7 @@ module decoder_6x20 (clock, reset, coder, decoder);
 
     end else if (32 <= coder && coder < 60) begin
       row_binary = 0;
-      column_binary += 1;
+      column_binary = coder - 32;
       row_traffic_lights = 3'b100;
       column_traffic_lights = 3'b001;
 
