@@ -1,18 +1,11 @@
-module decoder_6x20 (clock, reset, coder, decoder);
-  input clock, reset;
+module decoder_6x20 (coder, decoder);
   input [5:0] coder;
   output [19:0] decoder;
   reg [2:0] row_traffic_lights, column_traffic_lights;
   reg [6:0] row_binary, column_binary;
 
-  always @ (posedge clock) begin
-    if (reset) begin
-      row_binary = 0;
-      column_binary = 0;
-      row_traffic_lights = 0;
-      column_traffic_lights = 0;
-
-    end else if (0 <= coder && coder < 28) begin
+  always @ (*) begin
+    if (0 <= coder && coder < 28) begin
       row_binary = coder;
       column_binary = 0;
       row_traffic_lights = 3'b001;
