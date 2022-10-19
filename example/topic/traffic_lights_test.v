@@ -10,6 +10,7 @@ module traffic_lights_test ();
     row_display, column_display);
 
   initial begin
+    $display("| count | clock | reset | row traffic lights | column traffic lights | row display | column display");
     clock = 1'b1;
     reset = 1'b1;
 
@@ -17,11 +18,7 @@ module traffic_lights_test ();
     reset = 1'b0;
 
     #5;
-    $display("| clock | reset | row traffic lights | column traffic lights | row display | column display");
-    for (number = 0; number < 128; number = number + 1) begin
-      $monitor("|   %b   |   %b   | %b | %b | %b | %b |",
-        clock, reset, row_traffic_lights, column_traffic_lights,
-        row_display, column_display);
+    for (number = 0; number < 256; number = number + 1) begin
       #10;
     end
     $finish;
@@ -36,7 +33,11 @@ module traffic_lights_test ();
   end
 
   always begin
-    #10;
+    #5;
+    $monitor("| %d |   %b   |   %b   | %b | %b | %b | %b |",
+      number, clock, reset, row_traffic_lights, column_traffic_lights,
+      row_display, column_display);
+    #5;
     clock = ~clock;
   end
 
