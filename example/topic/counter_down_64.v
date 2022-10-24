@@ -8,7 +8,7 @@ module counter_down_64(clock, reset, q);
     if (reset | (q == 0)) begin
       q = 63;
     end else begin
-      q -= 1;
+      q = q - 1;
     end
   end
 
