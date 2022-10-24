@@ -3,14 +3,15 @@
 module traffic_lights_test ();
   reg clock, reset;
   integer number;
-  wire [13:0] row_display, column_display;
+  wire [6:0] row_display, column_display;
   wire [2:0] row_traffic_lights, column_traffic_lights;
+  wire [7:0] turn;
 
   traffic_lights UUT (clock, reset, row_traffic_lights, column_traffic_lights,
-    row_display, column_display);
+    row_display, column_display, turn);
 
   initial begin
-    $display("| count | clock | reset | row traffic lights | column traffic lights | row display | column display");
+    $display("| count | clock | reset | row traffic lights | column traffic lights | row display | column display | turn |");
     clock = 1'b1;
     reset = 1'b1;
 
@@ -18,7 +19,7 @@ module traffic_lights_test ();
     reset = 1'b0;
 
     #5;
-    for (number = 0; number < 256; number = number + 1) begin
+    for (number = 0; number < 500; number = number + 1) begin
       #10;
     end
     $finish;
@@ -34,9 +35,9 @@ module traffic_lights_test ();
 
   always begin
     #5;
-    $monitor("| %d |   %b   |   %b   | %b | %b | %b | %b |",
+    $monitor("| %d |   %b   |   %b   | %b | %b | %b | %b | %b |",
       number, clock, reset, row_traffic_lights, column_traffic_lights,
-      row_display, column_display);
+      row_display, column_display, turn);
     #5;
     clock = ~clock;
   end
