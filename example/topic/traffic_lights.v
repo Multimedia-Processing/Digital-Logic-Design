@@ -14,7 +14,7 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
 	reg [7:0] turn;
 	reg [27:0] diver;
 	reg clock_1hz;
-	reg [3:0] turn_bcd;
+	reg [3:0] turn_row_bcd, turn_column_bcd;
 
 	wire [7:0] row_bcd, column_bcd;
 	wire [6:0] row_display, column_display;
@@ -46,24 +46,24 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
 		end
 	end
 
+	always @ (posedge clock) begin
+		case (turn)
+			8'b00000001: turn_row_bcd = column_bcd[3:0];
+			8'b00000100: turn_row_bcd = column_bcd[7:0];
+			8'b00010000: turn_column_bcd = row_bcd[3:0];
+			8'b01000000: turn_column_bcd = row_bcd[7:4];
+		endcase
+	end
+
 	counter_down_64 count (clock_1hz, reset, coder);
 	decoder_6x20 dcode (coder, decoder);
 	binary_to_bcd column_bcd_circuit(decoder[13:7], column_bcd);
 	binary_to_bcd row_bcd_circuit(decoder[6:0], row_bcd);
 
 	assign row_traffic_lights = decoder[19:17];
-	assign column_traffic_lights = decoder[16:15];
+	assign column_traffic_lights = decoder[16:14];
 
-	always @ (posedge clock) begin
-		case (turn)
-			8'b00010000: turn_bcd = column_bcd[3:0];
-			8'b01000000: turn_bcd = column_bcd[7:0];
-			8'b00000001: turn_bcd = row_bcd[3:0];
-			8'b00000100: turn_bcd = row_bcd[7:4];
-		endcase
-	end
-
-	seven_segment_display_assign seven_seg_row_0(turn_bcd, row_display);
-	seven_segment_display_assign seven_seg_row_1(turn_bcd, column_display);
+	seven_segment_display_assign seven_seg_row_0(turn_row_bcd, row_display);
+	seven_segment_display_assign seven_seg_row_1(turn_column_bcd, column_display);
 
 endmodule // traffic_lights
