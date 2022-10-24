@@ -2,7 +2,6 @@
 `include "binary_to_bcd.v"
 `include "decoder_6x20.v"
 `include "counter_down_64.v"
-`include "counter.v"
 
 module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
 		row_display, column_display, turn);
