@@ -30,7 +30,7 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
 		end
 	end
 
-    always @ (diver) begin
+	always @ (diver) begin
 		if (diver < 50000000) begin
 			clock_1hz = 1;
 		end else begin
