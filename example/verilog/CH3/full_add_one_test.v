@@ -9,7 +9,7 @@ reg ci = 1'b0;
 
 wire co, s;
 
-full_add_one UUT (a, b, ci, co, s);
+full_adder_one UUT (a, b, ci, co, s);
 
 initial begin
   #100; {a, b, ci} = 3'b001;
@@ -27,4 +27,4 @@ initial begin
   $stop;
 end
 
-endmodule // full_add_one_test
+endmodule // full_adder_one_test
