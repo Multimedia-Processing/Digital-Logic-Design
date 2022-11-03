@@ -1,33 +1,32 @@
 `timescale 1ns / 1ps
-`include "half_adder.v"
 
 module half_adder_TEST();
 
 reg a, b, ci;
-wire half_adder_o ;
+wire [1:0] out ;
 
 half_adder UUT(a, b, ci, out);
 
 initial begin
-a = 1'b0;
-b = 1'b0;
-
+{a, b, ci} = 3'b000 ;
 #100;
-a = 1'b0;
-b = 1'b1;
-
+{a, b, ci} = 3'b001 ;
 #100;
-a = 1'b1;
-b = 1'b0;
-  
+{a, b, ci} = 3'b010 ;
 #100;
-a = 1'b1;
-b = 1'b1;
-
+{a, b, ci} = 3'b011 ;
+#100;
+{a, b, ci} = 3'b100 ;
+#100;
+{a, b, ci} = 3'b101 ;
+#100;
+{a, b, ci} = 3'b110 ;
+#100;
+{a, b, ci} = 3'b111 ;
 end
 
 initial begin
-#400;
+#800;
 $stop;
 end
 
