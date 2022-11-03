@@ -11,7 +11,7 @@ module buf_test ();
 
 
 
- aqaasdfsdf
+ 
   buf_gate UUT(a, b);
   
   initial begin
