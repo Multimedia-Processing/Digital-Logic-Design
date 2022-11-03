@@ -1,4 +1,4 @@
-module BUF_GATE_A (c, a);
+module BUF_GATE (c, a);
 
 input a;
 output c;
