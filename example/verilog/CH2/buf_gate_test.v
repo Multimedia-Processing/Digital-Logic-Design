@@ -5,6 +5,13 @@ module buf_test ();
   reg a ;
   wire b;
 
+
+
+
+
+
+
+ aqaasdfsdf
   buf_gate UUT(a, b);
   
   initial begin
