@@ -3,9 +3,9 @@
 module full_adder_test ();
   // 輸入輸出宣告
   reg a, b, ci;
-  wire [2:0]out;
+  wire s, co;
  
-  full_adder UUT(a, b, ci, out);
+  full_adder UUT(a, b, ci, s, co);
   
   initial begin
 

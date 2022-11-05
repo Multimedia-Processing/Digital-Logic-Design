@@ -1,9 +1,14 @@
-module full_adder (a, b, ci, out);
-  // 輸入輸出宣告
-  input a, b, ci;
-  output [1:0] out;
-
-  assign out = a + b + ci;
+module full_adder (a, b, ci, s, co);
   
-// 描述模組內部電路敘述
+  input a, b, ci;
+  output s, co;
+  wire Xab, Acixab, Aab;
+
+  xor(Xab, a, b);
+  xor(s, Xab, ci);
+  and(Acixab, Xab, ci);
+  and(Aab, a, b);
+  or(co, Acixab, Aab);
+
+
 endmodule // full_adder
