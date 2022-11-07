@@ -9,13 +9,13 @@ always @ (posedge clock) begin
         if (reset || data == 9) begin
             data = 0;
         end else begin
-            data += 1;
+            data = data + 1;
         end
     end else begin
         if (reset || data == 0) begin
             data = 9;
         end else begin
-            data -= 1;
+            data = data - 1;
         end
     end
 end
