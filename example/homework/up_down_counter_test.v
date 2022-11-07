@@ -1,39 +1,41 @@
-`include "down_counter.v"
+`include "up_down_counter.v"
 
-module down_counter_test ();
-  reg clock, reset;
+module up_down_counter_test ();
+  reg clock, reset, control;
   integer number;
   wire [3:0] data;
 
-  down_counter UUT (clock, reset, data, control);
+  up_down_counter UUT (clock, reset, data, control);
 
-  initial begin
-    clock = 1'b1;
-    reset = 1'b1;
+	initial begin
+		$display("| clock | reset |  data | control |");
+		clock = 1'b1;
+		reset = 1'b1;
+		control = 1'b1;
 
-    #10;
-    reset = 1'b0;
+		#10;
+		reset = 1'b0;
 
-    #5;
-    $display("| clock | reset |  data | control |");
-    for (number = 0; number < 50; number = number + 1) begin
-      $monitor("|   %b   |   %b   | %d |", clock, reset, data, control);
-      #10;
-    end
-    $finish;
-  end
+		#5;
+    	#100;
+	    reset = 1'b1;
+	    #10;
+		reset = 1'b0;
+		#10;
+		control = 1'b0;
+		#100;
+		control = 1'b1;
 
-  initial begin
-    #250;
-    reset = 1'b1;
-    #20;
-    reset = 1'b0;
+		$finish;
+	end
 
-  end
+	always begin
+		#5;
+		$monitor("|   %b   |   %b   | %d  |  %b  |",
+			clock, reset, data, control);
 
-  always begin
-    #10;
-    clock = ~clock;
-  end
+		#5;
+		clock = ~clock;
+	end
 
 endmodule // down_counter_test
