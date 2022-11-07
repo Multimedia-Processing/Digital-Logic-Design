@@ -17,7 +17,7 @@ module up_down_counter_seven_segment_display (clock, reset, control, display, tu
     //         diver = diver + 1;
     //     end
     // end
-	//
+    //
     // always @ (diver) begin
     //     if (diver < 50000000) begin
     //         clock_1hz = 1;
@@ -25,9 +25,9 @@ module up_down_counter_seven_segment_display (clock, reset, control, display, tu
     //         clock_1hz = 0;
     //     end
     // end
-	always @ (clock) begin
-		clock_1hz = clock;
-	end
+    always @ (clock) begin
+        clock_1hz = clock;
+    end
 
     always @ (posedge clock_1hz) begin
         if (control == 1) begin
