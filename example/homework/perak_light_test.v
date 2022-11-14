@@ -2,7 +2,7 @@
 
 module perak_light_test ();
     reg clock, reset;
-    wire [6:0] display;
+    wire [7:0] display;
     wire [3:0] turn;
 
     perak_light UUT (clock, reset, display, turn);
@@ -16,12 +16,12 @@ module perak_light_test ();
         reset = 1'b0;
 
         #5;
-        #100;
+        #1000;
         reset = 1'b1;
         #10;
         reset = 1'b0;
         #10;
-        #100;
+        #1000;
 
         $finish;
     end
