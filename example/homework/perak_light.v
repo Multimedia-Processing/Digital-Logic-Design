@@ -58,14 +58,20 @@ module perak_light (clock, reset, display, turn);
             1: display = 7'b0100000;
             2: display = 7'b0010000;
             3: display = 7'b0001000;
-            4: display = 7'b0000100;
-            5: display = 7'b0000010;
+            4: display = 7'b0001000;
+            5: display = 7'b0001000;
+            6: display = 7'b0001000;
+            7: display = 7'b0000100;
+            8: display = 7'b0000010;
+            9: display = 7'b1000000;
+            10: display = 7'b1000000;
+            11: display = 7'b1000000;
             default: display = 7'b1001111;
         endcase
     end
 
-    always @ (posedge clock_250hz) begin
-        if (turn == 8 || reset) begin
+    always @ (posedge clock_10hz) begin
+        if (reset || turn == 8) begin
             turn = 4'b0001;
         end else begin
             turn = turn * 2;
@@ -73,7 +79,7 @@ module perak_light (clock, reset, display, turn);
 	end
 
     always @ (posedge clock_10hz) begin
-        if (reset || data == 5) begin
+        if (reset || data == 12) begin
             data = 0;
         end else begin
             data = data + 1;
