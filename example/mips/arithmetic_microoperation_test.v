@@ -51,7 +51,7 @@ module arithmetic_microoperation_test ();
     #10;
 
     $monitor(
-        "|   %b   |   %b   |   %b%b   | %d | %d |   %d |",
+        "|   %b   |   %b   |   %b%b   | %d | %d |  %d |",
         clock, reset, s, carry, a, b, data);
 
     end
