@@ -1,6 +1,7 @@
 module full_adder_if(a, b, ci, s, co);
     input a, b, ci;
     output s, co;
+    reg s,co;
 
     always@(a or b or ci)
     if(a == 0 && b == 0 && ci == 0)begin
