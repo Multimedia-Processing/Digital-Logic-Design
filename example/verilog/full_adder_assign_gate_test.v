@@ -1,12 +1,12 @@
-`timescale 1ns / 1ps
+`timescale 1ns/1ps
 
-module full_adder_case_test ();
+module full_adder_assign_gate_test ();
 
-reg a,b,ci
+reg a, b, ci ;
 wire s, co;
 
-full_adder_case UUT (a, b, ci, s, co);
-
+full_adder_assign_gate UUT(a, b, ci, s, co);
+  
 initial begin
   {a, b, ci} = 3'b000;
   #100; {a, b, ci} = 3'b001;
@@ -22,5 +22,5 @@ initial begin
   #900;
   $stop;
 end
-
-endmodule // full_add_one_test
+    
+endmodule // full_adder_assign_gate_test

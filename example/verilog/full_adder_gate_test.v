@@ -3,7 +3,6 @@
 module full_adder_gate_test ();
 
 reg a,b,ci;
-
 wire s,co;
 
 full_adder_gate UUT (a, b, ci, s, co);
@@ -17,7 +16,6 @@ initial begin
   #100; {a, b, ci} = 3'b101;
   #100; {a, b, ci} = 3'b110;
   #100; {a, b, ci} = 3'b111;
-
 end
 
 initial begin

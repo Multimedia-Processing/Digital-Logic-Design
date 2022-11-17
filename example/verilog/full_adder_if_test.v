@@ -3,10 +3,9 @@
 module full_adder_if_test ();
 
 reg a,b,ci;
+wire s, co;
 
-wire [1:0] out;
-
-full_adder_if UUT (a, b, ci, out);
+full_adder_if UUT (a, b, ci, s, co);
 
 initial begin
   {a, b, ci} = 3'b000;
@@ -17,7 +16,6 @@ initial begin
   #100; {a, b, ci} = 3'b101;
   #100; {a, b, ci} = 3'b110;
   #100; {a, b, ci} = 3'b111;
-
 end
 
 initial begin
