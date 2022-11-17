@@ -5,7 +5,7 @@ reg Co, S;
 
 
 always @ (Ci or A or B) begin
-  case ({A, B, Ci}) //括號視為一個 //case設計增值表
+  case ({A, B, Ci})
     0 : {Co, S} = 2'b00;
     1 : {Co, S} = 2'b01;
     2 : {Co, S} = 2'b01;
