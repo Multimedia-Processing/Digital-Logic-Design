@@ -1,13 +1,14 @@
-module arithmetic_microoperation (clock, reset, s, a, b, carry, data);
+module arithmetic_microoperation (
+        clock, reset, selective_set, a, b, carry, data);
     input clock, reset, carry;
-    input [1:0] s;
+    input [1:0] selective_set;
     input signed [3:0] a, b;
     output signed [4:0] data;
 
     reg [4:0] data;
 
     always @ (posedge clock) begin
-        case ({s, carry})
+        case ({selective_set, carry})
             0: data = a + b;
             1: data = a + b + carry;
             2: data = a + ~b;
