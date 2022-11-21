@@ -68,7 +68,7 @@ module perak_light (clock, reset, display, turn);
 	end
 
     always @ (posedge clock_1hz) begin
-        if (reset || data == 33) begin
+        if (reset || data >= 33) begin
             data = 0;
         end else begin
             data = data + 3;
