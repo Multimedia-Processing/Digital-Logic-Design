@@ -2,7 +2,7 @@
 
 module full_adder_case_test ();
 
-reg a,b,ci
+reg a,b,ci;
 wire s, co;
 
 full_adder_case UUT (a, b, ci, s, co);
