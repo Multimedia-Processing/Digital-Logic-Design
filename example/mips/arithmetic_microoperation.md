@@ -4,17 +4,21 @@
 
 ## 電路
 
+![4位元算術電路](https://i.imgur.com/ZP96kT2.jpg)
 
-
----
-
-## 模擬結果
-
-
+<!-- ![](assets/3a39017b.png) -->
 
 ---
 
-## 真值表
+## 波形模擬
+
+![68aba0af](https://i.imgur.com/4t5CC4F.png)
+
+<!-- ![](assets/68aba0af.png) -->
+
+---
+
+## 數值模擬
 
 使用 iverilog 產生模擬數據。
 
