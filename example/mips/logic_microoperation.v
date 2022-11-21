@@ -16,4 +16,9 @@ always @ (posedge clock) begin
     endcase
 end
 
+always @ (posedge clock) begin
+    if (reset == 1)
+        data = 0;
+end
+
 endmodule // logic_microoperation
