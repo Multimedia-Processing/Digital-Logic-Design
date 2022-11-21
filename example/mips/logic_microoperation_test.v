@@ -38,7 +38,7 @@ module logic_microoperation_test ();
         #10;
         reset = 1'b1;
 
-        #20;
+        #40;
         $finish;
     end
 
