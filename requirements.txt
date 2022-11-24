@@ -5,3 +5,5 @@ mkdocs-redirects
 mdx_truly_sane_lists
 mkdocs-mermaid2-plugin
 markdown-katex
+mkdocs-wavedrom-plugin
+markdown-wavedrom
