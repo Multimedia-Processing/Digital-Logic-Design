@@ -2,13 +2,13 @@ module full_adder_gate (a, b, ci, s, co);
   
   input a, b, ci;
   output s, co;
-  wire Xab, Acixab, Aab;
+  wire  ab, aci, bci;
 
-  xor(Xab, a, b);
-  xor(s, Xab, ci);
-  and(Acixab, Xab, ci);
-  and(Aab, a, b);
-  or(co, Acixab, Aab);
-
+  
+  xor(s, a, b, ci);
+  and(ab, a, b);
+  and(aci, a, ci);
+  and(bci, b, ci);
+  or(co, ab, aci, bci);
 
 endmodule // full_adder
