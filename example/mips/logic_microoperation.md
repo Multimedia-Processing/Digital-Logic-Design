@@ -22,15 +22,7 @@ enableSpeakerNotes: true
 
 ---
 
-<!-- ![](assets/5805922a.png) -->
-
-```wavedrom
-{ signal : [
-  { name: "clk",  wave: "p......" },
-  { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
-  { name: "wire", wave: "0.1..0." },
-]}
-```
+![](assets/5805922a.png)
 
 ---
 
