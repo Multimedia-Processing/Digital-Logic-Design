@@ -39,6 +39,7 @@ repo_url: https://github.com/Multimedia-Processing/Digital-Logic-Design
 plugins:
   - search
   - mermaid2
+  - markdownwavedrom
 
 authors: Chenzhi Wu
 nav:
@@ -110,6 +111,10 @@ nav:
 markdown_extensions:
   - meta
   - smarty
+  - admonition
+  - markdown_wavedrom
+  - pymdownx.details
+  - pymdownx.superfences
   - mdx_truly_sane_lists
   - def_list
   - pymdownx.tasklist:
@@ -137,3 +142,11 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - wavedrom.unpkg.js
+  - skin-default.js
+  # above, place *.js in docs directory, or below from internet.
+  - https://cdn.jsdelivr.net/npm/wavedrom@2.1.2/wavedrom.unpkg.js
+  - https://wavedrom.com/skins/default.js
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js
+  - js/wavedrom_loader.js
