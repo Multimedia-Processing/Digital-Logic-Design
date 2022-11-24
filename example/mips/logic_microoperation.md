@@ -1,3 +1,11 @@
+---
+marp: true
+
+# Enable Speake Notes
+presentation:
+enableSpeakerNotes: true
+---
+
 # 邏輯微運算
 
 ---
@@ -6,9 +14,23 @@
 
 ---
 
+<!-- ![](assets/a46a87c2.png) -->
+
+<!-- --- -->
+
 ## 電路
 
+---
 
+<!-- ![](assets/5805922a.png) -->
+
+```wavedrom
+{ signal : [
+  { name: "clk",  wave: "p......" },
+  { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
+  { name: "wire", wave: "0.1..0." },
+]}
+```
 
 ---
 
