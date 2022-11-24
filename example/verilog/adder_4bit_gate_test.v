@@ -7,15 +7,18 @@ module adder_4bit_gate_test ();
     reg ci;
     wire [3:0] s;
     wire co;
+    integer i,j;
 
     adder_4bit_gate UUT (a, b, ci, s, co);
 
     initial begin
-        a  = 4'h0;
-        b  = 4'h0;
+        a  = -1;
+        b  = -1;
         ci = 0;
-        for (a = 0; a < 15; a = a + 1)begin
-            for (b = 0; b < 15; b = b + 1)begin
+        for (i = 0; i < 16; i = i + 1)begin
+            a=a+1;
+            for (j = 0; j < 16; j = j + 1)begin
+                b=b+1;
                 //ci=~ci;
             #10;
             end
@@ -28,4 +31,4 @@ module adder_4bit_gate_test ();
     end
 
 
-endmodule // full_add_one_test
+endmodule 
