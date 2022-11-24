@@ -26,7 +26,7 @@ module adder_4bit_assign_gate_test ();
     end
 
     initial begin
-        #2500;
+        #2560;
         $stop;
     end
 
