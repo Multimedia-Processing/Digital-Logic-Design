@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+// test
 
 module adder_4bit_if_test();
     reg [3:0] a;
