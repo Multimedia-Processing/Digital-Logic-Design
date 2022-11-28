@@ -11,7 +11,7 @@ module perak_light (clock, reset, display, turn);
 
     // 此用於實際電路除頻器，實際燒錄時取消註解
     always@(posedge clock) begin
-        if(reset || diver == 100000000) begin
+        if(~reset || diver == 100000000) begin
             diver = 0;
         end else begin
             diver = diver + 1;
@@ -89,10 +89,10 @@ module perak_light (clock, reset, display, turn);
     end
 
     always @ (posedge clock_1hz) begin
-        if (reset || data >= 33) begin
+        if (~reset || data >= 11) begin
             data = 0;
         end else begin
-            data = data + 3;
+            data = data + 1;
         end
     end
 
