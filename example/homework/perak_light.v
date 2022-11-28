@@ -33,39 +33,60 @@ module perak_light (clock, reset, display, turn);
 
     always @ (data) begin
         case (data)
-            0: display = 8'b01000000;
-            3: display = 8'b00100000;
-            6: display = 8'b00010000;
-            9: display = 8'b00010000;
-            12: display = 8'b00010000;
-            15: display = 8'b00010000;
-            18: display = 8'b00001000;
-            21: display = 8'b00000100;
-            24: display = 8'b10000000;
-            27: display = 8'b10000000;
-            30: display = 8'b10000000;
-            33: display = 8'b10000000;
-            default: display = 8'b10011110;
+            0: begin
+                turn = 4'b0001;
+                display = 8'b01000000;
+            end
+            1: begin
+                turn = 4'b0001;
+                display = 8'b00100000;
+            end
+            2: begin
+                turn = 4'b0001;
+                display = 8'b00010000;
+            end
+            3: begin
+                turn = 4'b0010;
+                display = 8'b00010000;
+            end
+            4: begin
+                turn = 4'b0100;
+                display = 8'b00010000;
+            end
+            5: begin
+                turn = 4'b1000;
+                display = 8'b00010000;
+            end
+            6: begin
+                turn = 4'b1000;
+                display = 8'b00001000;
+            end
+            7: begin
+                turn = 4'b1000;
+                display = 8'b00000100;
+            end
+            8: begin
+                turn = 4'b1000;
+                display = 8'b10000000;
+            end
+            9: begin
+                turn = 4'b0100;
+                display = 8'b10000000;
+            end
+            10: begin
+                turn = 4'b0010;
+                display = 8'b10000000;
+            end
+            11: begin
+                turn = 4'b0001;
+                display = 8'b10000000;
+            end
+            default: begin
+                turn = 4'b1111;
+                display = 8'b10011110;
+            end
         endcase
     end
-
-    always @ (data) begin
-        case (data)
-            0: turn = 4'b0001;
-            3: turn = 4'b0001;
-            6: turn = 4'b0001;
-            9: turn = 4'b0010;
-            12: turn = 4'b0100;
-            15: turn = 4'b1000;
-            18: turn = 4'b1000;
-            21: turn = 4'b1000;
-            24: turn = 4'b1000;
-            27: turn = 4'b0100;
-            30: turn = 4'b0010;
-            33: turn = 4'b0001;
-            default: turn = 4'b1111;
-        endcase
-	end
 
     always @ (posedge clock_1hz) begin
         if (reset || data >= 33) begin
