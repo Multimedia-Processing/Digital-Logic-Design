@@ -10,16 +10,16 @@ module perak_light_test ();
     initial begin
         $display("| clock | reset | display | turn |");
         clock = 1'b1;
-        reset = 1'b1;
+        reset = 1'b0;
 
         #10;
-        reset = 1'b0;
+        reset = 1'b1;
 
         #5;
         #1000;
-        reset = 1'b1;
-        #10;
         reset = 1'b0;
+        #10;
+        reset = 1'b1;
         #10;
         #1000;
 
