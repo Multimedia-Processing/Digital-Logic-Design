@@ -2,53 +2,541 @@ module adder_4bit_case(a, b, ci, s, co);
     input [3:0] a,b;
     input ci;
     output [3:0] s;
-    output co;
+    output [1:0] co;
     reg [3:0] s;
-    reg co;
+    reg [1:0] co;
 
-    always@ (a or b or ci)
-    begin
+    always@(a or b or ci)begin
         case({a, b, ci})
-        //{ 4'b0000 , b == 4'b0000 , ci == 1'b0 }: begin   s = 4'b0000 ; co = 1'b0 ;  end
-        { a == 4'b0000 , b == 4'b0000 , ci == 1'b0 }:begin
-            s = 4'b0001;    co = 1'b0;
-        end
-        3'h001 :begin   s = 1'h1; co = 0;  end
-        3'h010 :begin   s = 1'h1; co = 0;  end
-        3'h011 :begin   s = 1'h2; co = 0;  end
-        3'h020 :begin   s = 1'h2; co = 0;  end
-        3'h021 :begin   s = 1'h3; co = 0;  end
-        3'h030 :begin   s = 1'h3; co = 0;  end
-        3'h031 :begin   s = 1'h4; co = 0;  end
-        3'h040 :begin   s = 1'h5; co = 0;  end
-        3'h041 :begin   s = 1'h5; co = 0;  end
-        3'h050 :begin   s = 1'h5; co = 0;  end
-        3'h051 :begin   s = 1'h6; co = 0;  end
-        3'h060 :begin   s = 1'h6; co = 0;  end
-        3'h061 :begin   s = 1'h7; co = 0;  end
-        3'h070 :begin   s = 1'h7; co = 0;  end
-        3'h071 :begin   s = 1'h8; co = 0;  end
-        3'h080 :begin   s = 1'h8; co = 0;  end
-        3'h081 :begin   s = 1'h9; co = 0;  end
-        3'h090 :begin   s = 1'h9; co = 0;  end
-        3'h091 :begin   s = 1'hA; co = 0;  end
-        3'h0A0 :begin   s = 1'hA; co = 0;  end
-        3'h0A1 :begin   s = 1'hB; co = 0;  end
-        3'h0B0 :begin   s = 1'hB; co = 0;  end
-        3'h0B1 :begin   s = 1'hC; co = 0;  end
-        3'h0C0 :begin   s = 1'hC; co = 0;  end
-        3'h0C1 :begin   s = 1'hD; co = 0;  end
-        3'h0D0 :begin   s = 1'hD; co = 0;  end
-        3'h0D1 :begin   s = 1'hE; co = 0;  end
-        3'h0E0 :begin   s = 1'hE; co = 0;  end
-        3'h0E1 :begin   s = 1'hF; co = 0;  end
-        3'h0F0 :begin   s = 1'hF; co = 0;  end
-        3'h0F1 :begin   s = 1'h0; co = 1;  end
+
+        //  a=0, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0000 , 4'b0000 , 1'b0 }: begin     s = 4'b0000;    co = 2'b00;    end
+        { 4'b0000 , 4'b0000 , 1'b1 }: begin     s = 4'b0001;    co = 2'b00;    end
+        { 4'b0000 , 4'b0001 , 1'b0 }: begin     s = 4'b0001;    co = 2'b00;    end
+        { 4'b0000 , 4'b0001 , 1'b1 }: begin     s = 4'b0010;    co = 2'b00;    end
+        { 4'b0000 , 4'b0010 , 1'b0 }: begin     s = 4'b0010;    co = 2'b00;    end
+        { 4'b0000 , 4'b0010 , 1'b1 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0000 , 4'b0011 , 1'b0 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0000 , 4'b0011 , 1'b1 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0000 , 4'b0100 , 1'b0 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0000 , 4'b0100 , 1'b1 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0000 , 4'b0101 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0000 , 4'b0101 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0000 , 4'b0110 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0000 , 4'b0110 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0000 , 4'b0111 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0000 , 4'b0111 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0000 , 4'b1000 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0000 , 4'b1000 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0000 , 4'b1001 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0000 , 4'b1001 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0000 , 4'b1010 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0000 , 4'b1010 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0000 , 4'b1011 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0000 , 4'b1011 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0000 , 4'b1100 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0000 , 4'b1100 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0000 , 4'b1101 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0000 , 4'b1101 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0000 , 4'b1110 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0000 , 4'b1110 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0000 , 4'b1111 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0000 , 4'b1111 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        //  a=1, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0001 , 4'b0000 , 1'b0 }: begin     s = 4'b0001;    co = 2'b00;    end
+        { 4'b0001 , 4'b0000 , 1'b1 }: begin     s = 4'b0010;    co = 2'b00;    end
+        { 4'b0001 , 4'b0001 , 1'b0 }: begin     s = 4'b0010;    co = 2'b00;    end
+        { 4'b0001 , 4'b0001 , 1'b1 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0001 , 4'b0010 , 1'b0 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0001 , 4'b0010 , 1'b1 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0001 , 4'b0011 , 1'b0 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0001 , 4'b0011 , 1'b1 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0001 , 4'b0100 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0001 , 4'b0100 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0001 , 4'b0101 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0001 , 4'b0101 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0001 , 4'b0110 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0001 , 4'b0110 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0001 , 4'b0111 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0001 , 4'b0111 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0001 , 4'b1000 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0001 , 4'b1000 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0001 , 4'b1001 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0001 , 4'b1001 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0001 , 4'b1010 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0001 , 4'b1010 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0001 , 4'b1011 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0001 , 4'b1011 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0001 , 4'b1100 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0001 , 4'b1100 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0001 , 4'b1101 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0001 , 4'b1101 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0001 , 4'b1110 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0001 , 4'b1110 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0001 , 4'b1111 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0001 , 4'b1111 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        //  a=2, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0010 , 4'b0000 , 1'b0 }: begin     s = 4'b0010;    co = 2'b00;    end
+        { 4'b0010 , 4'b0000 , 1'b1 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0010 , 4'b0001 , 1'b0 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0010 , 4'b0001 , 1'b1 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0010 , 4'b0010 , 1'b0 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0010 , 4'b0010 , 1'b1 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0010 , 4'b0011 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0010 , 4'b0011 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0010 , 4'b0100 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0010 , 4'b0100 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0010 , 4'b0101 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0010 , 4'b0101 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0010 , 4'b0110 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0010 , 4'b0110 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0010 , 4'b0111 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0010 , 4'b0111 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0010 , 4'b1000 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0010 , 4'b1000 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0010 , 4'b1001 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0010 , 4'b1001 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0010 , 4'b1010 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0010 , 4'b1010 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0010 , 4'b1011 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0010 , 4'b1011 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0010 , 4'b1100 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0010 , 4'b1100 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0010 , 4'b1101 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0010 , 4'b1101 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0010 , 4'b1110 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0010 , 4'b1110 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0010 , 4'b1111 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0010 , 4'b1111 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        //  a=3, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0011 , 4'b0000 , 1'b0 }: begin     s = 4'b0011;    co = 2'b00;    end
+        { 4'b0011 , 4'b0000 , 1'b1 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0011 , 4'b0001 , 1'b0 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0011 , 4'b0001 , 1'b1 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0011 , 4'b0010 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0011 , 4'b0010 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0011 , 4'b0011 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0011 , 4'b0011 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0011 , 4'b0100 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0011 , 4'b0100 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0011 , 4'b0101 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0011 , 4'b0101 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0011 , 4'b0110 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0011 , 4'b0110 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0011 , 4'b0111 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0011 , 4'b0111 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0011 , 4'b1000 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0011 , 4'b1000 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0011 , 4'b1001 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0011 , 4'b1001 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0011 , 4'b1010 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0011 , 4'b1010 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0011 , 4'b1011 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0011 , 4'b1011 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0011 , 4'b1100 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0011 , 4'b1100 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0011 , 4'b1101 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0011 , 4'b1101 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0011 , 4'b1110 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0011 , 4'b1110 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0011 , 4'b1111 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0011 , 4'b1111 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        //  a=4, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0100 , 4'b0000 , 1'b0 }: begin     s = 4'b0100;    co = 2'b00;    end
+        { 4'b0100 , 4'b0000 , 1'b1 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0100 , 4'b0001 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0100 , 4'b0001 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0100 , 4'b0010 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0100 , 4'b0010 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0100 , 4'b0011 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0100 , 4'b0011 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0100 , 4'b0100 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0100 , 4'b0100 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0100 , 4'b0101 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0100 , 4'b0101 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0100 , 4'b0110 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0100 , 4'b0110 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0100 , 4'b0111 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0100 , 4'b0111 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0100 , 4'b1000 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0100 , 4'b1000 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0100 , 4'b1001 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0100 , 4'b1001 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0100 , 4'b1010 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0100 , 4'b1010 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0100 , 4'b1011 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0100 , 4'b1011 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0100 , 4'b1100 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0100 , 4'b1100 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0100 , 4'b1101 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0100 , 4'b1101 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0100 , 4'b1110 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0100 , 4'b1110 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0100 , 4'b1111 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0100 , 4'b1111 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        //  a=5, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0101 , 4'b0000 , 1'b0 }: begin     s = 4'b0101;    co = 2'b00;    end
+        { 4'b0101 , 4'b0000 , 1'b1 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0101 , 4'b0001 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0101 , 4'b0001 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0101 , 4'b0010 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0101 , 4'b0010 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0101 , 4'b0011 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0101 , 4'b0011 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0101 , 4'b0100 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0101 , 4'b0100 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0101 , 4'b0101 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0101 , 4'b0101 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0101 , 4'b0110 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0101 , 4'b0110 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0101 , 4'b0111 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0101 , 4'b0111 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0101 , 4'b1000 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0101 , 4'b1000 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0101 , 4'b1001 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0101 , 4'b1001 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0101 , 4'b1010 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0101 , 4'b1010 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0101 , 4'b1011 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0101 , 4'b1011 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0101 , 4'b1100 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0101 , 4'b1100 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0101 , 4'b1101 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0101 , 4'b1101 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0101 , 4'b1110 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0101 , 4'b1110 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0101 , 4'b1111 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0101 , 4'b1111 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        //  a=6, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0110 , 4'b0000 , 1'b0 }: begin     s = 4'b0110;    co = 2'b00;    end
+        { 4'b0110 , 4'b0000 , 1'b1 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0110 , 4'b0001 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0110 , 4'b0001 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0110 , 4'b0010 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0110 , 4'b0010 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0110 , 4'b0011 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0110 , 4'b0011 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0110 , 4'b0100 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0110 , 4'b0100 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0110 , 4'b0101 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0110 , 4'b0101 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0110 , 4'b0110 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0110 , 4'b0110 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0110 , 4'b0111 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0110 , 4'b0111 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0110 , 4'b1000 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0110 , 4'b1000 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0110 , 4'b1001 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0110 , 4'b1001 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0110 , 4'b1010 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0110 , 4'b1010 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0110 , 4'b1011 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0110 , 4'b1011 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0110 , 4'b1100 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0110 , 4'b1100 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0110 , 4'b1101 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0110 , 4'b1101 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0110 , 4'b1110 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0110 , 4'b1110 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b0110 , 4'b1111 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b0110 , 4'b1111 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        //  a=7, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b0111 , 4'b0000 , 1'b0 }: begin     s = 4'b0111;    co = 2'b00;    end
+        { 4'b0111 , 4'b0000 , 1'b1 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0111 , 4'b0001 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b0111 , 4'b0001 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0111 , 4'b0010 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b0111 , 4'b0010 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0111 , 4'b0011 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b0111 , 4'b0011 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0111 , 4'b0100 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b0111 , 4'b0100 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0111 , 4'b0101 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b0111 , 4'b0101 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0111 , 4'b0110 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b0111 , 4'b0110 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0111 , 4'b0111 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b0111 , 4'b0111 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0111 , 4'b1000 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b0111 , 4'b1000 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0111 , 4'b1001 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b0111 , 4'b1001 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0111 , 4'b1010 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b0111 , 4'b1010 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0111 , 4'b1011 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b0111 , 4'b1011 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0111 , 4'b1100 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b0111 , 4'b1100 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0111 , 4'b1101 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b0111 , 4'b1101 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b0111 , 4'b1110 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b0111 , 4'b1110 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b0111 , 4'b1111 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b0111 , 4'b1111 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        //  a=8, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1000 , 4'b0000 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
+        { 4'b1000 , 4'b0000 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b1000 , 4'b0001 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b1000 , 4'b0001 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b1000 , 4'b0010 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b1000 , 4'b0010 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1000 , 4'b0011 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1000 , 4'b0011 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1000 , 4'b0100 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1000 , 4'b0100 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1000 , 4'b0101 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1000 , 4'b0101 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1000 , 4'b0110 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1000 , 4'b0110 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1000 , 4'b0111 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1000 , 4'b0111 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1000 , 4'b1000 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1000 , 4'b1000 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1000 , 4'b1001 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1000 , 4'b1001 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1000 , 4'b1010 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1000 , 4'b1010 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1000 , 4'b1011 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1000 , 4'b1011 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1000 , 4'b1100 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1000 , 4'b1100 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1000 , 4'b1101 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1000 , 4'b1101 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1000 , 4'b1110 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1000 , 4'b1110 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1000 , 4'b1111 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1000 , 4'b1111 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        //  a=9, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1001 , 4'b0000 , 1'b0 }: begin     s = 4'b1001;    co = 2'b00;    end
+        { 4'b1001 , 4'b0000 , 1'b1 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b1001 , 4'b0001 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b1001 , 4'b0001 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1001 , 4'b0010 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1001 , 4'b0010 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1001 , 4'b0011 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1001 , 4'b0011 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1001 , 4'b0100 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1001 , 4'b0100 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1001 , 4'b0101 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1001 , 4'b0101 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1001 , 4'b0110 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1001 , 4'b0110 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1001 , 4'b0111 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1001 , 4'b0111 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1001 , 4'b1000 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1001 , 4'b1000 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1001 , 4'b1001 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1001 , 4'b1001 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1001 , 4'b1010 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1001 , 4'b1010 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1001 , 4'b1011 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1001 , 4'b1011 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1001 , 4'b1100 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1001 , 4'b1100 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1001 , 4'b1101 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1001 , 4'b1101 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1001 , 4'b1110 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1001 , 4'b1110 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1001 , 4'b1111 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1001 , 4'b1111 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        //  a=A, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1010 , 4'b0000 , 1'b0 }: begin     s = 4'b1010;    co = 2'b00;    end
+        { 4'b1010 , 4'b0000 , 1'b1 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1010 , 4'b0001 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1010 , 4'b0001 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1010 , 4'b0010 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1010 , 4'b0010 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1010 , 4'b0011 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1010 , 4'b0011 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1010 , 4'b0100 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1010 , 4'b0100 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1010 , 4'b0101 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1010 , 4'b0101 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1010 , 4'b0110 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1010 , 4'b0110 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1010 , 4'b0111 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1010 , 4'b0111 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1010 , 4'b1000 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1010 , 4'b1000 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1010 , 4'b1001 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1010 , 4'b1001 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1010 , 4'b1010 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1010 , 4'b1010 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1010 , 4'b1011 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1010 , 4'b1011 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1010 , 4'b1100 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1010 , 4'b1100 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1010 , 4'b1101 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1010 , 4'b1101 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1010 , 4'b1110 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1010 , 4'b1110 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1010 , 4'b1111 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1010 , 4'b1111 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        //  a=B, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1011 , 4'b0000 , 1'b0 }: begin     s = 4'b1011;    co = 2'b00;    end
+        { 4'b1011 , 4'b0000 , 1'b1 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1011 , 4'b0001 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1011 , 4'b0001 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1011 , 4'b0010 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1011 , 4'b0010 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1011 , 4'b0011 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1011 , 4'b0011 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1011 , 4'b0100 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1011 , 4'b0100 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1011 , 4'b0101 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1011 , 4'b0101 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1011 , 4'b0110 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1011 , 4'b0110 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1011 , 4'b0111 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1011 , 4'b0111 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1011 , 4'b1000 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1011 , 4'b1000 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1011 , 4'b1001 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1011 , 4'b1001 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1011 , 4'b1010 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1011 , 4'b1010 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1011 , 4'b1011 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1011 , 4'b1011 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1011 , 4'b1100 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1011 , 4'b1100 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1011 , 4'b1101 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1011 , 4'b1101 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1011 , 4'b1110 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1011 , 4'b1110 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1011 , 4'b1111 , 1'b0 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1011 , 4'b1111 , 1'b1 }: begin     s = 4'b1100;    co = 2'b01;    end
+        //  a=C, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1100 , 4'b0000 , 1'b0 }: begin     s = 4'b1100;    co = 2'b00;    end
+        { 4'b1100 , 4'b0000 , 1'b1 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1100 , 4'b0001 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1100 , 4'b0001 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1100 , 4'b0010 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1100 , 4'b0010 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1100 , 4'b0011 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1100 , 4'b0011 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1100 , 4'b0100 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1100 , 4'b0100 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1100 , 4'b0101 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1100 , 4'b0101 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1100 , 4'b0110 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1100 , 4'b0110 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1100 , 4'b0111 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1100 , 4'b0111 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1100 , 4'b1000 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1100 , 4'b1000 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1100 , 4'b1001 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1100 , 4'b1001 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1100 , 4'b1010 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1100 , 4'b1010 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1100 , 4'b1011 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1100 , 4'b1011 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1100 , 4'b1100 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1100 , 4'b1100 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1100 , 4'b1101 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1100 , 4'b1101 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1100 , 4'b1110 , 1'b0 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1100 , 4'b1110 , 1'b1 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1100 , 4'b1111 , 1'b0 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1100 , 4'b1111 , 1'b1 }: begin     s = 4'b1101;    co = 2'b01;    end
+        //  a=D, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1101 , 4'b0000 , 1'b0 }: begin     s = 4'b1101;    co = 2'b00;    end
+        { 4'b1101 , 4'b0000 , 1'b1 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1101 , 4'b0001 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1101 , 4'b0001 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1101 , 4'b0010 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1101 , 4'b0010 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1101 , 4'b0011 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1101 , 4'b0011 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1101 , 4'b0100 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1101 , 4'b0100 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1101 , 4'b0101 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1101 , 4'b0101 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1101 , 4'b0110 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1101 , 4'b0110 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1101 , 4'b0111 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1101 , 4'b0111 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1101 , 4'b1000 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1101 , 4'b1000 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1101 , 4'b1001 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1101 , 4'b1001 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1101 , 4'b1010 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1101 , 4'b1010 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1101 , 4'b1011 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1101 , 4'b1011 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1101 , 4'b1100 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1101 , 4'b1100 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1101 , 4'b1101 , 1'b0 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1101 , 4'b1101 , 1'b1 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1101 , 4'b1110 , 1'b0 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1101 , 4'b1110 , 1'b1 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1101 , 4'b1111 , 1'b0 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1101 , 4'b1111 , 1'b1 }: begin     s = 4'b1110;    co = 2'b01;    end
+        //  a=E, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1110 , 4'b0000 , 1'b0 }: begin     s = 4'b1110;    co = 2'b00;    end
+        { 4'b1110 , 4'b0000 , 1'b1 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1110 , 4'b0001 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1110 , 4'b0001 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1110 , 4'b0010 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1110 , 4'b0010 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1110 , 4'b0011 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1110 , 4'b0011 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1110 , 4'b0100 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1110 , 4'b0100 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1110 , 4'b0101 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1110 , 4'b0101 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1110 , 4'b0110 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1110 , 4'b0110 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1110 , 4'b0111 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1110 , 4'b0111 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1110 , 4'b1000 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1110 , 4'b1000 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1110 , 4'b1001 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1110 , 4'b1001 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1110 , 4'b1010 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1110 , 4'b1010 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1110 , 4'b1011 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1110 , 4'b1011 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1110 , 4'b1100 , 1'b0 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1110 , 4'b1100 , 1'b1 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1110 , 4'b1101 , 1'b0 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1110 , 4'b1101 , 1'b1 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1110 , 4'b1110 , 1'b0 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1110 , 4'b1110 , 1'b1 }: begin     s = 4'b1110;    co = 2'b01;    end
+        { 4'b1110 , 4'b1111 , 1'b0 }: begin     s = 4'b1110;    co = 2'b01;    end
+        { 4'b1110 , 4'b1111 , 1'b1 }: begin     s = 4'b0000;    co = 2'b10;    end
+        //  a=F, b=0~F, c=0~1, truth table check ( OK )
+        { 4'b1111 , 4'b0000 , 1'b0 }: begin     s = 4'b0000;    co = 2'b01;    end
+        { 4'b1111 , 4'b0000 , 1'b1 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1111 , 4'b0001 , 1'b0 }: begin     s = 4'b0001;    co = 2'b01;    end
+        { 4'b1111 , 4'b0001 , 1'b1 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1111 , 4'b0010 , 1'b0 }: begin     s = 4'b0010;    co = 2'b01;    end
+        { 4'b1111 , 4'b0010 , 1'b1 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1111 , 4'b0011 , 1'b0 }: begin     s = 4'b0011;    co = 2'b01;    end
+        { 4'b1111 , 4'b0011 , 1'b1 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1111 , 4'b0100 , 1'b0 }: begin     s = 4'b0100;    co = 2'b01;    end
+        { 4'b1111 , 4'b0100 , 1'b1 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1111 , 4'b0101 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
+        { 4'b1111 , 4'b0101 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1111 , 4'b0110 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
+        { 4'b1111 , 4'b0110 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1111 , 4'b0111 , 1'b0 }: begin     s = 4'b0111;    co = 2'b01;    end
+        { 4'b1111 , 4'b0111 , 1'b1 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1111 , 4'b1000 , 1'b0 }: begin     s = 4'b1000;    co = 2'b01;    end
+        { 4'b1111 , 4'b1000 , 1'b1 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1111 , 4'b1001 , 1'b0 }: begin     s = 4'b1001;    co = 2'b01;    end
+        { 4'b1111 , 4'b1001 , 1'b1 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1111 , 4'b1010 , 1'b0 }: begin     s = 4'b1010;    co = 2'b01;    end
+        { 4'b1111 , 4'b1010 , 1'b1 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1111 , 4'b1011 , 1'b0 }: begin     s = 4'b1011;    co = 2'b01;    end
+        { 4'b1111 , 4'b1011 , 1'b1 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1111 , 4'b1100 , 1'b0 }: begin     s = 4'b1100;    co = 2'b01;    end
+        { 4'b1111 , 4'b1100 , 1'b1 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1111 , 4'b1101 , 1'b0 }: begin     s = 4'b1101;    co = 2'b01;    end
+        { 4'b1111 , 4'b1101 , 1'b1 }: begin     s = 4'b1110;    co = 2'b01;    end
+        { 4'b1111 , 4'b1110 , 1'b0 }: begin     s = 4'b1110;    co = 2'b01;    end
+        { 4'b1111 , 4'b1110 , 1'b1 }: begin     s = 4'b0000;    co = 2'b10;    end
+        { 4'b1111 , 4'b1111 , 1'b0 }: begin     s = 4'b0000;    co = 2'b10;    end
+        { 4'b1111 , 4'b1111 , 1'b1 }: begin     s = 4'b0001;    co = 2'b10;    end
         endcase
     end
-
-
-
-
-
 endmodule
