@@ -20,6 +20,6 @@ module data_flow (P, Q, R, S, T, U, V, W, X, Y, Z);
     assign W = {P[2:0], Q[4:2]};
     assign X = (P > 10) ? P:Q;
     assign Y = (Q >= 10)? ((Q <= 20)? 1'b1:1'b0):1'b0;
-    assign Z = (P ~^ P);
+    assign Z = ~^ P;
 
 endmodule 
