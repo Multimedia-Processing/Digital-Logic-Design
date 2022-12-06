@@ -30,7 +30,7 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
         end
     end
 
-    always @ (diver) begin
+    always @ (*) begin
         if (diver < 50000000) begin
             clock_1hz = 1;
         end else begin
@@ -46,7 +46,7 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
         end
     end
 
-    always @ (diver250) begin
+    always @ (*) begin
         if (diver250 < 200000) begin
             clock_250hz = 1;
         end else begin
@@ -62,7 +62,7 @@ module traffic_lights (clock, reset, row_traffic_lights, column_traffic_lights,
         end
     end
 
-    always @ (turn) begin
+    always @ (*) begin
         case (turn)
             8'b00000001: turn_bcd = column_bcd[3:0];
             8'b00000100: turn_bcd = column_bcd[7:4];
