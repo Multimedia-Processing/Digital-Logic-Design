@@ -162,6 +162,9 @@ endmodule
 ```
 </details>
 
+### 模擬圖
+![模擬圖結果](docs/assets/data_flow.png)
+
 
 ## 行為層次
 「行為層次」(Behavior Level)以控制結構描述方式高階描述方式來描述電路，具有高度抽象化特性，設計上較為直覺與抓大放小。
