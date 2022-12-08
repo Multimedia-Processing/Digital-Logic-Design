@@ -18,7 +18,7 @@ assign T = 4'b1010 + P;
 assign U = ~(P & Q);
 assign V = {P[1:0], P[4:2]};
 assign W = {P[2:0], Q[4:2]};
-assign X = (P > 10) ? P:Q;
+assign X = (P > 10) ? P:Q; //if條件式
 assign Y = (Q >= 10)? ((Q <= 20)? 0'b1:0'b0):0'b0;
 assign Z = (P ~^ P);
 

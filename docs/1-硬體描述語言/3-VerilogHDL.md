@@ -85,6 +85,84 @@ assign 輸出訊號 = 輸入訊號與運算子的組合運算式;
 
 ### 連接運算子
 
+##  練習題
+
+<details>
+<summary>Verilog練習題程式碼 </summary>
+
+``` verilog
+module data_flow (P, Q, R, S, T, U, V, W, X, Y, Z);
+
+    input [4:0]P;
+    input [4:0]Q;
+    output [6:0]R;
+    output [3:0]S;
+    output [5:0]T;
+    output [4:0]U;
+    output [4:0]V;
+    output [5:0]W;
+    output [4:0]X;
+    output Y;
+    output Z;
+
+    assign R = (P * 3);
+    assign S = (Q >> 1);
+    assign T = 4'b1001 + P;
+    assign U = ~(P & Q);
+    assign V = {P[1:0], P[4:2]};
+    assign W = {P[2:0], Q[4:2]};
+    assign X = (P > 10) ? P:Q;
+    assign Y = (Q >= 10)? ((Q <= 20)? 1'b1:1'b0):1'b0;
+    assign Z = ~^ P;
+
+endmodule 
+```
+</details>
+
+<details>
+<summary>Verilog測式檔</summary>
+
+``` verilog
+`timescale 1ns / 1ps
+
+module data_flow_test ();
+
+    reg [4:0]P;
+    reg [4:0]Q;
+    wire [6:0]R;
+    wire [3:0]S;
+    wire [5:0]T;
+    wire [4:0]U;
+    wire [4:0]V;
+    wire [5:0]W;
+    wire [4:0]X;
+    wire Y;
+    wire Z;
+
+    data_flow UUT (P, Q, R, S, T, U, V, W, X, Y, Z);
+    
+    initial begin
+        P=5'b00000; Q=5'b00000;
+        #100; 
+            P=5'b11000; Q=5'b10101;
+        #100; 
+            P=5'b00111; Q=5'b01010;
+        #100;
+            P=5'b10011; Q=5'b11010;
+        #100;
+            P=5'b01100; Q=5'b00101;
+    end
+
+    initial begin
+        #500;
+        $finish;
+    end
+
+endmodule
+```
+</details>
+
+
 ## 行為層次
 「行為層次」(Behavior Level)以控制結構描述方式高階描述方式來描述電路，具有高度抽象化特性，設計上較為直覺與抓大放小。
 
