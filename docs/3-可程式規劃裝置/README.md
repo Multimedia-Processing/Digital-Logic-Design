@@ -6,10 +6,26 @@
 
 因此可以知道老大吃肉喝酒，老二喝湯，老三只能撿剩的，因此既然如此 Lattice 透過開放原始碼的方式，吸引開放原始碼社群跟自幹玩家加入作為助力。
 
-- 唯讀記憶體
-- 隨機存取記憶體
+- 唯讀記憶體(ROM, )
+- 隨機存取記憶體(RAM, )
 - 可程式邏輯陣列
 - 可程式陣列邏輯
-- 序向可規劃裝置 SPLD
-- 複雜可程式邏輯裝置
-- 現場可程式邏輯閘陣列 FPGA
+- 可程式邏輯裝置(PLD, Programmable Logic Device)
+- 序向可規劃裝置(SPLD, Small/Simple Programmable Logic Device)
+- 複雜可程式邏輯裝置(CPLD, Complex Programmable Logic Device)
+- 現場可程式邏輯閘陣列(FPGA, Field Programmable Gate Array)
+
+```mermaid
+graph TD
+  subgraph "IC Design Tree"
+  1["IC Design Methodology"] --> 2["Full Custom"]
+  1 --> 3["Semi Custom"]
+  3 --> 4["Gate Array"]
+  3 --> 5["Standard Cell"]
+  3 --> 6["Programmable Device"]
+  6 --> SPLD
+  6 --> CPLD
+  6 --> FPGA
+  6 --> PLD
+  end
+```
