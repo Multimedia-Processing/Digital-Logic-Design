@@ -65,3 +65,6 @@ end
 initial begin
   #6400;
     $finish;
+end
+
+endmodule // block_test
