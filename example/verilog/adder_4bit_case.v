@@ -8,7 +8,6 @@ module adder_4bit_case(a, b, ci, s, co);
 
     always@(a or b or ci)begin
         case({a, b, ci})
-/*
         //  a=0, b=0~F, c=0~1, truth table check ( OK )
         { 4'b0000 , 4'b0000 , 1'b0 }: begin     s = 4'b0000;    co = 2'b00;    end
         { 4'b0000 , 4'b0000 , 1'b1 }: begin     s = 4'b0001;    co = 2'b00;    end
@@ -272,7 +271,7 @@ module adder_4bit_case(a, b, ci, s, co);
         { 4'b0111 , 4'b1110 , 1'b0 }: begin     s = 4'b0101;    co = 2'b01;    end
         { 4'b0111 , 4'b1110 , 1'b1 }: begin     s = 4'b0110;    co = 2'b01;    end
         { 4'b0111 , 4'b1111 , 1'b0 }: begin     s = 4'b0110;    co = 2'b01;    end
-        { 4'b0111 , 4'b1111 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end*/
+        { 4'b0111 , 4'b1111 , 1'b1 }: begin     s = 4'b0111;    co = 2'b01;    end
         //  a=8, b=0~F, c=0~1, truth table check ( OK )
         { 4'b1000 , 4'b0000 , 1'b0 }: begin     s = 4'b1000;    co = 2'b00;    end
         { 4'b1000 , 4'b0000 , 1'b1 }: begin     s = 4'b1001;    co = 2'b00;    end
