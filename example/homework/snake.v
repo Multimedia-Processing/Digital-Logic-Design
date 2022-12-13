@@ -42,12 +42,18 @@ module snake (clock, reset, turn, display);
         end
     end
 
-    // 方向控制
+    // 方向陣列循環複製
     always @ (posedge clock_1hz) begin
-        if (~reset) begin
-            first = 0;
-        end else if (${2:condition2) begin
-
+        if (~reset || switch == 0) begin
+            first[15:14] = first[15:14];
+            second[15:14] = first[15:14];
+            third[15:14] = second[15:14];
+            fourth[15:14] = third[15:14];
+        end else begin
+            first[15:14] = direction;
+            second[15:14] = first[15:14];
+            third[15:14] = second[15:14];
+            fourth[15:14] = third[15:14];
         end
     end
 
