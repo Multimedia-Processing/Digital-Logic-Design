@@ -32,13 +32,6 @@ module snake (clock, reset, turn, display);
         clock_1hz = clock;
     end
 
-    always @ (*) begin
-        case (condition)
-            value: ;
-            default: ;
-        endcase
-    end
-
     // 柱欄梁行
     always @ (posedge clock_1hz) begin
         if (~reset) begin
