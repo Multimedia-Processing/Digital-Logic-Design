@@ -3,12 +3,13 @@ module snake (clock, reset, turn, display);
     output [7:0] trun;
     output [7:0] display;
 
-    reg [3:0] direction;
-    reg [3:0] first, second, third, fourth;
-    reg [3:0] row;  // 行
-    reg [15:0] column;  // 欄
-    reg [3:0] pillar;  // 柱
-    reg [17:0] beam_of_roof;  // 梁
+    reg [3:0] switch;
+    reg [15:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
+    reg [1:0] direction;  // 方向陣列
+    reg [2:0] pillar;  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
+    reg [4:0] column;  // 欄 0:無, 1~16: 由左到右, default: don't care
+    reg [4:0] beam_of_roof;  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
+    reg [1:0] row;  // 行 0 無 1~3 由上而下
 
     // always@(posedge clock) begin
     //     if(reset || diver == 100000000) begin
