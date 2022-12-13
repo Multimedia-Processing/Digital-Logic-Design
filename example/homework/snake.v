@@ -39,9 +39,13 @@ module snake (clock, reset, turn, display);
         endcase
     end
 
+    // 柱欄梁行
     always @ (posedge clock_1hz) begin
         if (~reset) begin
-            re
+            first = {2'b11, 2'b00, 2'b00000, 2'b00110, 2'b10};
+            second = {2'b11, 2'b00, 2'b00000, 2'b00101, 2'b10};
+            third = {2'b11, 2'b00, 2'b00000, 2'b00100, 2'b10};
+            fourth = {2'b11, 2'b00, 2'b00000, 2'b00011, 2'b10};
         end else if (${2:condition2) begin
 
         end
