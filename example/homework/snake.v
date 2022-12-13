@@ -1,5 +1,6 @@
 module snake (clock, reset, turn, display);
     input clock, reset;
+    input [3:0] switch;
     output [7:0] trun;
     output [7:0] display;
 
