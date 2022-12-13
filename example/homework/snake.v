@@ -42,6 +42,11 @@ module snake (clock, reset, turn, display);
         end
     end
 
+    // 死亡
+    always @ (posedge clock_1hz) begin
+
+    end
+
     // 方向陣列循環複製
     always @ (posedge clock_1hz) begin
         if (~reset || switch == 0) begin
