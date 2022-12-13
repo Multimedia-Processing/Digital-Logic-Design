@@ -7,6 +7,7 @@ wire [3:0] X, Y;
 block UUT (.D(D), .Clk(Clk), .X(X), .Y(Y));
 
 initial begin
+  $display)
   #80 D = 1; #150 D = 0;
   #270 D = 1; #150 D = 0;
   #270 D = 1; #150 D = 0;
@@ -58,6 +59,10 @@ initial begin
   #100 Clk = 1; #100 Clk = 0;
   #100 Clk = 1; #100 Clk = 0;
   #100 Clk = 1; #100 Clk = 0;
+
+// always begin
+// #10;
+// 
 
 end
 
