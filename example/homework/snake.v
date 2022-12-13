@@ -56,12 +56,18 @@ module snake (clock, reset, turn, display);
         end
     end
 
-    // 方向陣列 1, 2, 3, 4
+    // 方向控制
     always @ (posedge clock_1hz) begin
         if (~reset) begin
-            first = 0;
-        end else if (${2:condition2) begin
-
+            direction = 3;
+        end else begin
+            case (switch)
+              2'b1000: direction = 0;
+              2'b0100: direction = 1;
+              2'b1010: direction = 2;
+              2'b1001: direction = 3;
+              default: 0;
+            endcase
         end
     end
 
