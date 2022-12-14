@@ -43,7 +43,7 @@ module snake (clock, reset, turn, display);
         end else if (first[15:8] == 0 && first[7:0] > 0) begin
             // 確定身體為水平
 
-            if (first[17:14] == 3) begin
+            if (first[17:16] == 3) begin
                 // 身體往右
 
                 if (direction == 0) begin
@@ -71,7 +71,7 @@ module snake (clock, reset, turn, display);
                     };
                 end
 
-            end else if (first[17:14] == 2) begin
+            end else if (first[17:16] == 2) begin
                 // 身體往左
 
                 if (direction == 1) begin
@@ -102,7 +102,7 @@ module snake (clock, reset, turn, display);
         end else if (first[15:8] > 0 && first[7:0] == 0) begin
             // 確定身體為垂直
 
-            if (first[17:14] == 0) begin
+            if (first[17:16] == 0) begin
                 // 身體往上
 
                 if (direction == 0) begin
@@ -130,7 +130,7 @@ module snake (clock, reset, turn, display);
                     };
                 end
 
-            end else if (first[17:14] == 1) begin
+            end else if (first[17:16] == 1) begin
                 // 身體往下
 
                 if (direction == 1) begin
@@ -174,9 +174,9 @@ module snake (clock, reset, turn, display);
     // 方向陣列循環複製
     always @ (posedge clock_1hz) begin
         if (~reset || switch == 0) begin
-            first[17:14] = first[17:14];
+            first[17:16] = first[17:16];
         end else begin
-            first[17:14] = direction;
+            first[17:16] = direction;
         end
     end
 
