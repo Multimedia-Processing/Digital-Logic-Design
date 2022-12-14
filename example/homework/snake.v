@@ -5,12 +5,12 @@ module snake (clock, reset, turn, display);
     output [7:0] display;
 
     reg [3:0] switch;
-    reg [16:0] first, second_body, third_body, fourth_body;  // 第一個、第二個、第三個、第四個
+    reg [17:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
     reg [1:0] direction;  // 方向陣列
     reg [2:0] pillar;  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
     reg [4:0] column;  // 欄 0:無, 1~16: 由左到右, default: don't care
     reg [4:0] beam_of_roof;  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
-    reg [1:0] row;  // 行 0 無 1~3 由上而下
+    reg [2:0] row;  // 行 0 無 1~3 由上而下
 
     // always@(posedge clock) begin
     //     if(reset || diver == 100000000) begin
@@ -35,120 +35,134 @@ module snake (clock, reset, turn, display);
     // 柱欄梁行
     always @ (posedge clock_1hz) begin
         if (~reset) begin
-            first = {2'b11, 2'b000, 5'b00000, 5'b00110, 2'b10};
-            second_body = {2'b11, 2'b000, 5'b00000, 5'b00101, 2'b10};
-            third_body = {2'b11, 2'b000, 5'b00000, 5'b00100, 2'b10};
-            fourth_body = {2'b11, 2'b000, 5'b00000, 5'b00011, 2'b10};
+            first = {2'b11, 2'b000, 5'b00000, 5'b00110, 2'b010};
+            second = {2'b11, 2'b000, 5'b00000, 5'b00101, 2'b010};
+            third = {2'b11, 2'b000, 5'b00000, 5'b00100, 2'b010};
+            fourth = {2'b11, 2'b000, 5'b00000, 5'b00011, 2'b010};
 
-        end else if (first[14:7] == 0 && first[6:0] > 0) begin
+        end else if (first[15:8] == 0 && first[7:0] > 0) begin
             // 確定身體為水平
 
-            if (first[16:15] == 3) begin
+            if (first[17:14] == 3) begin
                 // 身體往右
 
-            end else if (first[16:15] == 2) begin
-                // 身體往左
-                if (direction == 1) begin
-                    // 如果控制往下
-                    first[14:0] = {
-                      first[16:15],
-                      first[14:12] - 1,
-                      first[11:7],  //
-                      7'b0000000  // 將橫向資料歸零
+                if (direction == 0) begin
+                    // 如果控制往上
+                    first[15:0] = {
+                      first[2:0],  //
+                      first[7:3],
+                      8'b00000000  // 將橫向資料歸零
                     };
 
                 end else if (direction == 3) begin
+                    // 如果控制往下
+                    first[15:0] = {
+                      first[2:0],  //
+                      first[7:3] + 1,
+                      8'b00000000  // 將橫向資料歸零
+                    };
+
+                end else if (direction == 2) begin
                     // 如果控制往右
-                    first[14:0] = {
-                      first[16:15],
-                      7'b0000000  // 將直向資料歸零
-                      first[11:7] + 1,  //
-                      first[14:12],
+                    first[15:0] = {
+                      8'b00000000  // 將直向資料歸零
+                      first[12:8] + 1,  //
+                      first[2:0],
+                    };
+                end
+
+            end else if (first[17:14] == 2) begin
+                // 身體往左
+
+                if (direction == 1) begin
+                    // 如果控制往上
+                    first[15:0] = {
+                      first[2:0] - 1,  //
+                      first[7:3],
+                      8'b00000000  // 將橫向資料歸零
+                    };
+
+                end else if (direction == 3) begin
+                    // 如果控制往下
+                    first[15:0] = {
+                      first[2:0] + 1,
+                      first[7:3] - 1,  //
+                      8'b00000000  // 將橫向資料歸零
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往左
-                    first[14:0] = {
-                      first[16:15],
-                      7'b0000000  // 將直向資料歸零
-                      first[11:7] - 1,  //
-                      first[14:12],
+                    first[15:0] = {
+                      8'b00000000  // 將直向資料歸零
+                      first[7:3] - 1,
+                      first[2:0],  //
                     };
                 end
 
-        end else if (first[14:7] > 0 && first[6:0] == 0) begin
+        end else if (first[15:8] > 0 && first[7:0] == 0) begin
             // 確定身體為垂直
 
-            if (first[16:15] == 0) begin
+            if (first[17:14] == 0) begin
                 // 身體往上
 
                 if (direction == 0) begin
                     // 如果控制往上
-                    first[14:0] = {
-                        first[16:15],
-                        first[14:12] - 1,
-                        first[11:7],  //
-                        7'b0000000  // 將橫向資料歸零
+                    first[15:0] = {
+                        first[15:13] - 1,
+                        first[12:8],  //
+                        8'b00000000  // 將橫向資料歸零
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往右
-                    first[14:0] = {
-                        first[16:15],
-                        7'b0000000  // 將直向資料歸零
-                        first[11:7] + 1,  //
-                        first[14:12] - 1,
+                    first[15:0] = {
+                        8'b00000000  // 將直向資料歸零
+                        first[12:8] + 1,  //
+                        first[15:13] - 1,
                     };
-                    second_body = first;
-                    third_body = second_body;
-                    fourth_body = third_body;
 
                 end else if (direction == 2) begin
                     // 如果控制往左
-                    first[14:0] = {
-                        first[16:15],
-                        7'b0000000  // 將直向資料歸零
-                        first[11:7] + 1,  //
-                        first[14:12] - 1
+                    first[15:0] = {
+                        8'b00000000  // 將直向資料歸零
+                        first[12:8] - 1,  //
+                        first[15:13] - 1
                     };
                 end
 
-            end else if (first[16:15] == 1) begin
+            end else if (first[17:14] == 1) begin
                 // 身體往下
 
                 if (direction == 1) begin
                     // 如果控制往下
-                    first[14:0] = {
-                        first[16:15],
-                        first[14:12] - 1,
-                        first[11:7],  //
-                        7'b0000000  // 將橫向資料歸零
+                    first[15:0] = {
+                        first[15:13] + 1,
+                        first[12:8],  //
+                        8'b00000000  // 將橫向資料歸零
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往右
-                    first[14:0] = {
-                        first[16:15],
-                        7'b0000000  // 將直向資料歸零
-                        first[11:7] + 1,  //
-                        first[14:12],
+                    first[15:0] = {
+                        8'b00000000  // 將直向資料歸零
+                        first[12:8] + 1,  //
+                        first[15:13],
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往左，且第一個身體往下，另確定資料為垂直，做往左移動動作
-                    first[14:0] = {
-                        first[16:15],
-                        7'b0000000  // 將直向資料歸零
-                        first[11:7] - 1,  //
-                        first[14:12],
+                    first[15:0] = {
+                        8'b00000000  // 將直向資料歸零
+                        first[12:8] - 1,  //
+                        first[15:13],
                     };
 
                 end
             end
         end
-        second_body = first;
-        third_body = second_body;
-        fourth_body = third_body;
+        second = first;
+        third = second;
+        fourth = third;
 
     end
 
@@ -160,9 +174,9 @@ module snake (clock, reset, turn, display);
     // 方向陣列循環複製
     always @ (posedge clock_1hz) begin
         if (~reset || switch == 0) begin
-            first[16:15] = first[16:15];
+            first[17:14] = first[17:14];
         end else begin
-            first[16:15] = direction;
+            first[17:14] = direction;
         end
     end
 
