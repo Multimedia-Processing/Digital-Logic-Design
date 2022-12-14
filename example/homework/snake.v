@@ -5,7 +5,7 @@ module snake (clock, reset, turn, display);
     output [7:0] display;
 
     reg [3:0] switch;
-    reg [15:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
+    reg [16:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
     reg [1:0] direction;  // 方向陣列
     reg [2:0] pillar;  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
     reg [4:0] column;  // 欄 0:無, 1~16: 由左到右, default: don't care
@@ -35,10 +35,10 @@ module snake (clock, reset, turn, display);
     // 柱欄梁行
     always @ (posedge clock_1hz) begin
         if (~reset) begin
-            first = {2'b11, 2'b00, 2'b00000, 2'b00110, 2'b10};
-            second = {2'b11, 2'b00, 2'b00000, 2'b00101, 2'b10};
-            third = {2'b11, 2'b00, 2'b00000, 2'b00100, 2'b10};
-            fourth = {2'b11, 2'b00, 2'b00000, 2'b00011, 2'b10};
+            first = {2'b11, 2'b000, 2'b00000, 2'b00110, 2'b10};
+            second = {2'b11, 2'b000, 2'b00000, 2'b00101, 2'b10};
+            third = {2'b11, 2'b000, 2'b00000, 2'b00100, 2'b10};
+            fourth = {2'b11, 2'b000, 2'b00000, 2'b00011, 2'b10};
         end
     end
 
