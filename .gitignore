@@ -29,6 +29,10 @@
 *.ddb
 !/example/
 
+# VeriLogger Pro
+*.dsk
+*.key
+
 # Explicitly add any text files used
 *.txt
 PLLJ_PLLSPE_INFO.txt
