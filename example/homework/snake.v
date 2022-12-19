@@ -12,6 +12,7 @@ module snake (clock, reset, turn, display);
     reg [4:0] beam_of_roof;  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
     reg [2:0] row;  // 行 0 無 1~3 由上而下
 
+    reg clock_10hz, clock_250hz;
     // always@(posedge clock) begin
     //     if(reset || diver == 100000000) begin
     //         diver = 0;
@@ -22,18 +23,18 @@ module snake (clock, reset, turn, display);
     //
     // always @ (diver) begin
     //     if (diver < 50000000) begin
-    //         clock_1hz = 1;
+    //         clock_10hz = 1;
     //     end else begin
-    //         clock_1hz = 0;
+    //         clock_10hz = 0;
     //     end
     // end
 
     always @ (clock) begin
-        clock_1hz = clock;
+        clock_10hz = clock;
     end
 
     // 柱欄梁行
-    always @ (posedge clock_1hz) begin
+    always @ (posedge clock_10hz) begin
         if (~reset) begin
             first = {2'b11, 2'b000, 5'b00000, 5'b00110, 2'b010};
             second = {2'b11, 2'b000, 5'b00000, 5'b00101, 2'b010};
@@ -167,7 +168,7 @@ module snake (clock, reset, turn, display);
     end
 
     // 死亡
-    always @ (posedge clock_1hz) begin
+    always @ (posedge clock_10hz) begin
         pillar = first[15:13];  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
         column = first[12:8];  // 欄 0:無, 1~16: 由左到右, default: don't care
         beam_of_roof = first[7:3];  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
@@ -180,7 +181,7 @@ module snake (clock, reset, turn, display);
     end
 
     // 方向陣列循環複製
-    always @ (posedge clock_1hz) begin
+    always @ (posedge clock_10hz) begin
         if (~reset || switch == 0) begin
             first[17:16] = first[17:16];
         end else begin
@@ -189,7 +190,7 @@ module snake (clock, reset, turn, display);
     end
 
     // 方向控制
-    always @ (posedge clock_1hz) begin
+    always @ (posedge clock_10hz) begin
         if (~reset) begin
             direction = 3;
         end else begin
