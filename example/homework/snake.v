@@ -65,11 +65,32 @@ module snake (clock, reset, turn, display);
                     if (15 < first[7:3] <= 16 || 15 < second[7:3] <= 16
                             || 15 < third[7:3] <= 16 || 15 < fourth[7:3] <= 16
                             ) begin
-                        // 控制顯示燈亮起來
+                        // 控制梁顯示燈亮起來
+                        case (first[7:0])
+                            8'b00000001: display = ;
+                            8'b00000001: display = ;
+                            8'b00000001: display = ;
+                          default: ;
+                        endcase
+
+                        case (second[7:0])
+                          value: ;
+                          default: ;
+                        endcase
+
+                        case (third[7:0])
+                          value: ;
+                          default: ;
+                        endcase
+
+                        case (fourth[7:0])
+                          value: ;
+                          default: ;
+                        endcase
                     end else if (15 <= first[12:8] <= 16 || 15 <= second[12:8] <= 16
                             || 15 <= third[12:8] <= 16 || 15 <= fourth[12:8] <= 16
                             ) begin
-                        // 控制顯示燈亮起來
+                        // 控制欄顯示燈亮起來
 
                     end
                 end
