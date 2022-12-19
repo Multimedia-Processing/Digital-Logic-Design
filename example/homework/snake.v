@@ -54,6 +54,34 @@ module snake (clock, reset, turn, display);
         clock_250hz = clock;
     end
 
+    // 七段顯示器輪播
+    always @ (posedge clock_250hz) begin
+        if (turn == 0 || reset) begin
+            turn = 8'b00000001;
+        end else begin
+            turn = turn * 2;
+            case (turn)
+                8'b00000001: begin
+                    if (15 < first[7:3] <= 16 || 15 < second[7:3] <= 16
+                            || 15 < third[7:3] <= 16 || 15 < fourth[7:3] <= 16
+                            ) begin
+                        // 控制顯示燈亮起來
+                    end else if (15 <= first[12:8] <= 16 || 15 <= second[12:8] <= 16
+                            || 15 <= third[12:8] <= 16 || 15 <= fourth[12:8] <= 16
+                            ) begin
+                        // 控制顯示燈亮起來
+
+                    end
+                end
+                8'b00000010: begin display = ; end
+                8'b00000100: begin display = ; end
+                8'b00001000: begin display = ; end
+                8'b00010000: begin display = ; end
+                8'b00100000: begin display = ; end
+                8'b01000000: begin display = ; end
+                8'b10000000: begin display = ; end
+            endcase
+        end
     end
 
     // 柱欄梁行
@@ -196,6 +224,7 @@ module snake (clock, reset, turn, display);
         column = first[12:8];  // 欄 0:無, 1~16: 由左到右, default: don't care
         beam_of_roof = first[7:3];  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
         row = first[2:0];  // 行 0 無 1~3 由上而下
+
         if (pillar < 1 or pillar > 4) begin
 
         end else if (beam_of_roof < 1 or beam_of_roof > 17) begin
