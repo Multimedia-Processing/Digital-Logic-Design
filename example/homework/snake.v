@@ -14,7 +14,7 @@ module snake (clock, reset, turn, display);
 
     reg clock_10hz, clock_250hz;
     // always@(posedge clock) begin
-    //     if(reset || diver == 100000000) begin
+    //     if(reset || diver == 1000000000) begin
     //         diver = 0;
     //     end else begin
     //         diver = diver + 1;
@@ -22,7 +22,7 @@ module snake (clock, reset, turn, display);
     // end
     //
     // always @ (diver) begin
-    //     if (diver < 50000000) begin
+    //     if (diver < 500000000) begin
     //         clock_10hz = 1;
     //     end else begin
     //         clock_10hz = 0;
