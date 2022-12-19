@@ -12,7 +12,11 @@ module snake (clock, reset, turn, display);
     reg [4:0] beam_of_roof;  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
     reg [2:0] row;  // 行 0 無 1~3 由上而下
 
+    reg [7:0] turn;
+    reg [7:0] display;
+    reg [27:0] diver, diver250;
     reg clock_10hz, clock_250hz;
+
     // always@(posedge clock) begin
     //     if(reset || diver == 1000000000) begin
     //         diver = 0;
@@ -28,9 +32,28 @@ module snake (clock, reset, turn, display);
     //         clock_10hz = 0;
     //     end
     // end
+    //
+    // always@(posedge clock) begin
+    //     if(reset || diver250 == 400000) begin
+    //         diver250 = 0;
+    //     end else begin
+    //         diver250 = diver250 + 1;
+    //     end
+    // end
+    //
+    // always @ (*) begin
+    //     if (diver250 < 200000) begin
+    //         clock_250hz = 1;
+    //     end else begin
+    //         clock_250hz = 0;
+    //     end
+    // end
 
     always @ (clock) begin
         clock_10hz = clock;
+        clock_250hz = clock;
+    end
+
     end
 
     // 柱欄梁行
