@@ -195,11 +195,11 @@ module snake (clock, reset, turn, display);
             direction = 3;
         end else begin
             case (switch)
-              2'b1000: direction = 0;
-              2'b0100: direction = 1;
-              2'b1010: direction = 2;
-              2'b1001: direction = 3;
-              default: 0;
+                2'b1000: direction = 0;
+                2'b0100: direction = 1;
+                2'b1010: direction = 2;
+                2'b1001: direction = 3;
+                default: 0;
             endcase
         end
     end
