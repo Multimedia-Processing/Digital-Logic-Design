@@ -239,20 +239,6 @@ module snake (clock, reset, turn, display);
 
     end
 
-    // 死亡
-    always @ (posedge clock_10hz) begin
-        pillar = first[15:13];  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
-        column = first[12:8];  // 欄 0:無, 1~16: 由左到右, default: don't care
-        beam_of_roof = first[7:3];  // 梁 0: 無, 1:超出, 2~16: 由左到右, 17:超出, default: don't care
-        row = first[2:0];  // 行 0 無 1~3 由上而下
-
-        if (pillar < 1 or pillar > 4) begin
-
-        end else if (beam_of_roof < 1 or beam_of_roof > 17) begin
-
-        end
-    end
-
     // 方向陣列循環複製
     always @ (posedge clock_10hz) begin
         if (~reset || switch == 0) begin
