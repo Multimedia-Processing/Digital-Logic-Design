@@ -66,32 +66,90 @@ module snake (clock, reset, turn, display);
                             || 15 < third[7:3] <= 16 || 15 < fourth[7:3] <= 16
                             ) begin
                         // 控制梁顯示燈亮起來
-                        case (first[7:0])
-                            8'b00000001: display = ;
-                            8'b00000001: display = ;
-                            8'b00000001: display = ;
-                          default: ;
+                        case (first[2:0])
+                            3'b000: display = 8'b00000000;
+                            3'b001: display = 8'b10000000;
+                            3'b010: display = 8'b00000010;
+                            3'b011: display = 8'b00010000;
+                            default: display = 8'b10011110;
                         endcase
 
-                        case (second[7:0])
-                          value: ;
-                          default: ;
+                        case (second[2:0])
+                            3'b000: display = 8'b00000000;
+                            3'b001: display = 8'b10000000;
+                            3'b010: display = 8'b00000010;
+                            3'b011: display = 8'b00010000;
+                            default: display = 8'b10011110;
                         endcase
 
-                        case (third[7:0])
-                          value: ;
-                          default: ;
+                        case (third[2:0])
+                            3'b000: display = 8'b00000000;
+                            3'b001: display = 8'b10000000;
+                            3'b010: display = 8'b00000010;
+                            3'b011: display = 8'b00010000;
+                            default: display = 8'b10011110;
                         endcase
 
-                        case (fourth[7:0])
-                          value: ;
-                          default: ;
+                        case (fourth[2:0])
+                            3'b000: display = 8'b00000000;
+                            3'b001: display = 8'b10000000;
+                            3'b010: display = 8'b00000010;
+                            3'b011: display = 8'b00010000;
+                            default: display = 8'b10011110;
                         endcase
-                    end else if (15 <= first[12:8] <= 16 || 15 <= second[12:8] <= 16
+                    end
+
+                    if (15 <= first[12:8] <= 16 || 15 <= second[12:8] <= 16
                             || 15 <= third[12:8] <= 16 || 15 <= fourth[12:8] <= 16
                             ) begin
                         // 控制欄顯示燈亮起來
+                        case (first[15:8])
+                            8'b00001111: display = 8'b00000000;
+                            8'b00010000: display = 8'b00000000;
+                            8'b01001111: display = 8'b10000000;
+                            8'b01010000: display = 8'b10000000;
+                            8'b01101111: display = 8'b00000010;
+                            8'b01110000: display = 8'b00000010;
+                            8'b10001111: display = 8'b00010000;
+                            8'b10010000: display = 8'b00010000;
+                            default: display = 8'b10011110;
+                        endcase
 
+                        case (second[15:8])
+                            8'b00001111: display = 8'b00000000;
+                            8'b00010000: display = 8'b00000000;
+                            8'b01001111: display = 8'b10000000;
+                            8'b01010000: display = 8'b10000000;
+                            8'b01101111: display = 8'b00000010;
+                            8'b01110000: display = 8'b00000010;
+                            8'b10001111: display = 8'b00010000;
+                            8'b10010000: display = 8'b00010000;
+                            default: display = 8'b10011110;
+                        endcase
+
+                        case (third[15:8])
+                            8'b00001111: display = 8'b00000000;
+                            8'b00010000: display = 8'b00000000;
+                            8'b01001111: display = 8'b10000000;
+                            8'b01010000: display = 8'b10000000;
+                            8'b01101111: display = 8'b00000010;
+                            8'b01110000: display = 8'b00000010;
+                            8'b10001111: display = 8'b00010000;
+                            8'b10010000: display = 8'b00010000;
+                            default: display = 8'b10011110;
+                        endcase
+
+                        case (fourth[15:8])
+                            8'b00001111: display = 8'b00000000;
+                            8'b00010000: display = 8'b00000000;
+                            8'b01001111: display = 8'b10000000;
+                            8'b01010000: display = 8'b10000000;
+                            8'b01101111: display = 8'b00000010;
+                            8'b01110000: display = 8'b00000010;
+                            8'b10001111: display = 8'b00010000;
+                            8'b10010000: display = 8'b00010000;
+                            default: display = 8'b10011110;
+                        endcase
                     end
                 end
                 8'b00000010: begin
