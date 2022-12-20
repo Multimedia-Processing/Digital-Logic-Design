@@ -94,13 +94,20 @@ module snake (clock, reset, turn, display);
 
                     end
                 end
-                8'b00000010: begin display = ; end
-                8'b00000100: begin display = ; end
-                8'b00001000: begin display = ; end
-                8'b00010000: begin display = ; end
-                8'b00100000: begin display = ; end
-                8'b01000000: begin display = ; end
-                8'b10000000: begin display = ; end
+                8'b00000010: begin
+                end
+                8'b00000100: begin
+                end
+                8'b00001000: begin
+                end
+                8'b00010000: begin
+                end
+                8'b00100000: begin
+                end
+                8'b01000000: begin
+                end
+                8'b10000000: begin
+                end
             endcase
         end
     end
