@@ -1,4 +1,4 @@
-module snake (clock, reset, turn, display);
+module snake (clock, reset, switch, turn, display);
     input clock, reset;
     input [3:0] switch;
     output [7:0] trun;
@@ -56,7 +56,7 @@ module snake (clock, reset, turn, display);
 
     // 七段顯示器輪播
     always @ (posedge clock_250hz) begin
-        if (turn == 0 || reset) begin
+        if (turn == 0 || ~reset) begin
             turn = 8'b00000001;
         end else begin
             turn = turn * 2;
