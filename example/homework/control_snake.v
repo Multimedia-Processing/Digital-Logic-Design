@@ -86,7 +86,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -94,7 +94,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -102,7 +102,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -110,7 +110,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -129,7 +129,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01110000: display = 8'b00000010;
                             8'b10001111: display = 8'b00010000;
                             8'b10010000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -141,7 +141,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01110000: display = 8'b00000010;
                             8'b10001111: display = 8'b00010000;
                             8'b10010000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -153,7 +153,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01110000: display = 8'b00000010;
                             8'b10001111: display = 8'b00010000;
                             8'b10010000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -165,7 +165,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01110000: display = 8'b00000010;
                             8'b10001111: display = 8'b00010000;
                             8'b10010000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -182,7 +182,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -190,7 +190,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -198,7 +198,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -206,7 +206,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -225,7 +225,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101110: display = 8'b00000010;
                             8'b10001101: display = 8'b00010000;
                             8'b10001110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -237,7 +237,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101110: display = 8'b00000010;
                             8'b10001101: display = 8'b00010000;
                             8'b10001110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -249,7 +249,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101110: display = 8'b00000010;
                             8'b10001101: display = 8'b00010000;
                             8'b10001110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -261,7 +261,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101110: display = 8'b00000010;
                             8'b10001101: display = 8'b00010000;
                             8'b10001110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -277,7 +277,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -285,7 +285,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -293,7 +293,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -301,7 +301,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -320,7 +320,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101100: display = 8'b00000010;
                             8'b10001011: display = 8'b00010000;
                             8'b10001100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -332,7 +332,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101100: display = 8'b00000010;
                             8'b10001011: display = 8'b00010000;
                             8'b10001100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -344,7 +344,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101100: display = 8'b00000010;
                             8'b10001011: display = 8'b00010000;
                             8'b10001100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -356,7 +356,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101100: display = 8'b00000010;
                             8'b10001011: display = 8'b00010000;
                             8'b10001100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -373,7 +373,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -381,7 +381,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -389,7 +389,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -397,7 +397,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -416,7 +416,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101010: display = 8'b00000010;
                             8'b10001001: display = 8'b00010000;
                             8'b10001010: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -428,7 +428,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101010: display = 8'b00000010;
                             8'b10001001: display = 8'b00010000;
                             8'b10001010: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -440,7 +440,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101010: display = 8'b00000010;
                             8'b10001001: display = 8'b00010000;
                             8'b10001010: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -452,7 +452,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101010: display = 8'b00000010;
                             8'b10001001: display = 8'b00010000;
                             8'b10001010: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -469,7 +469,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -477,7 +477,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -485,7 +485,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -493,7 +493,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -512,7 +512,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101000: display = 8'b00000010;
                             8'b10000111: display = 8'b00010000;
                             8'b10001000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -524,7 +524,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101000: display = 8'b00000010;
                             8'b10000111: display = 8'b00010000;
                             8'b10001000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -536,7 +536,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101000: display = 8'b00000010;
                             8'b10000111: display = 8'b00010000;
                             8'b10001000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -548,7 +548,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01101000: display = 8'b00000010;
                             8'b10000111: display = 8'b00010000;
                             8'b10001000: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -565,7 +565,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -573,7 +573,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -581,7 +581,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -589,7 +589,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -608,7 +608,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100110: display = 8'b00000010;
                             8'b10000101: display = 8'b00010000;
                             8'b10000110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -620,7 +620,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100110: display = 8'b00000010;
                             8'b10000101: display = 8'b00010000;
                             8'b10000110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -632,7 +632,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100110: display = 8'b00000010;
                             8'b10000101: display = 8'b00010000;
                             8'b10000110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -644,7 +644,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100110: display = 8'b00000010;
                             8'b10000101: display = 8'b00010000;
                             8'b10000110: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -661,7 +661,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -669,7 +669,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -677,7 +677,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -685,7 +685,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -704,7 +704,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100100: display = 8'b00000010;
                             8'b10000011: display = 8'b00010000;
                             8'b10000100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -716,7 +716,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100100: display = 8'b00000010;
                             8'b10000011: display = 8'b00010000;
                             8'b10000100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -728,7 +728,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100100: display = 8'b00000010;
                             8'b10000011: display = 8'b00010000;
                             8'b10000100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -740,7 +740,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100100: display = 8'b00000010;
                             8'b10000011: display = 8'b00010000;
                             8'b10000100: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
@@ -757,7 +757,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[2:0])
@@ -765,7 +765,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[2:0])
@@ -773,7 +773,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[2:0])
@@ -781,7 +781,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             3'b001: display = 8'b10000000;
                             3'b010: display = 8'b00000010;
                             3'b011: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
 
@@ -800,7 +800,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100001: display = 8'b00000010;
                             8'b10000010: display = 8'b00010000;
                             8'b10000001: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (second[15:8])
@@ -812,7 +812,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100001: display = 8'b00000010;
                             8'b10000010: display = 8'b00010000;
                             8'b10000001: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (third[15:8])
@@ -824,7 +824,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100001: display = 8'b00000010;
                             8'b10000010: display = 8'b00010000;
                             8'b10000001: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
 
                         case (fourth[15:8])
@@ -836,7 +836,7 @@ module control_snake (clock, reset, switch, first, second, third, fourth, turn, 
                             8'b01100001: display = 8'b00000010;
                             8'b10000010: display = 8'b00010000;
                             8'b10000001: display = 8'b00010000;
-                            default: display = 8'b10011110;
+                            default: display = 8'b00000000;
                         endcase
                     end
                 end
