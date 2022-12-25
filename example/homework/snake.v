@@ -930,9 +930,9 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
             end
         end
-        second = first;
-        third = second;
-        fourth = third;
+        second <= first;
+        third <= second;
+        fourth <= third;
 
     end
 
