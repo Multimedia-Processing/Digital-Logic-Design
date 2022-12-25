@@ -1,8 +1,9 @@
-module snake (clock, reset, switch, turn, display);
+module snake (clock, reset, switch, first, second, third, fourth, turn, display);
     input clock, reset;
     input [3:0] switch;
     output [7:0] trun;
     output [7:0] display;
+    output [17:0] first, second, third, fourth;
 
     reg [3:0] switch;
     reg [17:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
