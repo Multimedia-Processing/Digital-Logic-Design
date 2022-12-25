@@ -805,6 +805,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
             second = {2'b11, 3'b000, 5'b00000, 5'b00101, 3'b010};
             third = {2'b11, 3'b000, 5'b00000, 5'b00100, 3'b010};
             fourth = {2'b11, 3'b000, 5'b00000, 5'b00011, 3'b010};
+            pillar = 0;
+            column = 0;
+            beam_of_roof = 0;
+            row = 0;
 
         end else if (first[15:8] == 0 && first[7:0] > 0) begin
             // 確定身體為水平
