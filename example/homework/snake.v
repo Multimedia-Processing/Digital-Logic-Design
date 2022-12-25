@@ -818,26 +818,41 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
 
                 if (direction == 0) begin
                     // 如果控制往上
+                    pillar = first[2:0];
+                    column = first[7:3];
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                      first[2:0],  //
-                      first[7:3],
-                      8'b00000000  // 將橫向資料歸零
+                      pillar,
+                      column,
+                      beam_of_roof,
+                      row
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往下
+                    pillar = first[2:0];
+                    column = first[7:3] + 1;
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                      first[2:0],  //
-                      first[7:3] + 1,
-                      8'b00000000  // 將橫向資料歸零
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往右
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[12:8] + 1;
+                    row = first[2:0];
                     first[15:0] = {
-                      8'b00000000  // 將直向資料歸零
-                      first[12:8] + 1,  //
-                      first[2:0],
+                      pillar,
+                      column,
+                      beam_of_roof,
+                      row
                     };
                 end
 
@@ -846,26 +861,41 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
 
                 if (direction == 1) begin
                     // 如果控制往上
+                    pillar = first[2:0] - 1;
+                    column = first[7:3];
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                      first[2:0] - 1,  //
-                      first[7:3],
-                      8'b00000000  // 將橫向資料歸零
+                      pillar,
+                      column,
+                      beam_of_roof,
+                      row
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往下
+                    pillar = first[2:0] + 1;
+                    column = first[7:3] - 1;
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                      first[2:0] + 1,
-                      first[7:3] - 1,  //
-                      8'b00000000  // 將橫向資料歸零
+                      pillar ,
+                      column,
+                      beam_of_roof,
+                      row
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往左
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[7:3] - 1;
+                    row = first[2:0];
                     first[15:0] = {
-                      8'b00000000  // 將直向資料歸零
-                      first[7:3] - 1,
-                      first[2:0],  //
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
                 end
 
@@ -877,26 +907,41 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
 
                 if (direction == 0) begin
                     // 如果控制往上
+                    pillar = first[15:13] - 1;
+                    column = first[12:8];
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                        first[15:13] - 1,
-                        first[12:8],  //
-                        8'b00000000  // 將橫向資料歸零
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往右
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[12:8] + 1;
+                    row = first[15:13] - 1;
                     first[15:0] = {
-                        8'b00000000  // 將直向資料歸零
-                        first[12:8] + 1,  //
-                        first[15:13] - 1,
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往左
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[12:8] - 1;
+                    row = first[15:13] - 1;
                     first[15:0] = {
-                        8'b00000000  // 將直向資料歸零
-                        first[12:8] - 1,  //
-                        first[15:13] - 1
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
                 end
 
@@ -905,26 +950,41 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
 
                 if (direction == 1) begin
                     // 如果控制往下
+                    pillar = first[15:13] + 1;
+                    column = first[12:8];
+                    beam_of_roof = 0;  // 將橫向資料歸零
+                    row = 0;  // 將橫向資料歸零
                     first[15:0] = {
-                        first[15:13] + 1,
-                        first[12:8],  //
-                        8'b00000000  // 將橫向資料歸零
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end else if (direction == 3) begin
                     // 如果控制往右
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[12:8] + 1;
+                    row = first[15:13];
                     first[15:0] = {
-                        8'b00000000  // 將直向資料歸零
-                        first[12:8] + 1,  //
-                        first[15:13],
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end else if (direction == 2) begin
                     // 如果控制往左，且第一個身體往下，另確定資料為垂直，做往左移動動作
+                    pillar = 0;  // 將直向資料歸零
+                    column = 0;  // 將直向資料歸零
+                    beam_of_roof = first[12:8] - 1;
+                    row = first[15:13];
                     first[15:0] = {
-                        8'b00000000  // 將直向資料歸零
-                        first[12:8] - 1,  //
-                        first[15:13],
+                        pillar,
+                        column,
+                        beam_of_roof,
+                        row
                     };
 
                 end
