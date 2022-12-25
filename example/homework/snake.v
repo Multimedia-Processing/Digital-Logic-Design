@@ -898,6 +898,7 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         row
                     };
                 end
+            end
 
         end else if (first[15:8] > 0 && first[7:0] == 0) begin
             // 確定身體為垂直
