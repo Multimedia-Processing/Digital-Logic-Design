@@ -5,7 +5,6 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
     output [7:0] display;
     output [17:0] first, second, third, fourth;
 
-    reg [3:0] switch;
     reg [17:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
     reg [1:0] direction;  // 方向陣列
     reg [2:0] pillar;  // 柱 0:無, 1: 超出, 2~3: 由上而下, 4: 超出
