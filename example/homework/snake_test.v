@@ -24,7 +24,7 @@ module snake_test ();
     always begin
         #2.5;
         $monitor(
-            "|   %b   |   %b   | %b | %b | %b | %b | %b | %b |",
+            "|   %b   |   %b   | %b | %b | %d | %d | %d | %d |",
             clock, reset, turn, display, first, second, third, fourth);
 
         #2.5;
