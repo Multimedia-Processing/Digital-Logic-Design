@@ -6,14 +6,7 @@ module snake_test ();
     wire [7:0] display;
     wire [4:0] first, second, third, fourth;
 
-    integer number, number2;
-    integer seed;
-
     snake UUT (clock, reset, turn, display, first, second, third, fourth);
-
-    initial begin
-        seed = 10;
-    end
 
     initial begin
         $display("| clock | reset |   turn   | display  | first | second | third | fourth |");
@@ -24,7 +17,7 @@ module snake_test ();
         reset = 1;
 
 
-        #1600;
+        #16000;
         $finish;
     end
 
