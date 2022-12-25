@@ -2,50 +2,39 @@
 
 module snake_test ();
     reg clock, reset;
-    reg [3:0] switch;
     wire [7:0] turn;
     wire [7:0] display;
-    wire [17:0] first, second, third, fourth;
+    wire [4:0] first, second, third, fourth;
 
     integer number, number2;
     integer seed;
 
-    snake UUT (clock, reset, switch, first, second, third, fourth, turn, display);
+    snake UUT (clock, reset, turn, display, first, second, third, fourth);
 
     initial begin
         seed = 10;
     end
 
     initial begin
-        $display("| clock | reset | switch |        first        | second | third | fourth | turn | display |");
+        $display("| clock | reset |   turn   | display  | first | second | third | fourth |");
         clock = 1;
         reset = 0;
 
-        #10;
+        #12.5;
         reset = 1;
-        #5;
-        for (number = 0; number < 136; number = number + 1) begin
-            switch = 0000;
-            #20;
-        end
-        reset = 1'b1;
 
-        for (number = 0; number < 136; number = number + 1) begin
-            switch = $random(seed) / 16;
-            #20;
-        end
 
-        #20;
+        #1600;
         $finish;
     end
 
     always begin
-        #5;
+        #2.5;
         $monitor(
-            "|   %b   |   %b   |  %b  | %b | %b | %b | %b | %b | %b |",
-            clock, reset, switch, first, second, third, fourth, turn, display);
+            "|   %b   |   %b   | %b | %b | %b | %b | %b | %b |",
+            clock, reset, turn, display, first, second, third, fourth);
 
-        #5;
+        #2.5;
         clock = ~clock;
     end
 
