@@ -801,10 +801,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
     // 柱欄梁行
     always @ (posedge clock_10hz) begin
         if (~reset) begin
-            first = {2'b11, 2'b000, 5'b00000, 5'b00110, 2'b010};
-            second = {2'b11, 2'b000, 5'b00000, 5'b00101, 2'b010};
-            third = {2'b11, 2'b000, 5'b00000, 5'b00100, 2'b010};
-            fourth = {2'b11, 2'b000, 5'b00000, 5'b00011, 2'b010};
+            first = {2'b11, 3'b000, 5'b00000, 5'b00110, 3'b010};
+            second = {2'b11, 3'b000, 5'b00000, 5'b00101, 3'b010};
+            third = {2'b11, 3'b000, 5'b00000, 5'b00100, 3'b010};
+            fourth = {2'b11, 3'b000, 5'b00000, 5'b00011, 3'b010};
 
         end else if (first[15:8] == 0 && first[7:0] > 0) begin
             // 確定身體為水平
