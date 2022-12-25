@@ -45,7 +45,7 @@ module snake (clock, reset, turn, display, first, second, third, fourth);
     // end
 
     always @ (clock) begin
-        clock_250hz = clock;
+        clock_1hz = clock;
 
         if(~reset || diver == 16) begin
             diver = 0;
@@ -56,9 +56,9 @@ module snake (clock, reset, turn, display, first, second, third, fourth);
 
     always @ (*) begin
         if (diver < 8) begin
-            clock_1hz = 1;
+            clock_250hz = 1;
         end else begin
-            clock_1hz = 0;
+            clock_250hz = 0;
         end
     end
 
