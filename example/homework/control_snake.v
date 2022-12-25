@@ -1,4 +1,4 @@
-module snake (clock, reset, switch, first, second, third, fourth, turn, display);
+module control_snake (clock, reset, switch, first, second, third, fourth, turn, display);
     input clock, reset;
     input [3:0] switch;
     output [7:0] turn;
@@ -1067,4 +1067,4 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
         end
     end
 
-endmodule // snake
+endmodule // control_snake
