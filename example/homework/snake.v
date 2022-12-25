@@ -750,9 +750,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                             8'b00000001: display = 8'b00000000;
                             8'b01000010: display = 8'b10000000;
                             8'b01000001: display = 8'b10000000;
-                            01001100101: display = 8'b00000010;
-                            00101100110: display = 8'b0000001010                            8'b10000101: display = 8'b00010000;
-                            8'b10000110: display = 8'b000100001
+                            8'b01100010: display = 8'b00000010;
+                            8'b01100001: display = 8'b00000010;
+                            8'b10000010: display = 8'b00010000;
+                            8'b10000001: display = 8'b00010000;
                             default: display = 8'b10011110;
                         endcase
 
