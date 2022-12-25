@@ -1,6 +1,6 @@
-`include "snake.v"
+`include "control_snake.v"
 
-module snake_test ();
+module control_snake_test ();
     reg clock, reset;
     reg [3:0] switch;
     wire [7:0] turn;
@@ -10,7 +10,7 @@ module snake_test ();
     integer number, number2;
     integer seed;
 
-    snake UUT (clock, reset, switch, first, second, third, fourth, turn, display);
+    control_snake UUT (clock, reset, switch, first, second, third, fourth, turn, display);
 
     initial begin
         seed = 10;
@@ -49,4 +49,4 @@ module snake_test ();
         clock = ~clock;
     end
 
-endmodule // snake_test
+endmodule // control_snake_test
