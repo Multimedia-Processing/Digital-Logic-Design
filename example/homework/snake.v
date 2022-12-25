@@ -50,8 +50,21 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
     // end
 
     always @ (clock) begin
-        clock_10hz = clock;
         clock_250hz = clock;
+
+        if(~reset || diver == 8) begin
+            diver = 0;
+        end else begin
+            diver = diver + 1;
+        end
+    end
+
+    always @ (*) begin
+        if (diver < 4) begin
+            clock_10hz = 1;
+        end else begin
+            clock_10hz = 0;
+        end
     end
 
     // 七段顯示器輪播
