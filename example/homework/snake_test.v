@@ -24,13 +24,13 @@ module snake_test ();
         #10;
         reset = 1;
         #5;
-        for (number = 0; number < 18; number = number + 1) begin
+        for (number = 0; number < 136; number = number + 1) begin
             switch = 0000;
             #20;
         end
         reset = 1'b1;
 
-        for (number = 0; number < 4; number = number + 1) begin
+        for (number = 0; number < 136; number = number + 1) begin
             switch = $random(seed) / 16;
             #20;
         end
