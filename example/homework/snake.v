@@ -62,8 +62,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
             turn = turn * 2;
             case (turn)
                 8'b00000001: begin
-                    if (15 < first[7:3] < 17 || 15 < second[7:3] < 17
-                            || 15 < third[7:3] < 17 || 15 < fourth[7:3] < 17
+                    if (15 < first[7:3] || first[7:3] < 17
+                            || 15 < second[7:3] || second[7:3] < 17
+                            || 15 < third[7:3] || third[7:3] < 17
+                            || 15 < fourth[7:3] || fourth[7:3] < 17
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -99,8 +101,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (15 <= first[12:8] <= 16 || 15 <= second[12:8] <= 16
-                            || 15 <= third[12:8] <= 16 || 15 <= fourth[12:8] <= 16
+                    if (15 <= first[12:8] || first[12:8] <= 16
+                            || 15 <= second[12:8] || second[12:8] <= 16
+                            || 15 <= third[12:8] || third[12:8] <= 16
+                            || 15 <= fourth[12:8] || fourth[12:8] <= 16
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -152,9 +156,12 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
                 end
+
                 8'b00000010: begin
-                    if (13 < first[7:3] < 15 || 13 < second[7:3] = 15
-                            || 13 < third[7:3] < 15 || 13 < fourth[7:3] = 15
+                    if (13 < first[7:3] || first[7:3] < 15
+                            || 13 < second[7:3] || second[7:3] == 15
+                            || 13 < third[7:3] || third[7:3] < 15
+                            || 13 < fourth[7:3] || fourth[7:3] == 15
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -190,8 +197,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (13 <= first[12:8] <= 14 || 13 <= second[12:8] <= 14
-                            || 13 <= third[12:8] <= 14 || 13 <= fourth[12:8] <= 14
+                    if (13 <= first[12:8] || first[12:8] <= 14
+                            || 13 <= second[12:8] || second[12:8] <= 14
+                            || 13 <= third[12:8] || third[12:8] <= 14
+                            || 13 <= fourth[12:8] || fourth[12:8] <= 14
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -244,8 +253,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                     end
                 end
                 8'b00000100: begin
-                    if (11 < first[7:3] < 13 || 11 < second[7:3] = 13
-                            || 11 < third[7:3] < 13 || 11 < fourth[7:3] = 13
+                    if (11 < first[7:3] || first[7:3] < 13
+                            || 11 < second[7:3] || second[7:3] == 13
+                            || 11 < third[7:3] || third[7:3] < 13
+                            || 11 < fourth[7:3] || fourth[7:3] == 13
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -281,8 +292,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (11 <= first[12:8] <= 12 || 11 <= second[12:8] <= 12
-                            || 11 <= third[12:8] <= 12 || 11 <= fourth[12:8] <= 12
+                    if (11 <= first[12:8] || first[12:8] <= 12
+                            || 11 <= second[12:8] || second[12:8] <= 12
+                            || 11 <= third[12:8] || third[12:8] <= 12
+                            || 11 <= fourth[12:8] || fourth[12:8] <= 12
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -336,8 +349,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
                 8'b00001000: begin
                     //
-                    if (9 < first[7:3] < 11 || 9 < second[7:3] = 11
-                            || 9 < third[7:3] < 11 || 9 < fourth[7:3] = 11
+                    if (9 < first[7:3] || first[7:3] < 11
+                            || 9 < second[7:3] || second[7:3] == 11
+                            || 9 < third[7:3] || third[7:3] < 11
+                            || 9 < fourth[7:3] || fourth[7:3] == 11
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -373,8 +388,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (9 <= first[12:8] <= 10 || 9 <= second[12:8] <= 10
-                            || 9 <= third[12:8] <= 10 || 9 <= fourth[12:8] <= 10
+                    if (9 <= first[12:8] || first[12:8] <= 10
+                            || 9 <= second[12:8] || second[12:8] <= 10
+                            || 9 <= third[12:8] || third[12:8] <= 10
+                            || 9 <= fourth[12:8] || fourth[12:8] <= 10
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -428,8 +445,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
                 8'b00010000: begin
                     //
-                    if (7 < first[7:3] < 9 || 7 < second[7:3] = 9
-                            || 7 < third[7:3] < 9 || 7 < fourth[7:3] = 9
+                    if (7 < first[7:3] || first[7:3] < 9
+                            || 7 < second[7:3] || second[7:3] == 9
+                            || 7 < third[7:3] || third[7:3] < 9
+                            || 7 < fourth[7:3] || fourth[7:3] == 9
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -465,8 +484,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (7 <= first[12:8] <= 8 || 7 <= second[12:8] <= 8
-                            || 7 <= third[12:8] <= 8 || 7 <= fourth[12:8] <= 8
+                    if (7 <= first[12:8] || first[12:8] <= 8
+                            || 7 <= second[12:8] || second[12:8] <= 8
+                            || 7 <= third[12:8] || third[12:8] <= 8
+                            || 7 <= fourth[12:8] || fourth[12:8] <= 8
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -520,8 +541,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
                 8'b00100000: begin
                     //
-                    if (5 < first[7:3] < 7 || 5 < second[7:3] = 7
-                            || 5 < third[7:3] < 7 || 5 < fourth[7:3] = 7
+                    if (5 < first[7:3] || first[7:3] < 7
+                            || 5 < second[7:3] || second[7:3] == 7
+                            || 5 < third[7:3] || third[7:3] < 7
+                            || 5 < fourth[7:3] || fourth[7:3] == 7
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -557,8 +580,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (5 <= first[12:8] <= 6 || 5 <= second[12:8] <= 6
-                            || 5 <= third[12:8] <= 6 || 5 <= fourth[12:8] <= 6
+                    if (5 <= first[12:8] || first[12:8] <= 6
+                            || 5 <= second[12:8] || second[12:8] <= 6
+                            || 5 <= third[12:8] || third[12:8] <= 6
+                            || 5 <= fourth[12:8] || fourth[12:8] <= 6
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -612,8 +637,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
                 8'b01000000: begin
                     //
-                    if (3 < first[7:3] < 5 || 3 < second[7:3] = 5
-                            || 3 < third[7:3] < 5 || 3 < fourth[7:3] = 5
+                    if (3 < first[7:3] || first[7:3] < 5
+                            || 3 < second[7:3] || second[7:3] == 5
+                            || 3 < third[7:3] || third[7:3] < 5
+                            || 3 < fourth[7:3] || fourth[7:3] == 5
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -649,8 +676,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (3 <= first[12:8] <= 4 || 3 <= second[12:8] <= 4
-                            || 3 <= third[12:8] <= 4 || 3 <= fourth[12:8] <= 4
+                    if (3 <= first[12:8] || first[12:8] <= 4
+                            || 3 <= second[12:8] || second[12:8] <= 4
+                            || 3 <= third[12:8] || third[12:8] <= 4
+                            || 3 <= fourth[12:8] || fourth[12:8] <= 4
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
@@ -704,8 +733,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                 end
                 8'b10000000: begin
                     //
-                    if (1 < first[7:3] < 3 || 1 < second[7:3] = 3
-                            || 1 < third[7:3] < 3 || 1 < fourth[7:3] = 3
+                    if (1 < first[7:3] || first[7:3] < 3
+                            || 1 < second[7:3] || second[7:3] == 3
+                            || 1 < third[7:3] || third[7:3] < 3
+                            || 1 < fourth[7:3] || fourth[7:3] == 3
                             ) begin
                         // 控制梁顯示燈亮起來
                         case (first[2:0])
@@ -741,8 +772,10 @@ module snake (clock, reset, switch, first, second, third, fourth, turn, display)
                         endcase
                     end
 
-                    if (1 <= first[12:8] <= 2 || 1 <= second[12:8] <= 2
-                            || 1 <= third[12:8] <= 2 || 1 <= fourth[12:8] <= 2
+                    if (1 <= first[12:8] || first[12:8] <= 2
+                            || 1 <= second[12:8] || second[12:8] <= 2
+                            || 1 <= third[12:8] || third[12:8] <= 2
+                            || 1 <= fourth[12:8] || fourth[12:8] <= 2
                             ) begin
                         // 控制欄顯示燈亮起來
                         case (first[15:8])
