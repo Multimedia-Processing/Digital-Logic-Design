@@ -150,27 +150,20 @@ module snake (clock, reset, turn, display, first, second, third, fourth);
         end
     end
 
+    // 移動蛇計數器
     always @ (posedge clock_1hz) begin
-        if (~reset) begin
+        if (~reset || counter >= 23) begin
+            counter = 0;
             first = 0;
             second = 0;
             third = 0;
             fourth = 0;
         end else begin
+            counter = counter + 1;
             first <= counter;
             second <= first;
             third <= second;
             fourth <= third;
-        end
-
-    end
-
-    // 移動蛇計數器
-    always @ (posedge clock_1hz) begin
-        if (~reset || counter >= 23) begin
-            counter = 0;
-        end else begin
-            counter = counter + 1;
         end
     end
 
