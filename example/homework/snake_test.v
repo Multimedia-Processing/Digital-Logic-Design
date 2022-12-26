@@ -4,12 +4,11 @@ module snake_test ();
     reg clock, reset;
     wire [7:0] turn;
     wire [7:0] display;
-    wire [4:0] first, second, third, fourth;
 
-    snake UUT (clock, reset, turn, display, first, second, third, fourth);
+    snake UUT (clock, reset, turn, display);
 
     initial begin
-        $display("| clock | reset |   turn   | display  | first | second | third | fourth |");
+        $display("| clock | reset |   turn   | display |");
         clock = 1;
         reset = 0;
 
@@ -24,8 +23,8 @@ module snake_test ();
     always begin
         #2.5;
         $monitor(
-            "|   %b   |   %b   | %b | %b | %d | %d | %d | %d |",
-            clock, reset, turn, display, first, second, third, fourth);
+            "|   %b   |   %b   | %b | %b |",
+            clock, reset, turn, display);
 
         #2.5;
         clock = ~clock;

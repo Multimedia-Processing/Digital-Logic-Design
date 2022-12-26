@@ -1,8 +1,7 @@
-module snake (clock, reset, turn, display, first, second, third, fourth);
+module snake (clock, reset, turn, display);
     input clock, reset;
     output [7:0] turn;
     output [7:0] display;
-    output [4:0] first, second, third, fourth;
 
     reg [4:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
     reg [4:0] counter;
