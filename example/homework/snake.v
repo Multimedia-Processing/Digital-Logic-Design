@@ -44,7 +44,7 @@ module snake (clock, reset, turn, display);
     // end
 
     always @ (clock) begin
-        clock_1hz = clock;
+        clock_250hz = clock;
 
         if(~reset || diver == 16) begin
             diver = 0;
@@ -55,9 +55,9 @@ module snake (clock, reset, turn, display);
 
     always @ (*) begin
         if (diver < 8) begin
-            clock_250hz = 1;
+            clock_1hz = 1;
         end else begin
-            clock_250hz = 0;
+            clock_1hz = 0;
         end
     end
 
@@ -65,7 +65,7 @@ module snake (clock, reset, turn, display);
     always @ (posedge clock_250hz) begin
         case (turn)
             8'b00000001: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b10011: display = 8'b10000000;
                     5'b10100: display = 8'b01000000;
                     5'b10101: display = 8'b00000010;
@@ -74,7 +74,7 @@ module snake (clock, reset, turn, display);
             end
 
             8'b00000010: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                 5'b10010: display = 8'b10000000;
                 5'b10110: display = 8'b00000010;
                 default: display = 8'b00000000;
@@ -83,7 +83,7 @@ module snake (clock, reset, turn, display);
             end
 
             8'b00000100: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b10001: display = 8'b10000000;
                     5'b10111: display = 8'b00000010;
                     default: display = 8'b00000000;
@@ -91,7 +91,7 @@ module snake (clock, reset, turn, display);
 
             end
             8'b00001000: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b00001: display = 8'b00000010;
                     5'b10000: display = 8'b10000000;
                     default: display = 8'b00000000;
@@ -99,7 +99,7 @@ module snake (clock, reset, turn, display);
 
             end
             8'b00010000: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b00010: display = 8'b00100000;
                     5'b00011: display = 8'b00010000;
                     5'b01110: display = 8'b01000000;
@@ -109,7 +109,7 @@ module snake (clock, reset, turn, display);
 
             end
             8'b00100000: begin
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b00100: display = 8'b00010000;
                     5'b01100: display = 8'b00000010;
                     default: display = 8'b00000000;
@@ -118,7 +118,7 @@ module snake (clock, reset, turn, display);
             end
             8'b01000000: begin
                 // 控制欄顯示燈亮起來
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b00101: display = 8'b10000000;
                     5'b01010: display = 8'b01000000;
                     5'b01011: display = 8'b00010000;
@@ -128,7 +128,7 @@ module snake (clock, reset, turn, display);
             end
             8'b10000000: begin
                 // 控制欄顯示燈亮起來
-                case (first | second | third | fourth)
+                case (first || second || third || fourth)
                     5'b00110: display = 8'b00010000;
                     5'b00111: display = 8'b00001000;
                     5'b01000: display = 8'b00000100;
