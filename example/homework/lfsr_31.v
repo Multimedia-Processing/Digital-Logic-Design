@@ -1,4 +1,4 @@
-module lfsr (clock, reset, random);
+module lfsr_31 (clock, reset, random);
     input clock, reset;
     output [2:0] random;
 
@@ -12,4 +12,4 @@ module lfsr (clock, reset, random);
         end
     end
 
-endmodule // lfsr
+endmodule // lfsr_31

@@ -1,10 +1,10 @@
-`include "lfsr.v"
+`include "lfsr_31.v"
 
-module lfsr_test ();
+module lfsr_31_test ();
     reg clock, reset;
     wire [2:0] random;
 
-    lfsr UUT (clock, reset, random);
+    lfsr_31 UUT (clock, reset, random);
 
     initial begin
         $display("| clock | reset | random |");
@@ -26,4 +26,4 @@ module lfsr_test ();
         clock = ~clock;
     end
 
-endmodule // lfsr_test
+endmodule // lfsr_31_test
