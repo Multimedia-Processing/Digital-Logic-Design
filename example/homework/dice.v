@@ -6,7 +6,7 @@ module dice (clock, reset, control, turn, display);
     reg [7:0] display;
 
     reg [27:0] diver;
-    reg clock_10hz;
+    reg clock_100hz;
     reg [3:0] turn = 4'b0001;
     reg [2:0] random;
 
@@ -20,17 +20,17 @@ module dice (clock, reset, control, turn, display);
 
     always @ (diver) begin
         if (diver < 500000) begin
-            clock_10hz = 1;
+            clock_100hz = 1;
         end else begin
-            clock_10hz = 0;
+            clock_100hz = 0;
         end
     end
 
     // always @ (clock) begin
-    //     clock_10hz = clock;
+    //     clock_100hz = clock;
     // end
 
-    always @ (posedge clock_10hz) begin
+    always @ (posedge clock_100hz) begin
         if (~reset) begin
             display = 8'b00000000;
             random = 3'b100;
