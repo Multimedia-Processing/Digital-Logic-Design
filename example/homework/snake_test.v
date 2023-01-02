@@ -3,7 +3,7 @@
 module snake_test ();
     reg clock, reset;
     wire [7:0] turn;
-    wire [7:0] display;
+    wire [15:0] display;
 
     snake UUT (clock, reset, turn, display);
 
@@ -14,7 +14,6 @@ module snake_test ();
 
         #12.5;
         reset = 1;
-
 
         #16000;
         $finish;
