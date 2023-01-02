@@ -1,6 +1,7 @@
-module dice (clock, reset, control, display);
+module dice (clock, reset, control, turn, display);
     input clock, reset, control;
     output [7:0] display;
+    output [3:0] turn;
 
     reg [7:0] display;
 
