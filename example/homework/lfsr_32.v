@@ -8,7 +8,7 @@ module lfsr_32 (clock, reset, random);
         if (~reset) begin
             random = 3'b100;
         end else begin
-            random = {random[1:0], random[0] ^ random[2]};
+            random = {random[1:0], random[1] ^ random[2]};
         end
     end
 
