@@ -31,7 +31,13 @@ module three_dice (clock, reset, control, turn, display);
     // end
 
     always @ (posedge clock_250hz) begin
-        if (~reset) begin
+        if (~reset || (
+                        random == 3
+                        & random_0 == 3
+                        & random_1 == 3
+                        & random_2 == 3
+                    )
+                ) begin
             display = 8'b00000000;
             random = 3'b100;
             random_0 = 3'b100;
