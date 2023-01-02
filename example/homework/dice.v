@@ -40,7 +40,7 @@ module dice (clock, reset, control, turn, display);
                 2: display = 8'b10010000;
                 3: display = 8'b10010010;
                 4: display = 8'b01101100;
-                5: display = 8'b01111100;
+                5: display = 8'b01101110;
                 6: display = 8'b11111100;
                 default: display = 8'b00000001;
             endcase
