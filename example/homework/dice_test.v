@@ -4,7 +4,6 @@ module dice_test ();
     reg clock, reset;
     reg control;
     wire [3:0] turn;
-    wire [2:0] random;
     wire [7:0] display;
 
     dice UUT (clock, reset, control, turn, display);
@@ -30,13 +29,25 @@ module dice_test ();
         #5;
         control = 0;
 
+        #35;
+        control = 1;
+
+        #5;
+        control = 0;
+
+        #35;
+        control = 1;
+
+        #5;
+        control = 0;
+
         #50;
         $finish;
     end
 
     always begin
         #5;
-        $monitor("|   %b   |   %b   |  %d  | %b |", clock, reset, control, turn, display);
+        $monitor("|   %b   |   %b   |  %b  | %b | %b | %d |", clock, reset, control, turn, display);
 
         #5;
         clock = ~clock;
