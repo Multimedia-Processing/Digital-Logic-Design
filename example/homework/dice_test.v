@@ -3,13 +3,14 @@
 module dice_test ();
     reg clock, reset;
     reg control;
+    wire [3:0] turn;
     wire [2:0] random;
     wire [7:0] display;
 
-    dice UUT (clock, reset, control, display);
+    dice UUT (clock, reset, control, turn, display);
 
     initial begin
-        $display("| clock | reset | control | display |");
+        $display("| clock | reset | control | turn | display |");
         clock = 1;
         reset = 0;
         control = 0;
@@ -35,7 +36,7 @@ module dice_test ();
 
     always begin
         #5;
-        $monitor("|   %b   |   %b   |  %d  | %b |", clock, reset, control, display);
+        $monitor("|   %b   |   %b   |  %d  | %b |", clock, reset, control, turn, display);
 
         #5;
         clock = ~clock;
