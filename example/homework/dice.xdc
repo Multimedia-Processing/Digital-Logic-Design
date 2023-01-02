@@ -1,0 +1,15 @@
+set_property IOSTANDARD LVCMOS33 [get_ports clock]
+set_property IOSTANDARD LVCMOS33 [get_ports reset]
+set_property PACKAGE_PIN P17 [get_ports clock]
+set_property PACKAGE_PIN P15 [get_ports reset]
+
+set_property IOSTANDARD LVCMOS33 [get_ports {random[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {random[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {random[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {random[0]}]
+set_property PACKAGE_PIN H4 [get_ports {random[3]}]
+set_property PACKAGE_PIN J3 [get_ports {random[2]}]
+set_property PACKAGE_PIN J2 [get_ports {random[1]}]
+set_property PACKAGE_PIN K2 [get_ports {random[0]}]
+
+set_property DRIVE 12 [get_ports {random[3]}]
