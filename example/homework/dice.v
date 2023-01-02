@@ -11,7 +11,7 @@ module dice (clock, reset, control, turn, display);
     reg [2:0] random;
 
     always@(posedge clock) begin
-        if(~reset || diver == 100000000) begin
+        if(~reset || diver == 10000000) begin
             diver = 0;
         end else begin
             diver = diver + 1;
@@ -19,7 +19,7 @@ module dice (clock, reset, control, turn, display);
     end
 
     always @ (diver) begin
-        if (diver < 5000000) begin
+        if (diver < 500000) begin
             clock_10hz = 1;
         end else begin
             clock_10hz = 0;
