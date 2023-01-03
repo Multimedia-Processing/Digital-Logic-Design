@@ -1,13 +1,10 @@
 `include "seven_segment_display_assign.v"
 `include "binary_to_bcd.v"
 
-module deck_of_cards (
-            clock, reset, control, turn, display, random
-        );
+module deck_of_cards (clock, reset, control, turn, display);
     input clock, reset, control;
     output [3:0] turn;
     output [7:0] display;
-    output [6:0] random;
 
     reg [32:0] diver;
     reg clock_400hz;
