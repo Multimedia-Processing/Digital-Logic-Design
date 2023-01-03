@@ -1,9 +1,13 @@
 module deck_of_cards (
-        clock, reset, control, turn, display_0, display_1
+        clock, reset, control, turn, display_0, display_1,
+        face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3,
+        suits, suits_0, suits_1, suits_2, suits_3
         );
     input clock, reset, control;
     output [7:0] turn;
     output [7:0] display_0, display_1;
+    output [3:0] face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3;
+    output [2:0] suits, suits_0, suits_1, suits_2, suits_3;
 
     reg [7:0] display_0, display_1;
     reg [32:0] diver;
@@ -12,25 +16,25 @@ module deck_of_cards (
     reg [3:0] face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3;
     reg [2:0] suits, suits_0, suits_1, suits_2, suits_3;
 
-    always@(posedge clock) begin
-        if(~reset || diver == 250000) begin
-            diver = 0;
-        end else begin
-            diver = diver + 1;
-        end
-    end
-
-    always @ (diver) begin
-        if (diver < 125000) begin
-            clock_400hz = 1;
-        end else begin
-            clock_400hz = 0;
-        end
-    end
-
-    // always @ (clock) begin
-    //     clock_400hz = clock;
+    // always@(posedge clock) begin
+    //     if(~reset || diver == 250000) begin
+    //         diver = 0;
+    //     end else begin
+    //         diver = diver + 1;
+    //     end
     // end
+    //
+    // always @ (diver) begin
+    //     if (diver < 125000) begin
+    //         clock_400hz = 1;
+    //     end else begin
+    //         clock_400hz = 0;
+    //     end
+    // end
+
+    always @ (clock) begin
+        clock_400hz = clock;
+    end
 
     always @ (posedge clock_400hz) begin
         if (~reset) begin
