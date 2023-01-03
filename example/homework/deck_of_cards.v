@@ -1,13 +1,9 @@
 module deck_of_cards (
-        clock, reset, control, turn, display_0, display_1,
-        face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3,
-        suits, suits_0, suits_1, suits_2, suits_3
+        clock, reset, control, turn, display_0, display_1
         );
     input clock, reset, control;
     output [7:0] turn;
     output [7:0] display_0, display_1;
-    output [3:0] face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3;
-    output [2:0] suits, suits_0, suits_1, suits_2, suits_3;
 
     reg [7:0] display_0, display_1;
     reg [32:0] diver;
@@ -16,32 +12,28 @@ module deck_of_cards (
     reg [3:0] face_card_number, face_card_number_0, face_card_number_1, face_card_number_2, face_card_number_3;
     reg [2:0] suits, suits_0, suits_1, suits_2, suits_3;
 
-    // always@(posedge clock) begin
-    //     if(~reset || diver == 250000) begin
-    //         diver = 0;
-    //     end else begin
-    //         diver = diver + 1;
-    //     end
-    // end
-    //
-    // always @ (diver) begin
-    //     if (diver < 125000) begin
-    //         clock_400hz = 1;
-    //     end else begin
-    //         clock_400hz = 0;
-    //     end
-    // end
-
-    always @ (clock) begin
-        clock_400hz = clock;
+    always@(posedge clock) begin
+        if(~reset || diver == 250000) begin
+            diver = 0;
+        end else begin
+            diver = diver + 1;
+        end
     end
 
+    always @ (diver) begin
+        if (diver < 125000) begin
+            clock_400hz = 1;
+        end else begin
+            clock_400hz = 0;
+        end
+    end
+
+    // always @ (clock) begin
+    //     clock_400hz = clock;
+    // end
+
     always @ (posedge clock_400hz) begin
-        if (
-                ~reset
-                // || face_card_number == 0 || face_card_number_0 == 0 || face_card_number_1 == 0 || face_card_number_2 == 0 || face_card_number_3 == 0
-                // || suits == 0 || suits_0 == 0 || suits_1 == 0 || suits_2 == 0 || suits_3 == 0
-            ) begin
+        if (~reset) begin
             display_0 = 8'b00000000;
             display_1 = 8'b00000000;
             face_card_number = 4'b1000;
@@ -55,7 +47,7 @@ module deck_of_cards (
             suits_2 = 3'b100;
             suits_3 = 3'b100;
             turn = 8'b00000001;
-        end else if (control || display_0 == 8'b11111111 || display_1 == 8'b11111111) begin
+        end else if (control) begin
             face_card_number_0 = {face_card_number_0[2:0], face_card_number_0[0] ^ face_card_number_0[2] ^ face_card_number[0]};
             face_card_number_1 = {face_card_number_1[2:0], face_card_number_1[1] ^ face_card_number_1[3] ^ face_card_number[1]};
             face_card_number_2 = {face_card_number_2[2:0], face_card_number_2[2] ^ face_card_number_2[3] ^ face_card_number[2]};
@@ -128,6 +120,10 @@ module deck_of_cards (
                     display_0 = 8'b11011101;
                     display_1 = 8'b11011101;
                 end
+                4'b1110: begin
+                    display_0 = 8'b00000001;
+                    display_1 = 8'b00000001;
+                end
                 default: begin
                     display_0 = 8'b11111111;
                     display_1 = 8'b11111111;
@@ -149,6 +145,10 @@ module deck_of_cards (
                 3'b001: begin
                     display_0 = 8'b10011101;
                     display_1 = 8'b10011101;
+                end
+                3'b101: begin
+                    display_0 = 8'b00000001;
+                    display_1 = 8'b00000001;
                 end
                 default: begin
                     display_0 = 8'b11111111;
