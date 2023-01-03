@@ -5,14 +5,13 @@ module deck_of_cards_test ();
     reg control;
     wire [3:0] turn;
     wire [7:0] display;
-    wire [6:0] random;
 
     integer number;
 
-    deck_of_cards UUT (clock, reset, control, turn, display, random);
+    deck_of_cards UUT (clock, reset, control, turn, display);
 
     initial begin
-        $display("| clock | reset | control | turn | display | random |");
+        $display("| clock | reset | control | turn | display |");
         clock = 1;
         reset = 0;
         control = 0;
@@ -53,8 +52,8 @@ module deck_of_cards_test ();
 
     always begin
         #5;
-        $monitor("|   %b   |   %b   |  %b  | %b | %b | %d |",
-            clock, reset, control, turn, display, random
+        $monitor("|   %b   |   %b   |  %b  | %b | %b |",
+            clock, reset, control, turn, display
             );
 
         #5;
