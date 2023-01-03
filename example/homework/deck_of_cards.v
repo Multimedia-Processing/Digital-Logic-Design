@@ -71,94 +71,97 @@ module deck_of_cards (
                 8'b01000000: face_card_number = face_card_number_3;
                 8'b10000000: suits = suits_3;
             endcase
-            case (face_card_number)
-                4'b0001: begin
-                    display_0 = 8'b11101111;
-                    display_1 = 8'b11101111;
-                end
-                4'b0010: begin
-                    display_0 = 8'b11011010;
-                    display_1 = 8'b11011010;
-                end
-                4'b0011: begin
-                    display_0 = 8'b11110010;
-                    display_1 = 8'b11110010;
-                end
-                4'b0100: begin
-                    display_0 = 8'b01100110;
-                    display_1 = 8'b01100110;
-                end
-                4'b0101: begin
-                    display_0 = 8'b10110110;
-                    display_1 = 8'b10110110;
-                end
-                4'b0110: begin
-                    display_0 = 8'b10111110;
-                    display_1 = 8'b10111110;
-                end
-                4'b0111: begin
-                    display_0 = 8'b11100100;
-                    display_1 = 8'b11100100;
-                end
-                4'b1000: begin
-                    display_0 = 8'b11111110;
-                    display_1 = 8'b11111110;
-                end
-                4'b1001: begin
-                    display_0 = 8'b11110110;
-                    display_1 = 8'b11110110;
-                end
-                4'b1010: begin
-                    display_0 = 8'b01101100;
-                    display_1 = 8'b01101100;
-                end
-                4'b1011: begin
-                    display_0 = 8'b11110001;
-                    display_1 = 8'b11110001;
-                end
-                4'b1100: begin
-                    display_0 = 8'b11010111;
-                    display_1 = 8'b11010111;
-                end
-                4'b1101: begin
-                    display_0 = 8'b11011101;
-                    display_1 = 8'b11011101;
-                end
-                4'b1110: begin
-                    display_0 = 8'b00000001;
-                    display_1 = 8'b00000001;
-                end
-                default: begin
-                    display_0 = 8'b11111111;
-                    display_1 = 8'b11111111;
-                end
-            endcase
-            case (suits)
-                3'b110: begin
-                    display_0 = 8'b10010111;
-                    display_1 = 8'b10010111;
-                end
-                3'b111: begin
-                    display_0 = 8'b01101111;
-                    display_1 = 8'b01101111;
-                end
-                3'b010: begin
-                    display_0 = 8'b10111011;
-                    display_1 = 8'b10111011;
-                end
-                3'b001: begin
-                    display_0 = 8'b10011101;
-                    display_1 = 8'b10011101;
-                end
-                3'b101: begin
-                    display_0 = 8'b00000001;
-                    display_1 = 8'b00000001;
-                end
-                default: begin
-                    display_0 = 8'b11111111;
-                    display_1 = 8'b11111111;
-                end
-            endcase
+            if (turn == 1 || turn == 4 || turn == 16 || turn == 64) begin
+                case (face_card_number)
+                    1: begin
+                        display_0 = 8'b11101111;
+                        display_1 = 8'b11101111;
+                    end
+                    2: begin
+                        display_0 = 8'b11011010;
+                        display_1 = 8'b11011010;
+                    end
+                    3: begin
+                        display_0 = 8'b11110010;
+                        display_1 = 8'b11110010;
+                    end
+                    4: begin
+                        display_0 = 8'b01100110;
+                        display_1 = 8'b01100110;
+                    end
+                    5: begin
+                        display_0 = 8'b10110110;
+                        display_1 = 8'b10110110;
+                    end
+                    6: begin
+                        display_0 = 8'b10111110;
+                        display_1 = 8'b10111110;
+                    end
+                    7: begin
+                        display_0 = 8'b11100100;
+                        display_1 = 8'b11100100;
+                    end
+                    8: begin
+                        display_0 = 8'b11111110;
+                        display_1 = 8'b11111110;
+                    end
+                    9: begin
+                        display_0 = 8'b11110110;
+                        display_1 = 8'b11110110;
+                    end
+                    10: begin
+                        display_0 = 8'b01101100;
+                        display_1 = 8'b01101100;
+                    end
+                    11: begin
+                        display_0 = 8'b11110001;
+                        display_1 = 8'b11110001;
+                    end
+                    12: begin
+                        display_0 = 8'b11010111;
+                        display_1 = 8'b11010111;
+                    end
+                    13: begin
+                        display_0 = 8'b11011101;
+                        display_1 = 8'b11011101;
+                    end
+                    14: begin
+                        display_0 = 8'b00000001;
+                        display_1 = 8'b00000001;
+                    end
+                    default: begin
+                        display_0 = 8'b11111111;
+                        display_1 = 8'b11111111;
+                    end
+                endcase
+            end else begin
+                case (suits)
+                    1: begin
+                        display_0 = 8'b10010111;
+                        display_1 = 8'b10010111;
+                    end
+                    2: begin
+                        display_0 = 8'b01101111;
+                        display_1 = 8'b01101111;
+                    end
+                    3: begin
+                        display_0 = 8'b10111011;
+                        display_1 = 8'b10111011;
+                    end
+                    4: begin
+                        display_0 = 8'b10011101;
+                        display_1 = 8'b10011101;
+                    end
+                    5: begin
+                        display_0 = 8'b00000001;
+                        display_1 = 8'b00000001;
+                    end
+                    default: begin
+                        display_0 = 8'b11111111;
+                        display_1 = 8'b11111111;
+                    end
+                endcase
+            end
             turn = {turn[6:0], turn[7]};
         end
     end
