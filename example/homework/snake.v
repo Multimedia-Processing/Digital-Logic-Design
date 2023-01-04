@@ -7,64 +7,87 @@ module snake (clock, reset, turn, display);
 
     reg [7:0] turn;
     reg [15:0] display;
-    reg [32:0] diver, diver250;
-    reg clock_1hz, clock_250hz;
+    reg [32:0] diver, diver400;
+    reg clock_1hz, clock_400hz;
 
-    // always@(posedge clock) begin
-    //     if(reset || diver == 100000000000) begin
-    //         diver = 0;
-    //     end else begin
-    //         diver = diver + 1;
-    //     end
-    // end
-    //
-    // always @ (diver) begin
-    //     if (diver < 50000000000) begin
-    //         clock_1hz = 1;
-    //     end else begin
-    //         clock_1hz = 0;
-    //     end
-    // end
-    //
-    // always@(posedge clock) begin
-    //     if(reset || diver250 == 400000) begin
-    //         diver250 = 0;
-    //     end else begin
-    //         diver250 = diver250 + 1;
-    //     end
-    // end
-    //
-    // always @ (*) begin
-    //     if (diver250 < 200000) begin
-    //         clock_250hz = 1;
-    //     end else begin
-    //         clock_250hz = 0;
-    //     end
-    // end
-
-    always @ (clock) begin
-        clock_250hz = clock;
-
-        if(~reset || diver == 16) begin
+    always@(posedge clock) begin
+        if(reset || diver == 100000000) begin
             diver = 0;
         end else begin
             diver = diver + 1;
         end
     end
 
-    always @ (*) begin
-        if (diver < 8) begin
+    always @ (diver) begin
+        if (diver < 50000000) begin
             clock_1hz = 1;
         end else begin
             clock_1hz = 0;
         end
     end
 
-    // 七段顯示器輪播
-    always @ (posedge clock_250hz) begin
-        if (~reset) begin
-            display = {8'b00000000, 8'b00000000};
+    always@(posedge clock) begin
+        if(~reset || diver400 == 250000) begin
+            diver400 = 0;
+        end else begin
+            diver400 = diver400 + 1;
         end
+    end
+
+    always @ (diver400) begin
+        if (diver400 < 125000) begin
+            clock_400hz = 1;
+        end else begin
+            clock_400hz = 0;
+        end
+    end
+
+    // always @ (clock) begin
+    //     clock_400hz = clock;
+    //
+    //     if(~reset || diver == 16) begin
+    //         diver = 0;
+    //     end else begin
+    //         diver = diver + 1;
+    //     end
+    // end
+    //
+    // always @ (*) begin
+    //     if (diver < 8) begin
+    //         clock_1hz = 1;
+    //     end else begin
+    //         clock_1hz = 0;
+    //     end
+    // end
+
+    // 七段顯示器輪播
+    always @ (posedge clock_400hz) begin
+        if (turn >= 128 || ~reset) begin
+            turn = 8'b00000001;
+        end else begin
+            turn = turn << 1;
+        end
+    end
+
+    always @ (posedge clock_1hz) begin
+        if (~reset) begin
+            first = 0;
+            second = 0;
+            third = 0;
+            fourth = 0;
+            display = {8'b00000000, 8'b00000000};
+        end else if (first >= 23) begin
+            first = 0;
+        end else begin
+            first = first + 1;
+            second <= first;
+            third <= second;
+            fourth <= third;
+        end
+    end
+
+    // 循環輪播
+    always @ (*) begin
         case (turn)
             8'b00000001: begin
                 case (first)
@@ -302,32 +325,8 @@ module snake (clock, reset, turn, display);
 
             end
         endcase
+
     end
 
-    // 循環輪播
-    always @ (posedge clock_250hz) begin
-        if (turn >= 128 || ~reset) begin
-            turn = 8'b00000001;
-        end else begin
-            turn = turn * 2;
-        end
-    end
-
-    // 移動蛇計數器
-    always @ (posedge clock_1hz) begin
-        if (~reset) begin
-            first = 0;
-            second = 0;
-            third = 0;
-            fourth = 0;
-        end else if (first >= 23) begin
-            first = 0;
-        end else begin
-            first = first + 1;
-            second <= first;
-            third <= second;
-            fourth <= third;
-        end
-    end
 
 endmodule // snake
