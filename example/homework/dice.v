@@ -34,7 +34,9 @@ module dice (clock, reset, control, turn, display);
         if (~reset) begin
             display = 8'b00000000;
             random = 3'b100;
-        end else if (control) begin
+        end else if (control || random > 6) begin
+            random = {random[1:0], random[1] ^ random[2]};
+        end else begin
             case (random)
                 1: display = 8'b00000010;
                 2: display = 8'b10010000;
@@ -42,10 +44,7 @@ module dice (clock, reset, control, turn, display);
                 4: display = 8'b01101100;
                 5: display = 8'b01101110;
                 6: display = 8'b11111100;
-                default: display = 8'b00000001;
             endcase
-        end else begin
-            random = {random[1:0], random[1] ^ random[2]};
         end
     end
 
