@@ -1,10 +1,18 @@
+---
+marp: true
+
+# Enable Speake Notes
+presentation:
+enableSpeakerNotes: true
+---
+
 # 算術微運算
 
 ---
 
 ## 電路
 
-![4位元算術電路](https://i.imgur.com/ZP96kT2.jpg)
+![bg left h:100%](https://i.imgur.com/ZP96kT2.jpg)
 
 <!-- ![](assets/3a39017b.png) -->
 
