@@ -10,26 +10,26 @@ module perak_light (clock, reset, display, turn);
     reg [7:0] data;
 
     // 此用於實際電路除頻器，實際燒錄時取消註解
-    // always@(posedge clock) begin
-    //     if(~reset || diver == 100000000) begin
-    //         diver = 0;
-    //     end else begin
-    //         diver = diver + 1;
-    //     end
-    // end
-    //
-    // always @ (diver) begin
-    //     if (diver < 50000000) begin
-    //         clock_1hz = 1;
-    //     end else begin
-    //         clock_1hz = 0;
-    //     end
-    // end
+    always@(posedge clock) begin
+        if(~reset || diver == 32'd100000000) begin
+            diver = 0;
+        end else begin
+            diver = diver + 1;
+        end
+    end
+    
+    always @ (posedge clock) begin
+        if (diver < 32'd50000000) begin
+            clock_1hz = 1;
+        end else begin
+            clock_1hz = 0;
+        end
+    end
 
     // 此用於模擬檢測使用，實際燒錄時將此註解
-    always @ (clock) begin
-       clock_1hz = clock;
-    end
+    // always @ (clock) begin
+    //    clock_1hz = clock;
+    // end
 
     always @ (data) begin
         case (data)
