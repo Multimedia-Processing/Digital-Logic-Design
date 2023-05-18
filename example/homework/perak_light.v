@@ -27,9 +27,9 @@ module perak_light (clock, reset, display, turn);
     // end
 
     // 此用於模擬檢測使用，實際燒錄時將此註解
-    // always @ (clock) begin
-    //    clock_1hz = clock;
-    // end
+    always @ (clock) begin
+       clock_1hz = clock;
+    end
 
     always @ (*) begin
         case (data)
