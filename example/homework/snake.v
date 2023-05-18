@@ -3,9 +3,10 @@ module snake (clock, reset, turn, display);
     output [7:0] turn;
     output [15:0] display;
 
-    reg [4:0] first, second, third, fourth;  // 第一個、第二個、第三個、第四個
+    reg [4:0] body, first, second, third, fourth;  // 第一個、第二個、第三個、第四個
 
     reg [7:0] turn;
+    reg [1:0] turn_snake;
     reg [15:0] display;
     reg [32:0] diver, diver400;
     reg clock_1hz, clock_400hz;
@@ -62,11 +63,103 @@ module snake (clock, reset, turn, display);
 
     // 七段顯示器輪播
     always @ (posedge clock_400hz) begin
-        if (turn >= 128 || ~reset) begin
+        if (~reset) begin
             turn = 8'b00000001;
+            turn_snake = 0;
+            display = {8'b00000000, 8'b00000000};
+        end else if (turn >= 128) begin
+            turn = 8'b00000001;
+        end else if (turn_snake >= 3) begin
+            turn_snake = 0;
         end else begin
             turn = turn << 1;
+            turn_snake = turn_snake + 1;
         end
+        case (turn)
+            8'b00000001: begin
+                case (body)
+
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b00000010: begin
+                case (body)
+
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b00000100: begin
+                case (body)
+
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b00001000: begin
+                case (body)
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b00010000: begin
+                case (body)
+
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+            8'b00100000: begin
+                case (body)
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b01000000: begin
+                // 控制欄顯示燈亮起來
+                case (body)
+
+                    default: display = {8'b00000000, 8'b00000000};
+                endcase
+            end
+
+            8'b10000000: begin
+                // 控制欄顯示燈亮起來
+
+            end
+
+        endcase
+        case (body)
+            5'b00001: display = {8'b00000000, 8'b00000010};
+            5'b00010: display = {8'b00100000, 8'b00000000};
+            5'b00011: display = {8'b00010000, 8'b00000000};
+            5'b00100: display = {8'b00010000, 8'b00000000};
+            5'b00101: display = {8'b10000000, 8'b00000000};
+            5'b00110: display = {8'b00010000, 8'b00000000};
+            5'b00111: display = {8'b00001000, 8'b00000000};
+            5'b01000: display = {8'b00000100, 8'b00000000};
+            5'b01001: display = {8'b10000000, 8'b00000000};
+            5'b01010: display = {8'b01000000, 8'b00000000};
+            5'b01011: display = {8'b00010000, 8'b00000000};
+            5'b01100: display = {8'b00000010, 8'b00000000};
+            5'b01101: display = {8'b00000010, 8'b00000000};
+            5'b01110: display = {8'b01000000, 8'b00000000};
+            5'b10000: display = {8'b00000000, 8'b10000000};
+            5'b10001: display = {8'b00000000, 8'b10000000};
+            5'b10010: display = {8'b00000000, 8'b10000000};
+            5'b10011: display = {8'b00000000, 8'b10000000};
+            5'b10100: display = {8'b00000000, 8'b01000000};
+            5'b10101: display = {8'b00000000, 8'b00000010};
+            5'b10110: display = {8'b00000000, 8'b00000010};
+            5'b10111: display = {8'b00000000, 8'b00000010};
+            default: display = {8'b00000000, 8'b00000000};
+        endcase
+        case (turn_snake)
+            0: body = first;
+            1: body = second;
+            2: body = third;
+            3: body = fourth;
+        endcase
     end
 
     always @ (posedge clock_1hz) begin
@@ -75,7 +168,6 @@ module snake (clock, reset, turn, display);
             second = 0;
             third = 0;
             fourth = 0;
-            display = {8'b00000000, 8'b00000000};
         end else if (first >= 23) begin
             first = 0;
         end else begin
@@ -85,248 +177,5 @@ module snake (clock, reset, turn, display);
             fourth <= third;
         end
     end
-
-    // 循環輪播
-    always @ (*) begin
-        case (turn)
-            8'b00000001: begin
-                case (first)
-                    5'b10011: display = {8'b00000000, 8'b10000000};
-                    5'b10100: display = {8'b00000000, 8'b01000000};
-                    5'b10101: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b10011: display = {8'b00000000, 8'b10000000};
-                    5'b10100: display = {8'b00000000, 8'b01000000};
-                    5'b10101: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b10011: display = {8'b00000000, 8'b10000000};
-                    5'b10100: display = {8'b00000000, 8'b01000000};
-                    5'b10101: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b10011: display = {8'b00000000, 8'b10000000};
-                    5'b10100: display = {8'b00000000, 8'b01000000};
-                    5'b10101: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-            end
-
-            8'b00000010: begin
-                case (first)
-                    5'b10010: display = {8'b00000000, 8'b10000000};
-                    5'b10110: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b10010: display = {8'b00000000, 8'b10000000};
-                    5'b10110: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b10010: display = {8'b00000000, 8'b10000000};
-                    5'b10110: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b10010: display = {8'b00000000, 8'b10000000};
-                    5'b10110: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-            end
-
-            8'b00000100: begin
-                case (first)
-                    5'b10001: display = {8'b00000000, 8'b10000000};
-                    5'b10111: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b10001: display = {8'b00000000, 8'b10000000};
-                    5'b10111: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b10001: display = {8'b00000000, 8'b10000000};
-                    5'b10111: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b10001: display = {8'b00000000, 8'b10000000};
-                    5'b10111: display = {8'b00000000, 8'b00000010};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-            end
-
-            8'b00001000: begin
-                case (first)
-                    5'b00001: display = {8'b00000000, 8'b00000010};
-                    5'b10000: display = {8'b00000000, 8'b10000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b00001: display = {8'b00000000, 8'b00000010};
-                    5'b10000: display = {8'b00000000, 8'b10000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b00001: display = {8'b00000000, 8'b00000010};
-                    5'b10000: display = {8'b00000000, 8'b10000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b00001: display = {8'b00000000, 8'b00000010};
-                    5'b10000: display = {8'b00000000, 8'b10000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-            end
-
-            8'b00010000: begin
-                case (first)
-                    5'b00010: display = {8'b00100000, 8'b00000000};
-                    5'b00011: display = {8'b00010000, 8'b00000000};
-                    5'b01110: display = {8'b01000000, 8'b00000000};
-                    5'b01101: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b00010: display = {8'b00100000, 8'b00000000};
-                    5'b00011: display = {8'b00010000, 8'b00000000};
-                    5'b01110: display = {8'b01000000, 8'b00000000};
-                    5'b01101: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b00010: display = {8'b00100000, 8'b00000000};
-                    5'b00011: display = {8'b00010000, 8'b00000000};
-                    5'b01110: display = {8'b01000000, 8'b00000000};
-                    5'b01101: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b00010: display = {8'b00100000, 8'b00000000};
-                    5'b00011: display = {8'b00010000, 8'b00000000};
-                    5'b01110: display = {8'b01000000, 8'b00000000};
-                    5'b01101: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-            end
-            8'b00100000: begin
-                case (first)
-                    5'b00100: display = {8'b00010000, 8'b00000000};
-                    5'b01100: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b00100: display = {8'b00010000, 8'b00000000};
-                    5'b01100: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b00100: display = {8'b00010000, 8'b00000000};
-                    5'b01100: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b00100: display = {8'b00010000, 8'b00000000};
-                    5'b01100: display = {8'b00000010, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-            end
-
-            8'b01000000: begin
-                // 控制欄顯示燈亮起來
-                case (first)
-                    5'b00101: display = {8'b10000000, 8'b00000000};
-                    5'b01010: display = {8'b01000000, 8'b00000000};
-                    5'b01011: display = {8'b00010000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b00101: display = {8'b10000000, 8'b00000000};
-                    5'b01010: display = {8'b01000000, 8'b00000000};
-                    5'b01011: display = {8'b00010000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b00101: display = {8'b10000000, 8'b00000000};
-                    5'b01010: display = {8'b01000000, 8'b00000000};
-                    5'b01011: display = {8'b00010000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b00101: display = {8'b10000000, 8'b00000000};
-                    5'b01010: display = {8'b01000000, 8'b00000000};
-                    5'b01011: display = {8'b00010000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-            end
-
-            8'b10000000: begin
-                // 控制欄顯示燈亮起來
-                case (first)
-                    5'b00110: display = {8'b00010000, 8'b00000000};
-                    5'b00111: display = {8'b00001000, 8'b00000000};
-                    5'b01000: display = {8'b00000100, 8'b00000000};
-                    5'b01001: display = {8'b10000000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (second)
-                    5'b00110: display = {8'b00010000, 8'b00000000};
-                    5'b00111: display = {8'b00001000, 8'b00000000};
-                    5'b01000: display = {8'b00000100, 8'b00000000};
-                    5'b01001: display = {8'b10000000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (third)
-                    5'b00110: display = {8'b00010000, 8'b00000000};
-                    5'b00111: display = {8'b00001000, 8'b00000000};
-                    5'b01000: display = {8'b00000100, 8'b00000000};
-                    5'b01001: display = {8'b10000000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-                case (fourth)
-                    5'b00110: display = {8'b00010000, 8'b00000000};
-                    5'b00111: display = {8'b00001000, 8'b00000000};
-                    5'b01000: display = {8'b00000100, 8'b00000000};
-                    5'b01001: display = {8'b10000000, 8'b00000000};
-                    default: display = {8'b00000000, 8'b00000000};
-                endcase
-
-            end
-        endcase
-
-    end
-
 
 endmodule // snake
