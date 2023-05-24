@@ -8,17 +8,16 @@ output [3:0] data;
 reg [3:0] data;
 
 always @ (posedge clock) begin
-    case (selective_set)
-        0: data = processor_register & b_in;
-        1: data = processor_register | b_in;
-        2: data = processor_register ^ b_in;
-        3: data = ~processor_register;
-    endcase
-end
-
-always @ (posedge clock) begin
-    if (reset == 1)
+    if (reset) begin
         data = 0;
+    end else begin
+        case (selective_set)
+            0: data = processor_register & b_in;
+            1: data = processor_register | b_in;
+            2: data = processor_register ^ b_in;
+            3: data = ~processor_register;
+        endcase
+    end
 end
 
 endmodule // logic_microoperation
