@@ -43,16 +43,13 @@ module logic_microoperation_test ();
     end
 
     always begin
-        #10;
+        #5;
+        $monitor(
+            "|   %b   |   %b   |   %b   | %b | %b |  %b |",
+            clock, reset, selective_set, processor_register, b_in, data);
+        
+        #5;
         clock = ~clock;
-    end
-
-    always begin
-    #10;
-
-    $monitor(
-        "|   %b   |   %b   |   %b   | %b | %b |  %b |",
-        clock, reset, selective_set, processor_register, b_in, data);
 
     end
 
