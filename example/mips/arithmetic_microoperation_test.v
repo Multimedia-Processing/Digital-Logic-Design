@@ -43,16 +43,13 @@ module arithmetic_microoperation_test ();
     end
 
     always begin
-        #10;
+        #5;
+        $monitor(
+            "|   %b   |   %b   |   %b%b   | %d | %d |  %d |",
+            clock, reset, s, carry, a, b, data);
+
+        #5;
         clock = ~clock;
-    end
-
-    always begin
-    #10;
-
-    $monitor(
-        "|   %b   |   %b   |   %b%b   | %d | %d |  %d |",
-        clock, reset, s, carry, a, b, data);
 
     end
 
